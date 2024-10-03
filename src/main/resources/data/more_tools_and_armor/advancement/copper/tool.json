@@ -1,0 +1,51 @@
+{
+  "display": {
+    "icon": {
+      "id": "more_tools_and_armor:copper_pickaxe"
+    },
+    "title": {
+      "translate": "advancement.title.copper/tool"
+    },
+    "description": {
+      "translate": "advancement.description.copper/tool"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "more_tools_and_armor:copper/weapon",
+  "criteria": {
+    "pickaxe": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "more_tools_and_armor:copper_pickaxe"
+          }
+        ]
+      }
+    },
+    "shovel": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "more_tools_and_armor:copper_shovel"
+          }
+        ]
+      }
+    },
+    "hoe": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "more_tools_and_armor:copper_hoe"
+          }
+        ]
+      }
+    }
+  },
+  "sends_telemetry_event": true
+}

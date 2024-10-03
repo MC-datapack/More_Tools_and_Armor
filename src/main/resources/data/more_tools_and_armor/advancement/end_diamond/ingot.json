@@ -1,0 +1,36 @@
+{
+  "display": {
+    "icon": {
+      "id": "more_tools_and_armor:end_diamond"
+    },
+    "title": {
+      "translate": "advancement.title.end_diamond/ingot"
+    },
+    "description": {
+      "translate": "advancement.description.end_diamond/ingot"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "more_tools_and_armor:root",
+  "criteria": {
+    "item": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "more_tools_and_armor:end_diamond"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "loot": [
+      "more_tools_and_armor:advancement_rewards/end_diamond/ingot"
+    ]
+  },
+  "sends_telemetry_event": true
+}

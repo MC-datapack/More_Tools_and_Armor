@@ -1,0 +1,41 @@
+{
+  "display": {
+    "icon": {
+      "id": "more_tools_and_armor:copper_sword"
+    },
+    "title": {
+      "translate": "advancement.title.copper/weapon"
+    },
+    "description": {
+      "translate": "advancement.description.copper/weapon"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "more_tools_and_armor:copper/ingot",
+  "criteria": {
+    "sword": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "more_tools_and_armor:copper_sword"
+          }
+        ]
+      }
+    },
+    "axe": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "more_tools_and_armor:copper_axe"
+          }
+        ]
+      }
+    }
+  },
+  "sends_telemetry_event": true
+}

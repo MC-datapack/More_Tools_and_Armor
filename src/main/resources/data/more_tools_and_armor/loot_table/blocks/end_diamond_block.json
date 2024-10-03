@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "more_tools_and_armor:end_diamond_block"
+        }
+      ]
+    }
+  ],
+  "random_sequence": "more_tools_and_armor:blocks/end_diamond_block"
+}

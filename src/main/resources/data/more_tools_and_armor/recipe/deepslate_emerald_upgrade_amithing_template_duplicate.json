@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "aca",
+    "aba",
+    "aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:diamond"
+    },
+    "b": {
+      "item": "more_tools_and_armor:deepslate_emerald"
+    },
+    "c": {
+      "item": "more_tools_and_armor:deepslate_emerald_upgrade_smithing_template"
+    }
+  },
+  "result": {
+    "id": "more_tools_and_armor:deepslate_emerald_upgrade_smithing_template",
+    "count": 2
+  }
+}

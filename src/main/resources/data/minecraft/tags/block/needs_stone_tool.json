@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "more_tools_and_armor:end_copper_ore",
+    "more_tools_and_armor:end_iron_ore",
+    "more_tools_and_armor:end_lapis_lazuli_ore",
+    "more_tools_and_armor:end_iron_ore"
+  ]
+}

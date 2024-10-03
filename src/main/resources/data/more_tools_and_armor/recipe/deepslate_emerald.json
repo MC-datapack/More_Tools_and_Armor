@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "more_tools_and_armor:deepslate_emerald_block"
+    }
+  ],
+  "result": {
+    "id": "more_tools_and_armor:deepslate_emerald",
+    "count": 9
+  }
+}

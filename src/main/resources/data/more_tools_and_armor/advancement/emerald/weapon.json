@@ -1,0 +1,41 @@
+{
+  "display": {
+    "icon": {
+      "id": "more_tools_and_armor:emerald_sword"
+    },
+    "title": {
+      "translate": "advancement.title.emerald/weapon"
+    },
+    "description": {
+      "translate": "advancement.description.emerald/weapon"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "more_tools_and_armor:emerald/ingot",
+  "criteria": {
+    "sword": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "more_tools_and_armor:emerald_sword"
+          }
+        ]
+      }
+    },
+    "axe": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "more_tools_and_armor:emerald_axe"
+          }
+        ]
+      }
+    }
+  },
+  "sends_telemetry_event": true
+}

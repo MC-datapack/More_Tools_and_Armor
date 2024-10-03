@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "more_tools_and_armor:deepslate_emerald_block",
+    "more_tools_and_armor:end_coal_ore",
+    "more_tools_and_armor:end_copper_ore",
+    "more_tools_and_armor:end_iron_ore",
+    "more_tools_and_armor:end_gold_ore",
+    "more_tools_and_armor:end_lapis_lazuli_ore",
+    "more_tools_and_armor:end_emerald_ore",
+    "more_tools_and_armor:end_redstone_ore",
+    "more_tools_and_armor:end_diamond_ore",
+    "more_tools_and_armor:end_diamond_block"
+  ]
+}

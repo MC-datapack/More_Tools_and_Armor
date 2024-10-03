@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "aaa",
+    "aaa",
+    "aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "more_tools_and_armor:end_diamond"
+    }
+  },
+  "result": {
+    "id": "more_tools_and_armor:end_diamond_block"
+  }
+}

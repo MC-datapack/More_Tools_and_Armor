@@ -1,0 +1,66 @@
+{
+  "display": {
+    "icon": {
+      "id": "more_tools_and_armor:deepslate_emerald_chestplate"
+    },
+    "title": {
+      "translate": "advancement.title.deepslate_emerald/armor"
+    },
+    "description": {
+      "translate": "advancement.description.deepslate_emerald/armor"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "more_tools_and_armor:deepslate_emerald/tool",
+  "criteria": {
+    "helmet": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "more_tools_and_armor:deepslate_emerald_helmet"
+          }
+        ]
+      }
+    },
+    "chestplate": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "more_tools_and_armor:deepslate_emerald_chestplate"
+          }
+        ]
+      }
+    },
+    "leggings": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "more_tools_and_armor:deepslate_emerald_leggings"
+          }
+        ]
+      }
+    },
+    "boots": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "more_tools_and_armor:deepslate_emerald_boots"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "loot": [
+      "more_tools_and_armor:advancement_rewards/deepslate_emerald/armor"
+    ]
+  },
+  "sends_telemetry_event": true
+}

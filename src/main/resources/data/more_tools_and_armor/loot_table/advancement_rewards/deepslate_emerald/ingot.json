@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:advancement_reward",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:deepslate_emerald_ore"
+        }
+      ]
+    }
+  ],
+  "random_sequence": "more_tools_and_armor:advancement_rewards/deepslate_emerald/ingot"
+}
