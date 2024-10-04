@@ -77,6 +77,18 @@
   "item.more_tools_and_armor.end_diamond_leggings": "End Diamantbeinshutz",
   "item.more_tools_and_armor.end_diamond_boots": "End Diamantstiefel",
 
+  "item.more_tools_and_armor.void_ingot": "Lerrebarren",
+  "item.more_tools_and_armor.void_upgrade_smithing_template": "Leereaufwertungsschmiedevorlage",
+  "item.more_tools_and_armor.void_sword": "Leereschwert",
+  "item.more_tools_and_armor.void_axe": "Leereaxt",
+  "item.more_tools_and_armor.void_pickaxe": "LeereSpritzhacke",
+  "item.more_tools_and_armor.void_shovel": "Leereschaufel",
+  "item.more_tools_and_armor.void_hoe": "Leerehacke",
+  "item.more_tools_and_armor.void_helmet": "Leerehelm",
+  "item.more_tools_and_armor.void_chestplate": "Leereharnisch",
+  "item.more_tools_and_armor.void_leggings": "Leerehose",
+  "item.more_tools_and_armor.void_boots": "Leerestiefel",
+
 
 
 
@@ -146,5 +158,16 @@
   "advancement.title.end_diamond/armor": "End Diamant Rüstung",
   "advancement.description.end_diamond/armor": "Besorge dir eine volle End Diamantrüstung",
   "advancement.title.end_diamond/block": "End Diamantblock",
-  "advancement.description.end_diamond/block": "Besorge einen End Diamantblock"
+  "advancement.description.end_diamond/block": "Besorge einen End Diamantblock",
+
+  "advancement.title.void/ingot": "Lerrebarren",
+  "advancement.description.void/ingot": "Besorge einen Lerrebarren",
+  "advancement.title.void/upgrade": "Leereaufwertungsschmiedevorlage",
+  "advancement.description.void/upgrade": "Bersorge eine Leereaufwertungsschmiedevorlage",
+  "advancement.title.void/weapon": "Leere Waffen",
+  "advancement.description.void/weapon": "Besorge ein Leereschwert und eine Leereaxt",
+  "advancement.title.void/tool": "Leere Werkzeuge",
+  "advancement.description.void/tool": "Besorge eine Leerespitzhacke und eine Leereschaufel und eine Leerehacke",
+  "advancement.title.void/armor": "Leere Rüstung",
+  "advancement.description.void/armor": "Besorge dir eine volle Leererüstung"
 }

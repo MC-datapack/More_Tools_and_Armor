@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "more_tools_and_armor:end_diamond_block"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "id": "more_tools_and_armor:end_diamond"
+  }
+}

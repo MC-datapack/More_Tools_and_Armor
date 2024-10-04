@@ -1,16 +1,12 @@
 {
 	"schemaVersion": 1,
 	"id": "more_tools_and_armor",
-	"version": "3.0",
+	"version": "4.0",
 	"name": "More Tools and Armor",
 	"description": "This mod adds many Tools and Armor Types to Minecraft",
 	"authors": [
 		"Timo_11(MC-datapack)"
 	],
-	"contact": {
-		"homepage": "",
-		"sources": ""
-	},
 	"license": "BSD 2-Clause",
 	"icon": "assets/more_tools_and_armor/icon.png",
 	"environment": "*",
@@ -24,15 +20,12 @@
 	},
 	"depends": {
 		"fabricloader": ">=0.16.2",
-		"minecraft": "~1.21.1",
 		"java": ">=21",
 		"fabric-api": "*"
 	},
 	"contact": {
 		"homepage": "https://modrinth.com/mod/more_tools_and_armor",
-		"issues": "https://github.com/MC-datapack/More_Tools_and_armor/issues"
-	},
-	"suggests": {
-		"another-mod": "*"
+		"issues": "https://github.com/MC-datapack/More_Tools_and_armor/issues",
+	  	"sources": "https://github.com/MC-datapack/More_Tools_and_Armor"
 	}
 }

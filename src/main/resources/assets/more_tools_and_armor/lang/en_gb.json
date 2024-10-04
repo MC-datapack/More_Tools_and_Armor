@@ -76,6 +76,18 @@
   "item.more_tools_and_armor.end_diamond_leggings": "End Diamond Leggings",
   "item.more_tools_and_armor.end_diamond_boots": "End Diamond Boots",
 
+  "item.more_tools_and_armor.void_ingot": "Void Ingot",
+  "item.more_tools_and_armor.void_upgrade_smithing_template": "Void Upgrade Smithing Template",
+  "item.more_tools_and_armor.void_sword": "Void Sword",
+  "item.more_tools_and_armor.void_axe": "Void Axe",
+  "item.more_tools_and_armor.void_pickaxe": "Void Pickaxe",
+  "item.more_tools_and_armor.void_shovel": "Void Shovel",
+  "item.more_tools_and_armor.void_hoe": "Void Hoe",
+  "item.more_tools_and_armor.void_helmet": "Void Helmet",
+  "item.more_tools_and_armor.void_chestplate": "Void Chestplate",
+  "item.more_tools_and_armor.void_leggings": "Void Leggings",
+  "item.more_tools_and_armor.void_boots": "Void Boots",
+
 
 
 
@@ -145,5 +157,16 @@
   "advancement.title.end_diamond/armor": "End Diamond Armour",
   "advancement.description.end_diamond/armor": "Obtain a full set of End Diamond Armour",
   "advancement.title.end_diamond/block": "End Diamond Block",
-  "advancement.description.end_diamond/block": "Obtain a Block of End Diamond"
+  "advancement.description.end_diamond/block": "Obtain a Block of End Diamond",
+
+  "advancement.title.void/ingot": "Void Ingot",
+  "advancement.description.void/ingot": "Obtain a Void Ingot",
+  "advancement.title.void/upgrade": "Void Upgrade Smithing Template",
+  "advancement.description.void/upgrade": "Obtain a Void Upgrade Smithing Template",
+  "advancement.title.void/weapon": "Void Weapons",
+  "advancement.description.void/weapon": "Obtain a Void Sword and a Void Axe",
+  "advancement.title.void/tool": "Void Tools",
+  "advancement.description.void/tool": "Obtain a Void Pickaxe and a Void Shovel and a Void Hoe",
+  "advancement.title.void/armor": "Void Armour",
+  "advancement.description.void/armor": "Obtain a full set of Void Armour"
 }

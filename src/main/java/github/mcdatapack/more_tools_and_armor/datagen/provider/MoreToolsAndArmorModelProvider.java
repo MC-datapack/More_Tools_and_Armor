@@ -34,6 +34,8 @@ public class MoreToolsAndArmorModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ItemInit.DEEPSLATE_EMERALD_UPGRADE_SMITHING_TEMPLATE, Models.GENERATED);
         itemModelGenerator.register(ItemInit.END_DIAMOND, Models.GENERATED);
         itemModelGenerator.register(ItemInit.END_DIAMOND_UPGRADE_SMITHING_TEMPLATE, Models.GENERATED);
+        itemModelGenerator.register(ItemInit.VOID_INGOT, Models.GENERATED);
+        itemModelGenerator.register(ItemInit.VOID_UPGRADE_SMITHING_TEMPLATE, Models.GENERATED);
 
         itemModelGenerator.register(ItemInit.BUDDING_AMETHYST_SWORD, Models.HANDHELD);
         itemModelGenerator.register(ItemInit.BUDDING_AMETHYST_AXE, Models.HANDHELD);
@@ -94,5 +96,15 @@ public class MoreToolsAndArmorModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ItemInit.END_DIAMOND_CHESTPLATE, Models.GENERATED);
         itemModelGenerator.register(ItemInit.END_DIAMOND_LEGGINGS, Models.GENERATED);
         itemModelGenerator.register(ItemInit.END_DIAMOND_BOOTS, Models.GENERATED);
+
+        itemModelGenerator.register(ItemInit.VOID_SWORD, Models.HANDHELD);
+        itemModelGenerator.register(ItemInit.VOID_AXE, Models.HANDHELD);
+        itemModelGenerator.register(ItemInit.VOID_PICKAXE, Models.HANDHELD);
+        itemModelGenerator.register(ItemInit.VOID_SHOVEL, Models.HANDHELD);
+        itemModelGenerator.register(ItemInit.VOID_HOE, Models.HANDHELD);
+        itemModelGenerator.register(ItemInit.VOID_HELMET, Models.GENERATED);
+        itemModelGenerator.register(ItemInit.VOID_CHESTPLATE, Models.GENERATED);
+        itemModelGenerator.register(ItemInit.VOID_LEGGINGS, Models.GENERATED);
+        itemModelGenerator.register(ItemInit.VOID_BOOTS, Models.GENERATED);
     }
 }

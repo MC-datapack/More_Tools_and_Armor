@@ -32,6 +32,8 @@ public class ItemGroupInit {
                 entries.add(BlockInit.END_DIAMOND_ORE);
                 entries.add(ItemInit.END_DIAMOND);
                 entries.add(BlockInit.END_DIAMOND_BLOCK);
+                entries.add(ItemInit.VOID_INGOT);
+                entries.add(ItemInit.VOID_UPGRADE_SMITHING_TEMPLATE);
                 entries.add(ItemInit.COPPER_HELMET);
                 entries.add(ItemInit.COPPER_CHESTPLATE);
                 entries.add(ItemInit.COPPER_LEGGINGS);
@@ -86,6 +88,15 @@ public class ItemGroupInit {
                 entries.add(ItemInit.END_DIAMOND_PICKAXE);
                 entries.add(ItemInit.END_DIAMOND_SHOVEL);
                 entries.add(ItemInit.END_DIAMOND_HOE);
+                entries.add(ItemInit.VOID_HELMET);
+                entries.add(ItemInit.VOID_CHESTPLATE);
+                entries.add(ItemInit.VOID_LEGGINGS);
+                entries.add(ItemInit.VOID_BOOTS);
+                entries.add(ItemInit.VOID_SWORD);
+                entries.add(ItemInit.VOID_AXE);
+                entries.add(ItemInit.VOID_PICKAXE);
+                entries.add(ItemInit.VOID_SHOVEL);
+                entries.add(ItemInit.VOID_HOE);
             })
             .build());
 

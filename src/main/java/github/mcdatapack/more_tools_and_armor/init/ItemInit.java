@@ -18,6 +18,11 @@ public class ItemInit {
             .rarity(Rarity.EPIC).fireproof().maxCount(96)));
     public static final Item END_DIAMOND_UPGRADE_SMITHING_TEMPLATE = register("end_diamond_upgrade_smithing_template", new Item(new Item.Settings()
             .rarity(Rarity.EPIC).fireproof()));
+    public static final Item VOID_INGOT = register("void_ingot", new Item(new Item.Settings()
+            .rarity(Rarity.EPIC).fireproof().maxCount(96)));
+    public static final Item VOID_UPGRADE_SMITHING_TEMPLATE = register("void_upgrade_smithing_template", new Item(new Item.Settings()
+            .rarity(Rarity.EPIC).fireproof().maxCount(96)));
+
 //Budding Amethyst
     public static final SwordItem BUDDING_AMETHYST_SWORD = register("budding_amethyst_sword", new SwordItem(ToolMaterials.BUDDING_AMETHYST, new Item.Settings()
             .attributeModifiers(SwordItem.createAttributeModifiers(ToolMaterials.BUDDING_AMETHYST, 5, -2.4F))));
@@ -137,6 +142,27 @@ public class ItemInit {
             .maxDamage(ArmorItem.Type.LEGGINGS.getMaxDamage(280)).fireproof().rarity(Rarity.EPIC)));
     public static final ArmorItem END_DIAMOND_BOOTS = register("end_diamond_boots", new ArmorItem(ArmorMaterialInit.END_DIAMOND, ArmorItem.Type.BOOTS, new Item.Settings()
             .maxDamage(ArmorItem.Type.BOOTS.getMaxDamage(280)).fireproof().rarity(Rarity.EPIC)));
+
+
+    //Void
+    public static final SwordItem VOID_SWORD = register("void_sword", new SwordItem(ToolMaterials.VOID, new Item.Settings()
+            .attributeModifiers(SwordItem.createAttributeModifiers(ToolMaterials.VOID, 22, -1.8F)).fireproof().rarity(Rarity.EPIC)));
+    public static final AxeItem VOID_AXE = register("void_axe", new AxeItem(ToolMaterials.VOID, new Item.Settings()
+            .attributeModifiers(AxeItem.createAttributeModifiers(ToolMaterials.VOID, 21, -2.4F)).fireproof().rarity(Rarity.EPIC)));
+    public static final PickaxeItem VOID_PICKAXE = register("void_pickaxe", new PickaxeItem(ToolMaterials.VOID, new Item.Settings()
+            .attributeModifiers(PickaxeItem.createAttributeModifiers(ToolMaterials.VOID, 13, -2.0F)).fireproof().rarity(Rarity.EPIC)));
+    public static final ShovelItem VOID_SHOVEL = register("void_shovel", new ShovelItem(ToolMaterials.VOID, new Item.Settings()
+            .attributeModifiers(ShovelItem.createAttributeModifiers(ToolMaterials.VOID, 14, -2.2F)).fireproof().rarity(Rarity.EPIC)));
+    public static final HoeItem VOID_HOE = register("void_hoe", new HoeItem(ToolMaterials.VOID, new Item.Settings()
+            .attributeModifiers(HoeItem.createAttributeModifiers(ToolMaterials.VOID, 3, 3.0F)).fireproof().rarity(Rarity.EPIC)));
+    public static final ArmorItem VOID_HELMET = register("void_helmet", new ArmorItem(ArmorMaterialInit.VOID, ArmorItem.Type.HELMET, new Item.Settings()
+            .maxDamage(ArmorItem.Type.HELMET.getMaxDamage(1800)).fireproof().rarity(Rarity.EPIC)));
+    public static final ArmorItem VOID_CHESTPLATE = register("void_chestplate", new ArmorItem(ArmorMaterialInit.VOID, ArmorItem.Type.CHESTPLATE, new Item.Settings()
+            .maxDamage(ArmorItem.Type.CHESTPLATE.getMaxDamage(1800)).fireproof().rarity(Rarity.EPIC)));
+    public static final ArmorItem VOID_LEGGINGS = register("void_leggings", new ArmorItem(ArmorMaterialInit.VOID, ArmorItem.Type.LEGGINGS, new Item.Settings()
+            .maxDamage(ArmorItem.Type.LEGGINGS.getMaxDamage(1800)).fireproof().rarity(Rarity.EPIC)));
+    public static final ArmorItem VOID_BOOTS = register("void_boots", new ArmorItem(ArmorMaterialInit.VOID, ArmorItem.Type.BOOTS, new Item.Settings()
+            .maxDamage(ArmorItem.Type.BOOTS.getMaxDamage(1800)).fireproof().rarity(Rarity.EPIC)));
 
 
 

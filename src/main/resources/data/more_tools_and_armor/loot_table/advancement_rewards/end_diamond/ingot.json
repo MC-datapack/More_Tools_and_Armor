@@ -6,7 +6,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "minecraft:end_diamond_ore"
+          "name": "more_tools_and_armor:end_diamond_ore"
         }
       ]
     }

@@ -1,0 +1,56 @@
+{
+  "display": {
+    "icon": {
+      "id": "more_tools_and_armor:void_pickaxe"
+    },
+    "title": {
+      "translate": "advancement.title.void/tool"
+    },
+    "description": {
+      "translate": "advancement.description.void/tool"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "more_tools_and_armor:void/weapon",
+  "criteria": {
+    "pickaxe": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "more_tools_and_armor:void_pickaxe"
+          }
+        ]
+      }
+    },
+    "shovel": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "more_tools_and_armor:void_shovel"
+          }
+        ]
+      }
+    },
+    "hoe": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "more_tools_and_armor:void_hoe"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "loot": [
+      "more_tools_and_armor:advancement_rewards/void/tool"
+    ]
+  },
+  "sends_telemetry_event": true
+}

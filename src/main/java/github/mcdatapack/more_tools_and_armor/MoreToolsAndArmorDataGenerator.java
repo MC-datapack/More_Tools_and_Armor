@@ -2,6 +2,8 @@ package github.mcdatapack.more_tools_and_armor;
 
 import github.mcdatapack.more_tools_and_armor.datagen.generator.MoreToolsAndArmorWorldGenerator;
 import github.mcdatapack.more_tools_and_armor.datagen.provider.MoreToolsAndArmorModelProvider;
+import github.mcdatapack.more_tools_and_armor.datagen.provider.MoreToolsAndArmorRecipeProvider;
+import github.mcdatapack.more_tools_and_armor.datagen.provider.MoreToolsAndArmorTagProvider;
 import github.mcdatapack.more_tools_and_armor.init.worldgen.ConfiguredFeatureInit;
 import github.mcdatapack.more_tools_and_armor.init.worldgen.PlacedFeatureInit;
 import net.fabricmc.fabric.api.datagen.v1.DataGeneratorEntrypoint;
@@ -16,6 +18,9 @@ public class MoreToolsAndArmorDataGenerator implements DataGeneratorEntrypoint {
 		FabricDataGenerator.Pack pack = fabricDataGenerator.createPack();
 		pack.addProvider(MoreToolsAndArmorModelProvider::new);
 		pack.addProvider(MoreToolsAndArmorWorldGenerator::new);
+		pack.addProvider(MoreToolsAndArmorRecipeProvider::new);
+		pack.addProvider(MoreToolsAndArmorTagProvider.BlockTagProvider::new);
+		pack.addProvider(MoreToolsAndArmorTagProvider.ItemTagProvider::new);
 	}
 	@Override
 	public void buildRegistry(RegistryBuilder registryBuilder) {

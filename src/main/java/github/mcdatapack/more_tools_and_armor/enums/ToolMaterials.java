@@ -1,6 +1,7 @@
 package github.mcdatapack.more_tools_and_armor.enums;
 
 import github.mcdatapack.more_tools_and_armor.init.ItemInit;
+import github.mcdatapack.more_tools_and_armor.list.TagList;
 import net.minecraft.block.Block;
 import net.minecraft.item.Items;
 import net.minecraft.item.ToolMaterial;
@@ -9,6 +10,8 @@ import net.minecraft.registry.tag.BlockTags;
 import net.minecraft.registry.tag.TagKey;
 
 public enum ToolMaterials implements ToolMaterial {
+    //DEV NOTE 14w34a = 14, w->23->2+3, 34->3+4, a->1
+    //DEV NOTE 14571(10) -> 431241(5)
     BUDDING_AMETHYST(
             500, 7F, 1F, BlockTags.INCORRECT_FOR_IRON_TOOL, 12,
             Ingredient.ofItems(ItemInit.BUDDING_AMETHYST_CRYSTAL)
@@ -26,12 +29,16 @@ public enum ToolMaterials implements ToolMaterial {
             Ingredient.ofItems(Items.OBSIDIAN)
     ),
     DEEPSLATE_EMERALD(
-            14571, 40F, 1F, BlockTags.INCORRECT_FOR_NETHERITE_TOOL, 100,
+            14571, 40F, 1F, TagList.BlockTags.INCORRECT_FOR_DEEPSLATE_EMERALD_TOOL, 100,
             Ingredient.ofItems(ItemInit.DEEPSLATE_EMERALD)
     ),
     END_DIAMOND(
-            24581, 80F, 1F, BlockTags.INCORRECT_FOR_NETHERITE_TOOL, 100,
+            24581, 80F, 1F, TagList.BlockTags.INCORRECT_FOR_END_DIAMOND_TOOL, 100,
             Ingredient.ofItems(ItemInit.END_DIAMOND)
+    ),
+    VOID(
+            431241, 256F, 1F, TagList.BlockTags.INCORRECT_FOR_VOID_TOOL, 100,
+            Ingredient.ofItems(ItemInit.VOID_INGOT)
     )
     ;
 
