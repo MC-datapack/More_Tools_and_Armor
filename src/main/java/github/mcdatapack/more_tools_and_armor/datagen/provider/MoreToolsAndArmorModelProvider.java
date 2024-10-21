@@ -25,6 +25,11 @@ public class MoreToolsAndArmorModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerSimpleCubeAll(BlockInit.END_EMERALD_ORE);
         blockStateModelGenerator.registerSimpleCubeAll(BlockInit.END_REDSTONE_ORE);
         blockStateModelGenerator.registerSimpleCubeAll(BlockInit.END_DIAMOND_ORE);
+        blockStateModelGenerator.registerSimpleCubeAll(BlockInit.END_EMERALD_BLOCK);
+        blockStateModelGenerator.registerSimpleCubeAll(BlockInit.SCULK_EMERALD_ORE);
+        blockStateModelGenerator.registerSimpleCubeAll(BlockInit.BLACKSTONE_EMERALD_ORE);
+        blockStateModelGenerator.registerSimpleCubeAll(BlockInit.SCULK_EMERALD_BLOCK);
+        blockStateModelGenerator.registerSimpleCubeAll(BlockInit.BLACKSTONE_EMERALD_BLOCK);
     }
 
     @Override
@@ -36,6 +41,11 @@ public class MoreToolsAndArmorModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ItemInit.END_DIAMOND_UPGRADE_SMITHING_TEMPLATE, Models.GENERATED);
         itemModelGenerator.register(ItemInit.VOID_INGOT, Models.GENERATED);
         itemModelGenerator.register(ItemInit.VOID_UPGRADE_SMITHING_TEMPLATE, Models.GENERATED);
+        itemModelGenerator.register(ItemInit.SCULK_EMERALD, Models.GENERATED);
+        itemModelGenerator.register(ItemInit.BLACKSTONE_EMERALD, Models.GENERATED);
+        itemModelGenerator.register(ItemInit.END_EMERALD, Models.GENERATED);
+        itemModelGenerator.register(ItemInit.ONETHDENDERITE_INGOT, Models.GENERATED);
+        itemModelGenerator.register(ItemInit.ONETHDENDERITE_UPGRADE_SMITHING_TEMPLATE, Models.GENERATED);
 
         itemModelGenerator.register(ItemInit.BUDDING_AMETHYST_SWORD, Models.HANDHELD);
         itemModelGenerator.register(ItemInit.BUDDING_AMETHYST_AXE, Models.HANDHELD);
@@ -106,5 +116,15 @@ public class MoreToolsAndArmorModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ItemInit.VOID_CHESTPLATE, Models.GENERATED);
         itemModelGenerator.register(ItemInit.VOID_LEGGINGS, Models.GENERATED);
         itemModelGenerator.register(ItemInit.VOID_BOOTS, Models.GENERATED);
+
+        itemModelGenerator.register(ItemInit.ONETHDENDERITE_SWORD, Models.HANDHELD);
+        itemModelGenerator.register(ItemInit.ONETHDENDERITE_AXE, Models.HANDHELD);
+        itemModelGenerator.register(ItemInit.ONETHDENDERITE_PICKAXE, Models.HANDHELD);
+        itemModelGenerator.register(ItemInit.ONETHDENDERITE_SHOVEL, Models.HANDHELD);
+        itemModelGenerator.register(ItemInit.ONETHDENDERITE_HOE, Models.HANDHELD);
+        itemModelGenerator.register(ItemInit.ONETHDENDERITE_HELMET, Models.GENERATED);
+        itemModelGenerator.register(ItemInit.ONETHDENDERITE_CHESTPLATE, Models.GENERATED);
+        itemModelGenerator.register(ItemInit.ONETHDENDERITE_LEGGINGS, Models.GENERATED);
+        itemModelGenerator.register(ItemInit.ONETHDENDERITE_BOOTS, Models.GENERATED);
     }
 }

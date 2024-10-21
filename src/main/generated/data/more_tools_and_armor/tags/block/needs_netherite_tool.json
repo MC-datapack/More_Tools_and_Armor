@@ -1,6 +1,8 @@
 {
   "values": [
     "more_tools_and_armor:deepslate_emerald_block",
-    "more_tools_and_armor:end_diamond_block"
+    "more_tools_and_armor:end_diamond_block",
+    "more_tools_and_armor:sculk_emerald_block",
+    "more_tools_and_armor:blackstone_emerald_block"
   ]
 }

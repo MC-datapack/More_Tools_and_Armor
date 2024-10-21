@@ -12,6 +12,7 @@ import net.minecraft.registry.tag.TagKey;
 public enum ToolMaterials implements ToolMaterial {
     //DEV NOTE 14w34a = 14, w->23->2+3, 34->3+4, a->1
     //DEV NOTE 14571(10) -> 431241(5)
+    //DEV NOTE PI 31415926535897932384626433832795
     BUDDING_AMETHYST(
             500, 7F, 1F, BlockTags.INCORRECT_FOR_IRON_TOOL, 12,
             Ingredient.ofItems(ItemInit.BUDDING_AMETHYST_CRYSTAL)
@@ -39,6 +40,10 @@ public enum ToolMaterials implements ToolMaterial {
     VOID(
             431241, 256F, 1F, TagList.BlockTags.INCORRECT_FOR_VOID_TOOL, 100,
             Ingredient.ofItems(ItemInit.VOID_INGOT)
+    ),
+    ONETHDENDERITE(
+            3141592, 1256F, 1F, TagList.BlockTags.INCORRECT_FOR_ONETHDENDERITE_TOOL, 100,
+            Ingredient.ofItems(ItemInit.ONETHDENDERITE_INGOT)
     )
     ;
 

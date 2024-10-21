@@ -8,6 +8,14 @@
   "block.more_tools_and_armor.end_emerald_ore": "End Emerald Ore",
   "block.more_tools_and_armor.end_redstone_ore": "End Redstone Ore",
   "block.more_tools_and_armor.end_diamond_ore": "End Diamond Ore",
+  "block.more_tools_and_armor.sculk_emerald_ore": "Sculk Emerald Ore",
+  "block.more_tools_and_armor.blackstone_emerald_ore": "Blackstone Emerald Ore",
+  "item.more_tools_and_armor.end_emerald": "End Emerald",
+  "block.more_tools_and_armor.end_emerald_block": "End Emerald Block",
+  "item.more_tools_and_armor.sculk_emerald": "Sculk Emerald",
+  "block.more_tools_and_armor.sculk_emerald_block": "Sculk Emerald Block",
+  "item.more_tools_and_armor.blackstone_emerald": "Blackstone Emerald",
+  "block.more_tools_and_armor.blackstone_emerald_block": "Blackstone Emerald Block",
 
   "item.more_tools_and_armor.budding_amethyst_crystal": "Budding Amethyst Crystal",
   "item.more_tools_and_armor.budding_amethyst_sword": "Budding Amethyst Sword",
@@ -87,6 +95,18 @@
   "item.more_tools_and_armor.void_chestplate": "Void Chestplate",
   "item.more_tools_and_armor.void_leggings": "Void Leggings",
   "item.more_tools_and_armor.void_boots": "Void Boots",
+
+  "item.more_tools_and_armor.onethdenderite_ingot": "§2O§4neth§rd§eend§8erite§r Ingot",
+  "item.more_tools_and_armor.onethdenderite_upgrade_smithing_template": "§2O§4neth§rd§eend§8erite§r Upgrade Smithing Template",
+  "item.more_tools_and_armor.onethdenderite_sword": "§2O§4neth§rd§eend§8erite§r Sword",
+  "item.more_tools_and_armor.onethdenderite_axe": "§2O§4neth§rd§eend§8erite§r Axe",
+  "item.more_tools_and_armor.onethdenderite_pickaxe": "§2O§4neth§rd§eend§8erite§r Pickaxe",
+  "item.more_tools_and_armor.onethdenderite_shovel": "§2O§4neth§rd§eend§8erite§r Shovel",
+  "item.more_tools_and_armor.onethdenderite_hoe": "§2O§4neth§rd§eend§8erite§r Hoe",
+  "item.more_tools_and_armor.onethdenderite_helmet": "§2O§4neth§rd§eend§8erite§r Helmet",
+  "item.more_tools_and_armor.onethdenderite_chestplate": "§2O§4neth§rd§eend§8erite§r Chestplate",
+  "item.more_tools_and_armor.onethdenderite_leggings": "§2O§4neth§rd§eend§8erite§r Leggings",
+  "item.more_tools_and_armor.onethdenderite_boots": "§2O§4neth§rd§eend§8erite§r Boots",
 
 
 
@@ -168,5 +188,16 @@
   "advancement.title.void/tool": "Void Tools",
   "advancement.description.void/tool": "Obtain a Void Pickaxe and a Void Shovel and a Void Hoe",
   "advancement.title.void/armor": "Void Armor",
-  "advancement.description.void/armor": "Obtain a full set of Void Armor"
+  "advancement.description.void/armor": "Obtain a full set of Void Armor",
+
+  "advancement.title.onethdenderite/ingot": "§2O§4neth§5d§eend§8erite§5 Ingot",
+  "advancement.description.onethdenderite/ingot": "Obtain an §2O§4neth§5d§eend§8erite§5 Ingot",
+  "advancement.title.onethdenderite/upgrade": "§2O§4neth§5d§eend§8erite§5 Upgrade Smithing Template",
+  "advancement.description.onethdenderite/upgrade": "Obtain an §2O§4neth§5d§eend§8erite§5 Upgrade Smithing Template",
+  "advancement.title.onethdenderite/weapon": "§2O§4neth§5d§eend§8erite§5 Weapons",
+  "advancement.description.onethdenderite/weapon": "Obtain an §2O§4neth§5d§eend§8erite§5 Sword and an §2O§4neth§5d§eend§8erite§5 Axe",
+  "advancement.title.onethdenderite/tool": "§2O§4neth§5d§eend§8erite§5 Tools",
+  "advancement.description.onethdenderite/tool": "Obtain an §2O§4neth§5d§eend§8erite§5 Pickaxe and an §2O§4neth§5d§eend§8erite§5 Shovel and an §2O§4neth§5d§eend§8erite§5 Hoe",
+  "advancement.title.onethdenderite/armor": "§2O§4neth§5d§eend§8erite§5 Armor",
+  "advancement.description.onethdenderite/armor": "Obtain an full set of §2O§4neth§5d§eend§8erite§5 Armor"
 }

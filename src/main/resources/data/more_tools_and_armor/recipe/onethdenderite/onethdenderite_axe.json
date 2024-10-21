@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:smithing_transform",
+  "category": "equipment",
+  "template": {
+    "item": "more_tools_and_armor:onethdenderite_upgrade_smithing_template"
+  },
+  "base": {
+    "item": "more_tools_and_armor:void_axe"
+  },
+  "addition": {
+    "item": "more_tools_and_armor:onethdenderite_ingot"
+  },
+  "result": {
+    "id": "more_tools_and_armor:onethdenderite_axe"
+  }
+}

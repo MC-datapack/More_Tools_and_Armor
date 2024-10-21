@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "more_tools_and_armor:block/sculk_emerald_block"
+  }
+}

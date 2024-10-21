@@ -1,0 +1,33 @@
+{
+  "type": "minecraft:advancement_reward",
+  "pools": [
+    {
+      "rolls": 2,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "more_tools_and_armor:end_emerald"
+        }
+      ]
+    },
+    {
+      "rolls": 2,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "more_tools_and_armor:sculk_emerald"
+        }
+      ]
+    },
+    {
+      "rolls": 2,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "more_tools_and_armor:blackstone_emerald"
+        }
+      ]
+    }
+  ],
+  "random_sequence": "more_tools_and_armor:advancement_rewards/onethdenderite/ingot"
+}

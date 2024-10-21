@@ -100,6 +100,17 @@ public class ArmorMaterialInit {
             1.2F,
             false
     );
+    public static final RegistryEntry<ArmorMaterial> ONETHDENDERITE = register("onethdenderite", Map.of(
+            ArmorItem.Type.HELMET, 7,
+            ArmorItem.Type.CHESTPLATE, 10,
+            ArmorItem.Type.LEGGINGS, 8,
+            ArmorItem.Type.BOOTS, 5),
+            100,
+            SoundEvents.ITEM_ARMOR_EQUIP_NETHERITE,
+            () -> Ingredient.ofItems(ItemInit.ONETHDENDERITE_INGOT),
+            96,
+            1.2F,
+            false);
 
 //Armor Materials Setup Help
         public static RegistryEntry<ArmorMaterial> register(String id, Map<ArmorItem.Type, Integer> defensePoints,

@@ -107,6 +107,71 @@ public class MoreToolsAndArmorRecipeProvider extends FabricRecipeProvider {
                 .pattern("AAA")
                 .criterion(hasItem(VOID_INGOT), conditionsFromItem(VOID_INGOT))
                 .offerTo(exporter, "void_upgrade_smithing_template_dupe");
+        ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, SCULK_EMERALD_BLOCK)
+                .input('A', SCULK_EMERALD)
+                .pattern("AAA")
+                .pattern("AAA")
+                .pattern("AAA")
+                .criterion(hasItem(SCULK_EMERALD), conditionsFromItem(SCULK_EMERALD))
+                .offerTo(exporter);
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC, SCULK_EMERALD, 9)
+                .input(SCULK_EMERALD_BLOCK)
+                .criterion(hasItem(SCULK_EMERALD), conditionsFromItem(SCULK_EMERALD))
+                .offerTo(exporter);
+        ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, BLACKSTONE_EMERALD_BLOCK)
+                .input('A', BLACKSTONE_EMERALD)
+                .pattern("AAA")
+                .pattern("AAA")
+                .pattern("AAA")
+                .criterion(hasItem(BLACKSTONE_EMERALD), conditionsFromItem(BLACKSTONE_EMERALD))
+                .offerTo(exporter);
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC, BLACKSTONE_EMERALD, 9)
+                .input(BLACKSTONE_EMERALD_BLOCK)
+                .criterion(hasItem(BLACKSTONE_EMERALD), conditionsFromItem(BLACKSTONE_EMERALD))
+                .offerTo(exporter);
+        ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, END_EMERALD_BLOCK)
+                .input('A', END_EMERALD)
+                .pattern("AAA")
+                .pattern("AAA")
+                .pattern("AAA")
+                .criterion(hasItem(END_EMERALD), conditionsFromItem(END_EMERALD))
+                .offerTo(exporter);
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC, END_EMERALD, 9)
+                .input(END_EMERALD_BLOCK)
+                .criterion(hasItem(END_EMERALD), conditionsFromItem(END_EMERALD))
+                .offerTo(exporter);
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC, ONETHDENDERITE_INGOT, 2)
+                .input(SCULK_EMERALD)
+                .input(SCULK_EMERALD)
+                .input(END_EMERALD)
+                .input(END_EMERALD)
+                .input(BLACKSTONE_EMERALD)
+                .input(BLACKSTONE_EMERALD)
+                .input(VOID_INGOT)
+                .input(SCULK_EMERALD_ORE)
+                .input(BLACKSTONE_EMERALD_ORE)
+                .criterion(hasItem(SCULK_EMERALD), conditionsFromItem(SCULK_EMERALD))
+                .criterion(hasItem(BLACKSTONE_EMERALD), conditionsFromItem(BLACKSTONE_EMERALD))
+                .criterion(hasItem(END_EMERALD), conditionsFromItem(END_EMERALD))
+                .offerTo(exporter);
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ONETHDENDERITE_UPGRADE_SMITHING_TEMPLATE)
+                .input('A', END_DIAMOND)
+                .input('B', ONETHDENDERITE_INGOT)
+                .input('C', VOID_UPGRADE_SMITHING_TEMPLATE)
+                .pattern("BCB")
+                .pattern("BAB")
+                .pattern("AAA")
+                .criterion(hasItem(ONETHDENDERITE_INGOT), conditionsFromItem(ONETHDENDERITE_INGOT))
+                .offerTo(exporter, "onethdenderite_upgrade_smithing_template");
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ONETHDENDERITE_UPGRADE_SMITHING_TEMPLATE, 2)
+                .input('A', END_DIAMOND)
+                .input('B', ONETHDENDERITE_INGOT)
+                .input('C', ONETHDENDERITE_UPGRADE_SMITHING_TEMPLATE)
+                .pattern("ACA")
+                .pattern("ABA")
+                .pattern("AAA")
+                .criterion(hasItem(ONETHDENDERITE_INGOT), conditionsFromItem(ONETHDENDERITE_INGOT))
+                .offerTo(exporter, "onethdenderite_upgrade_smithing_template_dupe");
 
 
 

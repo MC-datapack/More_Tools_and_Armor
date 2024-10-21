@@ -6,7 +6,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "more_tools_and_armor:void_ingot_upgrade_smithing_template"
+          "name": "more_tools_and_armor:void_upgrade_smithing_template"
         }
       ]
     }

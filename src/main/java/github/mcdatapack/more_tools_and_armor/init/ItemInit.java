@@ -22,6 +22,16 @@ public class ItemInit {
             .rarity(Rarity.EPIC).fireproof().maxCount(96)));
     public static final Item VOID_UPGRADE_SMITHING_TEMPLATE = register("void_upgrade_smithing_template", new Item(new Item.Settings()
             .rarity(Rarity.EPIC).fireproof().maxCount(96)));
+    public static final Item SCULK_EMERALD = register("sculk_emerald", new Item(new Item.Settings()
+            .rarity(Rarity.EPIC).fireproof().maxCount(96)));
+    public static final Item BLACKSTONE_EMERALD = register("blackstone_emerald", new Item(new Item.Settings()
+            .rarity(Rarity.EPIC).fireproof().maxCount(96)));
+    public static final Item END_EMERALD = register("end_emerald", new Item(new Item.Settings()
+            .rarity(Rarity.EPIC).fireproof().maxCount(96)));
+    public static final Item ONETHDENDERITE_INGOT = register("onethdenderite_ingot", new Item(new Item.Settings()
+            .rarity(Rarity.EPIC).fireproof().maxCount(96)));
+    public static final Item ONETHDENDERITE_UPGRADE_SMITHING_TEMPLATE = register("onethdenderite_upgrade_smithing_template", new Item(new Item.Settings()
+            .rarity(Rarity.EPIC).fireproof().maxCount(96)));
 
 //Budding Amethyst
     public static final SwordItem BUDDING_AMETHYST_SWORD = register("budding_amethyst_sword", new SwordItem(ToolMaterials.BUDDING_AMETHYST, new Item.Settings()
@@ -164,7 +174,25 @@ public class ItemInit {
     public static final ArmorItem VOID_BOOTS = register("void_boots", new ArmorItem(ArmorMaterialInit.VOID, ArmorItem.Type.BOOTS, new Item.Settings()
             .maxDamage(ArmorItem.Type.BOOTS.getMaxDamage(1800)).fireproof().rarity(Rarity.EPIC)));
 
-
+    //ONETHDENDERITE
+    public static final SwordItem ONETHDENDERITE_SWORD = register("onethdenderite_sword", new SwordItem(ToolMaterials.ONETHDENDERITE, new Item.Settings()
+            .attributeModifiers(SwordItem.createAttributeModifiers(ToolMaterials.ONETHDENDERITE, 33, -1.6F)).fireproof().rarity(Rarity.EPIC)));
+    public static final AxeItem ONETHDENDERITE_AXE = register("onethdenderite_axe", new AxeItem(ToolMaterials.ONETHDENDERITE, new Item.Settings()
+            .attributeModifiers(AxeItem.createAttributeModifiers(ToolMaterials.ONETHDENDERITE, 28, -2.2F)).fireproof().rarity(Rarity.EPIC)));
+    public static final PickaxeItem ONETHDENDERITE_PICKAXE = register("onethdenderite_pickaxe", new PickaxeItem(ToolMaterials.ONETHDENDERITE, new Item.Settings()
+            .attributeModifiers(PickaxeItem.createAttributeModifiers(ToolMaterials.ONETHDENDERITE, 18, -1.8F)).fireproof().rarity(Rarity.EPIC)));
+    public static final ShovelItem ONETHDENDERITE_SHOVEL = register("onethdenderite_shovel", new ShovelItem(ToolMaterials.ONETHDENDERITE, new Item.Settings()
+            .attributeModifiers(ShovelItem.createAttributeModifiers(ToolMaterials.ONETHDENDERITE, 23, -2.0F)).fireproof().rarity(Rarity.EPIC)));
+    public static final HoeItem ONETHDENDERITE_HOE = register("onethdenderite_hoe", new HoeItem(ToolMaterials.ONETHDENDERITE, new Item.Settings()
+            .attributeModifiers(HoeItem.createAttributeModifiers(ToolMaterials.ONETHDENDERITE, 8, 3.2F)).fireproof().rarity(Rarity.EPIC)));
+    public static final ArmorItem ONETHDENDERITE_HELMET = register("onethdenderite_helmet", new ArmorItem(ArmorMaterialInit.ONETHDENDERITE, ArmorItem.Type.HELMET, new Item.Settings()
+            .maxDamage(ArmorItem.Type.HELMET.getMaxDamage(3600)).fireproof().rarity(Rarity.EPIC)));
+    public static final ArmorItem ONETHDENDERITE_CHESTPLATE = register("onethdenderite_chestplate", new ArmorItem(ArmorMaterialInit.ONETHDENDERITE, ArmorItem.Type.CHESTPLATE, new Item.Settings()
+            .maxDamage(ArmorItem.Type.CHESTPLATE.getMaxDamage(3600)).fireproof().rarity(Rarity.EPIC)));
+    public static final ArmorItem ONETHDENDERITE_LEGGINGS = register("onethdenderite_leggings", new ArmorItem(ArmorMaterialInit.ONETHDENDERITE, ArmorItem.Type.LEGGINGS, new Item.Settings()
+            .maxDamage(ArmorItem.Type.LEGGINGS.getMaxDamage(3600)).fireproof().rarity(Rarity.EPIC)));
+    public static final ArmorItem ONETHDENDERITE_BOOTS = register("onethdenderite_boots", new ArmorItem(ArmorMaterialInit.ONETHDENDERITE, ArmorItem.Type.BOOTS, new Item.Settings()
+            .maxDamage(ArmorItem.Type.BOOTS.getMaxDamage(3600)).fireproof().rarity(Rarity.EPIC)));
 
     public static <T extends Item> T register(String name, T item) {
         return Registry.register(Registries.ITEM, MoreToolsAndArmor.id(name), item);

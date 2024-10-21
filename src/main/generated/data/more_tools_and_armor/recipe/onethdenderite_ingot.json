@@ -1,0 +1,37 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "more_tools_and_armor:sculk_emerald"
+    },
+    {
+      "item": "more_tools_and_armor:sculk_emerald"
+    },
+    {
+      "item": "more_tools_and_armor:end_emerald"
+    },
+    {
+      "item": "more_tools_and_armor:end_emerald"
+    },
+    {
+      "item": "more_tools_and_armor:blackstone_emerald"
+    },
+    {
+      "item": "more_tools_and_armor:blackstone_emerald"
+    },
+    {
+      "item": "more_tools_and_armor:void_ingot"
+    },
+    {
+      "item": "more_tools_and_armor:sculk_emerald_ore"
+    },
+    {
+      "item": "more_tools_and_armor:blackstone_emerald_ore"
+    }
+  ],
+  "result": {
+    "count": 2,
+    "id": "more_tools_and_armor:onethdenderite_ingot"
+  }
+}
