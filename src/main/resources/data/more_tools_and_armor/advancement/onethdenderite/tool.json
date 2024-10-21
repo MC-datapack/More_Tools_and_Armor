@@ -1,0 +1,56 @@
+{
+  "display": {
+    "icon": {
+      "id": "more_tools_and_armor:onethdenderite_pickaxe"
+    },
+    "title": {
+      "translate": "advancement.title.onethdenderite/tool"
+    },
+    "description": {
+      "translate": "advancement.description.onethdenderite/tool"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "more_tools_and_armor:onethdenderite/weapon",
+  "criteria": {
+    "pickaxe": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "more_tools_and_armor:onethdenderite_pickaxe"
+          }
+        ]
+      }
+    },
+    "shovel": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "more_tools_and_armor:onethdenderite_shovel"
+          }
+        ]
+      }
+    },
+    "hoe": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "more_tools_and_armor:onethdenderite_hoe"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "loot": [
+      "more_tools_and_armor:advancement_rewards/onethdenderite/tool"
+    ]
+  },
+  "sends_telemetry_event": true
+}

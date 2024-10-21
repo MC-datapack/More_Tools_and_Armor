@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+	{
+	  "rolls": 1,
+	  "entries": [
+		{
+		  "type": "minecraft:item",
+		  "name": "minecraft:emerald",
+		  "weight": 95,
+		  "functions": [
+			{
+			  "function": "minecraft:apply_bonus",
+			  "enchantment": "minecraft:fortune",
+			  "formula": "minecraft:ore_drops"
+			}
+		  ]
+		},
+		{
+		  "type": "minecraft:item",
+		  "name": "more_tools_and_armor:blackstone_emerald",
+		  "weight": 5
+		}
+	  ]
+	}
+  ],
+  "random_sequence": "more_tools_and_armor:blocks/blackstone_emerald_ore_drops"
+}

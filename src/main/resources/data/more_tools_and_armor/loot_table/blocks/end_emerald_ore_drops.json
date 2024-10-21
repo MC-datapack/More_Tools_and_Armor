@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+	{
+	  "rolls": 1,
+	  "entries": [
+		{
+		  "type": "minecraft:item",
+		  "name": "minecraft:emerald",
+		  "weight": 98,
+		  "functions": [
+			{
+			  "function": "minecraft:apply_bonus",
+			  "enchantment": "minecraft:fortune",
+			  "formula": "minecraft:ore_drops"
+			}
+		  ]
+		},
+		{
+		  "type": "minecraft:item",
+		  "name": "more_tools_and_armor:end_emerald",
+		  "weight": 2
+		}
+	  ]
+	}
+  ],
+  "random_sequence": "more_tools_and_armor:blocks/end_emerald_ore_drops"
+}

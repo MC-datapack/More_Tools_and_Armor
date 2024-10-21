@@ -24,11 +24,15 @@ public class ConfiguredFeatureInit {
     public static final RegistryKey<ConfiguredFeature<?, ?>> END_EMERALD_ORE_KEY = registerKey("end_emerald_ore");
     public static final RegistryKey<ConfiguredFeature<?, ?>> END_REDSTONE_ORE_KEY = registerKey("end_redstone_ore");
     public static final RegistryKey<ConfiguredFeature<?, ?>> END_DIAMOND_ORE_KEY = registerKey("end_diamond_ore");
+    public static final RegistryKey<ConfiguredFeature<?, ?>> SCULK_EMERALD_ORE_KEY = registerKey("sculk_emerald_ore");
+    public static final RegistryKey<ConfiguredFeature<?, ?>> BLACKSTONE_EMERALD_ORE_KEY = registerKey("blackstone_emerald_ore");
 
 
 
     public static  void bootstrap(Registerable<ConfiguredFeature<?, ?>> context) {
         RuleTest endOreReplaceables = new BlockMatchRuleTest(Blocks.END_STONE);
+        RuleTest sculkOreReplacebles = new BlockMatchRuleTest(Blocks.SCULK);
+        RuleTest blackstoneOreReplacebles = new BlockMatchRuleTest(Blocks.BLACKSTONE);
 
         List<OreFeatureConfig.Target> endTargetsCoal = List.of(
                 OreFeatureConfig.createTarget(endOreReplaceables, BlockInit.END_COAL_ORE.getDefaultState()));
@@ -46,6 +50,10 @@ public class ConfiguredFeatureInit {
                 OreFeatureConfig.createTarget(endOreReplaceables, BlockInit.END_REDSTONE_ORE.getDefaultState()));
         List<OreFeatureConfig.Target> endTargetsDiamond = List.of(
                 OreFeatureConfig.createTarget(endOreReplaceables, BlockInit.END_DIAMOND_ORE.getDefaultState()));
+        List<OreFeatureConfig.Target> overworldTargetsSculkEmerald = List.of(
+                OreFeatureConfig.createTarget(sculkOreReplacebles, BlockInit.SCULK_EMERALD_ORE.getDefaultState()));
+        List<OreFeatureConfig.Target> netherTargetsBlackstoneEmerald = List.of(
+                OreFeatureConfig.createTarget(blackstoneOreReplacebles, BlockInit.BLACKSTONE_EMERALD_ORE.getDefaultState()));
 
         register(context, END_COAL_ORE_KEY, Feature.ORE, new OreFeatureConfig(endTargetsCoal, 17,0F));
         register(context, END_COPPER_ORE_KEY, Feature.ORE, new OreFeatureConfig(endTargetsCopper, 10,0F));
@@ -55,6 +63,8 @@ public class ConfiguredFeatureInit {
         register(context, END_EMERALD_ORE_KEY, Feature.ORE, new OreFeatureConfig(endTargetsEmerald, 6,0F));
         register(context, END_REDSTONE_ORE_KEY, Feature.ORE, new OreFeatureConfig(endTargetsRedstone, 8,0.75F));
         register(context, END_DIAMOND_ORE_KEY, Feature.ORE, new OreFeatureConfig(endTargetsDiamond, 8,0.75F));
+        register(context, SCULK_EMERALD_ORE_KEY, Feature.ORE, new OreFeatureConfig(overworldTargetsSculkEmerald, 8, 0F));
+        register(context, BLACKSTONE_EMERALD_ORE_KEY, Feature.ORE, new OreFeatureConfig(netherTargetsBlackstoneEmerald, 8, 0F));
     }
 
 

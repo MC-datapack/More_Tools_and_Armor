@@ -8,6 +8,14 @@
   "block.more_tools_and_armor.end_emerald_ore": "End-Smaragderz",
   "block.more_tools_and_armor.end_redstone_ore": "End-Redstone-Erz",
   "block.more_tools_and_armor.end_diamond_ore": "End-Diamanterz",
+  "block.more_tools_and_armor.sculk_emerald_ore": "Sculk-Smaragderz",
+  "block.more_tools_and_armor.blackstone_emerald_ore": "Schwarzstein-Smaragderz",
+  "item.more_tools_and_armor.end_emerald": "End Smaragd",
+  "block.more_tools_and_armor.end_emerald_block": "End Smaragdblock",
+  "item.more_tools_and_armor.sculk_emerald": "Sculk Smaragd",
+  "block.more_tools_and_armor.sculk_emerald_block": "Sculk Smaragdblock",
+  "item.more_tools_and_armor.blackstone_emerald": "Schwarzstein Smaragd",
+  "block.more_tools_and_armor.blackstone_emerald_block": "Schwarzstein Smaragdblock",
 
   "item.more_tools_and_armor.budding_amethyst_crystal": "Amethystknospenkristall",
   "item.more_tools_and_armor.budding_amethyst_sword": "Amethystknospenschwert",
@@ -86,8 +94,20 @@
   "item.more_tools_and_armor.void_hoe": "Leerehacke",
   "item.more_tools_and_armor.void_helmet": "Leerehelm",
   "item.more_tools_and_armor.void_chestplate": "Leereharnisch",
-  "item.more_tools_and_armor.void_leggings": "Leerehose",
+  "item.more_tools_and_armor.void_leggings": "Leerebeinschutz",
   "item.more_tools_and_armor.void_boots": "Leerestiefel",
+
+  "item.more_tools_and_armor.onethdenderite_ingot": "§2O§4neth§rd§eend§8erit§rbarren",
+  "item.more_tools_and_armor.onethdenderite_upgrade_smithing_template": "§2O§4neth§rd§eend§8erit§raufwertungsschmiedevorlage",
+  "item.more_tools_and_armor.onethdenderite_sword": "§2O§4neth§rd§eend§8erit§rschwert",
+  "item.more_tools_and_armor.onethdenderite_axe": "§2O§4neth§rd§eend§8erit§raxt",
+  "item.more_tools_and_armor.onethdenderite_pickaxe": "§2O§4neth§rd§eend§8erit§rspitzhacke",
+  "item.more_tools_and_armor.onethdenderite_shovel": "§2O§4neth§rd§eend§8erit§rschaufel",
+  "item.more_tools_and_armor.onethdenderite_hoe": "§2O§4neth§rd§eend§8erit§rhacke",
+  "item.more_tools_and_armor.onethdenderite_helmet": "§2O§4neth§rd§eend§8erit§rhelm",
+  "item.more_tools_and_armor.onethdenderite_chestplate": "§2O§4neth§rd§eend§8erit§rharnisch",
+  "item.more_tools_and_armor.onethdenderite_leggings": "§2O§4neth§rd§eend§8erit§rbeinschutz",
+  "item.more_tools_and_armor.onethdenderite_boots": "§2O§4neth§rd§eend§8erit§rstiefel",
 
 
 
@@ -169,5 +189,16 @@
   "advancement.title.void/tool": "Leere Werkzeuge",
   "advancement.description.void/tool": "Besorge eine Leerespitzhacke und eine Leereschaufel und eine Leerehacke",
   "advancement.title.void/armor": "Leere Rüstung",
-  "advancement.description.void/armor": "Besorge dir eine volle Leererüstung"
+  "advancement.description.void/armor": "Besorge dir eine volle Leererüstung",
+
+  "advancement.title.onethdenderite/ingot": "§2O§4neth§5d§eend§8erit§5barren",
+  "advancement.description.onethdenderite/ingot": "Besorge einen §2O§4neth§5d§eend§8erit§5barren",
+  "advancement.title.onethdenderite/upgrade": "§2O§4neth§5d§eend§8erit§5aufwertungsschmiedevorlage",
+  "advancement.description.onethdenderite/upgrade": "Besorge eine §2O§4neth§5d§eend§8erit§5aufwertungsschmiedevorlage",
+  "advancement.title.onethdenderite/weapon": "§2O§4neth§5d§eend§8erit§5 Waffen",
+  "advancement.description.onethdenderite/weapon": "Besorge ein §2O§4neth§5d§eend§8erit§5schwert und eine §2O§4neth§5d§eend§8erit§5axt",
+  "advancement.title.onethdenderite/tool": "§2O§4neth§5d§eend§8erit§5 Werkzeuge",
+  "advancement.description.onethdenderite/tool": "Besorge eine §2O§4neth§5d§eend§8erit§5spitzhacke und eine §2O§4neth§5d§eend§8erit§5schaufel und eine §2O§4neth§5d§eend§8erit§5hacke",
+  "advancement.title.onethdenderite/armor": "§2O§4neth§5d§eend§8erit§5 Rüstung",
+  "advancement.description.onethdenderite/armor": "Besorge dir eine volle §2O§4neth§5d§eend§8erit§5rüstung"
 }

@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "A": "minecraft:diamond",
+    "B": "more_tools_and_armor:end_diamond",
+    "C": "more_tools_and_armor:end_diamond_upgrade_smithing_template"
+  },
+  "pattern": [
+    "ACA",
+    "ABA",
+    "AAA"
+  ],
+  "result": {
+    "count": 2,
+    "id": "more_tools_and_armor:end_diamond_upgrade_smithing_template"
+  }
+}

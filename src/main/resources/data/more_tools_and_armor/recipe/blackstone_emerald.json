@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "more_tools_and_armor:blackstone_emerald_block"
+  ],
+  "result": {
+    "count": 9,
+    "id": "more_tools_and_armor:blackstone_emerald"
+  }
+}

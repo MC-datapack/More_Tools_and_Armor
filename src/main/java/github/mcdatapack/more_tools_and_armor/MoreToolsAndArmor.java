@@ -18,7 +18,9 @@ public class MoreToolsAndArmor implements ModInitializer {
 	@Override
 	public void onInitialize() {
 		LOGGER.info("Loading More Tools and Armor");
+		LOGGER.info("Before ItemInit");
 		ItemInit.load();
+		LOGGER.info("After ItemInit");
 		BlockInit.load();
 		ItemGroupInit.load();
 		ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(entries -> {entries.addAfter(Items.AMETHYST_SHARD, ItemInit.BUDDING_AMETHYST_CRYSTAL);});

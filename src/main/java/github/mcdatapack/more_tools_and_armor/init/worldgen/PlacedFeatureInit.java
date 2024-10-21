@@ -20,6 +20,8 @@ public class PlacedFeatureInit {
     public static final RegistryKey<PlacedFeature> END_EMERALD_ORE = registerKey("end_emerald_ore");
     public static final RegistryKey<PlacedFeature> END_REDSTONE_ORE = registerKey("end_redstone_ore");
     public static final RegistryKey<PlacedFeature> END_DIAMOND_ORE = registerKey("end_diamond_ore");
+    public static final RegistryKey<PlacedFeature> SCULK_EMERALD_ORE = registerKey("sculk_emerald_ore");
+    public static final RegistryKey<PlacedFeature> BLACKSTONE_EMERALD_ORE = registerKey("blackstone_emerald_ore");
 
 
     public static void bootstrap(Registerable<PlacedFeature> context) {
@@ -42,6 +44,10 @@ public class PlacedFeatureInit {
                 Modifiers.modifiersCount(8, HeightRangePlacementModifier.uniform(YOffset.fixed(0), YOffset.fixed(72))));
         register(context, END_DIAMOND_ORE, registryLookup.getOrThrow(ConfiguredFeatureInit.END_DIAMOND_ORE_KEY),
                 Modifiers.modifiersCount(6, HeightRangePlacementModifier.uniform(YOffset.fixed(0), YOffset.fixed(64))));
+        register(context, SCULK_EMERALD_ORE, registryLookup.getOrThrow(ConfiguredFeatureInit.SCULK_EMERALD_ORE_KEY),
+                Modifiers.modifiersCount(6, HeightRangePlacementModifier.uniform(YOffset.fixed(-64), YOffset.fixed(0))));
+        register(context, BLACKSTONE_EMERALD_ORE, registryLookup.getOrThrow(ConfiguredFeatureInit.BLACKSTONE_EMERALD_ORE_KEY),
+                Modifiers.modifiersCount(6, HeightRangePlacementModifier.uniform(YOffset.fixed(0), YOffset.fixed(30))));
     }
 
 

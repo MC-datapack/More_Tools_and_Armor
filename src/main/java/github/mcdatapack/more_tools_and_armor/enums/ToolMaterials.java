@@ -1,90 +1,69 @@
 package github.mcdatapack.more_tools_and_armor.enums;
 
-import github.mcdatapack.more_tools_and_armor.init.ItemInit;
-import github.mcdatapack.more_tools_and_armor.list.TagList;
-import net.minecraft.block.Block;
-import net.minecraft.item.Items;
 import net.minecraft.item.ToolMaterial;
-import net.minecraft.recipe.Ingredient;
-import net.minecraft.registry.tag.BlockTags;
-import net.minecraft.registry.tag.TagKey;
 
-public enum ToolMaterials implements ToolMaterial {
-    //DEV NOTE 14w34a = 14, w->23->2+3, 34->3+4, a->1
-    //DEV NOTE 14571(10) -> 431241(5)
+import static github.mcdatapack.more_tools_and_armor.list.TagList.BlockTags.*;
+import static github.mcdatapack.more_tools_and_armor.list.TagList.ItemTags.*;
+import static net.minecraft.registry.tag.BlockTags.*;
+
+public enum ToolMaterials {
+    //Durability, Mining Speed Multiplier, Attack Damage Multiplier, Enchantebility
     BUDDING_AMETHYST(
-            500, 7F, 1F, BlockTags.INCORRECT_FOR_IRON_TOOL, 12,
-            Ingredient.ofItems(ItemInit.BUDDING_AMETHYST_CRYSTAL)
+            new ToolMaterial(
+                    INCORRECT_FOR_IRON_TOOL, 500, 7F, 1F, 12,
+                    BUDDING_AMETHYST_REPAIR_ITEMS
+            )
     ),
     COPPER(
-            121, 6F, 1F, BlockTags.INCORRECT_FOR_STONE_TOOL, 18,
-            Ingredient.ofItems(Items.COPPER_INGOT)
+            new ToolMaterial(
+                    INCORRECT_FOR_STONE_TOOL, 121, 6F, 1F, 18,
+                    COPPER_REPAIR_ITEMS
+            )
     ),
     EMERALD(
-            375, 6.5F, 1F, BlockTags.INCORRECT_FOR_IRON_TOOL, 14,
-            Ingredient.ofItems(Items.EMERALD)
+            new ToolMaterial(
+                    INCORRECT_FOR_IRON_TOOL, 375, 6.5F, 1F, 14,
+                    EMERALD_REPAIR_ITEMS
+            )
     ),
     OBSIDIAN(
-            1831, 8.5F, 1F, BlockTags.INCORRECT_FOR_DIAMOND_TOOL, 10,
-            Ingredient.ofItems(Items.OBSIDIAN)
+            new ToolMaterial(
+                    INCORRECT_FOR_DIAMOND_TOOL,1831, 8.5F, 1F,  10,
+                    OBSIDIAN_REPAIR_ITEMS
+            )
     ),
     DEEPSLATE_EMERALD(
-            14571, 40F, 1F, TagList.BlockTags.INCORRECT_FOR_DEEPSLATE_EMERALD_TOOL, 100,
-            Ingredient.ofItems(ItemInit.DEEPSLATE_EMERALD)
+            new ToolMaterial(
+                    INCORRECT_FOR_DEEPSLATE_EMERALD_TOOL, 14571, 40F, 1F, 100,
+                    DEEPSLATE_EMERALD_REPAIR_ITEMS
+            )
     ),
     END_DIAMOND(
-            24581, 80F, 1F, TagList.BlockTags.INCORRECT_FOR_END_DIAMOND_TOOL, 100,
-            Ingredient.ofItems(ItemInit.END_DIAMOND)
+            new ToolMaterial(
+                    INCORRECT_FOR_END_DIAMOND_TOOL, 24581, 80F, 1F, 100,
+                    END_DIAMOND_REPAIR_ITEMS
+            )
     ),
     VOID(
-            431241, 256F, 1F, TagList.BlockTags.INCORRECT_FOR_VOID_TOOL, 100,
-            Ingredient.ofItems(ItemInit.VOID_INGOT)
-    )
-    ;
+            new ToolMaterial(
+                    INCORRECT_FOR_VOID_TOOL, 431241, 256F, 1F, 100,
+                    VOID_REPAIR_ITEMS
+            )
+    ),
+    ONETHDENDERITE(
+            new ToolMaterial(
+                    INCORRECT_FOR_ONETHDENDERITE_TOOL, 3141592, 1256F, 1F, 100,
+                    ONETHDENDERITE_REPAIR_ITEMS
+            )
+    );
 
-    private final int durability;
-    private final float miningSpeedMultiplier, attackDamage;
-    private final TagKey<Block> inverseTag;
-    private final int enchantability;
-    private final Ingredient repairIngredient;
+    private final ToolMaterial material;
 
-    ToolMaterials(int durability, float miningSpeedMultiplier, float attackDamage, TagKey<Block> inverseTag, int enchantability,
-                  Ingredient repairIngredient) {
-        this.durability = durability;
-        this.miningSpeedMultiplier = miningSpeedMultiplier;
-        this.attackDamage = attackDamage;
-        this.inverseTag = inverseTag;
-        this.enchantability = enchantability;
-        this.repairIngredient = repairIngredient;
+    ToolMaterials(ToolMaterial material) {
+        this.material = material;
     }
 
-    @Override
-    public int getDurability() {
-        return this.durability;
-    }
-
-    @Override
-    public float getMiningSpeedMultiplier() {
-        return this.miningSpeedMultiplier;
-    }
-
-    @Override
-    public float getAttackDamage() {
-        return this.attackDamage;
-    }
-
-    @Override
-    public TagKey<Block> getInverseTag() {
-        return this.inverseTag;
-    }
-
-    @Override
-    public int getEnchantability() {
-        return this.enchantability;
-    }
-
-    @Override
-    public Ingredient getRepairIngredient() {
-        return this.repairIngredient;
+    public ToolMaterial getMaterial() {
+        return this.material;
     }
 }

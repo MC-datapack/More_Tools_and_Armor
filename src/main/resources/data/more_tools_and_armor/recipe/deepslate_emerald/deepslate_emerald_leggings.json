@@ -1,15 +1,9 @@
 {
   "type": "minecraft:smithing_transform",
   "category": "equipment",
-  "template": {
-    "item": "more_tools_and_armor:deepslate_emerald_upgrade_smithing_template"
-  },
-  "base": {
-    "item": "minecraft:netherite_leggings"
-  },
-  "addition": {
-    "item": "more_tools_and_armor:deepslate_emerald"
-  },
+  "template": "more_tools_and_armor:deepslate_emerald_upgrade_smithing_template",
+  "base": "minecraft:netherite_leggings",
+  "addition": "more_tools_and_armor:deepslate_emerald",
   "result": {
     "id": "more_tools_and_armor:deepslate_emerald_leggings"
   }
