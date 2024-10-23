@@ -6,3 +6,5 @@
 
 # These are Windows script files and should use crlf
 *.bat           text eol=crlf
+
+*.gradle linguist-language=Gradle linguist-detectable
