@@ -8,3 +8,4 @@
 *.bat           text eol=crlf
 
 *.gradle linguist-language=Gradle linguist-detectable
+*.json linguist-language=Java
