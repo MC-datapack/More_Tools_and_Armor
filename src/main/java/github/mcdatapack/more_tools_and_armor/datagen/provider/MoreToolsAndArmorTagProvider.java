@@ -6,12 +6,14 @@ import github.mcdatapack.more_tools_and_armor.list.TagList;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagProvider;
 import net.minecraft.block.Block;
+import net.minecraft.entity.EntityType;
 import net.minecraft.item.Item;
 import net.minecraft.item.Items;
 import net.minecraft.registry.Registry;
 import net.minecraft.registry.RegistryKey;
 import net.minecraft.registry.RegistryWrapper;
 import net.minecraft.registry.tag.BlockTags;
+import net.minecraft.registry.tag.EntityTypeTags;
 import net.minecraft.registry.tag.ItemTags;
 
 import java.util.concurrent.CompletableFuture;
@@ -173,6 +175,10 @@ public class MoreToolsAndArmorTagProvider{
                     .add(VOID_BOOTS)
                     .add(ONETHDENDERITE_BOOTS);
             getOrCreateTagBuilder(ItemTags.PIGLIN_SAFE_ARMOR)
+                    .add(Items.NETHERITE_HELMET)
+                    .add(Items.NETHERITE_CHESTPLATE)
+                    .add(Items.NETHERITE_LEGGINGS)
+                    .add(Items.NETHERITE_BOOTS)
                     .add(DEEPSLATE_EMERALD_BOOTS)
                     .add(DEEPSLATE_EMERALD_LEGGINGS)
                     .add(DEEPSLATE_EMERALD_CHESTPLATE)

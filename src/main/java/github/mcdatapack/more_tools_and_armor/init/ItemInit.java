@@ -2,12 +2,14 @@ package github.mcdatapack.more_tools_and_armor.init;
 
 import github.mcdatapack.more_tools_and_armor.MoreToolsAndArmor;
 import github.mcdatapack.more_tools_and_armor.enums.ToolMaterials;
+import github.mcdatapack.more_tools_and_armor.item.PaxelItem;
 import net.minecraft.item.*;
 import net.minecraft.item.equipment.EquipmentType;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.registry.RegistryKey;
 import net.minecraft.registry.RegistryKeys;
+import net.minecraft.util.Identifier;
 import net.minecraft.util.Rarity;
 
 public class ItemInit {
@@ -47,6 +49,35 @@ public class ItemInit {
     private static final RegistryKey<Item> ONETHDENDERITE_UPGRADE_SMITHING_TEMPLATE_k = RegistryKey.of(RegistryKeys.ITEM, MoreToolsAndArmor.id("onethdenderite_upgrade_smithing_template"));
     public static final Item ONETHDENDERITE_UPGRADE_SMITHING_TEMPLATE = register("onethdenderite_upgrade_smithing_template", new Item(new Item.Settings()
             .rarity(Rarity.EPIC).fireproof().maxCount(96).registryKey(ONETHDENDERITE_UPGRADE_SMITHING_TEMPLATE_k)));
+
+    public static final PaxelItem WOODEN_PAXEL = register("wooden_paxel", new PaxelItem(ToolMaterial.WOOD, 6.0F, -2.4F, new Item.Settings()
+            .registryKey(key("wooden_paxel"))));
+    public static final PaxelItem STONE_PAXEL = register("stone_paxel", new PaxelItem(ToolMaterial.STONE, 7.0F, -2.4F,new Item.Settings()
+            .registryKey(key("stone_paxel"))));
+    public static final PaxelItem IRON_PAXEL = register("iron_paxel", new PaxelItem(ToolMaterial.IRON, -6.0F, -2.4F,new Item.Settings()
+            .registryKey(key("iron_paxel"))));
+    public static final PaxelItem GOLDEN_PAXEL = register("golden_paxel", new PaxelItem(ToolMaterial.GOLD,6.0F, -2.4F, new Item.Settings()
+            .registryKey(key("golden_paxel"))));
+    public static final PaxelItem DIAMOND_PAXEL = register("diamond_paxel", new PaxelItem(ToolMaterial.DIAMOND, 6.0F, -2.4F,new Item.Settings()
+            .registryKey(key("diamond_paxel"))));
+    public static final PaxelItem NETHERITE_PAXEL = register("netherite_paxel", new PaxelItem(ToolMaterial.NETHERITE,6.0F, -2.4F,
+            new Item.Settings().registryKey(key("netherite_paxel"))));
+    public static final PaxelItem COPPER_PAXEL = register("copper_paxel", new PaxelItem(ToolMaterials.COPPER.getMaterial(),7, -2.4F,
+            new Item.Settings().registryKey(key("copper_paxel"))));
+    public static final PaxelItem BUDDING_AMETHYST_PAXEL = register("budding_amethyst_paxel", new PaxelItem(ToolMaterials.BUDDING_AMETHYST.getMaterial(), 7, -2.4F,
+            new Item.Settings().registryKey(key("budding_amethyst_paxel"))));
+    public static final PaxelItem EMERALD_PAXEL = register("emerald_paxel", new PaxelItem(ToolMaterials.EMERALD.getMaterial(), 5, -2.4F,
+            new Item.Settings().registryKey(key("emerald_paxel"))));
+    public static final PaxelItem OBSIDIAN_PAXEL = register("obsidian_paxel", new PaxelItem(ToolMaterials.OBSIDIAN.getMaterial(), 7, -2.6F,
+            new Item.Settings().registryKey(key("obsidian_paxel"))));
+    public static final PaxelItem DEEPSLATE_EMERALD_PAXEL = register("deepslate_emerald_paxel", new PaxelItem(ToolMaterials.DEEPSLATE_EMERALD.getMaterial(), 15, -2.0F,
+            new Item.Settings().registryKey(key("deepslate_emerald_paxel"))));
+    public static final PaxelItem END_DIAMOND_PAXEL = register("end_diamond_paxel", new PaxelItem(ToolMaterials.END_DIAMOND.getMaterial(), 17, -2.0F,
+            new Item.Settings().registryKey(key("end_diamond_paxel"))));
+    public static final PaxelItem VOID_PAXEL = register("void_paxel", new PaxelItem(ToolMaterials.VOID.getMaterial(), 22, -1.8F,
+            new Item.Settings().registryKey(key("void_paxel"))));
+    public static final PaxelItem ONETHDENDERITE_PAXEL = register("onethdenderite_paxel", new PaxelItem(ToolMaterials.ONETHDENDERITE.getMaterial(), 33, -1.6F,
+            new Item.Settings().registryKey(key("onethdenderite_paxel"))));
 
 
 //Budding Amethyst
@@ -284,6 +315,10 @@ private static final RegistryKey<Item> DEEPSLATE_EMERALD_SWORD_k = RegistryKey.o
 
     public static <T extends Item> T register(String name, T item) {
         return Registry.register(Registries.ITEM, MoreToolsAndArmor.id(name), item);
+    }
+
+    public static RegistryKey<Item> key(String s) {
+        return RegistryKey.of(RegistryKeys.ITEM, MoreToolsAndArmor.id(s));
     }
 
     public static void load() {}

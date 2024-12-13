@@ -1,4 +1,4 @@
-// 1.21.2 Release Candidate 1	2024-10-21T14:50:26.5498175	More Tools and Armor/World Generator
+// 1.21.3	2024-12-13T20:13:57.0189799	More Tools and Armor/World Generator
 b2ff528f5dbd7b529f3ce1ef51092cfb5d3c997b data\more_tools_and_armor\worldgen\placed_feature\end_coal_ore.json
 b800f10b3e031ba100daad42b389a597bb291f71 data\more_tools_and_armor\worldgen\configured_feature\sculk_emerald_ore.json
 b3ed81a59041b7c691813bf668dd6108ac70fdec data\more_tools_and_armor\worldgen\placed_feature\end_redstone_ore.json
@@ -17,5 +17,5 @@ e513b48c685d5ba9a3dc9806604010a94db62284 data\more_tools_and_armor\worldgen\plac
 53c80e51d2e7922d979dd48692232db23c3d3e81 data\more_tools_and_armor\worldgen\configured_feature\end_coal_ore.json
 0808056bd2b6228e1d87f95635770c447d09948a data\more_tools_and_armor\worldgen\configured_feature\end_lapis_lazuli_ore.json
 e2422cb3c0faa69ad47428ae006862b276221860 data\more_tools_and_armor\worldgen\configured_feature\end_redstone_ore.json
-b7da8e0186661e5195f99de07ddd9b1668031301 data\more_tools_and_armor\worldgen\placed_feature\end_gold_ore.json
 2e3896c37dac17b5e03a8c033309e0f62c7ce5a5 data\more_tools_and_armor\worldgen\placed_feature\end_iron_ore.json
+b7da8e0186661e5195f99de07ddd9b1668031301 data\more_tools_and_armor\worldgen\placed_feature\end_gold_ore.json

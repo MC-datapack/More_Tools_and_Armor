@@ -15,6 +15,7 @@ public class TagList {
         public static final TagKey<Block> NEEDS_NETHERITE_TOOL = TagKey.of(RegistryKeys.BLOCK, MoreToolsAndArmor.id("needs_netherite_tool"));
         public static final TagKey<Block> INCORRECT_FOR_ONETHDENDERITE_TOOL = TagKey.of(RegistryKeys.BLOCK, MoreToolsAndArmor.id("incorrect_for_onethdenderite_tool"));
         public static final TagKey<Block> NEEDS_DEEPSLATE_EMERALD_TOOL = TagKey.of(RegistryKeys.BLOCK, MoreToolsAndArmor.id("needs_deepslate_emerald_tool"));
+        public static final TagKey<Block> PAXEL_MINEABLE = TagKey.of(RegistryKeys.BLOCK, MoreToolsAndArmor.id("mineable/paxel"));
     }
     public static class ItemTags {
         public static final TagKey<Item> BUDDING_AMETHYST_REPAIR_ITEMS = TagKey.of(RegistryKeys.ITEM, MoreToolsAndArmor.id("budding_amethyst_repair_items"));
