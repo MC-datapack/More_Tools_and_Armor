@@ -1,0 +1,36 @@
+{
+  "display": {
+    "icon": {
+      "id": "more_tools_and_armor:onethdenderite_upgrade_smithing_template"
+    },
+    "title": {
+      "translate": "advancement.title.onethdenderite/upgrade"
+    },
+    "description": {
+      "translate": "advancement.description.onethdenderite/upgrade"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "more_tools_and_armor:onethdenderite/ingot",
+  "criteria": {
+    "item": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "more_tools_and_armor:onethdenderite_upgrade_smithing_template"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "loot": [
+      "more_tools_and_armor:advancement_rewards/onethdenderite/upgrade"
+    ]
+  },
+  "sends_telemetry_event": true
+}

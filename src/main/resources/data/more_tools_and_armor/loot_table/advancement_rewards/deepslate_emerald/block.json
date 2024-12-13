@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:advancement_reward",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "more_tools_and_armor:deepslate_emerald",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 4
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "random_sequence": "more_tools_and_armor:advancement_rewards/deepslate_emerald/block"
+}

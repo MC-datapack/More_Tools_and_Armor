@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "A": "more_tools_and_armor:end_diamond",
+    "B": "more_tools_and_armor:void_ingot",
+    "C": "more_tools_and_armor:void_upgrade_smithing_template"
+  },
+  "pattern": [
+    "ACA",
+    "ABA",
+    "AAA"
+  ],
+  "result": {
+    "count": 2,
+    "id": "more_tools_and_armor:void_upgrade_smithing_template"
+  }
+}

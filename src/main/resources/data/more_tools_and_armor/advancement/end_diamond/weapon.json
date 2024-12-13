@@ -1,0 +1,46 @@
+{
+  "display": {
+    "icon": {
+      "id": "more_tools_and_armor:end_diamond_sword"
+    },
+    "title": {
+      "translate": "advancement.title.end_diamond/weapon"
+    },
+    "description": {
+      "translate": "advancement.description.end_diamond/weapon"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "more_tools_and_armor:end_diamond/upgrade",
+  "criteria": {
+    "sword": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "more_tools_and_armor:end_diamond_sword"
+          }
+        ]
+      }
+    },
+    "axe": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "more_tools_and_armor:end_diamond_axe"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "loot": [
+      "more_tools_and_armor:advancement_rewards/end_diamond/weapon"
+    ]
+  },
+  "sends_telemetry_event": true
+}

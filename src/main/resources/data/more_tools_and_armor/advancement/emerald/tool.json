@@ -1,0 +1,51 @@
+{
+  "display": {
+    "icon": {
+      "id": "more_tools_and_armor:emerald_pickaxe"
+    },
+    "title": {
+      "translate": "advancement.title.emerald/tool"
+    },
+    "description": {
+      "translate": "advancement.description.emerald/tool"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "more_tools_and_armor:emerald/weapon",
+  "criteria": {
+    "pickaxe": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "more_tools_and_armor:emerald_pickaxe"
+          }
+        ]
+      }
+    },
+    "shovel": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "more_tools_and_armor:emerald_shovel"
+          }
+        ]
+      }
+    },
+    "hoe": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "more_tools_and_armor:emerald_hoe"
+          }
+        ]
+      }
+    }
+  },
+  "sends_telemetry_event": true
+}

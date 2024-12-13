@@ -1,0 +1,56 @@
+{
+  "display": {
+    "icon": {
+      "id": "more_tools_and_armor:deepslate_emerald_pickaxe"
+    },
+    "title": {
+      "translate": "advancement.title.deepslate_emerald/tool"
+    },
+    "description": {
+      "translate": "advancement.description.deepslate_emerald/tool"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "more_tools_and_armor:deepslate_emerald/weapon",
+  "criteria": {
+    "pickaxe": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "more_tools_and_armor:deepslate_emerald_pickaxe"
+          }
+        ]
+      }
+    },
+    "shovel": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "more_tools_and_armor:deepslate_emerald_shovel"
+          }
+        ]
+      }
+    },
+    "hoe": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "more_tools_and_armor:deepslate_emerald_hoe"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "loot": [
+      "more_tools_and_armor:advancement_rewards/deepslate_emerald/tool"
+    ]
+  },
+  "sends_telemetry_event": true
+}
