@@ -16,6 +16,19 @@ fabricApi {
 
 repositories {}
 
+loom {
+	mods {
+		"more_tools_and_armor" {
+			sourceSet sourceSets.main
+		}
+	}
+
+	runs {
+		datagen {
+			inherit client
+		}
+	}
+}
 
 dependencies {
 	// To change the versions see the gradle.properties file

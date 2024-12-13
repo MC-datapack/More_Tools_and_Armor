@@ -79,7 +79,7 @@ public class PaxelItem extends MiningToolItem {
             )
     );
 
-    public PaxelItem(ToolMaterial toolMaterial, float attackDamage, float attackSpeed, Item.Settings settings) {
+    public PaxelItem(ToolMaterial toolMaterial, float attackDamage, float attackSpeed, Settings settings) {
         super(toolMaterial, TagList.BlockTags.PAXEL_MINEABLE, attackDamage, attackSpeed, settings);
     }
 

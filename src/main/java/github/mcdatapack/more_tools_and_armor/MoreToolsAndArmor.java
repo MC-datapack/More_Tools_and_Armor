@@ -19,6 +19,8 @@ import org.jetbrains.annotations.NotNull;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import javax.swing.*;
+
 public class MoreToolsAndArmor implements ModInitializer {
 	public static final String MOD_ID = "more_tools_and_armor";
 	public static final Logger LOGGER = LoggerFactory.getLogger(MOD_ID);
