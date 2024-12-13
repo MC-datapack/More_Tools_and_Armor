@@ -1,4 +1,4 @@
-// 1.21.4 Release Candidate 3	2024-12-13T20:20:26.9343628	More Tools and Armor/Tags for minecraft:block
+// 1.21.4	2024-12-13T21:12:20.7631118	More Tools and Armor/Tags for minecraft:block
 f2ade6868691dd545f2e305d3efccbc2f55ae809 data\minecraft\tags\block\incorrect_for_stone_tool.json
 35133e95f1c8fdd7a1c21afcc231fc0bffefb9a8 data\more_tools_and_armor\tags\block\incorrect_for_deepslate_emerald_tool.json
 35133e95f1c8fdd7a1c21afcc231fc0bffefb9a8 data\more_tools_and_armor\tags\block\incorrect_for_void_tool.json

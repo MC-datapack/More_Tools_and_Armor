@@ -1,6 +1,6 @@
-// 1.21.4 Release Candidate 3	2024-12-13T20:20:26.9405866	More Tools and Armor/World Generator
-6b5e06117445b82c513a6a42ae833b7ff4849d33 data\more_tools_and_armor\worldgen\placed_feature\end_copper_ore.json
+// 1.21.4	2024-12-13T21:12:20.7701203	More Tools and Armor/World Generator
 77ef71f2b91096f2705bef27689ebee713949c01 data\more_tools_and_armor\worldgen\placed_feature\end_diamond_ore.json
+6b5e06117445b82c513a6a42ae833b7ff4849d33 data\more_tools_and_armor\worldgen\placed_feature\end_copper_ore.json
 0808056bd2b6228e1d87f95635770c447d09948a data\more_tools_and_armor\worldgen\configured_feature\end_lapis_lazuli_ore.json
 b436f2e45391c73bcdc5203b52ccaecf74011e54 data\more_tools_and_armor\worldgen\placed_feature\blackstone_emerald_ore.json
 3cafae5754ee15fcf3db661feebde3439b35bd71 data\more_tools_and_armor\worldgen\placed_feature\end_lapis_lazuli_ore.json

@@ -1,6 +1,7 @@
-// 1.21.4 Release Candidate 3	2024-12-13T20:20:26.9405866	More Tools and Armor/Tags for minecraft:item
+// 1.21.4	2024-12-13T21:12:20.7711173	More Tools and Armor/Tags for minecraft:item
 ca6d23d007d5c3d1a81b20c9104a10369400771b data\minecraft\tags\item\pickaxes.json
 4ac339d100bed5965fff11aae00bb4a128950172 data\minecraft\tags\item\foot_armor.json
+65967b928208fff208b2f5780d7d83f9a63913c2 data\minecraft\tags\item\enchantable\sharp_weapon.json
 a36425178a89388e6d57e0eedec1d6c279361b81 data\minecraft\tags\item\chest_armor.json
 63e102e84ae71767bdd9eb254618d0e6b33cdc63 data\minecraft\tags\item\shovels.json
 94bab6b7a32bbde67aba4c15cc137aef70b5ebd2 data\minecraft\tags\item\leg_armor.json
