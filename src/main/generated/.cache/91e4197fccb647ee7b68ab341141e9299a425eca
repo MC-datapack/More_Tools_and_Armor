@@ -1,11 +1,12 @@
-// 1.21.3	2024-12-13T20:13:57.0199827	More Tools and Armor/Tags for minecraft:item
+// 1.21.3	2024-12-13T21:12:19.0090493	More Tools and Armor/Tags for minecraft:item
 7a95b0af065827c7b8f1e4f02dfd53cd6785449f data\minecraft\tags\item\head_armor.json
 5b44b0ed544fbc294ae898a15704803ced3100a4 data\minecraft\tags\item\swords.json
 53aa4f90a4c9e8352aaf7ac3b53af04ba3e7df49 data\minecraft\tags\item\hoes.json
 a32ef2f3d17fc877beaf9aea86844bd1a208965b data\minecraft\tags\item\piglin_safe_armor.json
 a36425178a89388e6d57e0eedec1d6c279361b81 data\minecraft\tags\item\chest_armor.json
+65967b928208fff208b2f5780d7d83f9a63913c2 data\minecraft\tags\item\enchantable\sharp_weapon.json
 5e22f34ca53a6f297b1ec702ab098d25c838c59c data\minecraft\tags\item\axes.json
 94bab6b7a32bbde67aba4c15cc137aef70b5ebd2 data\minecraft\tags\item\leg_armor.json
 4ac339d100bed5965fff11aae00bb4a128950172 data\minecraft\tags\item\foot_armor.json
-ca6d23d007d5c3d1a81b20c9104a10369400771b data\minecraft\tags\item\pickaxes.json
 63e102e84ae71767bdd9eb254618d0e6b33cdc63 data\minecraft\tags\item\shovels.json
+ca6d23d007d5c3d1a81b20c9104a10369400771b data\minecraft\tags\item\pickaxes.json

@@ -195,6 +195,11 @@ public class MoreToolsAndArmorTagProvider{
                     .add(ONETHDENDERITE_LEGGINGS)
                     .add(ONETHDENDERITE_CHESTPLATE)
                     .add(ONETHDENDERITE_HELMET);
+
+            getOrCreateTagBuilder(ItemTags.SHARP_WEAPON_ENCHANTABLE)
+                    .add(ItemInit.WOODEN_PAXEL, ItemInit.STONE_PAXEL, ItemInit.IRON_PAXEL, ItemInit.GOLDEN_PAXEL, ItemInit.DIAMOND_PAXEL,
+                            ItemInit.NETHERITE_PAXEL, ItemInit.COPPER_PAXEL, ItemInit.BUDDING_AMETHYST_PAXEL, ItemInit.EMERALD_PAXEL, ItemInit.OBSIDIAN_PAXEL,
+                            ItemInit.DEEPSLATE_EMERALD_PAXEL, ItemInit.END_DIAMOND_PAXEL, ItemInit.VOID_PAXEL, ItemInit.ONETHDENDERITE_PAXEL);
         }
     }
 }
