@@ -8,6 +8,9 @@ import net.minecraft.data.client.BlockStateModelGenerator;
 import net.minecraft.data.client.ItemModelGenerator;
 import net.minecraft.data.client.Models;
 
+import static github.mcdatapack.more_tools_and_armor.init.ItemInit.*;
+import static github.mcdatapack.more_tools_and_armor.init.ItemInit.ONETHDENDERITE_PAXEL;
+
 public class MoreToolsAndArmorModelProvider extends FabricModelProvider {
     public MoreToolsAndArmorModelProvider(FabricDataOutput output) {
         super(output);
@@ -126,5 +129,20 @@ public class MoreToolsAndArmorModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ItemInit.ONETHDENDERITE_CHESTPLATE, Models.GENERATED);
         itemModelGenerator.register(ItemInit.ONETHDENDERITE_LEGGINGS, Models.GENERATED);
         itemModelGenerator.register(ItemInit.ONETHDENDERITE_BOOTS, Models.GENERATED);
+
+        itemModelGenerator.register(WOODEN_PAXEL, Models.GENERATED);
+        itemModelGenerator.register(STONE_PAXEL, Models.GENERATED);
+        itemModelGenerator.register(IRON_PAXEL, Models.GENERATED);
+        itemModelGenerator.register(GOLDEN_PAXEL, Models.GENERATED);
+        itemModelGenerator.register(DIAMOND_PAXEL, Models.GENERATED);
+        itemModelGenerator.register(NETHERITE_PAXEL, Models.GENERATED);
+        itemModelGenerator.register(COPPER_PAXEL, Models.GENERATED);
+        itemModelGenerator.register(BUDDING_AMETHYST_PAXEL, Models.GENERATED);
+        itemModelGenerator.register(EMERALD_PAXEL, Models.GENERATED);
+        itemModelGenerator.register(OBSIDIAN_PAXEL, Models.GENERATED);
+        itemModelGenerator.register(DEEPSLATE_EMERALD_PAXEL, Models.GENERATED);
+        itemModelGenerator.register(END_DIAMOND_PAXEL, Models.GENERATED);
+        itemModelGenerator.register(VOID_PAXEL, Models.GENERATED);
+        itemModelGenerator.register(ONETHDENDERITE_PAXEL, Models.GENERATED);
     }
 }

@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "equipment",
+  "ingredients": [
+    {
+      "item": "more_tools_and_armor:void_axe"
+    },
+    {
+      "item": "more_tools_and_armor:void_pickaxe"
+    },
+    {
+      "item": "more_tools_and_armor:void_shovel"
+    },
+    {
+      "item": "more_tools_and_armor:void_hoe"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "more_tools_and_armor:void_paxel"
+  }
+}

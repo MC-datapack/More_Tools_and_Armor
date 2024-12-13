@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "equipment",
+  "ingredients": [
+    {
+      "item": "more_tools_and_armor:obsidian_axe"
+    },
+    {
+      "item": "more_tools_and_armor:obsidian_pickaxe"
+    },
+    {
+      "item": "more_tools_and_armor:obsidian_shovel"
+    },
+    {
+      "item": "more_tools_and_armor:obsidian_hoe"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "more_tools_and_armor:obsidian_paxel"
+  }
+}

@@ -2,6 +2,7 @@ package github.mcdatapack.more_tools_and_armor.init;
 
 import github.mcdatapack.more_tools_and_armor.MoreToolsAndArmor;
 import github.mcdatapack.more_tools_and_armor.enums.ToolMaterials;
+import github.mcdatapack.more_tools_and_armor.item.PaxelItem;
 import net.minecraft.item.*;
 import net.minecraft.item.Item;
 import net.minecraft.registry.Registries;
@@ -32,6 +33,37 @@ public class ItemInit {
             .rarity(Rarity.EPIC).fireproof().maxCount(96)));
     public static final Item ONETHDENDERITE_UPGRADE_SMITHING_TEMPLATE = register("onethdenderite_upgrade_smithing_template", new Item(new Item.Settings()
             .rarity(Rarity.EPIC).fireproof().maxCount(96)));
+
+    public static final PaxelItem WOODEN_PAXEL = register("wooden_paxel", new PaxelItem(net.minecraft.item.ToolMaterials.WOOD, new Item.Settings()
+            .attributeModifiers(PaxelItem.createAttributeModifiers(net.minecraft.item.ToolMaterials.WOOD, 6.0F, -2.4F))));
+    public static final PaxelItem STONE_PAXEL = register("stone_paxel", new PaxelItem(net.minecraft.item.ToolMaterials.STONE, new Item.Settings()
+            .attributeModifiers(PaxelItem.createAttributeModifiers(net.minecraft.item.ToolMaterials.STONE, 7.0F, -2.4F))));
+    public static final PaxelItem IRON_PAXEL = register("iron_paxel", new PaxelItem(net.minecraft.item.ToolMaterials.IRON, new Item.Settings()
+            .attributeModifiers(PaxelItem.createAttributeModifiers(net.minecraft.item.ToolMaterials.IRON, 6.0F, -2.4F))));
+    public static final PaxelItem GOLDEN_PAXEL = register("golden_paxel", new PaxelItem(net.minecraft.item.ToolMaterials.GOLD, new Item.Settings()
+            .attributeModifiers(PaxelItem.createAttributeModifiers(net.minecraft.item.ToolMaterials.GOLD, 6.0F, -2.4F))));
+    public static final PaxelItem DIAMOND_PAXEL = register("diamond_paxel", new PaxelItem(net.minecraft.item.ToolMaterials.DIAMOND, new Item.Settings()
+            .attributeModifiers(PaxelItem.createAttributeModifiers(net.minecraft.item.ToolMaterials.DIAMOND, 6.0F, -2.4F))));
+    public static final PaxelItem NETHERITE_PAXEL = register("netherite_paxel", new PaxelItem(net.minecraft.item.ToolMaterials.NETHERITE,
+            new Item.Settings()
+            .attributeModifiers(PaxelItem.createAttributeModifiers(net.minecraft.item.ToolMaterials.NETHERITE, 6.0F, -2.4F))));
+    public static final PaxelItem COPPER_PAXEL = register("copper_paxel", new PaxelItem(ToolMaterials.COPPER, new Item.Settings()
+                    .attributeModifiers(PaxelItem.createAttributeModifiers(ToolMaterials.COPPER, 7, -2.4F))));
+    public static final PaxelItem BUDDING_AMETHYST_PAXEL = register("budding_amethyst_paxel", new PaxelItem(ToolMaterials.BUDDING_AMETHYST, new Item.Settings()
+            .attributeModifiers(PaxelItem.createAttributeModifiers(ToolMaterials.BUDDING_AMETHYST, 7, -2.4F))));
+    public static final PaxelItem EMERALD_PAXEL = register("emerald_paxel", new PaxelItem(ToolMaterials.EMERALD, new Item.Settings()
+            .attributeModifiers(PaxelItem.createAttributeModifiers(ToolMaterials.EMERALD, 5, -2.4F))));
+    public static final PaxelItem OBSIDIAN_PAXEL = register("obsidian_paxel", new PaxelItem(ToolMaterials.OBSIDIAN, new Item.Settings()
+            .attributeModifiers(PaxelItem.createAttributeModifiers(ToolMaterials.OBSIDIAN, 7, -2.6F))));
+    public static final PaxelItem DEEPSLATE_EMERALD_PAXEL = register("deepslate_emerald_paxel", new PaxelItem(ToolMaterials.DEEPSLATE_EMERALD,
+            new Item.Settings()
+            .attributeModifiers(PaxelItem.createAttributeModifiers(ToolMaterials.DEEPSLATE_EMERALD, 15, -2.0F))));
+    public static final PaxelItem END_DIAMOND_PAXEL = register("end_diamond_paxel", new PaxelItem(ToolMaterials.END_DIAMOND, new Item.Settings()
+            .attributeModifiers(PaxelItem.createAttributeModifiers(ToolMaterials.END_DIAMOND, 17, -2.0F))));
+    public static final PaxelItem VOID_PAXEL = register("void_paxel", new PaxelItem(ToolMaterials.VOID, new Item.Settings()
+            .attributeModifiers(PaxelItem.createAttributeModifiers(ToolMaterials.VOID, 22, -1.8F))));
+    public static final PaxelItem ONETHDENDERITE_PAXEL = register("onethdenderite_paxel", new PaxelItem(ToolMaterials.ONETHDENDERITE, new Item.Settings()
+            .attributeModifiers(PaxelItem.createAttributeModifiers(ToolMaterials.ONETHDENDERITE, 33, -1.6F))));
 
 //Budding Amethyst
     public static final SwordItem BUDDING_AMETHYST_SWORD = register("budding_amethyst_sword", new SwordItem(ToolMaterials.BUDDING_AMETHYST, new Item.Settings()

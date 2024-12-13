@@ -44,7 +44,11 @@ public enum ToolMaterials implements ToolMaterial {
     ONETHDENDERITE(
             3141592, 1256F, 1F, TagList.BlockTags.INCORRECT_FOR_ONETHDENDERITE_TOOL, 100,
             Ingredient.ofItems(ItemInit.ONETHDENDERITE_INGOT)
-    )
+    )//,
+    //OLED(
+    //         Integer.MAX_VALUE, 3141F, 1F, TagList.BlockTags.INCORRECT_FOR_OLED_TOOL, 100,
+    //        null
+    //)
     ;
 
     private final int durability;

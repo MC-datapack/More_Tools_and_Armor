@@ -4,7 +4,6 @@ import github.mcdatapack.more_tools_and_armor.init.ItemInit;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricRecipeProvider;
 import net.minecraft.data.server.recipe.*;
-import net.minecraft.recipe.Ingredient;
 import net.minecraft.recipe.book.RecipeCategory;
 import net.minecraft.registry.RegistryWrapper;
 
@@ -22,6 +21,65 @@ public class MoreToolsAndArmorRecipeProvider extends FabricRecipeProvider {
 
     @Override
     public void generate(RecipeExporter exporter) {
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.TOOLS, WOODEN_PAXEL)
+                .input(WOODEN_AXE).input(WOODEN_PICKAXE).input(WOODEN_SHOVEL).input(WOODEN_HOE)
+                .criterion(hasItem(WOODEN_PICKAXE), conditionsFromItem(WOODEN_PICKAXE))
+                .offerTo(exporter);
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.TOOLS, STONE_PAXEL)
+                .input(STONE_AXE).input(STONE_PICKAXE).input(STONE_SHOVEL).input(STONE_HOE)
+                .criterion(hasItem(STONE_PICKAXE), conditionsFromItem(STONE_PICKAXE))
+                .offerTo(exporter);
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.TOOLS, IRON_PAXEL)
+                .input(IRON_AXE).input(IRON_PICKAXE).input(IRON_SHOVEL).input(IRON_HOE)
+                .criterion(hasItem(IRON_PICKAXE), conditionsFromItem(IRON_PICKAXE))
+                .offerTo(exporter);
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.TOOLS, GOLDEN_PAXEL)
+                .input(GOLDEN_AXE).input(GOLDEN_PICKAXE).input(GOLDEN_SHOVEL).input(GOLDEN_HOE)
+                .criterion(hasItem(GOLDEN_PICKAXE), conditionsFromItem(GOLDEN_PICKAXE))
+                .offerTo(exporter);
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.TOOLS, DIAMOND_PAXEL)
+                .input(DIAMOND_AXE).input(DIAMOND_PICKAXE).input(DIAMOND_SHOVEL).input(DIAMOND_HOE)
+                .criterion(hasItem(DIAMOND_PICKAXE), conditionsFromItem(DIAMOND_PICKAXE))
+                .offerTo(exporter);
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.TOOLS, NETHERITE_PAXEL)
+                .input(NETHERITE_AXE).input(NETHERITE_PICKAXE).input(NETHERITE_SHOVEL).input(NETHERITE_HOE)
+                .criterion(hasItem(NETHERITE_PICKAXE), conditionsFromItem(NETHERITE_PICKAXE))
+                .offerTo(exporter);
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.TOOLS, COPPER_PAXEL)
+                .input(COPPER_AXE).input(COPPER_PICKAXE).input(COPPER_SHOVEL).input(COPPER_HOE)
+                .criterion(hasItem(COPPER_PICKAXE), conditionsFromItem(COPPER_PICKAXE))
+                .offerTo(exporter);
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.TOOLS, BUDDING_AMETHYST_PAXEL)
+                .input(BUDDING_AMETHYST_AXE).input(BUDDING_AMETHYST_PICKAXE).input(BUDDING_AMETHYST_SHOVEL).input(BUDDING_AMETHYST_HOE)
+                .criterion(hasItem(BUDDING_AMETHYST_PICKAXE), conditionsFromItem(BUDDING_AMETHYST_PICKAXE))
+                .offerTo(exporter);
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.TOOLS, EMERALD_PAXEL)
+                .input(EMERALD_AXE).input(EMERALD_PICKAXE).input(EMERALD_SHOVEL).input(EMERALD_HOE)
+                .criterion(hasItem(EMERALD_PICKAXE), conditionsFromItem(EMERALD_PICKAXE))
+                .offerTo(exporter);
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.TOOLS, OBSIDIAN_PAXEL)
+                .input(OBSIDIAN_AXE).input(OBSIDIAN_PICKAXE).input(OBSIDIAN_SHOVEL).input(OBSIDIAN_HOE)
+                .criterion(hasItem(OBSIDIAN_PICKAXE), conditionsFromItem(OBSIDIAN_PICKAXE))
+                .offerTo(exporter);
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.TOOLS, DEEPSLATE_EMERALD_PAXEL)
+                .input(DEEPSLATE_EMERALD_AXE).input(DEEPSLATE_EMERALD_PICKAXE).input(DEEPSLATE_EMERALD_SHOVEL).input(DEEPSLATE_EMERALD_HOE)
+                .criterion(hasItem(DEEPSLATE_EMERALD_PICKAXE), conditionsFromItem(DEEPSLATE_EMERALD_PICKAXE))
+                .offerTo(exporter);
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.TOOLS, END_DIAMOND_PAXEL)
+                .input(END_DIAMOND_AXE).input(END_DIAMOND_PICKAXE).input(END_DIAMOND_SHOVEL).input(END_DIAMOND_HOE)
+                .criterion(hasItem(END_DIAMOND_PICKAXE), conditionsFromItem(END_DIAMOND_PICKAXE))
+                .offerTo(exporter);
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.TOOLS, VOID_PAXEL)
+                .input(VOID_AXE).input(VOID_PICKAXE).input(VOID_SHOVEL).input(VOID_HOE)
+                .criterion(hasItem(VOID_PICKAXE), conditionsFromItem(VOID_PICKAXE))
+                .offerTo(exporter);
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.TOOLS, ONETHDENDERITE_PAXEL)
+                .input(ONETHDENDERITE_AXE).input(ONETHDENDERITE_PICKAXE).input(ONETHDENDERITE_SHOVEL).input(ONETHDENDERITE_HOE)
+                .criterion(hasItem(ONETHDENDERITE_PICKAXE), conditionsFromItem(ONETHDENDERITE_PICKAXE))
+                .offerTo(exporter);
+
+
+
         ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC, DEEPSLATE_EMERALD, 9)
                 .input(DEEPSLATE_EMERALD_BLOCK)
                 .criterion(hasItem(DEEPSLATE_EMERALD), conditionsFromItem(DEEPSLATE_EMERALD))

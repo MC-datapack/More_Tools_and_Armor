@@ -1,7 +1,7 @@
 {
 	"schemaVersion": 1,
 	"id": "more_tools_and_armor",
-	"version": "5.0",
+	"version": "${version}",
 	"name": "More Tools and Armor",
 	"description": "This mod adds many Tools and Armor Types to Minecraft",
 	"authors": [

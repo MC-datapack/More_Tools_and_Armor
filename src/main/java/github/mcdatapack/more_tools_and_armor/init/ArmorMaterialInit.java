@@ -112,6 +112,18 @@ public class ArmorMaterialInit {
             1.2F,
             false);
 
+    //public static final RegistryEntry<ArmorMaterial> OLED = register("oled", Map.of(
+    //        ArmorItem.Type.HELMET, 140,
+    //        ArmorItem.Type.CHESTPLATE, 200,
+    //        ArmorItem.Type.LEGGINGS, 160,
+    //        ArmorItem.Type.BOOTS, 100),
+    //        100,
+    //        SoundEvents.ITEM_ARMOR_EQUIP_NETHERITE,
+    //        () -> Ingredient.ofItems(null),
+    //        1024,
+    //        1.2F,
+    //        false);
+
 //Armor Materials Setup Help
         public static RegistryEntry<ArmorMaterial> register(String id, Map<ArmorItem.Type, Integer> defensePoints,
                                                         int enchantablilty,
