@@ -1,0 +1,46 @@
+{
+  "display": {
+    "icon": {
+      "id": "more_tools_and_armor:void_sword"
+    },
+    "title": {
+      "translate": "advancement.title.void/weapon"
+    },
+    "description": {
+      "translate": "advancement.description.void/weapon"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "more_tools_and_armor:void/upgrade",
+  "criteria": {
+    "sword": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "more_tools_and_armor:void_sword"
+          }
+        ]
+      }
+    },
+    "axe": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "more_tools_and_armor:void_axe"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "loot": [
+      "more_tools_and_armor:advancement_rewards/void/weapon"
+    ]
+  },
+  "sends_telemetry_event": true
+}

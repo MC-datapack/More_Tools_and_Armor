@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "equipment",
+  "ingredients": [
+    "minecraft:netherite_axe",
+    "minecraft:netherite_pickaxe",
+    "minecraft:netherite_shovel",
+    "minecraft:netherite_hoe"
+  ],
+  "result": {
+    "count": 1,
+    "id": "more_tools_and_armor:netherite_paxel"
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "display": {
+    "icon": {
+      "id": "more_tools_and_armor:obsidian_pickaxe"
+    },
+    "title": {
+      "translate": "advancement.title.obsidian/tool"
+    },
+    "description": {
+      "translate": "advancement.description.obsidian/tool"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "more_tools_and_armor:obsidian/weapon",
+  "criteria": {
+    "pickaxe": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "more_tools_and_armor:obsidian_pickaxe"
+          }
+        ]
+      }
+    },
+    "shovel": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "more_tools_and_armor:obsidian_shovel"
+          }
+        ]
+      }
+    },
+    "hoe": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "more_tools_and_armor:obsidian_hoe"
+          }
+        ]
+      }
+    }
+  },
+  "sends_telemetry_event": true
+}
