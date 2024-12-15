@@ -8,7 +8,7 @@ import net.minecraft.registry.RegistryKey;
 import net.minecraft.util.Identifier;
 
 public class CustomEquipmentModels implements EquipmentAssetKeys {
-    public static final RegistryKey<? extends Registry<EquipmentAsset>> REGISTRY_KEY = RegistryKey.ofRegistry(MoreToolsAndArmor.id("equipment_asset"));
+    public static final RegistryKey<? extends Registry<EquipmentAsset>> REGISTRY_KEY = RegistryKey.ofRegistry(Identifier.ofVanilla("equipment_asset"));
     public static final RegistryKey<EquipmentAsset> COPPER = register("copper");
     public static final RegistryKey<EquipmentAsset> BUDDING_AMETHYST = register("budding_amethyst");
     public static final RegistryKey<EquipmentAsset> EMERALD = register("emerald");
@@ -18,7 +18,7 @@ public class CustomEquipmentModels implements EquipmentAssetKeys {
     public static final RegistryKey<EquipmentAsset> VOID = register("void");
     public static final RegistryKey<EquipmentAsset> ONETHDENDERITE = register("onethdenderite");
 
-    static RegistryKey<EquipmentAsset> register(String name) {
-        return RegistryKey.of(REGISTRY_KEY, Identifier.ofVanilla(name));
+    public static RegistryKey<EquipmentAsset> register(String name) {
+        return RegistryKey.of(REGISTRY_KEY, MoreToolsAndArmor.id(name));
     }
 }
