@@ -70,13 +70,13 @@ public class ItemInit {
     public static final PaxelItem OBSIDIAN_PAXEL = register("obsidian_paxel", new PaxelItem(ToolMaterials.OBSIDIAN.getMaterial(), 7, -2.6F,
             new Item.Settings().registryKey(key("obsidian_paxel"))));
     public static final PaxelItem DEEPSLATE_EMERALD_PAXEL = register("deepslate_emerald_paxel", new PaxelItem(ToolMaterials.DEEPSLATE_EMERALD.getMaterial(), 15, -2.0F,
-            new Item.Settings().registryKey(key("deepslate_emerald_paxel"))));
+            new Item.Settings().registryKey(key("deepslate_emerald_paxel")).fireproof().rarity(Rarity.EPIC)));
     public static final PaxelItem END_DIAMOND_PAXEL = register("end_diamond_paxel", new PaxelItem(ToolMaterials.END_DIAMOND.getMaterial(), 17, -2.0F,
-            new Item.Settings().registryKey(key("end_diamond_paxel"))));
+            new Item.Settings().registryKey(key("end_diamond_paxel")).fireproof().rarity(Rarity.EPIC)));
     public static final PaxelItem VOID_PAXEL = register("void_paxel", new PaxelItem(ToolMaterials.VOID.getMaterial(), 22, -1.8F,
-            new Item.Settings().registryKey(key("void_paxel"))));
+            new Item.Settings().registryKey(key("void_paxel")).fireproof().rarity(Rarity.EPIC)));
     public static final PaxelItem ONETHDENDERITE_PAXEL = register("onethdenderite_paxel", new PaxelItem(ToolMaterials.ONETHDENDERITE.getMaterial(), 33, -1.6F,
-            new Item.Settings().registryKey(key("onethdenderite_paxel"))));
+            new Item.Settings().registryKey(key("onethdenderite_paxel")).fireproof().rarity(Rarity.EPIC)));
 
 
 //Budding Amethyst
