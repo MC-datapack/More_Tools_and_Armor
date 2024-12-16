@@ -57,13 +57,17 @@ public class ItemInit {
             .attributeModifiers(PaxelItem.createAttributeModifiers(ToolMaterials.OBSIDIAN, 7, -2.6F))));
     public static final PaxelItem DEEPSLATE_EMERALD_PAXEL = register("deepslate_emerald_paxel", new PaxelItem(ToolMaterials.DEEPSLATE_EMERALD,
             new Item.Settings()
-            .attributeModifiers(PaxelItem.createAttributeModifiers(ToolMaterials.DEEPSLATE_EMERALD, 15, -2.0F))));
+            .attributeModifiers(PaxelItem.createAttributeModifiers(ToolMaterials.DEEPSLATE_EMERALD, 15, -2.0F))
+            .fireproof().rarity(Rarity.EPIC)));
     public static final PaxelItem END_DIAMOND_PAXEL = register("end_diamond_paxel", new PaxelItem(ToolMaterials.END_DIAMOND, new Item.Settings()
-            .attributeModifiers(PaxelItem.createAttributeModifiers(ToolMaterials.END_DIAMOND, 17, -2.0F))));
+            .attributeModifiers(PaxelItem.createAttributeModifiers(ToolMaterials.END_DIAMOND, 17, -2.0F))
+            .fireproof().rarity(Rarity.EPIC)));
     public static final PaxelItem VOID_PAXEL = register("void_paxel", new PaxelItem(ToolMaterials.VOID, new Item.Settings()
-            .attributeModifiers(PaxelItem.createAttributeModifiers(ToolMaterials.VOID, 22, -1.8F))));
+            .attributeModifiers(PaxelItem.createAttributeModifiers(ToolMaterials.VOID, 22, -1.8F))
+            .fireproof().rarity(Rarity.EPIC)));
     public static final PaxelItem ONETHDENDERITE_PAXEL = register("onethdenderite_paxel", new PaxelItem(ToolMaterials.ONETHDENDERITE, new Item.Settings()
-            .attributeModifiers(PaxelItem.createAttributeModifiers(ToolMaterials.ONETHDENDERITE, 33, -1.6F))));
+            .attributeModifiers(PaxelItem.createAttributeModifiers(ToolMaterials.ONETHDENDERITE, 33, -1.6F))
+            .fireproof().rarity(Rarity.EPIC)));
 
 //Budding Amethyst
     public static final SwordItem BUDDING_AMETHYST_SWORD = register("budding_amethyst_sword", new SwordItem(ToolMaterials.BUDDING_AMETHYST, new Item.Settings()
