@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "A": "more_tools_and_armor:budding_amethyst_crystal",
+    "B": "#c:rods/wooden"
+  },
+  "pattern": [
+    "A",
+    "A",
+    "B"
+  ],
+  "result": {
+    "count": 1,
+    "id": "more_tools_and_armor:budding_amethyst_sword"
+  }
+}

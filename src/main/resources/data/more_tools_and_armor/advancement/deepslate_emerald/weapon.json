@@ -1,0 +1,46 @@
+{
+  "display": {
+    "icon": {
+      "id": "more_tools_and_armor:deepslate_emerald_sword"
+    },
+    "title": {
+      "translate": "advancement.title.deepslate_emerald/weapon"
+    },
+    "description": {
+      "translate": "advancement.description.deepslate_emerald/weapon"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "more_tools_and_armor:deepslate_emerald/upgrade",
+  "criteria": {
+    "sword": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "more_tools_and_armor:deepslate_emerald_sword"
+          }
+        ]
+      }
+    },
+    "axe": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "more_tools_and_armor:deepslate_emerald_axe"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "loot": [
+      "more_tools_and_armor:advancement_rewards/deepslate_emerald/weapon"
+    ]
+  },
+  "sends_telemetry_event": true
+}

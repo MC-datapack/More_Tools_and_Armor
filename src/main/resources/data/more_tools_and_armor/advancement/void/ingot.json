@@ -1,0 +1,36 @@
+{
+  "display": {
+    "icon": {
+      "id": "more_tools_and_armor:void_ingot"
+    },
+    "title": {
+      "translate": "advancement.title.void/ingot"
+    },
+    "description": {
+      "translate": "advancement.description.void/ingot"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "more_tools_and_armor:root",
+  "criteria": {
+    "item": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "more_tools_and_armor:void_ingot"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "loot": [
+      "more_tools_and_armor:advancement_rewards/void/ingot"
+    ]
+  },
+  "sends_telemetry_event": true
+}

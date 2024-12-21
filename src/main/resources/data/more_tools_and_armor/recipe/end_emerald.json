@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "more_tools_and_armor:end_emerald_block"
+  ],
+  "result": {
+    "count": 9,
+    "id": "more_tools_and_armor:end_emerald"
+  }
+}

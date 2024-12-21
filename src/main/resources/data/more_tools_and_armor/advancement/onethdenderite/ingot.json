@@ -1,0 +1,36 @@
+{
+  "display": {
+    "icon": {
+      "id": "more_tools_and_armor:onethdenderite_ingot"
+    },
+    "title": {
+      "translate": "advancement.title.onethdenderite/ingot"
+    },
+    "description": {
+      "translate": "advancement.description.onethdenderite/ingot"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "more_tools_and_armor:root",
+  "criteria": {
+    "item": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "more_tools_and_armor:onethdenderite_ingot"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "loot": [
+      "more_tools_and_armor:advancement_rewards/onethdenderite/ingot"
+    ]
+  },
+  "sends_telemetry_event": true
+}

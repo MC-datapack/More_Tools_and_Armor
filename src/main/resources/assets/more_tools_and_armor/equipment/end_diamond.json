@@ -1,0 +1,14 @@
+{
+  "layers": {
+    "humanoid": [
+      {
+        "texture": "more_tools_and_armor:end_diamond"
+      }
+    ],
+    "humanoid_leggings": [
+      {
+        "texture": "more_tools_and_armor:end_diamond"
+      }
+    ]
+  }
+}
