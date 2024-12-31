@@ -50,6 +50,11 @@ public class ItemInit {
     public static final Item ONETHDENDERITE_UPGRADE_SMITHING_TEMPLATE = register("onethdenderite_upgrade_smithing_template", new Item(new Item.Settings()
             .rarity(Rarity.EPIC).fireproof().maxCount(96).registryKey(ONETHDENDERITE_UPGRADE_SMITHING_TEMPLATE_k)));
 
+    public static final Item OLED_INGOT = register("oled_ingot", new Item(new Item.Settings()
+            .rarity(Rarity.EPIC).fireproof().maxCount(96).registryKey(key("oled_ingot"))));
+    public static final Item OLED_UPGRADE_SMITHING_TEMPLATE = register("oled_upgrade_smithing_template", new Item(new Item.Settings()
+            .rarity(Rarity.EPIC).fireproof().maxCount(96).registryKey(key("oled_upgrade_smithing_template"))));
+
     public static final PaxelItem WOODEN_PAXEL = register("wooden_paxel", new PaxelItem(ToolMaterial.WOOD, 6.0F, -2.4F, new Item.Settings()
             .registryKey(key("wooden_paxel"))));
     public static final PaxelItem STONE_PAXEL = register("stone_paxel", new PaxelItem(ToolMaterial.STONE, 7.0F, -2.4F,new Item.Settings()
@@ -78,6 +83,8 @@ public class ItemInit {
             new Item.Settings().registryKey(key("void_paxel")).fireproof().rarity(Rarity.EPIC)));
     public static final PaxelItem ONETHDENDERITE_PAXEL = register("onethdenderite_paxel", new PaxelItem(ToolMaterials.ONETHDENDERITE.getMaterial(), 33, -1.6F,
             new Item.Settings().registryKey(key("onethdenderite_paxel")).fireproof().rarity(Rarity.EPIC)));
+    public static final PaxelItem OLED_PAXEL = register("oled_paxel", new PaxelItem(ToolMaterials.OLED.getMaterial(), 100, 0,new Item.Settings()
+            .fireproof().rarity(Rarity.EPIC).registryKey(key("oled_paxel"))));
 
 
 //Budding Amethyst
@@ -311,6 +318,26 @@ private static final RegistryKey<Item> DEEPSLATE_EMERALD_SWORD_k = RegistryKey.o
     private static final RegistryKey<Item> ONETHDENDERITE_BOOTS_k = RegistryKey.of(RegistryKeys.ITEM, MoreToolsAndArmor.id("onethdenderite_boots"));
     public static final ArmorItem ONETHDENDERITE_BOOTS = register("onethdenderite_boots", new ArmorItem(ArmorMaterialInit.ONETHDENDERITE, EquipmentType.BOOTS,
             new Item.Settings().fireproof().rarity(Rarity.EPIC).registryKey(ONETHDENDERITE_BOOTS_k)));
+
+    //OLED
+    public static final SwordItem OLED_SWORD = register("oled_sword", new SwordItem(ToolMaterials.OLED.getMaterial(), 100, 0, new Item.Settings()
+            .fireproof().rarity(Rarity.EPIC).registryKey(key("oled_sword"))));
+    public static final AxeItem OLED_AXE = register("oled_axe", new AxeItem(ToolMaterials.OLED.getMaterial(), 90, -1.1F, new Item.Settings()
+            .fireproof().rarity(Rarity.EPIC).registryKey(key("oled_axe"))));
+    public static final PickaxeItem OLED_PICKAXE = register("oled_pickaxe", new PickaxeItem(ToolMaterials.OLED.getMaterial(), 70, -0.2F,new Item.Settings()
+            .fireproof().rarity(Rarity.EPIC).registryKey(key("oled_pickaxe"))));
+    public static final ShovelItem OLED_SHOVEL = register("oled_shovel", new ShovelItem(ToolMaterials.OLED.getMaterial(), 80, -1.1F,new Item.Settings()
+            .fireproof().rarity(Rarity.EPIC).registryKey(key("oled_shovel"))));
+    public static final HoeItem OLED_HOE = register("oled_hoe", new HoeItem(ToolMaterials.OLED.getMaterial(), 50, 50,new Item.Settings()
+            .fireproof().rarity(Rarity.EPIC).registryKey(key("oled_hoe"))));
+    public static final ArmorItem OLED_HELMET = register("oled_helmet", new ArmorItem(ArmorMaterialInit.OLED, EquipmentType.HELMET, new Item.Settings()
+            .fireproof().rarity(Rarity.EPIC).registryKey(key("oled_helmet"))));
+    public static final ArmorItem OLED_CHESTPLATE = register("oled_chestplate", new ArmorItem(ArmorMaterialInit.OLED, EquipmentType.CHESTPLATE, new Item.Settings()
+            .fireproof().rarity(Rarity.EPIC).registryKey(key("oled_chestplate"))));
+    public static final ArmorItem OLED_LEGGINGS = register("oled_leggings", new ArmorItem(ArmorMaterialInit.OLED, EquipmentType.LEGGINGS, new Item.Settings()
+            .fireproof().rarity(Rarity.EPIC).registryKey(key("oled_leggings"))));
+    public static final ArmorItem OLED_BOOTS = register("oled_boots", new ArmorItem(ArmorMaterialInit.OLED, EquipmentType.BOOTS, new Item.Settings()
+            .fireproof().rarity(Rarity.EPIC).registryKey(key("oled_boots"))));
 
 
     public static <T extends Item> T register(String name, T item) {

@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "equipment",
+  "ingredients": [
+    "more_tools_and_armor:oled_axe",
+    "more_tools_and_armor:oled_pickaxe",
+    "more_tools_and_armor:oled_shovel",
+    "more_tools_and_armor:oled_hoe"
+  ],
+  "result": {
+    "count": 1,
+    "id": "more_tools_and_armor:oled_paxel"
+  }
+}

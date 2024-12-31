@@ -65,7 +65,13 @@ public class ArmorMaterialInit implements ArmorMaterials {
         map.put(EquipmentType.LEGGINGS, 8);
         map.put(EquipmentType.CHESTPLATE, 10);
         map.put(EquipmentType.HELMET, 7);
-    }), 100, SoundEvents.ITEM_ARMOR_EQUIP_NETHERITE, 96, 1.2F, OBSIDIAN_REPAIR_ITEMS, CustomEquipmentModels.ONETHDENDERITE);
+    }), 100, SoundEvents.ITEM_ARMOR_EQUIP_NETHERITE, 96, 1.2F, ONETHDENDERITE_REPAIR_ITEMS, CustomEquipmentModels.ONETHDENDERITE);
+    public static final ArmorMaterial OLED = new ArmorMaterial(3600, Util.make(new EnumMap(EquipmentType.class), map -> {
+        map.put(EquipmentType.BOOTS, 100);
+        map.put(EquipmentType.LEGGINGS, 160);
+        map.put(EquipmentType.CHESTPLATE, 200);
+        map.put(EquipmentType.HELMET, 140);
+    }), 100, SoundEvents.ITEM_ARMOR_EQUIP_NETHERITE, 1024, 1.2F, OLED_REPAIR_ITEMS, CustomEquipmentModels.OLED);
 
     public static void load() {}
 }

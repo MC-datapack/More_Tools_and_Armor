@@ -14,6 +14,7 @@ public class TagList {
         public static final TagKey<Block> INCORRECT_FOR_VOID_TOOL = TagKey.of(RegistryKeys.BLOCK, MoreToolsAndArmor.id("incorrect_for_void_tool"));
         public static final TagKey<Block> NEEDS_NETHERITE_TOOL = TagKey.of(RegistryKeys.BLOCK, MoreToolsAndArmor.id("needs_netherite_tool"));
         public static final TagKey<Block> INCORRECT_FOR_ONETHDENDERITE_TOOL = TagKey.of(RegistryKeys.BLOCK, MoreToolsAndArmor.id("incorrect_for_onethdenderite_tool"));
+        public static final TagKey<Block> INCORRECT_FOR_OLED_TOOL = TagKey.of(RegistryKeys.BLOCK, MoreToolsAndArmor.id("incorrect_for_oled_tool"));
         public static final TagKey<Block> NEEDS_DEEPSLATE_EMERALD_TOOL = TagKey.of(RegistryKeys.BLOCK, MoreToolsAndArmor.id("needs_deepslate_emerald_tool"));
         public static final TagKey<Block> PAXEL_MINEABLE = TagKey.of(RegistryKeys.BLOCK, MoreToolsAndArmor.id("mineable/paxel"));
     }
@@ -26,5 +27,6 @@ public class TagList {
         public static final TagKey<Item> END_DIAMOND_REPAIR_ITEMS = TagKey.of(RegistryKeys.ITEM, MoreToolsAndArmor.id("end_diamond_repair_items"));
         public static final TagKey<Item> VOID_REPAIR_ITEMS = TagKey.of(RegistryKeys.ITEM, MoreToolsAndArmor.id("void_repair_items"));
         public static final TagKey<Item> ONETHDENDERITE_REPAIR_ITEMS = TagKey.of(RegistryKeys.ITEM, MoreToolsAndArmor.id("onethdenderite_repair_items"));
+        public static final TagKey<Item> OLED_REPAIR_ITEMS = TagKey.of(RegistryKeys.ITEM, MoreToolsAndArmor.id("oled_repair_items"));
     }
 }

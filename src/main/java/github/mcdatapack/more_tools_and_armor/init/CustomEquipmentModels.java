@@ -16,6 +16,7 @@ public class CustomEquipmentModels implements EquipmentModels {
     static Identifier END_DIAMOND = MoreToolsAndArmor.id("end_diamond");
     static Identifier VOID = MoreToolsAndArmor.id("void");
     static Identifier ONETHDENDERITE = MoreToolsAndArmor.id("onethdenderite");
+    static Identifier OLED = MoreToolsAndArmor.id("oled");
 
     public static void accept(BiConsumer<Identifier, EquipmentModel> equipmentModelBiConsumer) {
         equipmentModelBiConsumer.accept(COPPER, buildHumanoid("copper"));
@@ -26,6 +27,7 @@ public class CustomEquipmentModels implements EquipmentModels {
         equipmentModelBiConsumer.accept(END_DIAMOND, buildHumanoid("end_diamond"));
         equipmentModelBiConsumer.accept(VOID, buildHumanoid("void"));
         equipmentModelBiConsumer.accept(ONETHDENDERITE, buildHumanoid("onethdenderite"));
+        equipmentModelBiConsumer.accept(OLED, buildHumanoid("oled"));
     }
 
     private static EquipmentModel buildHumanoid(String path) {
