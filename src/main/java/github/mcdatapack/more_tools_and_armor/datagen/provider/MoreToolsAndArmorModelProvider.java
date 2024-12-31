@@ -131,6 +131,19 @@ public class MoreToolsAndArmorModelProvider extends FabricModelProvider {
         itemModelGenerator.registerArmor(ItemInit.ONETHDENDERITE_LEGGINGS, CustomEquipmentModels.ONETHDENDERITE, "leggings",false);
         itemModelGenerator.registerArmor(ItemInit.ONETHDENDERITE_BOOTS, CustomEquipmentModels.ONETHDENDERITE, "boots",false);
 
+        itemModelGenerator.register(OLED_INGOT, Models.GENERATED);
+        itemModelGenerator.register(OLED_UPGRADE_SMITHING_TEMPLATE, Models.GENERATED);
+
+        itemModelGenerator.register(ItemInit.OLED_SWORD, Models.HANDHELD);
+        itemModelGenerator.register(ItemInit.OLED_AXE, Models.HANDHELD);
+        itemModelGenerator.register(ItemInit.OLED_PICKAXE, Models.HANDHELD);
+        itemModelGenerator.register(ItemInit.OLED_SHOVEL, Models.HANDHELD);
+        itemModelGenerator.register(ItemInit.OLED_HOE, Models.HANDHELD);
+        itemModelGenerator.registerArmor(ItemInit.OLED_HELMET, CustomEquipmentModels.OLED, "helmet", false);
+        itemModelGenerator.registerArmor(ItemInit.OLED_CHESTPLATE, CustomEquipmentModels.OLED, "chestplate", false);
+        itemModelGenerator.registerArmor(ItemInit.OLED_LEGGINGS, CustomEquipmentModels.OLED, "leggings", false);
+        itemModelGenerator.registerArmor(ItemInit.OLED_BOOTS, CustomEquipmentModels.OLED, "boots", false);
+
         itemModelGenerator.register(WOODEN_PAXEL, Models.GENERATED);
         itemModelGenerator.register(STONE_PAXEL, Models.GENERATED);
         itemModelGenerator.register(IRON_PAXEL, Models.GENERATED);
@@ -145,5 +158,6 @@ public class MoreToolsAndArmorModelProvider extends FabricModelProvider {
         itemModelGenerator.register(END_DIAMOND_PAXEL, Models.GENERATED);
         itemModelGenerator.register(VOID_PAXEL, Models.GENERATED);
         itemModelGenerator.register(ONETHDENDERITE_PAXEL, Models.GENERATED);
+        itemModelGenerator.register(OLED_PAXEL, Models.GENERATED);
     }
 }

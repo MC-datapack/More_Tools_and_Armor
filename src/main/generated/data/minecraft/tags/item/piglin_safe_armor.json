@@ -1,9 +1,9 @@
 {
   "values": [
-    "minecraft:netherite_boots",
-    "minecraft:netherite_leggings",
-    "minecraft:netherite_chestplate",
     "minecraft:netherite_helmet",
+    "minecraft:netherite_chestplate",
+    "minecraft:netherite_leggings",
+    "minecraft:netherite_boots",
     "more_tools_and_armor:deepslate_emerald_boots",
     "more_tools_and_armor:deepslate_emerald_leggings",
     "more_tools_and_armor:deepslate_emerald_chestplate",
@@ -19,6 +19,10 @@
     "more_tools_and_armor:onethdenderite_boots",
     "more_tools_and_armor:onethdenderite_leggings",
     "more_tools_and_armor:onethdenderite_chestplate",
-    "more_tools_and_armor:onethdenderite_helmet"
+    "more_tools_and_armor:onethdenderite_helmet",
+    "more_tools_and_armor:oled_boots",
+    "more_tools_and_armor:oled_leggings",
+    "more_tools_and_armor:oled_chestplate",
+    "more_tools_and_armor:oled_helmet"
   ]
 }

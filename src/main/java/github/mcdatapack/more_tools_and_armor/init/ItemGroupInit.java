@@ -3,15 +3,13 @@ package github.mcdatapack.more_tools_and_armor.init;
 import github.mcdatapack.more_tools_and_armor.MoreToolsAndArmor;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
 import net.minecraft.item.ItemGroup;
-import net.minecraft.item.ItemGroups;
 import net.minecraft.item.Items;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.text.Text;
 
-import static github.mcdatapack.more_tools_and_armor.init.BlockInit.*;
-import static github.mcdatapack.more_tools_and_armor.init.BlockInit.BLACKSTONE_EMERALD_ORE;
 import static github.mcdatapack.more_tools_and_armor.init.ItemInit.*;
+import static github.mcdatapack.more_tools_and_armor.init.BlockInit.*;
 
 public class ItemGroupInit {
     private static final Text MORE_TOOLS_AND_ARMOR_GROUP_TITLE = Text.translatable("itemGroup." + MoreToolsAndArmor.MOD_ID + ".more_tools_and_armor_group");
@@ -49,6 +47,8 @@ public class ItemGroupInit {
                 entries.add(VOID_UPGRADE_SMITHING_TEMPLATE);
                 entries.add(ONETHDENDERITE_INGOT);
                 entries.add(ONETHDENDERITE_UPGRADE_SMITHING_TEMPLATE);
+                entries.add(OLED_INGOT);
+                entries.add(OLED_UPGRADE_SMITHING_TEMPLATE);
                 entries.add(WOODEN_PAXEL);
                 entries.add(STONE_PAXEL);
                 entries.add(IRON_PAXEL);
@@ -63,6 +63,7 @@ public class ItemGroupInit {
                 entries.add(END_DIAMOND_PAXEL);
                 entries.add(VOID_PAXEL);
                 entries.add(ONETHDENDERITE_PAXEL);
+                entries.add(OLED_PAXEL);
                 entries.add(COPPER_HELMET);
                 entries.add(COPPER_CHESTPLATE);
                 entries.add(COPPER_LEGGINGS);
@@ -135,6 +136,15 @@ public class ItemGroupInit {
                 entries.add(ONETHDENDERITE_PICKAXE);
                 entries.add(ONETHDENDERITE_SHOVEL);
                 entries.add(ONETHDENDERITE_HOE);
+                entries.add(OLED_HELMET);
+                entries.add(OLED_CHESTPLATE);
+                entries.add(OLED_LEGGINGS);
+                entries.add(OLED_BOOTS);
+                entries.add(OLED_SWORD);
+                entries.add(OLED_AXE);
+                entries.add(OLED_PICKAXE);
+                entries.add(OLED_SHOVEL);
+                entries.add(OLED_HOE);
             })
             .build());
 

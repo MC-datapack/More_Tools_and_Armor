@@ -1,9 +1,12 @@
 package github.mcdatapack.more_tools_and_armor.enums;
 
 import net.minecraft.item.ToolMaterial;
+import net.minecraft.recipe.Ingredient;
 
 import static github.mcdatapack.more_tools_and_armor.list.TagList.BlockTags.*;
+import static github.mcdatapack.more_tools_and_armor.list.TagList.BlockTags.INCORRECT_FOR_OLED_TOOL;
 import static github.mcdatapack.more_tools_and_armor.list.TagList.ItemTags.*;
+import static github.mcdatapack.more_tools_and_armor.list.TagList.ItemTags.OLED_REPAIR_ITEMS;
 import static net.minecraft.registry.tag.BlockTags.*;
 
 public enum ToolMaterials {
@@ -54,6 +57,12 @@ public enum ToolMaterials {
             new ToolMaterial(
                     INCORRECT_FOR_ONETHDENDERITE_TOOL, 3141592, 1256F, 1F, 100,
                     ONETHDENDERITE_REPAIR_ITEMS
+            )
+    ),
+    OLED(
+            new ToolMaterial(
+                    INCORRECT_FOR_OLED_TOOL, Integer.MAX_VALUE, 3141, 1, 100,
+                    OLED_REPAIR_ITEMS
             )
     );
 

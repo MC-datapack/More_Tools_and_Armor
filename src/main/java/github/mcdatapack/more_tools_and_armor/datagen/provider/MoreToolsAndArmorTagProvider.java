@@ -5,14 +5,20 @@ import github.mcdatapack.more_tools_and_armor.init.ItemInit;
 import github.mcdatapack.more_tools_and_armor.list.TagList;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagProvider;
+import net.minecraft.block.Block;
+import net.minecraft.entity.EntityType;
+import net.minecraft.item.Item;
+import net.minecraft.item.Items;
+import net.minecraft.registry.Registry;
+import net.minecraft.registry.RegistryKey;
 import net.minecraft.registry.RegistryWrapper;
 import net.minecraft.registry.tag.BlockTags;
+import net.minecraft.registry.tag.EntityTypeTags;
 import net.minecraft.registry.tag.ItemTags;
 
 import java.util.concurrent.CompletableFuture;
 
 import static github.mcdatapack.more_tools_and_armor.init.ItemInit.*;
-import static net.minecraft.item.Items.*;
 
 public class MoreToolsAndArmorTagProvider{
     public static class BlockTagProvider extends FabricTagProvider.BlockTagProvider {
@@ -95,7 +101,8 @@ public class MoreToolsAndArmorTagProvider{
                     .add(DEEPSLATE_EMERALD_SWORD)
                     .add(END_DIAMOND_SWORD)
                     .add(VOID_SWORD)
-                    .add(ONETHDENDERITE_SWORD);
+                    .add(ONETHDENDERITE_SWORD)
+                    .add(OLED_SWORD);
             getOrCreateTagBuilder(ItemTags.AXES)
                     .add(BUDDING_AMETHYST_AXE)
                     .add(COPPER_AXE)
@@ -105,9 +112,10 @@ public class MoreToolsAndArmorTagProvider{
                     .add(END_DIAMOND_AXE)
                     .add(VOID_AXE)
                     .add(ONETHDENDERITE_AXE)
+                    .add(OLED_AXE)
                     .add(ItemInit.WOODEN_PAXEL, ItemInit.STONE_PAXEL, ItemInit.IRON_PAXEL, ItemInit.GOLDEN_PAXEL, ItemInit.DIAMOND_PAXEL,
                             ItemInit.NETHERITE_PAXEL, ItemInit.COPPER_PAXEL, ItemInit.BUDDING_AMETHYST_PAXEL, ItemInit.EMERALD_PAXEL, ItemInit.OBSIDIAN_PAXEL,
-                            ItemInit.DEEPSLATE_EMERALD_PAXEL, ItemInit.END_DIAMOND_PAXEL, ItemInit.VOID_PAXEL, ItemInit.ONETHDENDERITE_PAXEL);
+                            ItemInit.DEEPSLATE_EMERALD_PAXEL, ItemInit.END_DIAMOND_PAXEL, ItemInit.VOID_PAXEL, ItemInit.ONETHDENDERITE_PAXEL, OLED_PAXEL);
             getOrCreateTagBuilder(ItemTags.PICKAXES)
                     .add(BUDDING_AMETHYST_PICKAXE)
                     .add(COPPER_PICKAXE)
@@ -116,7 +124,8 @@ public class MoreToolsAndArmorTagProvider{
                     .add(DEEPSLATE_EMERALD_PICKAXE)
                     .add(END_DIAMOND_PICKAXE)
                     .add(VOID_PICKAXE)
-                    .add(ONETHDENDERITE_PICKAXE);
+                    .add(ONETHDENDERITE_PICKAXE)
+                    .add(OLED_PICKAXE);
             getOrCreateTagBuilder(ItemTags.SHOVELS)
                     .add(BUDDING_AMETHYST_SHOVEL)
                     .add(COPPER_SHOVEL)
@@ -125,7 +134,8 @@ public class MoreToolsAndArmorTagProvider{
                     .add(DEEPSLATE_EMERALD_SHOVEL)
                     .add(END_DIAMOND_SHOVEL)
                     .add(VOID_SHOVEL)
-                    .add(ONETHDENDERITE_SHOVEL);
+                    .add(ONETHDENDERITE_SHOVEL)
+                    .add(OLED_SHOVEL);
             getOrCreateTagBuilder(ItemTags.HOES)
                     .add(BUDDING_AMETHYST_HOE)
                     .add(COPPER_HOE)
@@ -134,7 +144,8 @@ public class MoreToolsAndArmorTagProvider{
                     .add(DEEPSLATE_EMERALD_HOE)
                     .add(END_DIAMOND_HOE)
                     .add(VOID_HOE)
-                    .add(ONETHDENDERITE_HOE);
+                    .add(ONETHDENDERITE_HOE)
+                    .add(OLED_HOE);
             getOrCreateTagBuilder(ItemTags.HEAD_ARMOR)
                     .add(BUDDING_AMETHYST_HELMET)
                     .add(COPPER_HELMET)
@@ -143,7 +154,8 @@ public class MoreToolsAndArmorTagProvider{
                     .add(DEEPSLATE_EMERALD_HELMET)
                     .add(END_DIAMOND_HELMET)
                     .add(VOID_HELMET)
-                    .add(ONETHDENDERITE_HELMET);
+                    .add(ONETHDENDERITE_HELMET)
+                    .add(OLED_HELMET);
             getOrCreateTagBuilder(ItemTags.CHEST_ARMOR)
                     .add(BUDDING_AMETHYST_CHESTPLATE)
                     .add(COPPER_CHESTPLATE)
@@ -152,7 +164,8 @@ public class MoreToolsAndArmorTagProvider{
                     .add(DEEPSLATE_EMERALD_CHESTPLATE)
                     .add(END_DIAMOND_CHESTPLATE)
                     .add(VOID_CHESTPLATE)
-                    .add(ONETHDENDERITE_CHESTPLATE);
+                    .add(ONETHDENDERITE_CHESTPLATE)
+                    .add(OLED_CHESTPLATE);
             getOrCreateTagBuilder(ItemTags.LEG_ARMOR)
                     .add(BUDDING_AMETHYST_LEGGINGS)
                     .add(COPPER_LEGGINGS)
@@ -161,7 +174,8 @@ public class MoreToolsAndArmorTagProvider{
                     .add(DEEPSLATE_EMERALD_LEGGINGS)
                     .add(END_DIAMOND_LEGGINGS)
                     .add(VOID_LEGGINGS)
-                    .add(ONETHDENDERITE_LEGGINGS);
+                    .add(ONETHDENDERITE_LEGGINGS)
+                    .add(OLED_LEGGINGS);
             getOrCreateTagBuilder(ItemTags.FOOT_ARMOR)
                     .add(BUDDING_AMETHYST_BOOTS)
                     .add(COPPER_BOOTS)
@@ -170,12 +184,13 @@ public class MoreToolsAndArmorTagProvider{
                     .add(DEEPSLATE_EMERALD_BOOTS)
                     .add(END_DIAMOND_BOOTS)
                     .add(VOID_BOOTS)
-                    .add(ONETHDENDERITE_BOOTS);
+                    .add(ONETHDENDERITE_BOOTS)
+                    .add(OLED_BOOTS);
             getOrCreateTagBuilder(ItemTags.PIGLIN_SAFE_ARMOR)
-                    .add(NETHERITE_BOOTS)
-                    .add(NETHERITE_LEGGINGS)
-                    .add(NETHERITE_CHESTPLATE)
-                    .add(NETHERITE_HELMET)
+                    .add(Items.NETHERITE_HELMET)
+                    .add(Items.NETHERITE_CHESTPLATE)
+                    .add(Items.NETHERITE_LEGGINGS)
+                    .add(Items.NETHERITE_BOOTS)
                     .add(DEEPSLATE_EMERALD_BOOTS)
                     .add(DEEPSLATE_EMERALD_LEGGINGS)
                     .add(DEEPSLATE_EMERALD_CHESTPLATE)
@@ -191,7 +206,11 @@ public class MoreToolsAndArmorTagProvider{
                     .add(ONETHDENDERITE_BOOTS)
                     .add(ONETHDENDERITE_LEGGINGS)
                     .add(ONETHDENDERITE_CHESTPLATE)
-                    .add(ONETHDENDERITE_HELMET);
+                    .add(ONETHDENDERITE_HELMET)
+                    .add(OLED_BOOTS)
+                    .add(OLED_LEGGINGS)
+                    .add(OLED_CHESTPLATE)
+                    .add(OLED_HELMET);
         }
     }
 }

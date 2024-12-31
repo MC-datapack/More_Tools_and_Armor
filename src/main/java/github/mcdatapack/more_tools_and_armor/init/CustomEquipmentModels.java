@@ -17,6 +17,7 @@ public class CustomEquipmentModels implements EquipmentAssetKeys {
     public static final RegistryKey<EquipmentAsset> END_DIAMOND = register("end_diamond");
     public static final RegistryKey<EquipmentAsset> VOID = register("void");
     public static final RegistryKey<EquipmentAsset> ONETHDENDERITE = register("onethdenderite");
+    public static final RegistryKey<EquipmentAsset> OLED = register("oled");
 
     public static RegistryKey<EquipmentAsset> register(String name) {
         return RegistryKey.of(REGISTRY_KEY, MoreToolsAndArmor.id(name));
