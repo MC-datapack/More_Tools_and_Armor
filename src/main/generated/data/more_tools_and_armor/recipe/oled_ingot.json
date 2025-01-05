@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "A": {
+      "item": "more_tools_and_armor:onethdenderite_ingot"
+    },
+    "B": {
+      "item": "minecraft:zombie_head"
+    },
+    "C": {
+      "item": "minecraft:netherite_block"
+    },
+    "D": {
+      "item": "minecraft:diamond_block"
+    }
+  },
+  "pattern": [
+    "ACA",
+    "ABA",
+    "ADA"
+  ],
+  "result": {
+    "count": 1,
+    "id": "more_tools_and_armor:oled_ingot"
+  }
+}

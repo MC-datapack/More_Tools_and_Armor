@@ -1,5 +1,6 @@
 package github.mcdatapack.more_tools_and_armor.datagen.provider;
 
+import github.mcdatapack.more_tools_and_armor.init.BlockInit;
 import github.mcdatapack.more_tools_and_armor.init.ItemInit;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricRecipeProvider;
@@ -76,6 +77,10 @@ public class MoreToolsAndArmorRecipeProvider extends FabricRecipeProvider {
         ShapelessRecipeJsonBuilder.create(RecipeCategory.TOOLS, ONETHDENDERITE_PAXEL)
                 .input(ONETHDENDERITE_AXE).input(ONETHDENDERITE_PICKAXE).input(ONETHDENDERITE_SHOVEL).input(ONETHDENDERITE_HOE)
                 .criterion(hasItem(ONETHDENDERITE_PICKAXE), conditionsFromItem(ONETHDENDERITE_PICKAXE))
+                .offerTo(exporter);
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.TOOLS, OLED_PAXEL)
+                .input(OLED_AXE).input(OLED_PICKAXE).input(OLED_SHOVEL).input(OLED_HOE)
+                .criterion(hasItem(OLED_PICKAXE), conditionsFromItem(OLED_PICKAXE))
                 .offerTo(exporter);
 
 
@@ -230,6 +235,37 @@ public class MoreToolsAndArmorRecipeProvider extends FabricRecipeProvider {
                 .pattern("AAA")
                 .criterion(hasItem(ONETHDENDERITE_INGOT), conditionsFromItem(ONETHDENDERITE_INGOT))
                 .offerTo(exporter, "onethdenderite_upgrade_smithing_template_dupe");
+
+
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, OLED_INGOT)
+                .input('A', ONETHDENDERITE_INGOT)
+                .input('B', ZOMBIE_HEAD)
+                .input('C', NETHERITE_BLOCK)
+                .input('D', DIAMOND_BLOCK)
+                .pattern("ACA")
+                .pattern("ABA")
+                .pattern("ADA")
+                .criterion(hasItem(ONETHDENDERITE_INGOT), conditionsFromItem(ONETHDENDERITE_INGOT))
+                .offerTo(exporter);
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, OLED_UPGRADE_SMITHING_TEMPLATE)
+                .input('A', ONETHDENDERITE_INGOT)
+                .input('B', OLED_INGOT)
+                .input('C', ONETHDENDERITE_UPGRADE_SMITHING_TEMPLATE)
+                .pattern("BCB")
+                .pattern("BAB")
+                .pattern("AAA")
+                .criterion(hasItem(OLED_INGOT), conditionsFromItem(OLED_INGOT))
+                .offerTo(exporter, "oled_upgrade_smithing_template");
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, OLED_UPGRADE_SMITHING_TEMPLATE, 2)
+                .input('A', ONETHDENDERITE_INGOT)
+                .input('B', OLED_INGOT)
+                .input('C', OLED_UPGRADE_SMITHING_TEMPLATE)
+                .pattern("ACA")
+                .pattern("ABA")
+                .pattern("AAA")
+                .criterion(hasItem(OLED_INGOT), conditionsFromItem(OLED_INGOT))
+                .offerTo(exporter, "oled_upgrade_smithing_template_dupe");
 
 
 

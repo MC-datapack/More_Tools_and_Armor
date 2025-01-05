@@ -72,6 +72,8 @@
 	"minecraft:pearlescent_froglight",
 	"minecraft:redstone_lamp",
 	"minecraft:sea_lantern",
-	"minecraft:verdant_froglight"
+	"minecraft:verdant_froglight",
+
+	"minecraft:reinforced_deepslate"
   ]
 }

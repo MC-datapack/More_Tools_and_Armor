@@ -47,6 +47,8 @@ public class ItemGroupInit {
                 entries.add(VOID_UPGRADE_SMITHING_TEMPLATE);
                 entries.add(ONETHDENDERITE_INGOT);
                 entries.add(ONETHDENDERITE_UPGRADE_SMITHING_TEMPLATE);
+                entries.add(OLED_INGOT);
+                entries.add(OLED_UPGRADE_SMITHING_TEMPLATE);
                 entries.add(WOODEN_PAXEL);
                 entries.add(STONE_PAXEL);
                 entries.add(IRON_PAXEL);
@@ -61,6 +63,7 @@ public class ItemGroupInit {
                 entries.add(END_DIAMOND_PAXEL);
                 entries.add(VOID_PAXEL);
                 entries.add(ONETHDENDERITE_PAXEL);
+                entries.add(OLED_PAXEL);
                 entries.add(COPPER_HELMET);
                 entries.add(COPPER_CHESTPLATE);
                 entries.add(COPPER_LEGGINGS);
@@ -133,6 +136,15 @@ public class ItemGroupInit {
                 entries.add(ONETHDENDERITE_PICKAXE);
                 entries.add(ONETHDENDERITE_SHOVEL);
                 entries.add(ONETHDENDERITE_HOE);
+                entries.add(OLED_HELMET);
+                entries.add(OLED_CHESTPLATE);
+                entries.add(OLED_LEGGINGS);
+                entries.add(OLED_BOOTS);
+                entries.add(OLED_SWORD);
+                entries.add(OLED_AXE);
+                entries.add(OLED_PICKAXE);
+                entries.add(OLED_SHOVEL);
+                entries.add(OLED_HOE);
             })
             .build());
 

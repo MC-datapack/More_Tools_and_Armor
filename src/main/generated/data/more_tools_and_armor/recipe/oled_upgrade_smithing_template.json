@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "A": {
+      "item": "more_tools_and_armor:onethdenderite_ingot"
+    },
+    "B": {
+      "item": "more_tools_and_armor:oled_ingot"
+    },
+    "C": {
+      "item": "more_tools_and_armor:onethdenderite_upgrade_smithing_template"
+    }
+  },
+  "pattern": [
+    "BCB",
+    "BAB",
+    "AAA"
+  ],
+  "result": {
+    "count": 1,
+    "id": "more_tools_and_armor:oled_upgrade_smithing_template"
+  }
+}

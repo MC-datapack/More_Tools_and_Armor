@@ -34,6 +34,11 @@ public class ItemInit {
     public static final Item ONETHDENDERITE_UPGRADE_SMITHING_TEMPLATE = register("onethdenderite_upgrade_smithing_template", new Item(new Item.Settings()
             .rarity(Rarity.EPIC).fireproof().maxCount(96)));
 
+    public static final Item OLED_INGOT = register("oled_ingot", new Item(new Item.Settings()
+            .rarity(Rarity.EPIC).fireproof().maxCount(96)));
+    public static final Item OLED_UPGRADE_SMITHING_TEMPLATE = register("oled_upgrade_smithing_template", new Item(new Item.Settings()
+            .rarity(Rarity.EPIC).fireproof().maxCount(96)));
+
     public static final PaxelItem WOODEN_PAXEL = register("wooden_paxel", new PaxelItem(net.minecraft.item.ToolMaterials.WOOD, new Item.Settings()
             .attributeModifiers(PaxelItem.createAttributeModifiers(net.minecraft.item.ToolMaterials.WOOD, 6.0F, -2.4F))));
     public static final PaxelItem STONE_PAXEL = register("stone_paxel", new PaxelItem(net.minecraft.item.ToolMaterials.STONE, new Item.Settings()
@@ -67,6 +72,9 @@ public class ItemInit {
             .fireproof().rarity(Rarity.EPIC)));
     public static final PaxelItem ONETHDENDERITE_PAXEL = register("onethdenderite_paxel", new PaxelItem(ToolMaterials.ONETHDENDERITE, new Item.Settings()
             .attributeModifiers(PaxelItem.createAttributeModifiers(ToolMaterials.ONETHDENDERITE, 33, -1.6F))
+            .fireproof().rarity(Rarity.EPIC)));
+    public static final PaxelItem OLED_PAXEL = register("oled_paxel", new PaxelItem(ToolMaterials.OLED, new Item.Settings()
+            .attributeModifiers(PaxelItem.createAttributeModifiers(ToolMaterials.OLED, 100, 0))
             .fireproof().rarity(Rarity.EPIC)));
 
 //Budding Amethyst
@@ -229,6 +237,32 @@ public class ItemInit {
             .maxDamage(ArmorItem.Type.LEGGINGS.getMaxDamage(3600)).fireproof().rarity(Rarity.EPIC)));
     public static final ArmorItem ONETHDENDERITE_BOOTS = register("onethdenderite_boots", new ArmorItem(ArmorMaterialInit.ONETHDENDERITE, ArmorItem.Type.BOOTS, new Item.Settings()
             .maxDamage(ArmorItem.Type.BOOTS.getMaxDamage(3600)).fireproof().rarity(Rarity.EPIC)));
+
+    //OLED
+    public static final SwordItem OLED_SWORD = register("oled_sword", new SwordItem(ToolMaterials.OLED, new Item.Settings()
+            .attributeModifiers(SwordItem.createAttributeModifiers(ToolMaterials.OLED, 100, 0))
+            .fireproof().rarity(Rarity.EPIC)));
+    public static final AxeItem OLED_AXE = register("oled_axe", new AxeItem(ToolMaterials.OLED, new Item.Settings()
+            .attributeModifiers(AxeItem.createAttributeModifiers(ToolMaterials.OLED, 90, -1.1F))
+            .fireproof().rarity(Rarity.EPIC)));
+    public static final PickaxeItem OLED_PICKAXE = register("oled_pickaxe", new PickaxeItem(ToolMaterials.OLED, new Item.Settings()
+            .attributeModifiers(PickaxeItem.createAttributeModifiers(ToolMaterials.OLED, 70, -0.2F))
+            .fireproof().rarity(Rarity.EPIC)));
+    public static final ShovelItem OLED_SHOVEL = register("oled_shovel", new ShovelItem(ToolMaterials.OLED, new Item.Settings()
+            .attributeModifiers(ShovelItem.createAttributeModifiers(ToolMaterials.OLED, 80, -1.1F))
+            .fireproof().rarity(Rarity.EPIC)));
+    public static final HoeItem OLED_HOE = register("oled_hoe", new HoeItem(ToolMaterials.OLED, new Item.Settings()
+            .attributeModifiers(HoeItem.createAttributeModifiers(ToolMaterials.OLED, 50, 50))
+            .fireproof().rarity(Rarity.EPIC)));
+    public static final ArmorItem OLED_HELMET = register("oled_helmet", new ArmorItem(ArmorMaterialInit.OLED, ArmorItem.Type.HELMET, new Item.Settings()
+            .maxDamage(ArmorItem.Type.HELMET.getMaxDamage(3600)).fireproof().rarity(Rarity.EPIC)));
+    public static final ArmorItem OLED_CHESTPLATE = register("oled_chestplate", new ArmorItem(ArmorMaterialInit.OLED, ArmorItem.Type.CHESTPLATE, new Item.Settings()
+            .maxDamage(ArmorItem.Type.CHESTPLATE.getMaxDamage(3600)).fireproof().rarity(Rarity.EPIC)));
+    public static final ArmorItem OLED_LEGGINGS = register("oled_leggings", new ArmorItem(ArmorMaterialInit.OLED, ArmorItem.Type.LEGGINGS, new Item.Settings()
+            .maxDamage(ArmorItem.Type.LEGGINGS.getMaxDamage(3600)).fireproof().rarity(Rarity.EPIC)));
+    public static final ArmorItem OLED_BOOTS = register("oled_boots", new ArmorItem(ArmorMaterialInit.OLED, ArmorItem.Type.BOOTS, new Item.Settings()
+            .maxDamage(ArmorItem.Type.BOOTS.getMaxDamage(3600)).fireproof().rarity(Rarity.EPIC)));
+
 
     public static <T extends Item> T register(String name, T item) {
         return Registry.register(Registries.ITEM, MoreToolsAndArmor.id(name), item);
