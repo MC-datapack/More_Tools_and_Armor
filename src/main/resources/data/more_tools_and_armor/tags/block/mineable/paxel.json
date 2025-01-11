@@ -74,6 +74,11 @@
 	"minecraft:sea_lantern",
 	"minecraft:verdant_froglight",
 
-	"minecraft:reinforced_deepslate"
+	"minecraft:reinforced_deepslate",
+
+	{
+	  "id": "blocktopia:xp_trap",
+	  "required": false
+	}
   ]
 }
