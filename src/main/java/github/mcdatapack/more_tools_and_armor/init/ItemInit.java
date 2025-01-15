@@ -2,7 +2,10 @@ package github.mcdatapack.more_tools_and_armor.init;
 
 import github.mcdatapack.more_tools_and_armor.MoreToolsAndArmor;
 import github.mcdatapack.more_tools_and_armor.enums.ToolMaterials;
+import github.mcdatapack.more_tools_and_armor.item.ArmorItem;
 import github.mcdatapack.more_tools_and_armor.item.PaxelItem;
+import github.mcdatapack.more_tools_and_armor.item.PickaxeItem;
+import github.mcdatapack.more_tools_and_armor.item.SwordItem;
 import net.minecraft.item.*;
 import net.minecraft.item.equipment.EquipmentType;
 import net.minecraft.registry.Registries;
