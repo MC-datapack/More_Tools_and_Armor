@@ -143,20 +143,20 @@ public class MoreToolsAndArmorModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ItemInit.OLED_LEGGINGS, Models.GENERATED);
         itemModelGenerator.register(ItemInit.OLED_BOOTS, Models.GENERATED);
 
-        itemModelGenerator.register(WOODEN_PAXEL, Models.GENERATED);
-        itemModelGenerator.register(STONE_PAXEL, Models.GENERATED);
-        itemModelGenerator.register(IRON_PAXEL, Models.GENERATED);
-        itemModelGenerator.register(GOLDEN_PAXEL, Models.GENERATED);
-        itemModelGenerator.register(DIAMOND_PAXEL, Models.GENERATED);
-        itemModelGenerator.register(NETHERITE_PAXEL, Models.GENERATED);
-        itemModelGenerator.register(COPPER_PAXEL, Models.GENERATED);
-        itemModelGenerator.register(BUDDING_AMETHYST_PAXEL, Models.GENERATED);
-        itemModelGenerator.register(EMERALD_PAXEL, Models.GENERATED);
-        itemModelGenerator.register(OBSIDIAN_PAXEL, Models.GENERATED);
-        itemModelGenerator.register(DEEPSLATE_EMERALD_PAXEL, Models.GENERATED);
-        itemModelGenerator.register(END_DIAMOND_PAXEL, Models.GENERATED);
-        itemModelGenerator.register(VOID_PAXEL, Models.GENERATED);
-        itemModelGenerator.register(ONETHDENDERITE_PAXEL, Models.GENERATED);
-        itemModelGenerator.register(OLED_PAXEL, Models.GENERATED);
+        itemModelGenerator.register(WOODEN_PAXEL, Models.HANDHELD);
+        itemModelGenerator.register(STONE_PAXEL, Models.HANDHELD);
+        itemModelGenerator.register(IRON_PAXEL, Models.HANDHELD);
+        itemModelGenerator.register(GOLDEN_PAXEL, Models.HANDHELD);
+        itemModelGenerator.register(DIAMOND_PAXEL, Models.HANDHELD);
+        itemModelGenerator.register(NETHERITE_PAXEL, Models.HANDHELD);
+        itemModelGenerator.register(COPPER_PAXEL, Models.HANDHELD);
+        itemModelGenerator.register(BUDDING_AMETHYST_PAXEL, Models.HANDHELD);
+        itemModelGenerator.register(EMERALD_PAXEL, Models.HANDHELD);
+        itemModelGenerator.register(OBSIDIAN_PAXEL, Models.HANDHELD);
+        itemModelGenerator.register(DEEPSLATE_EMERALD_PAXEL, Models.HANDHELD);
+        itemModelGenerator.register(END_DIAMOND_PAXEL, Models.HANDHELD);
+        itemModelGenerator.register(VOID_PAXEL, Models.HANDHELD);
+        itemModelGenerator.register(ONETHDENDERITE_PAXEL, Models.HANDHELD);
+        itemModelGenerator.register(OLED_PAXEL, Models.HANDHELD);
     }
 }
