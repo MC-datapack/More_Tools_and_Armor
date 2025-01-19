@@ -1,4 +1,4 @@
-// 1.21.1	2025-01-19T11:39:11.777797	More Tools and Armor/Model Definitions
+// 1.21.1	2025-01-19T19:56:47.7636235	More Tools and Armor/Model Definitions
 bfadc3cbf1da8708fce07c45325e927983065a2c assets\more_tools_and_armor\models\item\copper_paxel.json
 55d0901fb474b34e53b47fd858dfec2208eb7beb assets\more_tools_and_armor\models\item\deepslate_emerald_leggings.json
 d5b73932607cd6421fab7ddd52bdbd8561660400 assets\more_tools_and_armor\models\item\golden_paxel.json
@@ -114,8 +114,8 @@ e77831b144e9ba05d5150f7b5d14724f2d37a04e assets\more_tools_and_armor\models\bloc
 ca99b000d1b14bb9a522f88f263009ab1dabeba2 assets\more_tools_and_armor\models\item\void_sword.json
 9544332c698958f6a803928a9bacd2acb203f27d assets\more_tools_and_armor\models\block\end_diamond_block.json
 8c312555bc7ee4f040a3b079f7d4059f288979ba assets\more_tools_and_armor\models\item\onethdenderite_ingot.json
-7e8ef1faa3dd8f93dbc2fd5ec48995650ed59b1b assets\more_tools_and_armor\models\item\budding_amethyst_chestplate.json
 63edd200662a3387fb3388ba69cf0f9401aacd34 assets\more_tools_and_armor\models\item\end_diamond_chestplate.json
+7e8ef1faa3dd8f93dbc2fd5ec48995650ed59b1b assets\more_tools_and_armor\models\item\budding_amethyst_chestplate.json
 4ca8b852393b853db36f906f846e5d5ae52f76f0 assets\more_tools_and_armor\models\item\void_helmet.json
 1158428a3fe5ef68997822002441ddd3af3dd154 assets\more_tools_and_armor\blockstates\blackstone_emerald_ore.json
 bf1fe3c3db13111e4e594499b4c31cabd6d76bfe assets\more_tools_and_armor\models\item\oled_hoe.json
