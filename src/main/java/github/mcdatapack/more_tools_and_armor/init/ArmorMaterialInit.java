@@ -30,10 +30,10 @@ public class ArmorMaterialInit {
             false);
 
     public static final RegistryEntry<ArmorMaterial> BUDDING_AMETHYST = register("budding_amethyst", Map.of(
-                ArmorItem.Type.HELMET, 3,
-                ArmorItem.Type.CHESTPLATE, 7,
-                ArmorItem.Type.LEGGINGS, 6,
-                ArmorItem.Type.BOOTS, 2),
+                    ArmorItem.Type.HELMET, 3,
+                    ArmorItem.Type.CHESTPLATE, 7,
+                    ArmorItem.Type.LEGGINGS, 6,
+                    ArmorItem.Type.BOOTS, 2),
             12,
             SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND,
             () -> Ingredient.ofItems(ItemInit.BUDDING_AMETHYST_CRYSTAL),
@@ -42,10 +42,10 @@ public class ArmorMaterialInit {
             false);
 
     public static final RegistryEntry<ArmorMaterial> EMERALD = register("emerald", Map.of(
-            ArmorItem.Type.HELMET, 2,
-            ArmorItem.Type.CHESTPLATE, 6,
-            ArmorItem.Type.LEGGINGS, 5,
-            ArmorItem.Type.BOOTS, 3),
+                    ArmorItem.Type.HELMET, 2,
+                    ArmorItem.Type.CHESTPLATE, 6,
+                    ArmorItem.Type.LEGGINGS, 5,
+                    ArmorItem.Type.BOOTS, 3),
             14,
             SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND,
             () -> Ingredient.ofItems(Items.EMERALD),
@@ -77,10 +77,10 @@ public class ArmorMaterialInit {
             1,
             false);
     public static final RegistryEntry<ArmorMaterial> END_DIAMOND = register("end_diamond", Map.of(
-                ArmorItem.Type.HELMET, 7,
-                ArmorItem.Type.CHESTPLATE, 10,
-                ArmorItem.Type.LEGGINGS, 8,
-                ArmorItem.Type.BOOTS, 5),
+                    ArmorItem.Type.HELMET, 7,
+                    ArmorItem.Type.CHESTPLATE, 10,
+                    ArmorItem.Type.LEGGINGS, 8,
+                    ArmorItem.Type.BOOTS, 5),
             100,
             SoundEvents.ITEM_ARMOR_EQUIP_NETHERITE,
             () -> Ingredient.ofItems(ItemInit.END_DIAMOND),
@@ -101,10 +101,10 @@ public class ArmorMaterialInit {
             false
     );
     public static final RegistryEntry<ArmorMaterial> ONETHDENDERITE = register("onethdenderite", Map.of(
-            ArmorItem.Type.HELMET, 7,
-            ArmorItem.Type.CHESTPLATE, 10,
-            ArmorItem.Type.LEGGINGS, 8,
-            ArmorItem.Type.BOOTS, 5),
+                    ArmorItem.Type.HELMET, 7,
+                    ArmorItem.Type.CHESTPLATE, 10,
+                    ArmorItem.Type.LEGGINGS, 8,
+                    ArmorItem.Type.BOOTS, 5),
             100,
             SoundEvents.ITEM_ARMOR_EQUIP_NETHERITE,
             () -> Ingredient.ofItems(ItemInit.ONETHDENDERITE_INGOT),
@@ -113,10 +113,10 @@ public class ArmorMaterialInit {
             false);
 
     public static final RegistryEntry<ArmorMaterial> OLED = register("oled", Map.of(
-            ArmorItem.Type.HELMET, 140,
-            ArmorItem.Type.CHESTPLATE, 200,
-            ArmorItem.Type.LEGGINGS, 160,
-            ArmorItem.Type.BOOTS, 100),
+                    ArmorItem.Type.HELMET, 140,
+                    ArmorItem.Type.CHESTPLATE, 200,
+                    ArmorItem.Type.LEGGINGS, 160,
+                    ArmorItem.Type.BOOTS, 100),
             100,
             SoundEvents.ITEM_ARMOR_EQUIP_NETHERITE,
             () -> Ingredient.ofItems(ItemInit.OLED_INGOT),
@@ -124,8 +124,8 @@ public class ArmorMaterialInit {
             1.2F,
             false);
 
-//Armor Materials Setup Help
-        public static RegistryEntry<ArmorMaterial> register(String id, Map<ArmorItem.Type, Integer> defensePoints,
+    //Armor Materials Setup Help
+    public static RegistryEntry<ArmorMaterial> register(String id, Map<ArmorItem.Type, Integer> defensePoints,
                                                         int enchantablilty,
                                                         RegistryEntry<SoundEvent> equipSound,
                                                         Supplier<Ingredient> repairIngredient,

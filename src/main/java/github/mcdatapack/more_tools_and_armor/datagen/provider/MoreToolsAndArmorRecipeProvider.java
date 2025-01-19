@@ -1,12 +1,19 @@
 package github.mcdatapack.more_tools_and_armor.datagen.provider;
 
+import github.mcdatapack.more_tools_and_armor.MoreToolsAndArmor;
 import github.mcdatapack.more_tools_and_armor.init.BlockInit;
 import github.mcdatapack.more_tools_and_armor.init.ItemInit;
+import github.mcdatapack.more_tools_and_armor.list.TagList;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricRecipeProvider;
 import net.minecraft.data.server.recipe.*;
+import net.minecraft.item.Item;
+import net.minecraft.item.Items;
+import net.minecraft.recipe.Ingredient;
 import net.minecraft.recipe.book.RecipeCategory;
+import net.minecraft.registry.Registries;
 import net.minecraft.registry.RegistryWrapper;
+import net.minecraft.util.Identifier;
 
 import java.util.concurrent.CompletableFuture;
 
@@ -547,5 +554,19 @@ public class MoreToolsAndArmorRecipeProvider extends FabricRecipeProvider {
                 .pattern("A A")
                 .criterion(hasItem(OBSIDIAN), conditionsFromItem(OBSIDIAN))
                 .offerTo(exporter);
+
+        paxelUpgradeRecipe(NETHERITE_UPGRADE_SMITHING_TEMPLATE, DIAMOND_PAXEL, NETHERITE_INGOT, NETHERITE_PAXEL, exporter);
+        paxelUpgradeRecipe(DEEPSLATE_EMERALD_UPGRADE_SMITHING_TEMPLATE, NETHERITE_PAXEL, DEEPSLATE_EMERALD, DEEPSLATE_EMERALD_PAXEL, exporter);
+        paxelUpgradeRecipe(END_DIAMOND_UPGRADE_SMITHING_TEMPLATE, DEEPSLATE_EMERALD_UPGRADE_SMITHING_TEMPLATE, END_DIAMOND, END_DIAMOND_PAXEL, exporter);
+        paxelUpgradeRecipe(VOID_UPGRADE_SMITHING_TEMPLATE, END_DIAMOND_PAXEL, VOID_INGOT, VOID_PAXEL, exporter);
+        paxelUpgradeRecipe(ONETHDENDERITE_UPGRADE_SMITHING_TEMPLATE, VOID_PAXEL, ONETHDENDERITE_INGOT, ONETHDENDERITE_PAXEL, exporter);
+        paxelUpgradeRecipe(OLED_UPGRADE_SMITHING_TEMPLATE, ONETHDENDERITE_PAXEL, OLED_INGOT, OLED_PAXEL, exporter);
+    }
+
+    private void paxelUpgradeRecipe(Item template, Item base, Item addition, Item result, RecipeExporter exporter) {
+        SmithingTransformRecipeJsonBuilder.create(Ingredient.ofItems(template), Ingredient.ofItems(base), Ingredient.ofItems(addition),
+                RecipeCategory.TOOLS, result)
+                .criterion(hasItem(addition), conditionsFromItem(addition))
+                .offerTo(exporter, MoreToolsAndArmor.id(Registries.ITEM.getId(result).toString().split(":")[1] + "_upgrade"));
     }
 }

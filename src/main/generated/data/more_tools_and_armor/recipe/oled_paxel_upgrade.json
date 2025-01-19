@@ -1,16 +1,16 @@
 {
   "type": "minecraft:smithing_transform",
-  "category": "equipment",
-  "template": {
-    "item": "more_tools_and_armor:oled_upgrade_smithing_template"
+  "addition": {
+    "item": "more_tools_and_armor:oled_ingot"
   },
   "base": {
     "item": "more_tools_and_armor:onethdenderite_paxel"
   },
-  "addition": {
-    "item": "more_tools_and_armor:oled_ingot"
-  },
   "result": {
+    "count": 1,
     "id": "more_tools_and_armor:oled_paxel"
+  },
+  "template": {
+    "item": "more_tools_and_armor:oled_upgrade_smithing_template"
   }
 }

@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:smithing_transform",
+  "addition": {
+    "item": "more_tools_and_armor:deepslate_emerald"
+  },
+  "base": {
+    "item": "more_tools_and_armor:netherite_paxel"
+  },
+  "result": {
+    "count": 1,
+    "id": "more_tools_and_armor:deepslate_emerald_paxel"
+  },
+  "template": {
+    "item": "more_tools_and_armor:deepslate_emerald_upgrade_smithing_template"
+  }
+}
