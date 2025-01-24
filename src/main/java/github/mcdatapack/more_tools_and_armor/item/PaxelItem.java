@@ -80,7 +80,7 @@ public class PaxelItem extends Item {
     );
 
     public PaxelItem(ToolMaterial toolMaterial, float attackDamage, float attackSpeed, Settings settings) {
-        super(settings.tool(toolMaterial, TagList.BlockTags.PAXEL_MINEABLE, attackDamage, attackSpeed, true));
+        super(settings.tool(toolMaterial, TagList.BlockTags.PAXEL_MINEABLE, attackDamage, attackSpeed, 0.0F));
     }
 
     @Override
