@@ -2,6 +2,7 @@ package github.mcdatapack.more_tools_and_armor.list;
 
 import github.mcdatapack.more_tools_and_armor.MoreToolsAndArmor;
 import net.minecraft.block.Block;
+import net.minecraft.item.Item;
 import net.minecraft.registry.RegistryKeys;
 import net.minecraft.registry.tag.TagKey;
 
@@ -20,5 +21,6 @@ public class TagList {
             return TagKey.of(RegistryKeys.BLOCK, MoreToolsAndArmor.id(path));
         }
     }
+
     public static class ItemTags {}
 }

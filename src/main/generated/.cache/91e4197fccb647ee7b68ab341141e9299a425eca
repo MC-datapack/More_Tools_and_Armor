@@ -1,6 +1,7 @@
-// 1.21.1	2025-01-19T19:56:47.765623	More Tools and Armor/Tags for minecraft:item
+// 1.21.1	2025-02-03T17:14:03.8844929	More Tools and Armor/Tags for minecraft:item
 009937ca4540f639f0ddb674a89445d2694f6d24 data\minecraft\tags\item\axes.json
 82bb69039e14eec62f6a5c18e4b5d98e945104dc data\minecraft\tags\item\chest_armor.json
+97527fad2414d3bc93a5fc4625aa2d1686440206 data\more_tools_and_armor\tags\item\enderman_passive_armor.json
 8fd2e586820f6ef5060bf1b84783fe571754000c data\minecraft\tags\item\leg_armor.json
 bf84011b91a9751f6d4f6050a2886801e797de6f data\minecraft\tags\item\hoes.json
 58cb5609a7d35d5ac89565f8851df8cc9dffb3e3 data\minecraft\tags\item\shovels.json

@@ -18,6 +18,9 @@
 			"github.mcdatapack.more_tools_and_armor.MoreToolsAndArmorDataGenerator"
 	  	]
 	},
+  "mixins": [
+	"mixins.more_tools_and_armor-abilities.json"
+  ],
 	"depends": {
 		"fabricloader": ">=0.16.2",
 		"java": ">=21",

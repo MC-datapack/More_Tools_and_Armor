@@ -2,7 +2,7 @@ package github.mcdatapack.more_tools_and_armor.init;
 
 import github.mcdatapack.more_tools_and_armor.MoreToolsAndArmor;
 import github.mcdatapack.more_tools_and_armor.enums.ToolMaterials;
-import github.mcdatapack.more_tools_and_armor.item.PaxelItem;
+import github.mcdatapack.more_tools_and_armor.item.*;
 import net.minecraft.item.*;
 import net.minecraft.item.Item;
 import net.minecraft.registry.Registries;
@@ -76,6 +76,11 @@ public class ItemInit {
     public static final PaxelItem OLED_PAXEL = register("oled_paxel", new PaxelItem(ToolMaterials.OLED, new Item.Settings()
             .attributeModifiers(PaxelItem.createAttributeModifiers(ToolMaterials.OLED, 100, 0))
             .fireproof().rarity(Rarity.EPIC)));
+
+    public static final MoreToolsAndArmorBowItem OLED_BOW = register("oled_bow", new MoreToolsAndArmorBowItem(ToolMaterials.OLED, new Item.Settings()));
+    public static final MoreToolsAndArmorFlintAndSteelItem OLED_FLINT_AND_STEEL = register("oled_flint_and_steel", new MoreToolsAndArmorFlintAndSteelItem(ToolMaterials.OLED, new Item.Settings()));
+    public static final MoreToolsAndArmorShearsItem OLED_SHEARS = register("oled_shears", new MoreToolsAndArmorShearsItem(ToolMaterials.OLED, new Item.Settings()));
+    public static final MoreToolsAndArmorMaceItem OLED_MACE = register("oled_mace", new MoreToolsAndArmorMaceItem(ToolMaterials.OLED, new Item.Settings()));
 
 //Budding Amethyst
     public static final SwordItem BUDDING_AMETHYST_SWORD = register("budding_amethyst_sword", new SwordItem(ToolMaterials.BUDDING_AMETHYST, new Item.Settings()
