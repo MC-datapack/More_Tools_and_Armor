@@ -2,7 +2,6 @@ package github.mcdatapack.more_tools_and_armor.enums;
 
 import github.mcdatapack.more_tools_and_armor.init.ItemInit;
 import github.mcdatapack.more_tools_and_armor.list.TagList;
-import github.mcdatapack.more_tools_and_armor.util.MoreToolsAndArmorToolMaterial;
 import net.minecraft.block.Block;
 import net.minecraft.item.Items;
 import net.minecraft.item.ToolMaterial;
@@ -10,63 +9,61 @@ import net.minecraft.recipe.Ingredient;
 import net.minecraft.registry.tag.BlockTags;
 import net.minecraft.registry.tag.TagKey;
 
-public enum ToolMaterials implements MoreToolsAndArmorToolMaterial {
+public enum ToolMaterials implements ToolMaterial {
     //DEV NOTE 14w34a = 14, w->23->2+3, 34->3+4, a->1
     //DEV NOTE 14571(10) -> 431241(5)
     //DEV NOTE PI 3.1415926535897932384626433832795
     BUDDING_AMETHYST(
             500, 7F, 1F, BlockTags.INCORRECT_FOR_IRON_TOOL, 12,
-            Ingredient.ofItems(ItemInit.BUDDING_AMETHYST_CRYSTAL), 1.5F, 1.5F
+            Ingredient.ofItems(ItemInit.BUDDING_AMETHYST_CRYSTAL)
     ),
     COPPER(
             121, 6F, 1F, BlockTags.INCORRECT_FOR_STONE_TOOL, 18,
-            Ingredient.ofItems(Items.COPPER_INGOT), 1, 1
+            Ingredient.ofItems(Items.COPPER_INGOT)
     ),
     EMERALD(
             375, 6.5F, 1F, BlockTags.INCORRECT_FOR_IRON_TOOL, 14,
-            Ingredient.ofItems(Items.EMERALD), 1.25F, 1.25F
+            Ingredient.ofItems(Items.EMERALD)
     ),
     OBSIDIAN(
             1831, 8.5F, 1F, BlockTags.INCORRECT_FOR_DIAMOND_TOOL, 10,
-            Ingredient.ofItems(Items.OBSIDIAN), 4, 2.5F
+            Ingredient.ofItems(Items.OBSIDIAN)
     ),
     DEEPSLATE_EMERALD(
             14571, 40F, 1F, TagList.BlockTags.INCORRECT_FOR_DEEPSLATE_EMERALD_TOOL, 100,
-            Ingredient.ofItems(ItemInit.DEEPSLATE_EMERALD), 10, 7.5F
+            Ingredient.ofItems(ItemInit.DEEPSLATE_EMERALD)
     ),
     END_DIAMOND(
             24581, 80F, 1F, TagList.BlockTags.INCORRECT_FOR_END_DIAMOND_TOOL, 100,
-            Ingredient.ofItems(ItemInit.END_DIAMOND), 25, 15
+            Ingredient.ofItems(ItemInit.END_DIAMOND)
     ),
     VOID(
             431241, 256F, 1F, TagList.BlockTags.INCORRECT_FOR_VOID_TOOL, 100,
-            Ingredient.ofItems(ItemInit.VOID_INGOT), 40, 30
+            Ingredient.ofItems(ItemInit.VOID_INGOT)
     ),
     ONETHDENDERITE(
             3141592, 1256F, 1F, TagList.BlockTags.INCORRECT_FOR_ONETHDENDERITE_TOOL, 100,
-            Ingredient.ofItems(ItemInit.ONETHDENDERITE_INGOT), 100, 75
+            Ingredient.ofItems(ItemInit.ONETHDENDERITE_INGOT)
     ),
     OLED(
              Integer.MAX_VALUE, 3141F, 1F, TagList.BlockTags.INCORRECT_FOR_OLED_TOOL, 100,
-            Ingredient.ofItems(ItemInit.OLED_INGOT), 100, 100
+            Ingredient.ofItems(ItemInit.OLED_INGOT)
     );
 
     private final int durability;
-    private final float miningSpeedMultiplier, attackDamage, maceEffectMultiplier, bowDamageMultiplier;
+    private final float miningSpeedMultiplier, attackDamage;
     private final TagKey<Block> inverseTag;
     private final int enchantability;
     private final Ingredient repairIngredient;
 
     ToolMaterials(int durability, float miningSpeedMultiplier, float attackDamage, TagKey<Block> inverseTag, int enchantability,
-                  Ingredient repairIngredient, float maceEffectMultiplier, float bowDamageMultiplier) {
+                  Ingredient repairIngredient) {
         this.durability = durability;
         this.miningSpeedMultiplier = miningSpeedMultiplier;
         this.attackDamage = attackDamage;
         this.inverseTag = inverseTag;
         this.enchantability = enchantability;
         this.repairIngredient = repairIngredient;
-        this.maceEffectMultiplier = maceEffectMultiplier;
-        this.bowDamageMultiplier = bowDamageMultiplier;
     }
 
     @Override
@@ -97,15 +94,5 @@ public enum ToolMaterials implements MoreToolsAndArmorToolMaterial {
     @Override
     public Ingredient getRepairIngredient() {
         return this.repairIngredient;
-    }
-
-    @Override
-    public float getMaceEffectMultiplier() {
-        return maceEffectMultiplier;
-    }
-
-    @Override
-    public float getBowDamageMultiplier() {
-        return bowDamageMultiplier;
     }
 }
