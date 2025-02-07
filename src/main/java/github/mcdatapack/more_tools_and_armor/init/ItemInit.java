@@ -77,11 +77,6 @@ public class ItemInit {
             .attributeModifiers(PaxelItem.createAttributeModifiers(ToolMaterials.OLED, 100, 0))
             .fireproof().rarity(Rarity.EPIC)));
 
-    public static final MoreToolsAndArmorBowItem OLED_BOW = register("oled_bow", new MoreToolsAndArmorBowItem(ToolMaterials.OLED, new Item.Settings()));
-    public static final MoreToolsAndArmorFlintAndSteelItem OLED_FLINT_AND_STEEL = register("oled_flint_and_steel", new MoreToolsAndArmorFlintAndSteelItem(ToolMaterials.OLED, new Item.Settings()));
-    public static final MoreToolsAndArmorShearsItem OLED_SHEARS = register("oled_shears", new MoreToolsAndArmorShearsItem(ToolMaterials.OLED, new Item.Settings()));
-    public static final MoreToolsAndArmorMaceItem OLED_MACE = register("oled_mace", new MoreToolsAndArmorMaceItem(ToolMaterials.OLED, new Item.Settings()));
-
 //Budding Amethyst
     public static final SwordItem BUDDING_AMETHYST_SWORD = register("budding_amethyst_sword", new SwordItem(ToolMaterials.BUDDING_AMETHYST, new Item.Settings()
             .attributeModifiers(SwordItem.createAttributeModifiers(ToolMaterials.BUDDING_AMETHYST, 5, -2.4F))));
