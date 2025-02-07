@@ -2,6 +2,7 @@ package github.mcdatapack.more_tools_and_armor.init;
 
 import github.mcdatapack.more_tools_and_armor.MoreToolsAndArmor;
 import github.mcdatapack.more_tools_and_armor.enums.ToolMaterials;
+import github.mcdatapack.more_tools_and_armor.item.MoreToolsAndArmorArmorItem;
 import github.mcdatapack.more_tools_and_armor.item.PaxelItem;
 import net.minecraft.item.*;
 import net.minecraft.item.equipment.EquipmentType;
@@ -103,17 +104,17 @@ private static final RegistryKey<Item> BUDDING_AMETHYST_SWORD_k = RegistryKey.of
     public static final HoeItem BUDDING_AMETHYST_HOE = register("budding_amethyst_hoe",
             new HoeItem(ToolMaterials.BUDDING_AMETHYST.getMaterial(), -1, -0F, new Item.Settings().registryKey(BUDDING_AMETHYST_HOE_k)));
     private static final RegistryKey<Item> BUDDING_AMETHYST_HELMET_k = RegistryKey.of(RegistryKeys.ITEM, MoreToolsAndArmor.id("budding_amethyst_helmet"));
-    public static final ArmorItem BUDDING_AMETHYST_HELMET = register("budding_amethyst_helmet",
-            new ArmorItem(ArmorMaterialInit.BUDDING_AMETHYST, EquipmentType.HELMET, new Item.Settings().registryKey(BUDDING_AMETHYST_HELMET_k)));
+    public static final MoreToolsAndArmorArmorItem BUDDING_AMETHYST_HELMET = register("budding_amethyst_helmet",
+            new MoreToolsAndArmorArmorItem(ArmorMaterialInit.BUDDING_AMETHYST, EquipmentType.HELMET, new Item.Settings().registryKey(BUDDING_AMETHYST_HELMET_k)));
     private static final RegistryKey<Item> BUDDING_AMETHYST_CHESTPLATE_k = RegistryKey.of(RegistryKeys.ITEM, MoreToolsAndArmor.id("budding_amethyst_chestplate"));
-    public static final ArmorItem BUDDING_AMETHYST_CHESTPLATE = register("budding_amethyst_chestplate",
-            new ArmorItem(ArmorMaterialInit.BUDDING_AMETHYST, EquipmentType.CHESTPLATE, new Item.Settings().registryKey(BUDDING_AMETHYST_CHESTPLATE_k)));
+    public static final MoreToolsAndArmorArmorItem BUDDING_AMETHYST_CHESTPLATE = register("budding_amethyst_chestplate",
+            new MoreToolsAndArmorArmorItem(ArmorMaterialInit.BUDDING_AMETHYST, EquipmentType.CHESTPLATE, new Item.Settings().registryKey(BUDDING_AMETHYST_CHESTPLATE_k)));
     private static final RegistryKey<Item> BUDDING_AMETHYST_LEGGINGS_k = RegistryKey.of(RegistryKeys.ITEM, MoreToolsAndArmor.id("budding_amethyst_leggings"));
-    public static final ArmorItem BUDDING_AMETHYST_LEGGINGS = register("budding_amethyst_leggings",
-            new ArmorItem(ArmorMaterialInit.BUDDING_AMETHYST, EquipmentType.LEGGINGS, new Item.Settings().registryKey(BUDDING_AMETHYST_LEGGINGS_k)));
+    public static final MoreToolsAndArmorArmorItem BUDDING_AMETHYST_LEGGINGS = register("budding_amethyst_leggings",
+            new MoreToolsAndArmorArmorItem(ArmorMaterialInit.BUDDING_AMETHYST, EquipmentType.LEGGINGS, new Item.Settings().registryKey(BUDDING_AMETHYST_LEGGINGS_k)));
     private static final RegistryKey<Item> BUDDING_AMETHYST_BOOTS_k = RegistryKey.of(RegistryKeys.ITEM, MoreToolsAndArmor.id("budding_amethyst_boots"));
-    public static final ArmorItem BUDDING_AMETHYST_BOOTS = register("budding_amethyst_boots", new
-            ArmorItem(ArmorMaterialInit.BUDDING_AMETHYST, EquipmentType.BOOTS, new Item.Settings().registryKey(BUDDING_AMETHYST_BOOTS_k)));
+    public static final MoreToolsAndArmorArmorItem BUDDING_AMETHYST_BOOTS = register("budding_amethyst_boots", new
+            MoreToolsAndArmorArmorItem(ArmorMaterialInit.BUDDING_AMETHYST, EquipmentType.BOOTS, new Item.Settings().registryKey(BUDDING_AMETHYST_BOOTS_k)));
 //Copper
 private static final RegistryKey<Item> COPPER_SWORD_k = RegistryKey.of(RegistryKeys.ITEM, MoreToolsAndArmor.id("copper_sword"));
     public static final SwordItem COPPER_SWORD = register("copper_sword", new SwordItem(ToolMaterials.COPPER.getMaterial(),3, -2.4F,
@@ -131,16 +132,16 @@ private static final RegistryKey<Item> COPPER_SWORD_k = RegistryKey.of(RegistryK
     public static final HoeItem COPPER_HOE = register("copper_hoe", new HoeItem(ToolMaterials.COPPER.getMaterial(),-1, -2F,
             new Item.Settings().registryKey(COPPER_HOE_k)));
     private static final RegistryKey<Item> COPPER_HELMET_k = RegistryKey.of(RegistryKeys.ITEM, MoreToolsAndArmor.id("copper_helmet"));
-    public static final ArmorItem COPPER_HELMET = register("copper_helmet", new ArmorItem(ArmorMaterialInit.COPPER, EquipmentType.HELMET,
+    public static final MoreToolsAndArmorArmorItem COPPER_HELMET = register("copper_helmet", new MoreToolsAndArmorArmorItem(ArmorMaterialInit.COPPER, EquipmentType.HELMET,
             new Item.Settings().registryKey(COPPER_HELMET_k)));
     private static final RegistryKey<Item> COPPER_CHESTPLATE_k = RegistryKey.of(RegistryKeys.ITEM, MoreToolsAndArmor.id("copper_chestplate"));
-    public static final ArmorItem COPPER_CHESTPLATE = register("copper_chestplate", new ArmorItem(ArmorMaterialInit.COPPER, EquipmentType.CHESTPLATE,
+    public static final MoreToolsAndArmorArmorItem COPPER_CHESTPLATE = register("copper_chestplate", new MoreToolsAndArmorArmorItem(ArmorMaterialInit.COPPER, EquipmentType.CHESTPLATE,
             new Item.Settings().registryKey(COPPER_CHESTPLATE_k)));
     private static final RegistryKey<Item> COPPER_LEGGINGS_k = RegistryKey.of(RegistryKeys.ITEM, MoreToolsAndArmor.id("copper_leggings"));
-    public static final ArmorItem COPPER_LEGGINGS = register("copper_leggings", new ArmorItem(ArmorMaterialInit.COPPER, EquipmentType.LEGGINGS,
+    public static final MoreToolsAndArmorArmorItem COPPER_LEGGINGS = register("copper_leggings", new MoreToolsAndArmorArmorItem(ArmorMaterialInit.COPPER, EquipmentType.LEGGINGS,
             new Item.Settings().registryKey(COPPER_LEGGINGS_k)));
     private static final RegistryKey<Item> COPPER_BOOTS_k = RegistryKey.of(RegistryKeys.ITEM, MoreToolsAndArmor.id("copper_boots"));
-    public static final ArmorItem COPPER_BOOTS = register("copper_boots", new ArmorItem(ArmorMaterialInit.COPPER, EquipmentType.BOOTS,
+    public static final MoreToolsAndArmorArmorItem COPPER_BOOTS = register("copper_boots", new MoreToolsAndArmorArmorItem(ArmorMaterialInit.COPPER, EquipmentType.BOOTS,
             new Item.Settings().registryKey(COPPER_BOOTS_k)));
 
 //Emerald
@@ -160,16 +161,16 @@ private static final RegistryKey<Item> EMERALD_SWORD_k = RegistryKey.of(Registry
     public static final HoeItem EMERALD_HOE = register("emerald_hoe", new HoeItem(ToolMaterials.EMERALD.getMaterial(),-1, -0,
             new Item.Settings().registryKey(EMERALD_HOE_k)));
     private static final RegistryKey<Item> EMERALD_HELMET_k = RegistryKey.of(RegistryKeys.ITEM, MoreToolsAndArmor.id("emerald_helmet"));
-    public static final ArmorItem EMERALD_HELMET = register("emerald_helmet", new ArmorItem(ArmorMaterialInit.EMERALD, EquipmentType.HELMET,
+    public static final MoreToolsAndArmorArmorItem EMERALD_HELMET = register("emerald_helmet", new MoreToolsAndArmorArmorItem(ArmorMaterialInit.EMERALD, EquipmentType.HELMET,
             new Item.Settings().registryKey(EMERALD_HELMET_k)));
     private static final RegistryKey<Item> EMERALD_CHESTPLATE_k = RegistryKey.of(RegistryKeys.ITEM, MoreToolsAndArmor.id("emerald_chestplate"));
-    public static final ArmorItem EMERALD_CHESTPLATE = register("emerald_chestplate", new ArmorItem(ArmorMaterialInit.EMERALD, EquipmentType.CHESTPLATE,
+    public static final MoreToolsAndArmorArmorItem EMERALD_CHESTPLATE = register("emerald_chestplate", new MoreToolsAndArmorArmorItem(ArmorMaterialInit.EMERALD, EquipmentType.CHESTPLATE,
             new Item.Settings().registryKey(EMERALD_CHESTPLATE_k)));
     private static final RegistryKey<Item> EMERALD_LEGGINGS_k = RegistryKey.of(RegistryKeys.ITEM, MoreToolsAndArmor.id("emerald_leggings"));
-    public static final ArmorItem EMERALD_LEGGINGS = register("emerald_leggings", new ArmorItem(ArmorMaterialInit.EMERALD, EquipmentType.LEGGINGS,
+    public static final MoreToolsAndArmorArmorItem EMERALD_LEGGINGS = register("emerald_leggings", new MoreToolsAndArmorArmorItem(ArmorMaterialInit.EMERALD, EquipmentType.LEGGINGS,
             new Item.Settings().registryKey(EMERALD_LEGGINGS_k)));
     private static final RegistryKey<Item> EMERALD_BOOTS_k = RegistryKey.of(RegistryKeys.ITEM, MoreToolsAndArmor.id("emerald_boots"));
-    public static final ArmorItem EMERALD_BOOTS = register("emerald_boots", new ArmorItem(ArmorMaterialInit.EMERALD, EquipmentType.BOOTS,
+    public static final MoreToolsAndArmorArmorItem EMERALD_BOOTS = register("emerald_boots", new MoreToolsAndArmorArmorItem(ArmorMaterialInit.EMERALD, EquipmentType.BOOTS,
             new Item.Settings().registryKey(EMERALD_BOOTS_k)));
 
 //Obsidian
@@ -189,16 +190,16 @@ private static final RegistryKey<Item> OBSIDIAN_SWORD_k = RegistryKey.of(Registr
     public static final HoeItem OBSIDIAN_HOE = register("obsidian_hoe", new HoeItem(ToolMaterials.OBSIDIAN.getMaterial(), 0, -0,
             new Item.Settings().registryKey(OBSIDIAN_HOE_k)));
     private static final RegistryKey<Item> OBSIDIAN_HELMET_k = RegistryKey.of(RegistryKeys.ITEM, MoreToolsAndArmor.id("obsidian_helmet"));
-    public static final ArmorItem OBSIDIAN_HELMET = register("obsidian_helmet", new ArmorItem(ArmorMaterialInit.OBSIDIAN, EquipmentType.HELMET,
+    public static final MoreToolsAndArmorArmorItem OBSIDIAN_HELMET = register("obsidian_helmet", new MoreToolsAndArmorArmorItem(ArmorMaterialInit.OBSIDIAN, EquipmentType.HELMET,
             new Item.Settings().registryKey(OBSIDIAN_HELMET_k)));
     private static final RegistryKey<Item> OBSIDIAN_CHESTPLATE_k = RegistryKey.of(RegistryKeys.ITEM, MoreToolsAndArmor.id("obsidian_chestplate"));
-    public static final ArmorItem OBSIDIAN_CHESTPLATE = register("obsidian_chestplate", new ArmorItem(ArmorMaterialInit.OBSIDIAN, EquipmentType.CHESTPLATE,
+    public static final MoreToolsAndArmorArmorItem OBSIDIAN_CHESTPLATE = register("obsidian_chestplate", new MoreToolsAndArmorArmorItem(ArmorMaterialInit.OBSIDIAN, EquipmentType.CHESTPLATE,
             new Item.Settings().registryKey(OBSIDIAN_CHESTPLATE_k)));
     private static final RegistryKey<Item> OBSIDIAN_LEGGINGS_k = RegistryKey.of(RegistryKeys.ITEM, MoreToolsAndArmor.id("obsidian_leggings"));
-    public static final ArmorItem OBSIDIAN_LEGGINGS = register("obsidian_leggings", new ArmorItem(ArmorMaterialInit.OBSIDIAN, EquipmentType.LEGGINGS,
+    public static final MoreToolsAndArmorArmorItem OBSIDIAN_LEGGINGS = register("obsidian_leggings", new MoreToolsAndArmorArmorItem(ArmorMaterialInit.OBSIDIAN, EquipmentType.LEGGINGS,
             new Item.Settings().registryKey(OBSIDIAN_LEGGINGS_k)));
     private static final RegistryKey<Item> OBSIDIAN_BOOTS_k = RegistryKey.of(RegistryKeys.ITEM, MoreToolsAndArmor.id("obsidian_boots"));
-    public static final ArmorItem OBSIDIAN_BOOTS = register("obsidian_boots", new ArmorItem(ArmorMaterialInit.OBSIDIAN, EquipmentType.BOOTS,
+    public static final MoreToolsAndArmorArmorItem OBSIDIAN_BOOTS = register("obsidian_boots", new MoreToolsAndArmorArmorItem(ArmorMaterialInit.OBSIDIAN, EquipmentType.BOOTS,
             new Item.Settings().registryKey(OBSIDIAN_BOOTS_k)));
 
 //Deepslate Emerald
@@ -218,16 +219,16 @@ private static final RegistryKey<Item> DEEPSLATE_EMERALD_SWORD_k = RegistryKey.o
     public static final HoeItem DEEPSLATE_EMERALD_HOE = register("deepslate_emerald_hoe", new HoeItem(ToolMaterials.DEEPSLATE_EMERALD.getMaterial(),1, 1,
             new Item.Settings().fireproof().rarity(Rarity.EPIC).registryKey(DEEPSLATE_EMERALD_HOE_k)));
     private static final RegistryKey<Item> DEEPSLATE_EMERALD_HELMET_k = RegistryKey.of(RegistryKeys.ITEM, MoreToolsAndArmor.id("deepslate_emerald_helmet"));
-    public static final ArmorItem DEEPSLATE_EMERALD_HELMET = register("deepslate_emerald_helmet", new ArmorItem(ArmorMaterialInit.DEEPSLATE_EMERALD, EquipmentType.HELMET,
+    public static final MoreToolsAndArmorArmorItem DEEPSLATE_EMERALD_HELMET = register("deepslate_emerald_helmet", new MoreToolsAndArmorArmorItem(ArmorMaterialInit.DEEPSLATE_EMERALD, EquipmentType.HELMET,
             new Item.Settings().fireproof().rarity(Rarity.EPIC).registryKey(DEEPSLATE_EMERALD_HELMET_k)));
     private static final RegistryKey<Item> DEEPSLATE_EMERALD_CHESTPLATE_k = RegistryKey.of(RegistryKeys.ITEM, MoreToolsAndArmor.id("deepslate_emerald_chestplate"));
-    public static final ArmorItem DEEPSLATE_EMERALD_CHESTPLATE = register("deepslate_emerald_chestplate", new ArmorItem(ArmorMaterialInit.DEEPSLATE_EMERALD, EquipmentType.CHESTPLATE,
+    public static final MoreToolsAndArmorArmorItem DEEPSLATE_EMERALD_CHESTPLATE = register("deepslate_emerald_chestplate", new MoreToolsAndArmorArmorItem(ArmorMaterialInit.DEEPSLATE_EMERALD, EquipmentType.CHESTPLATE,
             new Item.Settings().fireproof().rarity(Rarity.EPIC).registryKey(DEEPSLATE_EMERALD_CHESTPLATE_k)));
     private static final RegistryKey<Item> DEEPSLATE_EMERALD_LEGGINGS_k = RegistryKey.of(RegistryKeys.ITEM, MoreToolsAndArmor.id("deepslate_emerald_leggings"));
-    public static final ArmorItem DEEPSLATE_EMERALD_LEGGINGS = register("deepslate_emerald_leggings", new ArmorItem(ArmorMaterialInit.DEEPSLATE_EMERALD, EquipmentType.LEGGINGS,
+    public static final MoreToolsAndArmorArmorItem DEEPSLATE_EMERALD_LEGGINGS = register("deepslate_emerald_leggings", new MoreToolsAndArmorArmorItem(ArmorMaterialInit.DEEPSLATE_EMERALD, EquipmentType.LEGGINGS,
             new Item.Settings().fireproof().rarity(Rarity.EPIC).registryKey(DEEPSLATE_EMERALD_LEGGINGS_k)));
     private static final RegistryKey<Item> DEEPSLATE_EMERALD_BOOTS_k = RegistryKey.of(RegistryKeys.ITEM, MoreToolsAndArmor.id("deepslate_emerald_boots"));
-    public static final ArmorItem DEEPSLATE_EMERALD_BOOTS = register("deepslate_emerald_boots", new ArmorItem(ArmorMaterialInit.DEEPSLATE_EMERALD, EquipmentType.BOOTS,
+    public static final MoreToolsAndArmorArmorItem DEEPSLATE_EMERALD_BOOTS = register("deepslate_emerald_boots", new MoreToolsAndArmorArmorItem(ArmorMaterialInit.DEEPSLATE_EMERALD, EquipmentType.BOOTS,
             new Item.Settings().fireproof().rarity(Rarity.EPIC).registryKey(DEEPSLATE_EMERALD_BOOTS_k)));
 
 
@@ -248,16 +249,16 @@ private static final RegistryKey<Item> DEEPSLATE_EMERALD_SWORD_k = RegistryKey.o
     public static final HoeItem END_DIAMOND_HOE = register("end_diamond_hoe", new HoeItem(ToolMaterials.END_DIAMOND.getMaterial(),2, 2,
             new Item.Settings().fireproof().rarity(Rarity.EPIC).registryKey(END_DIAMOND_HOE_k)));
     private static final RegistryKey<Item> END_DIAMOND_HELMET_k = RegistryKey.of(RegistryKeys.ITEM, MoreToolsAndArmor.id("end_diamond_helmet"));
-    public static final ArmorItem END_DIAMOND_HELMET = register("end_diamond_helmet", new ArmorItem(ArmorMaterialInit.END_DIAMOND, EquipmentType.HELMET,
+    public static final MoreToolsAndArmorArmorItem END_DIAMOND_HELMET = register("end_diamond_helmet", new MoreToolsAndArmorArmorItem(ArmorMaterialInit.END_DIAMOND, EquipmentType.HELMET,
             new Item.Settings().fireproof().rarity(Rarity.EPIC).registryKey(END_DIAMOND_HELMET_k)));
     private static final RegistryKey<Item> END_DIAMOND_CHESTPLATE_k = RegistryKey.of(RegistryKeys.ITEM, MoreToolsAndArmor.id("end_diamond_chestplate"));
-    public static final ArmorItem END_DIAMOND_CHESTPLATE = register("end_diamond_chestplate", new ArmorItem(ArmorMaterialInit.END_DIAMOND, EquipmentType.CHESTPLATE,
+    public static final MoreToolsAndArmorArmorItem END_DIAMOND_CHESTPLATE = register("end_diamond_chestplate", new MoreToolsAndArmorArmorItem(ArmorMaterialInit.END_DIAMOND, EquipmentType.CHESTPLATE,
             new Item.Settings().fireproof().rarity(Rarity.EPIC).registryKey(END_DIAMOND_CHESTPLATE_k)));
     private static final RegistryKey<Item> END_DIAMOND_LEGGINGS_k = RegistryKey.of(RegistryKeys.ITEM, MoreToolsAndArmor.id("end_diamond_leggings"));
-    public static final ArmorItem END_DIAMOND_LEGGINGS = register("end_diamond_leggings", new ArmorItem(ArmorMaterialInit.END_DIAMOND, EquipmentType.LEGGINGS,
+    public static final MoreToolsAndArmorArmorItem END_DIAMOND_LEGGINGS = register("end_diamond_leggings", new MoreToolsAndArmorArmorItem(ArmorMaterialInit.END_DIAMOND, EquipmentType.LEGGINGS,
             new Item.Settings().fireproof().rarity(Rarity.EPIC).registryKey(END_DIAMOND_LEGGINGS_k)));
     private static final RegistryKey<Item> END_DIAMOND_BOOTS_k = RegistryKey.of(RegistryKeys.ITEM, MoreToolsAndArmor.id("end_diamond_boots"));
-    public static final ArmorItem END_DIAMOND_BOOTS = register("end_diamond_boots", new ArmorItem(ArmorMaterialInit.END_DIAMOND, EquipmentType.BOOTS,
+    public static final MoreToolsAndArmorArmorItem END_DIAMOND_BOOTS = register("end_diamond_boots", new MoreToolsAndArmorArmorItem(ArmorMaterialInit.END_DIAMOND, EquipmentType.BOOTS,
             new Item.Settings().fireproof().rarity(Rarity.EPIC).registryKey(END_DIAMOND_BOOTS_k)));
 
 
@@ -278,16 +279,16 @@ private static final RegistryKey<Item> DEEPSLATE_EMERALD_SWORD_k = RegistryKey.o
     public static final HoeItem VOID_HOE = register("void_hoe", new HoeItem(ToolMaterials.VOID.getMaterial(),3, 3,
             new Item.Settings().fireproof().rarity(Rarity.EPIC).registryKey(VOID_HOE_k)));
     private static final RegistryKey<Item> VOID_HELMET_k = RegistryKey.of(RegistryKeys.ITEM, MoreToolsAndArmor.id("void_helmet"));
-    public static final ArmorItem VOID_HELMET = register("void_helmet", new ArmorItem(ArmorMaterialInit.VOID, EquipmentType.HELMET,
+    public static final MoreToolsAndArmorArmorItem VOID_HELMET = register("void_helmet", new MoreToolsAndArmorArmorItem(ArmorMaterialInit.VOID, EquipmentType.HELMET,
             new Item.Settings().fireproof().rarity(Rarity.EPIC).registryKey(VOID_HELMET_k)));
     private static final RegistryKey<Item> VOID_CHESTPLATE_k = RegistryKey.of(RegistryKeys.ITEM, MoreToolsAndArmor.id("void_chestplate"));
-    public static final ArmorItem VOID_CHESTPLATE = register("void_chestplate", new ArmorItem(ArmorMaterialInit.VOID, EquipmentType.CHESTPLATE,
+    public static final MoreToolsAndArmorArmorItem VOID_CHESTPLATE = register("void_chestplate", new MoreToolsAndArmorArmorItem(ArmorMaterialInit.VOID, EquipmentType.CHESTPLATE,
             new Item.Settings().fireproof().rarity(Rarity.EPIC).registryKey(VOID_CHESTPLATE_k)));
     private static final RegistryKey<Item> VOID_LEGGINGS_k = RegistryKey.of(RegistryKeys.ITEM, MoreToolsAndArmor.id("void_leggings"));
-    public static final ArmorItem VOID_LEGGINGS = register("void_leggings", new ArmorItem(ArmorMaterialInit.VOID, EquipmentType.LEGGINGS,
+    public static final MoreToolsAndArmorArmorItem VOID_LEGGINGS = register("void_leggings", new MoreToolsAndArmorArmorItem(ArmorMaterialInit.VOID, EquipmentType.LEGGINGS,
             new Item.Settings().fireproof().rarity(Rarity.EPIC).registryKey(VOID_LEGGINGS_k)));
     private static final RegistryKey<Item> VOID_BOOTS_k = RegistryKey.of(RegistryKeys.ITEM, MoreToolsAndArmor.id("void_boots"));
-    public static final ArmorItem VOID_BOOTS = register("void_boots", new ArmorItem(ArmorMaterialInit.VOID, EquipmentType.BOOTS,
+    public static final MoreToolsAndArmorArmorItem VOID_BOOTS = register("void_boots", new MoreToolsAndArmorArmorItem(ArmorMaterialInit.VOID, EquipmentType.BOOTS,
             new Item.Settings().fireproof().rarity(Rarity.EPIC).registryKey(VOID_BOOTS_k)));
 
     private static final RegistryKey<Item> ONETHDENDERITE_SWORD_k = RegistryKey.of(RegistryKeys.ITEM, MoreToolsAndArmor.id("onethdenderite_sword"));
@@ -306,16 +307,16 @@ private static final RegistryKey<Item> DEEPSLATE_EMERALD_SWORD_k = RegistryKey.o
     public static final HoeItem ONETHDENDERITE_HOE = register("onethdenderite_hoe", new HoeItem(ToolMaterials.ONETHDENDERITE.getMaterial(),8, 3.2F,
             new Item.Settings().fireproof().rarity(Rarity.EPIC).registryKey(ONETHDENDERITE_HOE_k)));
     private static final RegistryKey<Item> ONETHDENDERITE_HELMET_k = RegistryKey.of(RegistryKeys.ITEM, MoreToolsAndArmor.id("onethdenderite_helmet"));
-    public static final ArmorItem ONETHDENDERITE_HELMET = register("onethdenderite_helmet", new ArmorItem(ArmorMaterialInit.ONETHDENDERITE, EquipmentType.HELMET,
+    public static final MoreToolsAndArmorArmorItem ONETHDENDERITE_HELMET = register("onethdenderite_helmet", new MoreToolsAndArmorArmorItem(ArmorMaterialInit.ONETHDENDERITE, EquipmentType.HELMET,
             new Item.Settings().fireproof().rarity(Rarity.EPIC).registryKey(ONETHDENDERITE_HELMET_k)));
     private static final RegistryKey<Item> ONETHDENDERITE_CHESTPLATE_k = RegistryKey.of(RegistryKeys.ITEM, MoreToolsAndArmor.id("onethdenderite_chestplate"));
-    public static final ArmorItem ONETHDENDERITE_CHESTPLATE = register("onethdenderite_chestplate", new ArmorItem(ArmorMaterialInit.ONETHDENDERITE, EquipmentType.CHESTPLATE,
+    public static final MoreToolsAndArmorArmorItem ONETHDENDERITE_CHESTPLATE = register("onethdenderite_chestplate", new MoreToolsAndArmorArmorItem(ArmorMaterialInit.ONETHDENDERITE, EquipmentType.CHESTPLATE,
             new Item.Settings().fireproof().rarity(Rarity.EPIC).registryKey(ONETHDENDERITE_CHESTPLATE_k)));
     private static final RegistryKey<Item> ONETHDENDERITE_LEGGINGS_k = RegistryKey.of(RegistryKeys.ITEM, MoreToolsAndArmor.id("onethdenderite_leggings"));
-    public static final ArmorItem ONETHDENDERITE_LEGGINGS = register("onethdenderite_leggings", new ArmorItem(ArmorMaterialInit.ONETHDENDERITE, EquipmentType.LEGGINGS,
+    public static final MoreToolsAndArmorArmorItem ONETHDENDERITE_LEGGINGS = register("onethdenderite_leggings", new MoreToolsAndArmorArmorItem(ArmorMaterialInit.ONETHDENDERITE, EquipmentType.LEGGINGS,
             new Item.Settings().fireproof().rarity(Rarity.EPIC).registryKey(ONETHDENDERITE_LEGGINGS_k)));
     private static final RegistryKey<Item> ONETHDENDERITE_BOOTS_k = RegistryKey.of(RegistryKeys.ITEM, MoreToolsAndArmor.id("onethdenderite_boots"));
-    public static final ArmorItem ONETHDENDERITE_BOOTS = register("onethdenderite_boots", new ArmorItem(ArmorMaterialInit.ONETHDENDERITE, EquipmentType.BOOTS,
+    public static final MoreToolsAndArmorArmorItem ONETHDENDERITE_BOOTS = register("onethdenderite_boots", new MoreToolsAndArmorArmorItem(ArmorMaterialInit.ONETHDENDERITE, EquipmentType.BOOTS,
             new Item.Settings().fireproof().rarity(Rarity.EPIC).registryKey(ONETHDENDERITE_BOOTS_k)));
 
     //OLED
@@ -329,13 +330,13 @@ private static final RegistryKey<Item> DEEPSLATE_EMERALD_SWORD_k = RegistryKey.o
             .fireproof().rarity(Rarity.EPIC).registryKey(key("oled_shovel"))));
     public static final HoeItem OLED_HOE = register("oled_hoe", new HoeItem(ToolMaterials.OLED.getMaterial(), 50, 50,new Item.Settings()
             .fireproof().rarity(Rarity.EPIC).registryKey(key("oled_hoe"))));
-    public static final ArmorItem OLED_HELMET = register("oled_helmet", new ArmorItem(ArmorMaterialInit.OLED, EquipmentType.HELMET, new Item.Settings()
+    public static final MoreToolsAndArmorArmorItem OLED_HELMET = register("oled_helmet", new MoreToolsAndArmorArmorItem(ArmorMaterialInit.OLED, EquipmentType.HELMET, new Item.Settings()
             .fireproof().rarity(Rarity.EPIC).registryKey(key("oled_helmet"))));
-    public static final ArmorItem OLED_CHESTPLATE = register("oled_chestplate", new ArmorItem(ArmorMaterialInit.OLED, EquipmentType.CHESTPLATE, new Item.Settings()
+    public static final MoreToolsAndArmorArmorItem OLED_CHESTPLATE = register("oled_chestplate", new MoreToolsAndArmorArmorItem(ArmorMaterialInit.OLED, EquipmentType.CHESTPLATE, new Item.Settings()
             .fireproof().rarity(Rarity.EPIC).registryKey(key("oled_chestplate"))));
-    public static final ArmorItem OLED_LEGGINGS = register("oled_leggings", new ArmorItem(ArmorMaterialInit.OLED, EquipmentType.LEGGINGS, new Item.Settings()
+    public static final MoreToolsAndArmorArmorItem OLED_LEGGINGS = register("oled_leggings", new MoreToolsAndArmorArmorItem(ArmorMaterialInit.OLED, EquipmentType.LEGGINGS, new Item.Settings()
             .fireproof().rarity(Rarity.EPIC).registryKey(key("oled_leggings"))));
-    public static final ArmorItem OLED_BOOTS = register("oled_boots", new ArmorItem(ArmorMaterialInit.OLED, EquipmentType.BOOTS, new Item.Settings()
+    public static final MoreToolsAndArmorArmorItem OLED_BOOTS = register("oled_boots", new MoreToolsAndArmorArmorItem(ArmorMaterialInit.OLED, EquipmentType.BOOTS, new Item.Settings()
             .fireproof().rarity(Rarity.EPIC).registryKey(key("oled_boots"))));
 
 
