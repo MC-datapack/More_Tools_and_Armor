@@ -19,7 +19,7 @@
 	  	]
 	},
   "mixins": [
-	"mixins.more_tools_and_armor-abilities.json"
+	"mixins.more_tools_and_armor.json"
   ],
 	"depends": {
 		"fabricloader": ">=0.16.2",

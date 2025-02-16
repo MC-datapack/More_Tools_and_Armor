@@ -1,0 +1,15 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "github.mcdatapack.more_tools_and_armor.mixns",
+  "compatibilityLevel": "JAVA_21",
+  "mixins": [
+	"ability.EndermanEntityMixin",
+	"ability.PiglinBrainMixin",
+	"ability.TargetPredicateMixin",
+	"ToolTipHandler"
+  ],
+  "injectors": {
+	"defaultRequire": 1
+  }
+}
