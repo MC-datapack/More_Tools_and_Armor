@@ -1,4 +1,10 @@
 {
+  "more_tools_and_armor.tooltip.piglin_save": "§2Piglin Save",
+  "more_tools_and_armor.tooltip.enderman_save": "§2Allows the Player to look into the eyes of a Enderman without being attacked",
+  "more_tools_and_armor.tooltip.piglin_passive": "§2Piglins do not attack the player even if the Player Punches the Piglin",
+  "more_tools_and_armor.tooltip.enderman_passive": "§2Enderman do not attack the player even if the Player Punches the Enderman",
+  "more_tools_and_armor.tooltip.iron_golem_passive": "§2Iron Golems do not attack the player even if the Player Punches the Iron Golem",
+
   "itemGroup.more_tools_and_armor.more_tools_and_armor_group": "More Tools and Armor",
   "block.more_tools_and_armor.end_coal_ore": "End Coal Ore",
   "block.more_tools_and_armor.end_copper_ore": "End Copper Ore",
