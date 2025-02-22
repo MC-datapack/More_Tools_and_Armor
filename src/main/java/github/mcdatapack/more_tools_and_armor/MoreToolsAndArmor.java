@@ -1,5 +1,6 @@
 package github.mcdatapack.more_tools_and_armor;
 
+import github.mcdatapack.more_tools_and_armor.config.MoreToolsAndArmorConfig;
 import github.mcdatapack.more_tools_and_armor.init.*;
 import github.mcdatapack.more_tools_and_armor.init.worldgen.BiomeModificationInit;
 import net.fabricmc.api.ModInitializer;
@@ -28,6 +29,7 @@ public class MoreToolsAndArmor implements ModInitializer {
 	@Override
 	public void onInitialize() {
 		LOGGER.info("Loading More Tools and Armor");
+		MoreToolsAndArmorConfig.register();
 		ItemInit.load();
 		BlockInit.load();
 		ItemGroupInit.load();
