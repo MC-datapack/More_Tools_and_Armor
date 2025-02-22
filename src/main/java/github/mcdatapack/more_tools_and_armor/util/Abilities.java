@@ -14,7 +14,7 @@ public class Abilities {
             return false;
         for (ItemStack itemStack : player.getArmorItems()) {
             if (itemStack.getItem() instanceof ArmorItem item) {
-                if (MoreToolsAndArmorConfig.getConfig().endermanSave.getMaterials().contains(item.getMaterial())) {
+                if (MoreToolsAndArmorConfig.getConfig().endermanSave.containsMaterial(item.getMaterial())) {
                     return true;
                 }
             }
@@ -41,7 +41,7 @@ public class Abilities {
             return false;
         for (ItemStack itemStack : player.getArmorItems()) {
             if (itemStack.getItem() instanceof ArmorItem item) {
-                if (MoreToolsAndArmorConfig.getConfig().piglinPassive.getMaterials().contains(item.getMaterial())) {
+                if (MoreToolsAndArmorConfig.getConfig().piglinPassive.containsMaterial(item.getMaterial())) {
                     return true;
                 }
             }
@@ -53,7 +53,7 @@ public class Abilities {
             return false;
         for (ItemStack itemStack : player.getArmorItems()) {
             if (itemStack.getItem() instanceof ArmorItem item) {
-                if (MoreToolsAndArmorConfig.getConfig().ironGolemPassive.getMaterials().contains(item.getMaterial())) {
+                if (MoreToolsAndArmorConfig.getConfig().ironGolemPassive.containsMaterial(item.getMaterial())) {
                     return true;
                 }
             }
@@ -65,7 +65,7 @@ public class Abilities {
             return false;
         for (ItemStack itemStack : player.getArmorItems()) {
             if (itemStack.getItem() instanceof ArmorItem item) {
-                if (MoreToolsAndArmorConfig.getConfig().endermanPassive.getMaterials().contains(item.getMaterial())) {
+                if (MoreToolsAndArmorConfig.getConfig().endermanPassive.containsMaterial(item.getMaterial())) {
                     return true;
                 }
             }
@@ -78,7 +78,7 @@ public class Abilities {
             return false;
         for (ItemStack itemStack : entity.getArmorItems()) {
             if (itemStack.getItem() instanceof ArmorItem item) {
-                if (MoreToolsAndArmorConfig.getConfig().powderSnowWalk.getMaterials().contains(item.getMaterial())) {
+                if (MoreToolsAndArmorConfig.getConfig().powderSnowWalk.containsMaterial(item.getMaterial())) {
                     return true;
                 }
             }
@@ -91,7 +91,7 @@ public class Abilities {
             return false;
         for (ItemStack itemStack : player.getArmorItems()) {
             if (itemStack.getItem() instanceof ArmorItem item) {
-                if (MoreToolsAndArmorConfig.getConfig().statusEffectImmune.getMaterials().contains(item.getMaterial())) {
+                if (MoreToolsAndArmorConfig.getConfig().statusEffectImmune.containsMaterial(item.getMaterial())) {
                     return true;
                 }
             }

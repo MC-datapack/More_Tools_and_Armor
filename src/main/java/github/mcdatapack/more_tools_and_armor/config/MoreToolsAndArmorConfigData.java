@@ -1,11 +1,14 @@
 package github.mcdatapack.more_tools_and_armor.config;
 
+import github.mcdatapack.more_tools_and_armor.MoreToolsAndArmor;
 import me.shedaniel.autoconfig.ConfigData;
 import me.shedaniel.autoconfig.annotation.Config;
 import me.shedaniel.autoconfig.annotation.ConfigEntry;
 import me.shedaniel.cloth.clothconfig.shadowed.blue.endless.jankson.Comment;
 import net.minecraft.item.ArmorMaterial;
 import net.minecraft.registry.Registries;
+import net.minecraft.registry.RegistryKey;
+import net.minecraft.registry.RegistryKeys;
 import net.minecraft.registry.entry.RegistryEntry;
 import net.minecraft.util.Identifier;
 
@@ -65,6 +68,15 @@ public class MoreToolsAndArmorConfigData implements ConfigData {
         public boolean isInMaterials(RegistryEntry<ArmorMaterial> material) {
             for (String s : materials) {
                 if (Registries.ARMOR_MATERIAL.get(Identifier.of(s)) == material.value()) {
+                    return true;
+                }
+            }
+            return false;
+        }
+
+        public boolean containsMaterial(RegistryEntry<ArmorMaterial> material) {
+            for (String string : materials) {
+                if (Objects.equals(Registries.ARMOR_MATERIAL.get(Identifier.of(string)), material.value())) {
                     return true;
                 }
             }
