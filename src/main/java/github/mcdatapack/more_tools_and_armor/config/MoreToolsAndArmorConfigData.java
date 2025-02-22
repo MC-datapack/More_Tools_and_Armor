@@ -44,21 +44,21 @@ public class MoreToolsAndArmorConfigData implements ConfigData {
             for (RegistryEntry<ArmorMaterial> material : materials) {
                 temp.add(Objects.requireNonNull(Registries.ARMOR_MATERIAL.getId(material.value())).toString());
             }
-            this.materials = temp.toArray(new String[0]);
+            this.materials = temp;
         }
 
         @ConfigEntry.Gui.TransitiveObject
         public boolean activated;
 
         @ConfigEntry.Gui.NoTooltip
-        public String[] materials;
+        public List<String> materials;
 
-        public ArmorMaterial[] getMaterials() {
-            List<ArmorMaterial> temp = new ArrayList<>();
+        public List<RegistryEntry<ArmorMaterial>> getMaterials() {
+            List<RegistryEntry<ArmorMaterial>> temp = new ArrayList<>();
             for (String s : materials) {
-                temp.add(Registries.ARMOR_MATERIAL.get(Identifier.of(s)));
+                temp.add(Registries.ARMOR_MATERIAL.getEntry(Identifier.of(s)).get());
             }
-            return temp.toArray(new ArmorMaterial[0]);
+            return temp;
         }
 
         public boolean isInMaterials(RegistryEntry<ArmorMaterial> material) {
