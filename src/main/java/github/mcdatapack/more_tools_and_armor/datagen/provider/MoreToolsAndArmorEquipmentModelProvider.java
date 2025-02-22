@@ -21,7 +21,7 @@ public class MoreToolsAndArmorEquipmentModelProvider extends EquipmentModelProvi
     }
     @Override
     public CompletableFuture<?> run(DataWriter writer) {
-        Map<Identifier, EquipmentModel> map = new HashMap();
+        Map<Identifier, EquipmentModel> map = new HashMap<>();
         CustomEquipmentModels.accept((id, model) -> {
             if (map.putIfAbsent(id, model) != null) {
                 throw new IllegalStateException("Tried to register equipment model twice for id: " + id);

@@ -4,6 +4,8 @@
   "more_tools_and_armor.tooltip.piglin_passive": "§2Piglins do not attack the player even if the Player Punches the Piglin",
   "more_tools_and_armor.tooltip.enderman_passive": "§2Enderman do not attack the player even if the Player Punches the Enderman",
   "more_tools_and_armor.tooltip.iron_golem_passive": "§2Iron Golems do not attack the player even if the Player Punches the Iron Golem",
+  "more_tools_and_armor.tooltip.powder_snow_walk": "§2Allows the player to walk on Powder Snow",
+  "more_tools_and_armor.tooltip.status_effect_immune": "§2No harmful Status Effects can be applied",
 
   "itemGroup.more_tools_and_armor.more_tools_and_armor_group": "More Tools and Armor",
   "block.more_tools_and_armor.end_coal_ore": "End Coal Ore",
@@ -233,5 +235,24 @@
   "advancement.title.onethdenderite/tool": "§2O§4neth§5d§eend§8erite§5 Tools",
   "advancement.description.onethdenderite/tool": "Obtain an §2O§4neth§5d§eend§8erite§5 Pickaxe and an §2O§4neth§5d§eend§8erite§5 Shovel and an §2O§4neth§5d§eend§8erite§5 Hoe",
   "advancement.title.onethdenderite/armor": "§2O§4neth§5d§eend§8erite§5 Armor",
-  "advancement.description.onethdenderite/armor": "Obtain an full set of §2O§4neth§5d§eend§8erite§5 Armor"
+  "advancement.description.onethdenderite/armor": "Obtain an full set of §2O§4neth§5d§eend§8erite§5 Armor",
+
+  "text.autoconfig.more_tools_and_armor.option.endermanSave": "Ability: §2Allows the Player to look into the eyes of a Enderman without being attacked",
+  "text.autoconfig.more_tools_and_armor.option.endermanSave.activated": "Activated",
+  "text.autoconfig.more_tools_and_armor.option.endermanSave.materials": "Materials",
+  "text.autoconfig.more_tools_and_armor.option.powderSnowWalk": "Ability: §2Allows the player to walk on Powder Snow",
+  "text.autoconfig.more_tools_and_armor.option.powderSnowWalk.activated": "Activated",
+  "text.autoconfig.more_tools_and_armor.option.powderSnowWalk.materials": "Materials",
+  "text.autoconfig.more_tools_and_armor.option.piglinPassive": "Ability: §2Piglins do not attack the player even if the Player Punches the Piglin",
+  "text.autoconfig.more_tools_and_armor.option.piglinPassive.activated": "Activated",
+  "text.autoconfig.more_tools_and_armor.option.piglinPassive.materials": "Materials",
+  "text.autoconfig.more_tools_and_armor.option.ironGolemPassive": "Ability: §2Iron Golems do not attack the player even if the Player Punches the Iron Golem",
+  "text.autoconfig.more_tools_and_armor.option.ironGolemPassive.activated": "Activated",
+  "text.autoconfig.more_tools_and_armor.option.ironGolemPassive.materials": "Materials",
+  "text.autoconfig.more_tools_and_armor.option.endermanPassive": "Ability: §2Enderman do not attack the player even if the Player Punches the Enderman",
+  "text.autoconfig.more_tools_and_armor.option.endermanPassive.activated": "Activated",
+  "text.autoconfig.more_tools_and_armor.option.endermanPassive.materials": "Materials",
+  "text.autoconfig.more_tools_and_armor.option.statusEffectImmune": "Ability: §2No harmful Status Effects can be applied",
+  "text.autoconfig.more_tools_and_armor.option.statusEffectImmune.activated": "Activated",
+  "text.autoconfig.more_tools_and_armor.option.statusEffectImmune.materials": "Materials"
 }
