@@ -6,7 +6,6 @@
   "mixins": [
 	"ToolTipHandler",
 	"ability.EndermanEntityMixin",
-	"ability.HuskEntityMixin",
 	"ability.PiglinBrainMixin",
 	"ability.PlayerEntityMixin",
 	"ability.PowderSnowBlockMixin",
