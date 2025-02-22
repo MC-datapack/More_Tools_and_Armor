@@ -27,7 +27,9 @@
 	"depends": {
 		"fabricloader": ">=0.16.2",
 		"java": ">=21",
-		"fabric-api": "*"
+		"fabric-api": "*",
+	  	"cloth-config": "*",
+	  	"modmenu": "*"
 	},
 	"contact": {
 		"homepage": "https://modrinth.com/mod/more_tools_and_armor",
