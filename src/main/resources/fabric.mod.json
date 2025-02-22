@@ -16,7 +16,10 @@
 		],
 	  	"fabric-datagen": [
 			"github.mcdatapack.more_tools_and_armor.MoreToolsAndArmorDataGenerator"
-	  	]
+	  	],
+	  	"modmenu": [
+		  	"github.mcdatapack.more_tools_and_armor.config.ModMenuIntegration"
+		]
 	},
   "mixins": [
 	"mixins.more_tools_and_armor.json"

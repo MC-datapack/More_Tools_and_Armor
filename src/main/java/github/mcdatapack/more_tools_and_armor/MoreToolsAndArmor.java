@@ -1,11 +1,11 @@
 package github.mcdatapack.more_tools_and_armor;
 
+import github.mcdatapack.more_tools_and_armor.config.MoreToolsAndArmorConfig;
 import github.mcdatapack.more_tools_and_armor.init.*;
 import github.mcdatapack.more_tools_and_armor.init.worldgen.BiomeModificationInit;
 import net.fabricmc.api.ModInitializer;
 
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
-import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroups;
 import net.minecraft.item.Items;
 import net.minecraft.util.Identifier;
@@ -19,6 +19,7 @@ public class MoreToolsAndArmor implements ModInitializer {
 	@Override
 	public void onInitialize() {
 		LOGGER.info("Loading More Tools and Armor");
+		MoreToolsAndArmorConfig.register();
 		ItemInit.load();
 		BlockInit.load();
 		ItemGroupInit.load();
@@ -41,7 +42,6 @@ public class MoreToolsAndArmor implements ModInitializer {
 		ArmorMaterialInit.load();
 		BiomeModificationInit.load();
 		LOGGER.info("Loaded More Tools and Armor");
-
 	}
 
 	public static Identifier id(String path) {

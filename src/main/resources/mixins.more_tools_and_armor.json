@@ -4,10 +4,13 @@
   "package": "github.mcdatapack.more_tools_and_armor.mixns",
   "compatibilityLevel": "JAVA_21",
   "mixins": [
+	"ToolTipHandler",
 	"ability.EndermanEntityMixin",
+	"ability.HuskEntityMixin",
 	"ability.PiglinBrainMixin",
-	"ability.TargetPredicateMixin",
-	"ToolTipHandler"
+	"ability.PlayerEntityMixin",
+	"ability.PowderSnowBlockMixin",
+	"ability.TargetPredicateMixin"
   ],
   "injectors": {
 	"defaultRequire": 1
