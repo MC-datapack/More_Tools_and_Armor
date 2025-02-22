@@ -12,6 +12,7 @@ import net.minecraft.util.Identifier;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
+import java.util.Optional;
 
 import static github.mcdatapack.more_tools_and_armor.init.ArmorMaterialInit.*;
 
@@ -56,7 +57,7 @@ public class MoreToolsAndArmorConfigData implements ConfigData {
         public List<RegistryEntry<ArmorMaterial>> getMaterials() {
             List<RegistryEntry<ArmorMaterial>> temp = new ArrayList<>();
             for (String s : materials) {
-                temp.add(Registries.ARMOR_MATERIAL.getEntry(Identifier.of(s)).get());
+                temp.add(Registries.ARMOR_MATERIAL.getEntry(Registries.ARMOR_MATERIAL.get(Identifier.of(s))));
             }
             return temp;
         }
