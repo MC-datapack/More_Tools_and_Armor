@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_deepslate_emerald": {
+      "conditions": {
+        "items": [
+          {
+            "items": "more_tools_and_armor:deepslate_emerald"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "more_tools_and_armor:deepslate_emerald_boots_upgrade"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_deepslate_emerald"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "more_tools_and_armor:deepslate_emerald_boots_upgrade"
+    ]
+  }
+}

@@ -3,6 +3,7 @@ package github.mcdatapack.more_tools_and_armor.init;
 import github.mcdatapack.more_tools_and_armor.MoreToolsAndArmor;
 import github.mcdatapack.more_tools_and_armor.enums.ToolMaterials;
 import github.mcdatapack.more_tools_and_armor.item.*;
+import github.mcdatapack.more_tools_and_armor.list.FoodList;
 import net.minecraft.item.*;
 import net.minecraft.item.Item;
 import net.minecraft.registry.Registries;
@@ -10,6 +11,16 @@ import net.minecraft.registry.Registry;
 import net.minecraft.util.Rarity;
 
 public class ItemInit {
+    public static final HoneyBottleItem ANCIENT_HONEY_BOTTLE = register("ancient_honey_bottle", new HoneyBottleItem(new Item.Settings()
+            .recipeRemainder(Items.GLASS_BOTTLE)
+            .food(FoodList.ANCIENT_HONEY_BOTTLE)));
+    public static final Item BAT_WING = register("bat_wing", new Item(new Item.Settings()));
+    public static final Item ANCIENT_COIN = register("ancient_coin", new Item(new Item.Settings()));
+
+    public static final Item ANCIENT_INGOT = register("ancient_ingot", new Item(new Item.Settings().rarity(Rarity.EPIC).fireproof().maxCount(96)));
+    public static final Item ANCIENT_UPGRADE_SMITHING_TEMPLATE = register("ancient_upgrade_smithing_template", new Item(new Item.Settings().rarity(Rarity.EPIC).fireproof().maxCount(96)));
+
+
     public static final Item BUDDING_AMETHYST_CRYSTAL = register("budding_amethyst_crystal", new Item(new Item.Settings()));
     public static final Item DEEPSLATE_EMERALD = register("deepslate_emerald", new Item(new Item.Settings()
             .rarity(Rarity.EPIC).fireproof().maxCount(96)));
@@ -75,6 +86,9 @@ public class ItemInit {
             .fireproof().rarity(Rarity.EPIC)));
     public static final PaxelItem OLED_PAXEL = register("oled_paxel", new PaxelItem(ToolMaterials.OLED, new Item.Settings()
             .attributeModifiers(PaxelItem.createAttributeModifiers(ToolMaterials.OLED, 100, 0))
+            .fireproof().rarity(Rarity.EPIC)));
+    public static final PaxelItem ANCIENT_PAXEL = register("ancient_paxel", new PaxelItem(ToolMaterials.ANCIENT, new Item.Settings()
+            .attributeModifiers(PaxelItem.createAttributeModifiers(ToolMaterials.ANCIENT, 100, 0))
             .fireproof().rarity(Rarity.EPIC)));
 
 //Budding Amethyst
@@ -262,6 +276,32 @@ public class ItemInit {
             .maxDamage(ArmorItem.Type.LEGGINGS.getMaxDamage(3600)).fireproof().rarity(Rarity.EPIC)));
     public static final ArmorItem OLED_BOOTS = register("oled_boots", new ArmorItem(ArmorMaterialInit.OLED, ArmorItem.Type.BOOTS, new Item.Settings()
             .maxDamage(ArmorItem.Type.BOOTS.getMaxDamage(3600)).fireproof().rarity(Rarity.EPIC)));
+
+
+    //ANCIENT
+    public static final SwordItem ANCIENT_SWORD = register("ancient_sword", new SwordItem(ToolMaterials.ANCIENT, new Item.Settings()
+            .attributeModifiers(SwordItem.createAttributeModifiers(ToolMaterials.ANCIENT, 100, 0))
+            .fireproof().rarity(Rarity.EPIC)));
+    public static final AxeItem ANCIENT_AXE = register("ancient_axe", new AxeItem(ToolMaterials.ANCIENT, new Item.Settings()
+            .attributeModifiers(AxeItem.createAttributeModifiers(ToolMaterials.ANCIENT, 90, -1.1F))
+            .fireproof().rarity(Rarity.EPIC)));
+    public static final PickaxeItem ANCIENT_PICKAXE = register("ancient_pickaxe", new PickaxeItem(ToolMaterials.ANCIENT, new Item.Settings()
+            .attributeModifiers(PickaxeItem.createAttributeModifiers(ToolMaterials.ANCIENT, 70, -0.2F))
+            .fireproof().rarity(Rarity.EPIC)));
+    public static final ShovelItem ANCIENT_SHOVEL = register("ancient_shovel", new ShovelItem(ToolMaterials.ANCIENT, new Item.Settings()
+            .attributeModifiers(ShovelItem.createAttributeModifiers(ToolMaterials.ANCIENT, 80, -1.1F))
+            .fireproof().rarity(Rarity.EPIC)));
+    public static final HoeItem ANCIENT_HOE = register("ancient_hoe", new HoeItem(ToolMaterials.ANCIENT, new Item.Settings()
+            .attributeModifiers(HoeItem.createAttributeModifiers(ToolMaterials.ANCIENT, 50, 50))
+            .fireproof().rarity(Rarity.EPIC)));
+    public static final ArmorItem ANCIENT_HELMET = register("ancient_helmet", new ArmorItem(ArmorMaterialInit.ANCIENT, ArmorItem.Type.HELMET, new Item.Settings()
+            .maxDamage(ArmorItem.Type.HELMET.getMaxDamage(360000)).fireproof().rarity(Rarity.EPIC)));
+    public static final ArmorItem ANCIENT_CHESTPLATE = register("ancient_chestplate", new ArmorItem(ArmorMaterialInit.ANCIENT, ArmorItem.Type.CHESTPLATE, new Item.Settings()
+            .maxDamage(ArmorItem.Type.CHESTPLATE.getMaxDamage(360000)).fireproof().rarity(Rarity.EPIC)));
+    public static final ArmorItem ANCIENT_LEGGINGS = register("ancient_leggings", new ArmorItem(ArmorMaterialInit.ANCIENT, ArmorItem.Type.LEGGINGS, new Item.Settings()
+            .maxDamage(ArmorItem.Type.LEGGINGS.getMaxDamage(360000)).fireproof().rarity(Rarity.EPIC)));
+    public static final ArmorItem ANCIENT_BOOTS = register("ancient_boots", new ArmorItem(ArmorMaterialInit.ANCIENT, ArmorItem.Type.BOOTS, new Item.Settings()
+            .maxDamage(ArmorItem.Type.BOOTS.getMaxDamage(360000)).fireproof().rarity(Rarity.EPIC)));
 
 
     public static <T extends Item> T register(String name, T item) {

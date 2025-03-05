@@ -48,6 +48,10 @@ public enum ToolMaterials implements ToolMaterial {
     OLED(
              Integer.MAX_VALUE, 3141F, 1F, TagList.BlockTags.INCORRECT_FOR_OLED_TOOL, 100,
             Ingredient.ofItems(ItemInit.OLED_INGOT)
+    ),
+    ANCIENT(
+            Integer.MAX_VALUE + 1, 2712561F, 150F, TagList.BlockTags.INCORRECT_FOR_ANCIENT_TOOL, 100,
+            Ingredient.ofItems(ItemInit.ANCIENT_INGOT)
     );
 
     private final int durability;

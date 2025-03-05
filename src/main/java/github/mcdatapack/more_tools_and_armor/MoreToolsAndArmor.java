@@ -3,6 +3,7 @@ package github.mcdatapack.more_tools_and_armor;
 import github.mcdatapack.more_tools_and_armor.config.MoreToolsAndArmorConfig;
 import github.mcdatapack.more_tools_and_armor.init.*;
 import github.mcdatapack.more_tools_and_armor.init.worldgen.BiomeModificationInit;
+import github.mcdatapack.more_tools_and_armor.util.LootHandler;
 import net.fabricmc.api.ModInitializer;
 
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
@@ -20,6 +21,7 @@ public class MoreToolsAndArmor implements ModInitializer {
 	public void onInitialize() {
 		LOGGER.info("Loading More Tools and Armor");
 		MoreToolsAndArmorConfig.register();
+		LootHandler.registerListeners();
 		ItemInit.load();
 		BlockInit.load();
 		ItemGroupInit.load();

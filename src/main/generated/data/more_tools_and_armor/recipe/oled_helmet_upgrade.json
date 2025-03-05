@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:smithing_transform",
+  "addition": {
+    "item": "more_tools_and_armor:oled_ingot"
+  },
+  "base": {
+    "item": "more_tools_and_armor:onethdenderite_helmet"
+  },
+  "result": {
+    "count": 1,
+    "id": "more_tools_and_armor:oled_helmet"
+  },
+  "template": {
+    "item": "more_tools_and_armor:oled_upgrade_smithing_template"
+  }
+}

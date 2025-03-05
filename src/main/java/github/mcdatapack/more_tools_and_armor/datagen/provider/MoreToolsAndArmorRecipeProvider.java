@@ -1,19 +1,15 @@
 package github.mcdatapack.more_tools_and_armor.datagen.provider;
 
 import github.mcdatapack.more_tools_and_armor.MoreToolsAndArmor;
-import github.mcdatapack.more_tools_and_armor.init.BlockInit;
 import github.mcdatapack.more_tools_and_armor.init.ItemInit;
-import github.mcdatapack.more_tools_and_armor.list.TagList;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricRecipeProvider;
 import net.minecraft.data.server.recipe.*;
 import net.minecraft.item.Item;
-import net.minecraft.item.Items;
 import net.minecraft.recipe.Ingredient;
 import net.minecraft.recipe.book.RecipeCategory;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.RegistryWrapper;
-import net.minecraft.util.Identifier;
 
 import java.util.concurrent.CompletableFuture;
 
@@ -29,6 +25,53 @@ public class MoreToolsAndArmorRecipeProvider extends FabricRecipeProvider {
 
     @Override
     public void generate(RecipeExporter exporter) {
+        ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ANCIENT_HONEY_BLOCK)
+                .input('A', ANCIENT_HONEY_BOTTLE)
+                .pattern("AA")
+                .pattern("AA")
+                .criterion(hasItem(ANCIENT_HONEY_BOTTLE), conditionsFromItem(ANCIENT_HONEY_BOTTLE))
+                .offerTo(exporter);
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC, ANCIENT_HONEY_BOTTLE, 4)
+                .input(ANCIENT_HONEY_BLOCK)
+                .input(GLASS_BOTTLE)
+                .input(GLASS_BOTTLE)
+                .input(GLASS_BOTTLE)
+                .input(GLASS_BOTTLE)
+                .criterion(hasItem(ANCIENT_HONEY_BLOCK), conditionsFromItem(ANCIENT_HONEY_BLOCK))
+                .offerTo(exporter);
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ANCIENT_INGOT)
+                .input('A', ANCIENT_HONEY_BLOCK)
+                .input('B', BAT_WING)
+                .input('C', ANCIENT_COIN)
+                .input('D', TORCHFLOWER)
+                .input('E', DEEPSLATE_EMERALD)
+                .pattern("EDE")
+                .pattern("ACA")
+                .pattern("EBE")
+                .criterion(hasItem(DEEPSLATE_EMERALD), conditionsFromItem(DEEPSLATE_EMERALD))
+                .offerTo(exporter);
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ANCIENT_UPGRADE_SMITHING_TEMPLATE)
+                .input('A', DIAMOND)
+                .input('B', ANCIENT_INGOT)
+                .input('C', OLED_UPGRADE_SMITHING_TEMPLATE)
+                .pattern("BCB")
+                .pattern("BAB")
+                .pattern("AAA")
+                .criterion(hasItem(ANCIENT_INGOT), conditionsFromItem(ANCIENT_INGOT))
+                .offerTo(exporter, "ancient_upgrade_smithing_template");
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ANCIENT_UPGRADE_SMITHING_TEMPLATE, 2)
+                .input('A', DIAMOND)
+                .input('B', ANCIENT_INGOT)
+                .input('C', ANCIENT_UPGRADE_SMITHING_TEMPLATE)
+                .pattern("ACA")
+                .pattern("ABA")
+                .pattern("AAA")
+                .criterion(hasItem(ANCIENT_INGOT), conditionsFromItem(ANCIENT_INGOT))
+                .offerTo(exporter, "ancient_upgrade_smithing_template_dupe");
+
+
+
+
         ShapelessRecipeJsonBuilder.create(RecipeCategory.TOOLS, WOODEN_PAXEL)
                 .input(WOODEN_AXE).input(WOODEN_PICKAXE).input(WOODEN_SHOVEL).input(WOODEN_HOE)
                 .criterion(hasItem(WOODEN_PICKAXE), conditionsFromItem(WOODEN_PICKAXE))
@@ -88,6 +131,10 @@ public class MoreToolsAndArmorRecipeProvider extends FabricRecipeProvider {
         ShapelessRecipeJsonBuilder.create(RecipeCategory.TOOLS, OLED_PAXEL)
                 .input(OLED_AXE).input(OLED_PICKAXE).input(OLED_SHOVEL).input(OLED_HOE)
                 .criterion(hasItem(OLED_PICKAXE), conditionsFromItem(OLED_PICKAXE))
+                .offerTo(exporter);
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.TOOLS, ANCIENT_PAXEL)
+                .input(ANCIENT_AXE).input(ANCIENT_PICKAXE).input(ANCIENT_SHOVEL).input(ANCIENT_HOE)
+                .criterion(hasItem(ANCIENT_PICKAXE), conditionsFromItem(ANCIENT_PICKAXE))
                 .offerTo(exporter);
 
 
@@ -555,15 +602,56 @@ public class MoreToolsAndArmorRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(OBSIDIAN), conditionsFromItem(OBSIDIAN))
                 .offerTo(exporter);
 
-        paxelUpgradeRecipe(NETHERITE_UPGRADE_SMITHING_TEMPLATE, DIAMOND_PAXEL, NETHERITE_INGOT, NETHERITE_PAXEL, exporter);
-        paxelUpgradeRecipe(DEEPSLATE_EMERALD_UPGRADE_SMITHING_TEMPLATE, NETHERITE_PAXEL, DEEPSLATE_EMERALD, DEEPSLATE_EMERALD_PAXEL, exporter);
-        paxelUpgradeRecipe(END_DIAMOND_UPGRADE_SMITHING_TEMPLATE, DEEPSLATE_EMERALD_PAXEL, END_DIAMOND, END_DIAMOND_PAXEL, exporter);
-        paxelUpgradeRecipe(VOID_UPGRADE_SMITHING_TEMPLATE, END_DIAMOND_PAXEL, VOID_INGOT, VOID_PAXEL, exporter);
-        paxelUpgradeRecipe(ONETHDENDERITE_UPGRADE_SMITHING_TEMPLATE, VOID_PAXEL, ONETHDENDERITE_INGOT, ONETHDENDERITE_PAXEL, exporter);
-        paxelUpgradeRecipe(OLED_UPGRADE_SMITHING_TEMPLATE, ONETHDENDERITE_PAXEL, OLED_INGOT, OLED_PAXEL, exporter);
+        upgradeRecipes(DEEPSLATE_EMERALD_UPGRADE_SMITHING_TEMPLATE,
+                NETHERITE_HELMET, NETHERITE_CHESTPLATE, NETHERITE_LEGGINGS, NETHERITE_BOOTS,NETHERITE_SWORD, NETHERITE_AXE, NETHERITE_PICKAXE, NETHERITE_SHOVEL, NETHERITE_HOE, NETHERITE_PAXEL,
+                DEEPSLATE_EMERALD_HELMET, DEEPSLATE_EMERALD_CHESTPLATE, DEEPSLATE_EMERALD_LEGGINGS, DEEPSLATE_EMERALD_BOOTS,DEEPSLATE_EMERALD_SWORD, DEEPSLATE_EMERALD_AXE, DEEPSLATE_EMERALD_PICKAXE, DEEPSLATE_EMERALD_SHOVEL, DEEPSLATE_EMERALD_HOE, DEEPSLATE_EMERALD_PAXEL,
+                DEEPSLATE_EMERALD, exporter);
+        upgradeRecipes(END_DIAMOND_UPGRADE_SMITHING_TEMPLATE,
+                DEEPSLATE_EMERALD_HELMET, DEEPSLATE_EMERALD_CHESTPLATE, DEEPSLATE_EMERALD_LEGGINGS, DEEPSLATE_EMERALD_BOOTS,DEEPSLATE_EMERALD_SWORD, DEEPSLATE_EMERALD_AXE, DEEPSLATE_EMERALD_PICKAXE, DEEPSLATE_EMERALD_SHOVEL, DEEPSLATE_EMERALD_HOE, DEEPSLATE_EMERALD_PAXEL,
+                END_DIAMOND_HELMET, END_DIAMOND_CHESTPLATE, END_DIAMOND_LEGGINGS, END_DIAMOND_BOOTS,END_DIAMOND_SWORD, END_DIAMOND_AXE, END_DIAMOND_PICKAXE, END_DIAMOND_SHOVEL, END_DIAMOND_HOE, END_DIAMOND_PAXEL,
+                END_DIAMOND, exporter);
+        upgradeRecipes(VOID_UPGRADE_SMITHING_TEMPLATE,
+                END_DIAMOND_HELMET, END_DIAMOND_CHESTPLATE, END_DIAMOND_LEGGINGS, END_DIAMOND_BOOTS,END_DIAMOND_SWORD, END_DIAMOND_AXE, END_DIAMOND_PICKAXE, END_DIAMOND_SHOVEL, END_DIAMOND_HOE, END_DIAMOND_PAXEL,
+                VOID_HELMET, VOID_CHESTPLATE, VOID_LEGGINGS, VOID_BOOTS,VOID_SWORD, VOID_AXE, VOID_PICKAXE, VOID_SHOVEL, VOID_HOE, VOID_PAXEL,
+                VOID_INGOT, exporter);
+        upgradeRecipes(ONETHDENDERITE_UPGRADE_SMITHING_TEMPLATE,
+                VOID_HELMET, VOID_CHESTPLATE, VOID_LEGGINGS, VOID_BOOTS,VOID_SWORD, VOID_AXE, VOID_PICKAXE, VOID_SHOVEL, VOID_HOE, VOID_PAXEL,
+                ONETHDENDERITE_HELMET, ONETHDENDERITE_CHESTPLATE, ONETHDENDERITE_LEGGINGS, ONETHDENDERITE_BOOTS,ONETHDENDERITE_SWORD, ONETHDENDERITE_AXE, ONETHDENDERITE_PICKAXE, ONETHDENDERITE_SHOVEL, ONETHDENDERITE_HOE, ONETHDENDERITE_PAXEL,
+                ONETHDENDERITE_INGOT, exporter);
+        upgradeRecipes(OLED_UPGRADE_SMITHING_TEMPLATE,
+                ONETHDENDERITE_HELMET, ONETHDENDERITE_CHESTPLATE, ONETHDENDERITE_LEGGINGS, ONETHDENDERITE_BOOTS,ONETHDENDERITE_SWORD, ONETHDENDERITE_AXE, ONETHDENDERITE_PICKAXE, ONETHDENDERITE_SHOVEL, ONETHDENDERITE_HOE, ONETHDENDERITE_PAXEL,
+                OLED_HELMET, OLED_CHESTPLATE, OLED_LEGGINGS, OLED_BOOTS,OLED_SWORD, OLED_AXE, OLED_PICKAXE, OLED_SHOVEL, OLED_HOE, OLED_PAXEL,
+                OLED_INGOT, exporter);
+        upgradeRecipes(ANCIENT_UPGRADE_SMITHING_TEMPLATE,
+                OLED_HELMET, OLED_CHESTPLATE, OLED_LEGGINGS, OLED_BOOTS,OLED_SWORD, OLED_AXE, OLED_PICKAXE, OLED_SHOVEL, OLED_HOE, OLED_PAXEL,
+                ANCIENT_HELMET, ANCIENT_CHESTPLATE, ANCIENT_LEGGINGS, ANCIENT_BOOTS,ANCIENT_SWORD, ANCIENT_AXE, ANCIENT_PICKAXE, ANCIENT_SHOVEL, ANCIENT_HOE, ANCIENT_PAXEL,
+                ANCIENT_INGOT, exporter);
+
+
+
+
+
+
+        upgradeRecipe(NETHERITE_UPGRADE_SMITHING_TEMPLATE, DIAMOND_PAXEL, NETHERITE_INGOT, NETHERITE_PAXEL, exporter);
     }
 
-    private void paxelUpgradeRecipe(Item template, Item base, Item addition, Item result, RecipeExporter exporter) {
+    private void upgradeRecipes(Item template,
+                                Item baseHelmet, Item baseChestplate, Item baseLeggings, Item baseBoots, Item baseSword, Item baseAxe, Item basePickaxe, Item baseShovel, Item baseHoe, Item basePaxel,
+                                Item helmet, Item chestplate, Item leggings, Item boots, Item sword, Item axe, Item pickaxe, Item shovel, Item hoe, Item paxel, Item
+                                        addition, RecipeExporter exporter)  {
+        upgradeRecipe(template, baseHelmet, addition, helmet, exporter);
+        upgradeRecipe(template, baseChestplate, addition, chestplate, exporter);
+        upgradeRecipe(template, baseLeggings, addition, leggings, exporter);
+        upgradeRecipe(template, baseBoots, addition, boots, exporter);
+        upgradeRecipe(template, baseSword, addition, sword, exporter);
+        upgradeRecipe(template, baseAxe, addition, axe, exporter);
+        upgradeRecipe(template, basePickaxe, addition, pickaxe, exporter);
+        upgradeRecipe(template, baseShovel, addition, shovel, exporter);
+        upgradeRecipe(template, baseHoe, addition, hoe, exporter);
+        upgradeRecipe(template, basePaxel, addition, paxel, exporter);
+    }
+
+    private void upgradeRecipe(Item template, Item base, Item addition, Item result, RecipeExporter exporter) {
         SmithingTransformRecipeJsonBuilder.create(Ingredient.ofItems(template), Ingredient.ofItems(base), Ingredient.ofItems(addition),
                 RecipeCategory.TOOLS, result)
                 .criterion(hasItem(addition), conditionsFromItem(addition))

@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_end_diamond": {
+      "conditions": {
+        "items": [
+          {
+            "items": "more_tools_and_armor:end_diamond"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "more_tools_and_armor:end_diamond_leggings_upgrade"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_end_diamond"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "more_tools_and_armor:end_diamond_leggings_upgrade"
+    ]
+  }
+}

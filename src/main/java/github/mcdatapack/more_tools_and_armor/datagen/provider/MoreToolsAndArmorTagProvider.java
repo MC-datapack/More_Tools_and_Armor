@@ -98,7 +98,8 @@ public class MoreToolsAndArmorTagProvider{
                     .add(ItemInit.END_DIAMOND_SWORD)
                     .add(ItemInit.VOID_SWORD)
                     .add(ItemInit.ONETHDENDERITE_SWORD)
-                    .add(ItemInit.OLED_SWORD);
+                    .add(ItemInit.OLED_SWORD)
+                    .add(ItemInit.ANCIENT_SWORD);
             getOrCreateTagBuilder(ItemTags.AXES)
                     .add(ItemInit.BUDDING_AMETHYST_AXE)
                     .add(ItemInit.COPPER_AXE)
@@ -109,9 +110,10 @@ public class MoreToolsAndArmorTagProvider{
                     .add(ItemInit.VOID_AXE)
                     .add(ItemInit.ONETHDENDERITE_AXE)
                     .add(ItemInit.OLED_AXE)
+                    .add(ItemInit.ANCIENT_AXE)
                     .add(ItemInit.WOODEN_PAXEL, ItemInit.STONE_PAXEL, ItemInit.IRON_PAXEL, ItemInit.GOLDEN_PAXEL, ItemInit.DIAMOND_PAXEL,
                             ItemInit.NETHERITE_PAXEL, ItemInit.COPPER_PAXEL, ItemInit.BUDDING_AMETHYST_PAXEL, ItemInit.EMERALD_PAXEL, ItemInit.OBSIDIAN_PAXEL,
-                            ItemInit.DEEPSLATE_EMERALD_PAXEL, ItemInit.END_DIAMOND_PAXEL, ItemInit.VOID_PAXEL, ItemInit.ONETHDENDERITE_PAXEL, ItemInit.OLED_PAXEL);
+                            ItemInit.DEEPSLATE_EMERALD_PAXEL, ItemInit.END_DIAMOND_PAXEL, ItemInit.VOID_PAXEL, ItemInit.ONETHDENDERITE_PAXEL, ItemInit.OLED_PAXEL, ItemInit.ANCIENT_PAXEL);
             getOrCreateTagBuilder(ItemTags.PICKAXES)
                     .add(ItemInit.BUDDING_AMETHYST_PICKAXE)
                     .add(ItemInit.COPPER_PICKAXE)
@@ -121,7 +123,8 @@ public class MoreToolsAndArmorTagProvider{
                     .add(ItemInit.END_DIAMOND_PICKAXE)
                     .add(ItemInit.VOID_PICKAXE)
                     .add(ItemInit.ONETHDENDERITE_PICKAXE)
-                    .add(ItemInit.OLED_PICKAXE);
+                    .add(ItemInit.OLED_PICKAXE)
+                    .add(ItemInit.ANCIENT_PICKAXE);
             getOrCreateTagBuilder(ItemTags.SHOVELS)
                     .add(ItemInit.BUDDING_AMETHYST_SHOVEL)
                     .add(ItemInit.COPPER_SHOVEL)
@@ -131,7 +134,8 @@ public class MoreToolsAndArmorTagProvider{
                     .add(ItemInit.END_DIAMOND_SHOVEL)
                     .add(ItemInit.VOID_SHOVEL)
                     .add(ItemInit.ONETHDENDERITE_SHOVEL)
-                    .add(ItemInit.OLED_SHOVEL);
+                    .add(ItemInit.OLED_SHOVEL)
+                    .add(ItemInit.ANCIENT_SHOVEL);
             getOrCreateTagBuilder(ItemTags.HOES)
                     .add(ItemInit.BUDDING_AMETHYST_HOE)
                     .add(ItemInit.COPPER_HOE)
@@ -141,7 +145,8 @@ public class MoreToolsAndArmorTagProvider{
                     .add(ItemInit.END_DIAMOND_HOE)
                     .add(ItemInit.VOID_HOE)
                     .add(ItemInit.ONETHDENDERITE_HOE)
-                    .add(ItemInit.OLED_HOE);
+                    .add(ItemInit.OLED_HOE)
+                    .add(ItemInit.ANCIENT_HOE);
             getOrCreateTagBuilder(ItemTags.HEAD_ARMOR)
                     .add(ItemInit.BUDDING_AMETHYST_HELMET)
                     .add(ItemInit.COPPER_HELMET)
@@ -151,7 +156,8 @@ public class MoreToolsAndArmorTagProvider{
                     .add(ItemInit.END_DIAMOND_HELMET)
                     .add(ItemInit.VOID_HELMET)
                     .add(ItemInit.ONETHDENDERITE_HELMET)
-                    .add(ItemInit.OLED_HELMET);
+                    .add(ItemInit.OLED_HELMET)
+                    .add(ItemInit.ANCIENT_HELMET);
             getOrCreateTagBuilder(ItemTags.CHEST_ARMOR)
                     .add(ItemInit.BUDDING_AMETHYST_CHESTPLATE)
                     .add(ItemInit.COPPER_CHESTPLATE)
@@ -161,7 +167,8 @@ public class MoreToolsAndArmorTagProvider{
                     .add(ItemInit.END_DIAMOND_CHESTPLATE)
                     .add(ItemInit.VOID_CHESTPLATE)
                     .add(ItemInit.ONETHDENDERITE_CHESTPLATE)
-                    .add(ItemInit.OLED_CHESTPLATE);
+                    .add(ItemInit.OLED_CHESTPLATE)
+                    .add(ItemInit.ANCIENT_CHESTPLATE);
             getOrCreateTagBuilder(ItemTags.LEG_ARMOR)
                     .add(ItemInit.BUDDING_AMETHYST_LEGGINGS)
                     .add(ItemInit.COPPER_LEGGINGS)
@@ -171,7 +178,8 @@ public class MoreToolsAndArmorTagProvider{
                     .add(ItemInit.END_DIAMOND_LEGGINGS)
                     .add(ItemInit.VOID_LEGGINGS)
                     .add(ItemInit.ONETHDENDERITE_LEGGINGS)
-                    .add(ItemInit.OLED_LEGGINGS);
+                    .add(ItemInit.OLED_LEGGINGS)
+                    .add(ItemInit.ANCIENT_LEGGINGS);
             getOrCreateTagBuilder(ItemTags.FOOT_ARMOR)
                     .add(ItemInit.BUDDING_AMETHYST_BOOTS)
                     .add(ItemInit.COPPER_BOOTS)
@@ -181,7 +189,8 @@ public class MoreToolsAndArmorTagProvider{
                     .add(ItemInit.END_DIAMOND_BOOTS)
                     .add(ItemInit.VOID_BOOTS)
                     .add(ItemInit.ONETHDENDERITE_BOOTS)
-                    .add(ItemInit.OLED_BOOTS);
+                    .add(ItemInit.OLED_BOOTS)
+                    .add(ItemInit.ANCIENT_BOOTS);
         }
     }
 }

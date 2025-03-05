@@ -49,6 +49,12 @@ public class ItemGroupInit {
                 entries.add(ONETHDENDERITE_UPGRADE_SMITHING_TEMPLATE);
                 entries.add(OLED_INGOT);
                 entries.add(OLED_UPGRADE_SMITHING_TEMPLATE);
+                entries.add(BAT_WING);
+                entries.add(ANCIENT_HONEY_BOTTLE);
+                entries.add(ANCIENT_HONEY_BLOCK);
+                entries.add(ANCIENT_COIN);
+                entries.add(ANCIENT_INGOT);
+                entries.add(ANCIENT_UPGRADE_SMITHING_TEMPLATE);
                 entries.add(WOODEN_PAXEL);
                 entries.add(STONE_PAXEL);
                 entries.add(IRON_PAXEL);
@@ -64,6 +70,7 @@ public class ItemGroupInit {
                 entries.add(VOID_PAXEL);
                 entries.add(ONETHDENDERITE_PAXEL);
                 entries.add(OLED_PAXEL);
+                entries.add(ANCIENT_PAXEL);
                 entries.add(COPPER_HELMET);
                 entries.add(COPPER_CHESTPLATE);
                 entries.add(COPPER_LEGGINGS);
@@ -145,6 +152,15 @@ public class ItemGroupInit {
                 entries.add(OLED_PICKAXE);
                 entries.add(OLED_SHOVEL);
                 entries.add(OLED_HOE);
+                entries.add(ANCIENT_HELMET);
+                entries.add(ANCIENT_CHESTPLATE);
+                entries.add(ANCIENT_LEGGINGS);
+                entries.add(ANCIENT_BOOTS);
+                entries.add(ANCIENT_SWORD);
+                entries.add(ANCIENT_AXE);
+                entries.add(ANCIENT_PICKAXE);
+                entries.add(ANCIENT_SHOVEL);
+                entries.add(ANCIENT_HOE);
             })
             .build());
 

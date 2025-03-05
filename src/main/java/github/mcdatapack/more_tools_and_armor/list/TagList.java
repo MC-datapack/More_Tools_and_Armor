@@ -13,6 +13,7 @@ public class TagList {
         public static final TagKey<Block> INCORRECT_FOR_VOID_TOOL = register("incorrect_for_void_tool");
         public static final TagKey<Block> INCORRECT_FOR_ONETHDENDERITE_TOOL = register("incorrect_for_onethdenderite_tool");
         public static final TagKey<Block> INCORRECT_FOR_OLED_TOOL = register("incorrect_for_oled_tool");
+        public static final TagKey<Block> INCORRECT_FOR_ANCIENT_TOOL = register("incorrect_for_ancient_tool");
         public static final TagKey<Block> NEEDS_NETHERITE_TOOL = register("needs_netherite_tool");
         public static final TagKey<Block> NEEDS_DEEPSLATE_EMERALD_TOOL = register("needs_deepslate_emerald_tool");
         public static final TagKey<Block> PAXEL_MINEABLE = register("mineable/paxel");

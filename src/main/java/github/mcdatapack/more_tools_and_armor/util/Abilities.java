@@ -14,7 +14,11 @@ public class Abilities {
             return false;
         for (ItemStack itemStack : player.getArmorItems()) {
             if (itemStack.getItem() instanceof ArmorItem item) {
-                if (MoreToolsAndArmorConfig.getConfig().endermanSave.containsMaterial(item.getMaterial())) {
+                if (item.getMaterial() == ArmorMaterialInit.END_DIAMOND
+                 || item.getMaterial() == ArmorMaterialInit.VOID
+                || item.getMaterial() == ArmorMaterialInit.ONETHDENDERITE
+                || item.getMaterial() == ArmorMaterialInit.OLED
+                || item.getMaterial() == ArmorMaterialInit.ANCIENT) {
                     return true;
                 }
             }
@@ -41,7 +45,9 @@ public class Abilities {
             return false;
         for (ItemStack itemStack : player.getArmorItems()) {
             if (itemStack.getItem() instanceof ArmorItem item) {
-                if (MoreToolsAndArmorConfig.getConfig().piglinPassive.containsMaterial(item.getMaterial())) {
+                if (item.getMaterial() == ArmorMaterialInit.ONETHDENDERITE
+                        || item.getMaterial() == ArmorMaterialInit.OLED
+                        || item.getMaterial() == ArmorMaterialInit.ANCIENT) {
                     return true;
                 }
             }
@@ -53,7 +59,8 @@ public class Abilities {
             return false;
         for (ItemStack itemStack : player.getArmorItems()) {
             if (itemStack.getItem() instanceof ArmorItem item) {
-                if (MoreToolsAndArmorConfig.getConfig().ironGolemPassive.containsMaterial(item.getMaterial())) {
+                if (item.getMaterial() == ArmorMaterialInit.OLED
+                        || item.getMaterial() == ArmorMaterialInit.ANCIENT) {
                     return true;
                 }
             }
@@ -65,7 +72,8 @@ public class Abilities {
             return false;
         for (ItemStack itemStack : player.getArmorItems()) {
             if (itemStack.getItem() instanceof ArmorItem item) {
-                if (MoreToolsAndArmorConfig.getConfig().endermanPassive.containsMaterial(item.getMaterial())) {
+                if (item.getMaterial() == ArmorMaterialInit.OLED
+                        || item.getMaterial() == ArmorMaterialInit.ANCIENT) {
                     return true;
                 }
             }
@@ -78,7 +86,10 @@ public class Abilities {
             return false;
         for (ItemStack itemStack : entity.getArmorItems()) {
             if (itemStack.getItem() instanceof ArmorItem item) {
-                if (MoreToolsAndArmorConfig.getConfig().powderSnowWalk.containsMaterial(item.getMaterial())) {
+                if (item.getMaterial() == ArmorMaterialInit.VOID
+                        || item.getMaterial() == ArmorMaterialInit.ONETHDENDERITE
+                        || item.getMaterial() == ArmorMaterialInit.OLED
+                        || item.getMaterial() == ArmorMaterialInit.ANCIENT) {
                     return true;
                 }
             }
@@ -91,7 +102,7 @@ public class Abilities {
             return false;
         for (ItemStack itemStack : player.getArmorItems()) {
             if (itemStack.getItem() instanceof ArmorItem item) {
-                if (MoreToolsAndArmorConfig.getConfig().statusEffectImmune.containsMaterial(item.getMaterial())) {
+                if (item.getMaterial() == ArmorMaterialInit.ANCIENT) {
                     return true;
                 }
             }

@@ -15,6 +15,9 @@ import static net.minecraft.block.AbstractBlock.Settings.*;
 import static net.minecraft.block.Blocks.DEEPSLATE_LAPIS_ORE;
 
 public class BlockInit {
+    public static final HoneyBlock ANCIENT_HONEY_BLOCK = registerWithItem("ancient_honey_block", new HoneyBlock(
+            AbstractBlock.Settings.create().mapColor(MapColor.ORANGE).velocityMultiplier(0.4F).jumpVelocityMultiplier(0.5F).nonOpaque().sounds(BlockSoundGroup.HONEY)));
+
 
     public static final Block DEEPSLATE_EMERALD_BLOCK = registerWithItem("deepslate_emerald_block", new Block(create()
             .sounds(BlockSoundGroup.METAL).instrument(NoteBlockInstrument.BIT).requiresTool().strength(25F, 3600000F)),

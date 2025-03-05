@@ -95,9 +95,7 @@ public class PaxelItem extends MiningToolItem {
         TILLING_ACTIONS.replace(Blocks.PODZOL, Pair.of(PaxelItem::canTillFarmland, createTillAndDropAction(Blocks.DIRT_PATH.getDefaultState(),
                 random(Items.BROWN_MUSHROOM, Items.RED_MUSHROOM))));
         PlayerEntity playerEntity = context.getPlayer();
-        if (shouldCancelStripAttempt(context)) {
-            return ActionResult.PASS;
-        } else {
+        if (!shouldCancelStripAttempt(context)) {
             Optional<BlockState> optional = this.tryStrip(world, blockPos, playerEntity, world.getBlockState(blockPos));
             if (pair == null && optional.isEmpty()) {
                 return ActionResult.PASS;
@@ -120,7 +118,7 @@ public class PaxelItem extends MiningToolItem {
             } else if (pair == null) {
                 ItemStack itemStack = context.getStack();
                 if (playerEntity instanceof ServerPlayerEntity) {
-                    Criteria.ITEM_USED_ON_BLOCK.trigger((ServerPlayerEntity)playerEntity, blockPos, itemStack);
+                    Criteria.ITEM_USED_ON_BLOCK.trigger((ServerPlayerEntity) playerEntity, blockPos, itemStack);
                 }
 
                 world.setBlockState(blockPos, optional.get(), Block.NOTIFY_ALL_AND_REDRAW);
@@ -131,13 +129,15 @@ public class PaxelItem extends MiningToolItem {
 
                 return ActionResult.success(world.isClient);
             }
-            return ActionResult.PASS;
         }
+        return ActionResult.PASS;
     }
 
     private static boolean shouldCancelStripAttempt(ItemUsageContext context) {
         PlayerEntity playerEntity = context.getPlayer();
-        return context.getHand().equals(Hand.MAIN_HAND) && playerEntity.getOffHandStack().isOf(Items.SHIELD) && !playerEntity.shouldCancelInteraction();
+        if (!context.getHand().equals(Hand.MAIN_HAND)) return false;
+        assert playerEntity != null;
+        return playerEntity.getOffHandStack().isOf(Items.SHIELD) && !playerEntity.shouldCancelInteraction();
     }
 
     private Optional<BlockState> tryStrip(World world, BlockPos pos, @Nullable PlayerEntity player, BlockState state) {
@@ -152,7 +152,7 @@ public class PaxelItem extends MiningToolItem {
                 world.syncWorldEvent(player, WorldEvents.BLOCK_SCRAPED, pos, 0);
                 return optional2;
             } else {
-                Optional<BlockState> optional3 = Optional.ofNullable((Block)((BiMap)HoneycombItem.WAXED_TO_UNWAXED_BLOCKS.get()).get(state.getBlock()))
+                Optional<BlockState> optional3 = Optional.ofNullable((Block)((BiMap<?, ?>)HoneycombItem.WAXED_TO_UNWAXED_BLOCKS.get()).get(state.getBlock()))
                         .map(block -> block.getStateWithProperties(state));
                 if (optional3.isPresent()) {
                     world.playSound(player, pos, SoundEvents.ITEM_AXE_WAX_OFF, SoundCategory.BLOCKS, 1.0F, 1.0F);
@@ -174,6 +174,7 @@ public class PaxelItem extends MiningToolItem {
         return context.getSide() != Direction.DOWN && context.getWorld().getBlockState(context.getBlockPos().up()).isAir();
     }
 
+    @SuppressWarnings("SameParameterValue")
     private static Item random(Item i1, Item i2) {
         int i = ThreadLocalRandom.current().nextInt(100);
         if (i <= 50) return i1;
