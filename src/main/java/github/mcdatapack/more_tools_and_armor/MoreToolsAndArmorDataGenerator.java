@@ -2,6 +2,7 @@ package github.mcdatapack.more_tools_and_armor;
 
 import github.mcdatapack.more_tools_and_armor.datagen.generator.MoreToolsAndArmorWorldGenerator;
 import github.mcdatapack.more_tools_and_armor.datagen.provider.MoreToolsAndArmorModelProvider;
+import github.mcdatapack.more_tools_and_armor.datagen.provider.MoreToolsAndArmorRecipeProvider;
 import github.mcdatapack.more_tools_and_armor.datagen.provider.MoreToolsAndArmorTagProvider;
 import github.mcdatapack.more_tools_and_armor.datagen.provider.MoreToolsAndArmorEquipmentModelProvider;
 import github.mcdatapack.more_tools_and_armor.init.worldgen.ConfiguredFeatureInit;
@@ -21,6 +22,7 @@ public class MoreToolsAndArmorDataGenerator implements DataGeneratorEntrypoint {
 		pack.addProvider(MoreToolsAndArmorWorldGenerator::new);
 		pack.addProvider(MoreToolsAndArmorTagProvider.BlockTagProvider::new);
 		pack.addProvider(MoreToolsAndArmorTagProvider.ItemTagProvider::new);
+		pack.addProvider(MoreToolsAndArmorRecipeProvider::new);
 		pack2.addProvider(MoreToolsAndArmorEquipmentModelProvider::new);
 	}
 	@Override

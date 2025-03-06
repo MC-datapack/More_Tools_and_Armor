@@ -1,9 +1,0 @@
-{
-  "type": "minecraft:smithing_transform",
-  "template": "more_tools_and_armor:end_diamond_upgrade_smithing_template",
-  "base": "more_tools_and_armor:deepslate_emerald_paxel",
-  "addition": "more_tools_and_armor:end_diamond_ingot",
-  "result": {
-    "id": "more_tools_and_armor:end_diamond_paxel"
-  }
-}

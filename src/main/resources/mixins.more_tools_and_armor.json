@@ -4,9 +4,10 @@
   "package": "github.mcdatapack.more_tools_and_armor.mixns",
   "compatibilityLevel": "JAVA_21",
   "mixins": [
+	"BrushableBlockEntityMixin",
 	"ToolTipHandler",
 	"ability.EndermanEntityMixin",
-	"ability.PlayerEntityMixin",
+	"ability.LivingEntityMixin",
 	"ability.PowderSnowBlockMixin",
 	"ability.TargetPredicateMixin"
   ],

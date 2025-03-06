@@ -23,6 +23,10 @@
     "more_tools_and_armor:oled_boots",
     "more_tools_and_armor:oled_leggings",
     "more_tools_and_armor:oled_chestplate",
-    "more_tools_and_armor:oled_helmet"
+    "more_tools_and_armor:oled_helmet",
+    "more_tools_and_armor:ancient_boots",
+    "more_tools_and_armor:ancient_leggings",
+    "more_tools_and_armor:ancient_chestplate",
+    "more_tools_and_armor:ancient_helmet"
   ]
 }

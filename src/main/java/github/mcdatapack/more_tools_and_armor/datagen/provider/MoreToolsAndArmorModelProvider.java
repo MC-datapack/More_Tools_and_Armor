@@ -33,6 +33,7 @@ public class MoreToolsAndArmorModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerSimpleCubeAll(BlockInit.BLACKSTONE_EMERALD_ORE);
         blockStateModelGenerator.registerSimpleCubeAll(BlockInit.SCULK_EMERALD_BLOCK);
         blockStateModelGenerator.registerSimpleCubeAll(BlockInit.BLACKSTONE_EMERALD_BLOCK);
+        blockStateModelGenerator.registerSimpleCubeAll(BlockInit.ANCIENT_HONEY_BLOCK);
     }
 
     @Override
@@ -49,6 +50,11 @@ public class MoreToolsAndArmorModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ItemInit.END_EMERALD, Models.GENERATED);
         itemModelGenerator.register(ItemInit.ONETHDENDERITE_INGOT, Models.GENERATED);
         itemModelGenerator.register(ItemInit.ONETHDENDERITE_UPGRADE_SMITHING_TEMPLATE, Models.GENERATED);
+        itemModelGenerator.register(ANCIENT_HONEY_BOTTLE, Models.GENERATED);
+        itemModelGenerator.register(ANCIENT_COIN, Models.GENERATED);
+        itemModelGenerator.register(BAT_WING, Models.GENERATED);
+        itemModelGenerator.register(ItemInit.ANCIENT_INGOT, Models.GENERATED);
+        itemModelGenerator.register(ItemInit.ANCIENT_UPGRADE_SMITHING_TEMPLATE, Models.GENERATED);
 
         itemModelGenerator.register(ItemInit.BUDDING_AMETHYST_SWORD, Models.HANDHELD);
         itemModelGenerator.register(ItemInit.BUDDING_AMETHYST_AXE, Models.HANDHELD);
@@ -143,6 +149,16 @@ public class MoreToolsAndArmorModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ItemInit.OLED_LEGGINGS, Models.GENERATED);
         itemModelGenerator.register(ItemInit.OLED_BOOTS, Models.GENERATED);
 
+        itemModelGenerator.register(ItemInit.ANCIENT_SWORD, Models.HANDHELD);
+        itemModelGenerator.register(ItemInit.ANCIENT_AXE, Models.HANDHELD);
+        itemModelGenerator.register(ItemInit.ANCIENT_PICKAXE, Models.HANDHELD);
+        itemModelGenerator.register(ItemInit.ANCIENT_SHOVEL, Models.HANDHELD);
+        itemModelGenerator.register(ItemInit.ANCIENT_HOE, Models.HANDHELD);
+        itemModelGenerator.register(ItemInit.ANCIENT_HELMET, Models.GENERATED);
+        itemModelGenerator.register(ItemInit.ANCIENT_CHESTPLATE, Models.GENERATED);
+        itemModelGenerator.register(ItemInit.ANCIENT_LEGGINGS, Models.GENERATED);
+        itemModelGenerator.register(ItemInit.ANCIENT_BOOTS, Models.GENERATED);
+
         itemModelGenerator.register(WOODEN_PAXEL, Models.HANDHELD);
         itemModelGenerator.register(STONE_PAXEL, Models.HANDHELD);
         itemModelGenerator.register(IRON_PAXEL, Models.HANDHELD);
@@ -158,5 +174,6 @@ public class MoreToolsAndArmorModelProvider extends FabricModelProvider {
         itemModelGenerator.register(VOID_PAXEL, Models.HANDHELD);
         itemModelGenerator.register(ONETHDENDERITE_PAXEL, Models.HANDHELD);
         itemModelGenerator.register(OLED_PAXEL, Models.HANDHELD);
+        itemModelGenerator.register(ANCIENT_PAXEL, Models.HANDHELD);
     }
 }

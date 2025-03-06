@@ -9,6 +9,7 @@
     "more_tools_and_armor:void_axe",
     "more_tools_and_armor:onethdenderite_axe",
     "more_tools_and_armor:oled_axe",
+    "more_tools_and_armor:ancient_axe",
     "more_tools_and_armor:wooden_paxel",
     "more_tools_and_armor:stone_paxel",
     "more_tools_and_armor:iron_paxel",
@@ -23,6 +24,7 @@
     "more_tools_and_armor:end_diamond_paxel",
     "more_tools_and_armor:void_paxel",
     "more_tools_and_armor:onethdenderite_paxel",
-    "more_tools_and_armor:oled_paxel"
+    "more_tools_and_armor:oled_paxel",
+    "more_tools_and_armor:ancient_paxel"
   ]
 }
