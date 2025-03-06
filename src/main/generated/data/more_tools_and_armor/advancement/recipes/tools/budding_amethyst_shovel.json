@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_budding_amethyst_crystal": {
+      "conditions": {
+        "items": [
+          {
+            "items": "more_tools_and_armor:budding_amethyst_crystal"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "more_tools_and_armor:budding_amethyst_shovel"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_budding_amethyst_crystal"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "more_tools_and_armor:budding_amethyst_shovel"
+    ]
+  }
+}

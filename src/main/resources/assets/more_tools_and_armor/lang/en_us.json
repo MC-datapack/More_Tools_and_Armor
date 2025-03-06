@@ -6,6 +6,7 @@
   "more_tools_and_armor.tooltip.iron_golem_passive": "§2Iron Golems do not attack the player even if the Player Punches the Iron Golem",
   "more_tools_and_armor.tooltip.powder_snow_walk": "§2Allows the player to walk on Powder Snow",
   "more_tools_and_armor.tooltip.status_effect_immune": "§2No harmful Status Effects can be applied",
+  "more_tools_and_armor.tooltip.elytra": "§2Allows the player to glide like with an elytra",
 
   "itemGroup.more_tools_and_armor.more_tools_and_armor_group": "More Tools and Armor",
   "block.more_tools_and_armor.end_coal_ore": "End Coal Ore",
@@ -143,6 +144,23 @@
   "item.more_tools_and_armor.oled_leggings": "Oled Leggings",
   "item.more_tools_and_armor.oled_boots": "Oled Boots",
   "item.more_tools_and_armor.oled_paxel": "Oled Paxel",
+
+  "item.more_tools_and_armor.bat_wing": "Bat Wing",
+  "item.more_tools_and_armor.ancient_honey_bottle": "Ancient Honey Bottle",
+  "block.more_tools_and_armor.ancient_honey_block": "Ancient Honey Block",
+  "item.more_tools_and_armor.ancient_coin": "Ancient Coin",
+  "item.more_tools_and_armor.ancient_ingot": "Ancient Ingot",
+  "item.more_tools_and_armor.ancient_upgrade_smithing_template": "Ancient Upgrade Smithing Template",
+  "item.more_tools_and_armor.ancient_sword": "Ancient Sword",
+  "item.more_tools_and_armor.ancient_axe": "Ancient Axe",
+  "item.more_tools_and_armor.ancient_pickaxe": "Ancient Pickaxe",
+  "item.more_tools_and_armor.ancient_shovel": "Ancient Shovel",
+  "item.more_tools_and_armor.ancient_hoe": "Ancient Hoe",
+  "item.more_tools_and_armor.ancient_helmet": "Ancient Helmet",
+  "item.more_tools_and_armor.ancient_chestplate": "Ancient Chestplate",
+  "item.more_tools_and_armor.ancient_leggings": "Ancient Leggings",
+  "item.more_tools_and_armor.ancient_boots": "Ancient Boots",
+  "item.more_tools_and_armor.ancient_paxel": "Ancient Paxel",
 
 
 

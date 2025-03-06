@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "equipment",
+  "ingredients": [
+    "more_tools_and_armor:ancient_axe",
+    "more_tools_and_armor:ancient_pickaxe",
+    "more_tools_and_armor:ancient_shovel",
+    "more_tools_and_armor:ancient_hoe"
+  ],
+  "result": {
+    "count": 1,
+    "id": "more_tools_and_armor:ancient_paxel"
+  }
+}

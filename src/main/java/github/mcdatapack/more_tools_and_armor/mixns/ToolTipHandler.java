@@ -3,6 +3,7 @@ package github.mcdatapack.more_tools_and_armor.mixns;
 import com.llamalad7.mixinextras.sugar.Local;
 import github.mcdatapack.more_tools_and_armor.config.MoreToolsAndArmorConfig;
 import github.mcdatapack.more_tools_and_armor.init.ArmorMaterialInit;
+import github.mcdatapack.more_tools_and_armor.init.ItemInit;
 import github.mcdatapack.more_tools_and_armor.item.MoreToolsAndArmorArmorItem;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.*;
@@ -41,7 +42,16 @@ public abstract class ToolTipHandler {
                 addPiglinPassive(list);
                 addEndermanPassive(list);
                 addIronGolemPassive(list);
+            } else if (material == ArmorMaterialInit.ANCIENT) {
+                addEndermanSave(list);
+                addPowderSnowWalk(list);
+                addPiglinPassive(list);
+                addEndermanPassive(list);
+                addIronGolemPassive(list);
                 addStatusEffectImmune(list);
+            }
+            if (armorItem == ItemInit.ANCIENT_CHESTPLATE) {
+                list.add(Text.translatable("more_tools_and_armor.tooltip.elytra"));
             }
         }
     }

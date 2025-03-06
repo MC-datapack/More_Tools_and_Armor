@@ -17,61 +17,67 @@ public class ArmorMaterialInit implements ArmorMaterials {
         map.put(EquipmentType.LEGGINGS, 5);
         map.put(EquipmentType.CHESTPLATE, 4);
         map.put(EquipmentType.HELMET, 1);
-    }), 18, SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 0, 0, COPPER_REPAIR_ITEMS, CustomEquipmentModels.COPPER);
+    }), 18, SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 0, 0, COPPER_REPAIR_ITEMS, EquipmentModelInit.COPPER);
 
     public static final ArmorMaterial BUDDING_AMETHYST = new ArmorMaterial(20, Util.make(new EnumMap<>(EquipmentType.class), map -> {
         map.put(EquipmentType.BOOTS, 3);
         map.put(EquipmentType.LEGGINGS, 7);
         map.put(EquipmentType.CHESTPLATE, 6);
         map.put(EquipmentType.HELMET, 2);
-    }), 12, SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND, 1, 0, BUDDING_AMETHYST_REPAIR_ITEMS, CustomEquipmentModels.BUDDING_AMETHYST);
+    }), 12, SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND, 1, 0, BUDDING_AMETHYST_REPAIR_ITEMS, EquipmentModelInit.BUDDING_AMETHYST);
 
     public static final ArmorMaterial EMERALD = new ArmorMaterial(21, Util.make(new EnumMap<>(EquipmentType.class), map -> {
         map.put(EquipmentType.BOOTS, 3);
         map.put(EquipmentType.LEGGINGS, 5);
         map.put(EquipmentType.CHESTPLATE, 6);
         map.put(EquipmentType.HELMET, 2);
-    }), 14, SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND, 0, 0, EMERALD_REPAIR_ITEMS, CustomEquipmentModels.EMERALD);
+    }), 14, SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND, 0, 0, EMERALD_REPAIR_ITEMS, EquipmentModelInit.EMERALD);
 
     public static final ArmorMaterial OBSIDIAN = new ArmorMaterial(40, Util.make(new EnumMap<>(EquipmentType.class), map -> {
         map.put(EquipmentType.BOOTS, 3);
         map.put(EquipmentType.LEGGINGS, 6);
         map.put(EquipmentType.CHESTPLATE, 8);
         map.put(EquipmentType.HELMET, 3);
-    }), 10, SoundEvents.ITEM_ARMOR_EQUIP_NETHERITE, 4, 4, OBSIDIAN_REPAIR_ITEMS, CustomEquipmentModels.OBSIDIAN);
+    }), 10, SoundEvents.ITEM_ARMOR_EQUIP_NETHERITE, 4, 4, OBSIDIAN_REPAIR_ITEMS, EquipmentModelInit.OBSIDIAN);
 
     public static final ArmorMaterial DEEPSLATE_EMERALD = new ArmorMaterial(280, Util.make(new EnumMap<>(EquipmentType.class), map -> {
         map.put(EquipmentType.BOOTS, 5);
         map.put(EquipmentType.LEGGINGS, 8);
         map.put(EquipmentType.CHESTPLATE, 10);
         map.put(EquipmentType.HELMET, 7);
-    }), 100, SoundEvents.ITEM_ARMOR_EQUIP_NETHERITE, 5, 1, DEEPSLATE_EMERALD_REPAIR_ITEMS, CustomEquipmentModels.DEEPSLATE_EMERALD);
+    }), 100, SoundEvents.ITEM_ARMOR_EQUIP_NETHERITE, 5, 1, DEEPSLATE_EMERALD_REPAIR_ITEMS, EquipmentModelInit.DEEPSLATE_EMERALD);
 
     public static final ArmorMaterial END_DIAMOND = new ArmorMaterial(280, Util.make(new EnumMap<>(EquipmentType.class), map -> {
         map.put(EquipmentType.BOOTS, 5);
         map.put(EquipmentType.LEGGINGS, 8);
         map.put(EquipmentType.CHESTPLATE, 10);
         map.put(EquipmentType.HELMET, 7);
-    }), 100, SoundEvents.ITEM_ARMOR_EQUIP_NETHERITE, 10, 1, END_DIAMOND_REPAIR_ITEMS, CustomEquipmentModels.END_DIAMOND);
+    }), 100, SoundEvents.ITEM_ARMOR_EQUIP_NETHERITE, 10, 1, END_DIAMOND_REPAIR_ITEMS, EquipmentModelInit.END_DIAMOND);
 
     public static final ArmorMaterial VOID = new ArmorMaterial(1800, Util.make(new EnumMap<>(EquipmentType.class), map -> {
         map.put(EquipmentType.BOOTS, 5);
         map.put(EquipmentType.LEGGINGS, 8);
         map.put(EquipmentType.CHESTPLATE, 10);
         map.put(EquipmentType.HELMET, 7);
-    }), 100, SoundEvents.ITEM_ARMOR_EQUIP_NETHERITE, 24, 1.2F, VOID_REPAIR_ITEMS, CustomEquipmentModels.VOID);
+    }), 100, SoundEvents.ITEM_ARMOR_EQUIP_NETHERITE, 24, 1.2F, VOID_REPAIR_ITEMS, EquipmentModelInit.VOID);
     public static final ArmorMaterial ONETHDENDERITE = new ArmorMaterial(3600, Util.make(new EnumMap<>(EquipmentType.class), map -> {
         map.put(EquipmentType.BOOTS, 5);
         map.put(EquipmentType.LEGGINGS, 8);
         map.put(EquipmentType.CHESTPLATE, 10);
         map.put(EquipmentType.HELMET, 7);
-    }), 100, SoundEvents.ITEM_ARMOR_EQUIP_NETHERITE, 96, 1.2F, ONETHDENDERITE_REPAIR_ITEMS, CustomEquipmentModels.ONETHDENDERITE);
+    }), 100, SoundEvents.ITEM_ARMOR_EQUIP_NETHERITE, 96, 1.2F, ONETHDENDERITE_REPAIR_ITEMS, EquipmentModelInit.ONETHDENDERITE);
     public static final ArmorMaterial OLED = new ArmorMaterial(3600, Util.make(new EnumMap<>(EquipmentType.class), map -> {
         map.put(EquipmentType.BOOTS, 100);
         map.put(EquipmentType.LEGGINGS, 160);
         map.put(EquipmentType.CHESTPLATE, 200);
         map.put(EquipmentType.HELMET, 140);
-    }), 100, SoundEvents.ITEM_ARMOR_EQUIP_NETHERITE, 1024, 1.2F, OLED_REPAIR_ITEMS, CustomEquipmentModels.OLED);
+    }), 100, SoundEvents.ITEM_ARMOR_EQUIP_NETHERITE, 1024, 1.2F, OLED_REPAIR_ITEMS, EquipmentModelInit.OLED);
+    public static final ArmorMaterial ANCIENT = new ArmorMaterial(360000, Util.make(new EnumMap<>(EquipmentType.class), map -> {
+        map.put(EquipmentType.HELMET, 1400);
+        map.put(EquipmentType.CHESTPLATE, 2000);
+        map.put(EquipmentType.LEGGINGS, 1600);
+        map.put(EquipmentType.BOOTS, 1000);
+    }), 100, SoundEvents.ITEM_ARMOR_EQUIP_NETHERITE, 4096, 1.2F, ANCIENT_REPAIR_ITEMS, EquipmentModelInit.ANCIENT);
 
     public static void load() {}
 }
