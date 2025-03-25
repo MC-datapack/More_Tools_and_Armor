@@ -5,6 +5,7 @@ import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.ai.TargetPredicate;
 import net.minecraft.entity.mob.AbstractPiglinEntity;
 import net.minecraft.entity.mob.EndermanEntity;
+import net.minecraft.entity.mob.PhantomEntity;
 import net.minecraft.entity.mob.ZombifiedPiglinEntity;
 import net.minecraft.entity.passive.IronGolemEntity;
 import net.minecraft.entity.player.PlayerEntity;
@@ -30,6 +31,11 @@ public class TargetPredicateMixin {
         }
         if (tester instanceof EndermanEntity endermanEntity && target instanceof PlayerEntity player) {
             if (Abilities.isWearingEndermanPassiveArmor(player)) {
+                cir.setReturnValue(false);
+            }
+        }
+        if (tester instanceof PhantomEntity phantomEntity && target instanceof PlayerEntity player) {
+            if (Abilities.isWearingPhantomPassiveArmor(player)) {
                 cir.setReturnValue(false);
             }
         }

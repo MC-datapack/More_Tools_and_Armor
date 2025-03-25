@@ -31,7 +31,7 @@ import java.util.function.Predicate;
 import static net.minecraft.item.HoeItem.createTillAction;
 import static net.minecraft.item.HoeItem.createTillAndDropAction;
 
-public class PaxelItem extends MiningToolItem {
+public class PaxelItem extends MiningToolItem implements MoreToolsAndArmorItem<ToolMaterial> {
     protected static final Map<Block, Block> STRIPPED_BLOCKS = new ImmutableMap.Builder<Block, Block>()
             .put(Blocks.OAK_WOOD, Blocks.STRIPPED_OAK_WOOD)
             .put(Blocks.OAK_LOG, Blocks.STRIPPED_OAK_LOG)
@@ -79,8 +79,11 @@ public class PaxelItem extends MiningToolItem {
             )
     );
 
+    private final ToolMaterial material;
+
     public PaxelItem(ToolMaterial toolMaterial, float attackDamage, float attackSpeed, Settings settings) {
         super(toolMaterial, TagList.BlockTags.PAXEL_MINEABLE, attackDamage, attackSpeed, settings);
+        this.material = toolMaterial;
     }
 
     @Override
@@ -178,5 +181,10 @@ public class PaxelItem extends MiningToolItem {
         int i = ThreadLocalRandom.current().nextInt(100);
         if (i <= 50) return i1;
         else return i2;
+    }
+
+    @Override
+    public ToolMaterial getMaterial() {
+        return material;
     }
 }
