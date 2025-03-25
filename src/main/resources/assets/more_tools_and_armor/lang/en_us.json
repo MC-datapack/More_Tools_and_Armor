@@ -7,6 +7,10 @@
   "more_tools_and_armor.tooltip.powder_snow_walk": "§2Allows the player to walk on Powder Snow",
   "more_tools_and_armor.tooltip.status_effect_immune": "§2No harmful Status Effects can be applied",
   "more_tools_and_armor.tooltip.elytra": "§2Allows the player to glide like with an elytra",
+  "more_tools_and_armor.tooltip.bedrockMining": "§2Allows to mine Bedrock and End Portal Frames",
+  "more_tools_and_armor.tooltip.randomOre": "§2Has a chance to convert Stones to Ores",
+  "more_tools_and_armor.tooltip.moreXP": "§2Entities drop more XP, Multiplier: ",
+  "more_tools_and_armor.tooltip.phantom_passive": "§2Phantom Passive",
 
   "itemGroup.more_tools_and_armor.more_tools_and_armor_group": "More Tools and Armor",
   "block.more_tools_and_armor.end_coal_ore": "End Coal Ore",
@@ -272,5 +276,9 @@
   "text.autoconfig.more_tools_and_armor.option.endermanPassive.materials": "Materials",
   "text.autoconfig.more_tools_and_armor.option.statusEffectImmune": "Ability: §2No harmful Status Effects can be applied",
   "text.autoconfig.more_tools_and_armor.option.statusEffectImmune.activated": "Activated",
-  "text.autoconfig.more_tools_and_armor.option.statusEffectImmune.materials": "Materials"
+  "text.autoconfig.more_tools_and_armor.option.statusEffectImmune.materials": "Materials",
+  "text.autoconfig.more_tools_and_armor.option.bedrockMining": "Ability: §2Allows to mine Bedrock and End Portal Frames",
+  "text.autoconfig.more_tools_and_armor.option.randomOre": "Ability: §2Has a chance to convert Stones to Ores",
+  "text.autoconfig.more_tools_and_armor.option.moreXP": "Ability: §2Entities drop more XP",
+  "text.autoconfig.more_tools_and_armor.option.phantomPassive": "Ability: §2Phantom Passive"
 }
