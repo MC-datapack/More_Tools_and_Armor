@@ -50,7 +50,7 @@ public enum ToolMaterials implements ToolMaterial {
             Ingredient.ofItems(ItemInit.OLED_INGOT)
     ),
     ANCIENT(
-            Integer.MAX_VALUE + 1, 2712561F, 150F, TagList.BlockTags.INCORRECT_FOR_ANCIENT_TOOL, 100,
+            Integer.MAX_VALUE, 2712561F, 150F, TagList.BlockTags.INCORRECT_FOR_ANCIENT_TOOL, 100,
             Ingredient.ofItems(ItemInit.ANCIENT_INGOT)
     );
 

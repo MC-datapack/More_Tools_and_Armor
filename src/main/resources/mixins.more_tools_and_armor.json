@@ -6,6 +6,8 @@
   "mixins": [
 	"BrushableBlockEntityMixin",
 	"ToolTipHandler",
+	"ability.AbstractBlockMixin",
+	"ability.AbstractBlockSettingsMixin",
 	"ability.EndermanEntityMixin",
 	"ability.LivingEntityMixin",
 	"ability.PiglinBrainMixin",

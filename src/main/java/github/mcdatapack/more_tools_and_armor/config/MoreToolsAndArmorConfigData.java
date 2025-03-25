@@ -8,31 +8,33 @@ import me.shedaniel.cloth.clothconfig.shadowed.blue.endless.jankson.Comment;
 @Config(name = "more_tools_and_armor")
 public class MoreToolsAndArmorConfigData implements ConfigData {
     @ConfigEntry.Gui.CollapsibleObject
-    public AbilityConfig endermanSave = new AbilityConfig(true);
+    public boolean endermanSave = true;
 
     @ConfigEntry.Gui.CollapsibleObject
-    public AbilityConfig powderSnowWalk = new AbilityConfig(true);
+    public boolean powderSnowWalk = true;
 
     @ConfigEntry.Gui.CollapsibleObject
-    public AbilityConfig piglinPassive = new AbilityConfig(true);
+    public boolean piglinPassive = true;
 
     @ConfigEntry.Gui.CollapsibleObject
-    public AbilityConfig ironGolemPassive = new AbilityConfig(true);
+    public boolean ironGolemPassive = true;
 
     @ConfigEntry.Gui.CollapsibleObject
-    public AbilityConfig endermanPassive = new AbilityConfig(true);
+    public boolean endermanPassive = true;
+
+    @ConfigEntry.Gui.CollapsibleObject
+    public boolean phantomPassive = true;
 
     @ConfigEntry.Gui.CollapsibleObject
     @Comment("Instand Damage always gets applied")
-    public AbilityConfig statusEffectImmune = new AbilityConfig(true);
+    public boolean statusEffectImmune = true;
 
-    public static class AbilityConfig {
-        public AbilityConfig(boolean activated) {
-            this.activated = activated;
-        }
+    @ConfigEntry.Gui.CollapsibleObject
+    public boolean bedrockMining = true;
 
-        @ConfigEntry.Gui.TransitiveObject
-        public boolean activated;
+    @ConfigEntry.Gui.CollapsibleObject
+    public boolean randomOre = true;
 
-    }
+    @ConfigEntry.Gui.CollapsibleObject
+    public boolean moreXP = true;
 }

@@ -81,14 +81,14 @@ public class ItemInit {
     public static final PaxelItem VOID_PAXEL = register("void_paxel", new PaxelItem(ToolMaterials.VOID, new Item.Settings()
             .attributeModifiers(PaxelItem.createAttributeModifiers(ToolMaterials.VOID, 22, -1.8F))
             .fireproof().rarity(Rarity.EPIC)));
-    public static final PaxelItem ONETHDENDERITE_PAXEL = register("onethdenderite_paxel", new PaxelItem(ToolMaterials.ONETHDENDERITE, new Item.Settings()
-            .attributeModifiers(PaxelItem.createAttributeModifiers(ToolMaterials.ONETHDENDERITE, 33, -1.6F))
+    public static final ConvertPaxelItem ONETHDENDERITE_PAXEL = register("onethdenderite_paxel", new ConvertPaxelItem(3, ToolMaterials.ONETHDENDERITE, new Item.Settings()
+            .attributeModifiers(ConvertPaxelItem.createAttributeModifiers(ToolMaterials.ONETHDENDERITE, 33, -1.6F))
             .fireproof().rarity(Rarity.EPIC)));
-    public static final PaxelItem OLED_PAXEL = register("oled_paxel", new PaxelItem(ToolMaterials.OLED, new Item.Settings()
-            .attributeModifiers(PaxelItem.createAttributeModifiers(ToolMaterials.OLED, 100, 0))
+    public static final ConvertPaxelItem OLED_PAXEL = register("oled_paxel", new ConvertPaxelItem(5, ToolMaterials.OLED, new Item.Settings()
+            .attributeModifiers(ConvertPaxelItem.createAttributeModifiers(ToolMaterials.OLED, 100, 0))
             .fireproof().rarity(Rarity.EPIC)));
-    public static final PaxelItem ANCIENT_PAXEL = register("ancient_paxel", new PaxelItem(ToolMaterials.ANCIENT, new Item.Settings()
-            .attributeModifiers(PaxelItem.createAttributeModifiers(ToolMaterials.ANCIENT, 100, 0))
+    public static final ConvertPaxelItem ANCIENT_PAXEL = register("ancient_paxel", new ConvertPaxelItem(100, ToolMaterials.ANCIENT, new Item.Settings()
+            .attributeModifiers(ConvertPaxelItem.createAttributeModifiers(ToolMaterials.ANCIENT, 100, 0))
             .fireproof().rarity(Rarity.EPIC)));
 
 //Budding Amethyst
@@ -105,11 +105,11 @@ public class ItemInit {
     public static final ArmorItem BUDDING_AMETHYST_HELMET = register("budding_amethyst_helmet", new ArmorItem(ArmorMaterialInit.BUDDING_AMETHYST, ArmorItem.Type.HELMET, new Item.Settings()
             .maxDamage(ArmorItem.Type.HELMET.getMaxDamage(20))));
     public static final ArmorItem BUDDING_AMETHYST_CHESTPLATE = register("budding_amethyst_chestplate", new ArmorItem(ArmorMaterialInit.BUDDING_AMETHYST, ArmorItem.Type.CHESTPLATE, new Item.Settings()
-            .maxDamage(ArmorItem.Type.CHESTPLATE.getMaxDamage(20))));;
+            .maxDamage(ArmorItem.Type.CHESTPLATE.getMaxDamage(20))));
     public static final ArmorItem BUDDING_AMETHYST_LEGGINGS = register("budding_amethyst_leggings", new ArmorItem(ArmorMaterialInit.BUDDING_AMETHYST, ArmorItem.Type.LEGGINGS, new Item.Settings()
-            .maxDamage(ArmorItem.Type.LEGGINGS.getMaxDamage(20))));;
+            .maxDamage(ArmorItem.Type.LEGGINGS.getMaxDamage(20))));
     public static final ArmorItem BUDDING_AMETHYST_BOOTS = register("budding_amethyst_boots", new ArmorItem(ArmorMaterialInit.BUDDING_AMETHYST, ArmorItem.Type.BOOTS, new Item.Settings()
-            .maxDamage(ArmorItem.Type.BOOTS.getMaxDamage(20))));;
+            .maxDamage(ArmorItem.Type.BOOTS.getMaxDamage(20))));
 //Copper
     public static final SwordItem COPPER_SWORD = register("copper_sword", new SwordItem(ToolMaterials.COPPER, new Item.Settings()
         .attributeModifiers(SwordItem.createAttributeModifiers(ToolMaterials.COPPER, 3, -2.4F))));
@@ -124,11 +124,11 @@ public class ItemInit {
     public static final ArmorItem COPPER_HELMET = register("copper_helmet", new ArmorItem(ArmorMaterialInit.COPPER, ArmorItem.Type.HELMET, new Item.Settings()
             .maxDamage(ArmorItem.Type.HELMET.getMaxDamage(15))));
     public static final ArmorItem COPPER_CHESTPLATE = register("copper_chestplate", new ArmorItem(ArmorMaterialInit.COPPER, ArmorItem.Type.CHESTPLATE, new Item.Settings()
-            .maxDamage(ArmorItem.Type.CHESTPLATE.getMaxDamage(15))));;
+            .maxDamage(ArmorItem.Type.CHESTPLATE.getMaxDamage(15))));
     public static final ArmorItem COPPER_LEGGINGS = register("copper_leggings", new ArmorItem(ArmorMaterialInit.COPPER, ArmorItem.Type.LEGGINGS, new Item.Settings()
-            .maxDamage(ArmorItem.Type.LEGGINGS.getMaxDamage(15))));;
+            .maxDamage(ArmorItem.Type.LEGGINGS.getMaxDamage(15))));
     public static final ArmorItem COPPER_BOOTS = register("copper_boots", new ArmorItem(ArmorMaterialInit.COPPER, ArmorItem.Type.BOOTS, new Item.Settings()
-            .maxDamage(ArmorItem.Type.BOOTS.getMaxDamage(15))));;
+            .maxDamage(ArmorItem.Type.BOOTS.getMaxDamage(15))));
 
 //Emerald
     public static final SwordItem EMERALD_SWORD = register("emerald_sword", new SwordItem(ToolMaterials.EMERALD, new Item.Settings()
@@ -144,9 +144,9 @@ public class ItemInit {
     public static final ArmorItem EMERALD_HELMET = register("emerald_helmet", new ArmorItem(ArmorMaterialInit.EMERALD, ArmorItem.Type.HELMET, new Item.Settings()
             .maxDamage(ArmorItem.Type.HELMET.getMaxDamage(21))));
     public static final ArmorItem EMERALD_CHESTPLATE = register("emerald_chestplate", new ArmorItem(ArmorMaterialInit.EMERALD, ArmorItem.Type.CHESTPLATE, new Item.Settings()
-            .maxDamage(ArmorItem.Type.CHESTPLATE.getMaxDamage(21))));;
+            .maxDamage(ArmorItem.Type.CHESTPLATE.getMaxDamage(21))));
     public static final ArmorItem EMERALD_LEGGINGS = register("emerald_leggings", new ArmorItem(ArmorMaterialInit.EMERALD, ArmorItem.Type.LEGGINGS, new Item.Settings()
-            .maxDamage(ArmorItem.Type.LEGGINGS.getMaxDamage(21))));;
+            .maxDamage(ArmorItem.Type.LEGGINGS.getMaxDamage(21))));
     public static final ArmorItem EMERALD_BOOTS = register("emerald_boots", new ArmorItem(ArmorMaterialInit.EMERALD, ArmorItem.Type.BOOTS, new Item.Settings()
             .maxDamage(ArmorItem.Type.BOOTS.getMaxDamage(21))));
 
@@ -164,9 +164,9 @@ public class ItemInit {
     public static final ArmorItem OBSIDIAN_HELMET = register("obsidian_helmet", new ArmorItem(ArmorMaterialInit.OBSIDIAN, ArmorItem.Type.HELMET, new Item.Settings()
             .maxDamage(ArmorItem.Type.HELMET.getMaxDamage(40))));
     public static final ArmorItem OBSIDIAN_CHESTPLATE = register("obsidian_chestplate", new ArmorItem(ArmorMaterialInit.OBSIDIAN, ArmorItem.Type.CHESTPLATE, new Item.Settings()
-            .maxDamage(ArmorItem.Type.CHESTPLATE.getMaxDamage(40))));;
+            .maxDamage(ArmorItem.Type.CHESTPLATE.getMaxDamage(40))));
     public static final ArmorItem OBSIDIAN_LEGGINGS = register("obsidian_leggings", new ArmorItem(ArmorMaterialInit.OBSIDIAN, ArmorItem.Type.LEGGINGS, new Item.Settings()
-            .maxDamage(ArmorItem.Type.LEGGINGS.getMaxDamage(40))));;
+            .maxDamage(ArmorItem.Type.LEGGINGS.getMaxDamage(40))));
     public static final ArmorItem OBSIDIAN_BOOTS = register("obsidian_boots", new ArmorItem(ArmorMaterialInit.OBSIDIAN, ArmorItem.Type.BOOTS, new Item.Settings()
             .maxDamage(ArmorItem.Type.BOOTS.getMaxDamage(40))));
 
@@ -237,8 +237,8 @@ public class ItemInit {
             .attributeModifiers(SwordItem.createAttributeModifiers(ToolMaterials.ONETHDENDERITE, 33, -1.6F)).fireproof().rarity(Rarity.EPIC)));
     public static final AxeItem ONETHDENDERITE_AXE = register("onethdenderite_axe", new AxeItem(ToolMaterials.ONETHDENDERITE, new Item.Settings()
             .attributeModifiers(AxeItem.createAttributeModifiers(ToolMaterials.ONETHDENDERITE, 28, -2.2F)).fireproof().rarity(Rarity.EPIC)));
-    public static final PickaxeItem ONETHDENDERITE_PICKAXE = register("onethdenderite_pickaxe", new PickaxeItem(ToolMaterials.ONETHDENDERITE, new Item.Settings()
-            .attributeModifiers(PickaxeItem.createAttributeModifiers(ToolMaterials.ONETHDENDERITE, 18, -1.8F)).fireproof().rarity(Rarity.EPIC)));
+    public static final ConvertPickaxeItem ONETHDENDERITE_PICKAXE = register("onethdenderite_pickaxe", new ConvertPickaxeItem(3, ToolMaterials.ONETHDENDERITE, new Item.Settings()
+            .attributeModifiers(ConvertPickaxeItem.createAttributeModifiers(ToolMaterials.ONETHDENDERITE, 18, -1.8F)).fireproof().rarity(Rarity.EPIC)));
     public static final ShovelItem ONETHDENDERITE_SHOVEL = register("onethdenderite_shovel", new ShovelItem(ToolMaterials.ONETHDENDERITE, new Item.Settings()
             .attributeModifiers(ShovelItem.createAttributeModifiers(ToolMaterials.ONETHDENDERITE, 23, -2.0F)).fireproof().rarity(Rarity.EPIC)));
     public static final HoeItem ONETHDENDERITE_HOE = register("onethdenderite_hoe", new HoeItem(ToolMaterials.ONETHDENDERITE, new Item.Settings()
@@ -259,8 +259,8 @@ public class ItemInit {
     public static final AxeItem OLED_AXE = register("oled_axe", new AxeItem(ToolMaterials.OLED, new Item.Settings()
             .attributeModifiers(AxeItem.createAttributeModifiers(ToolMaterials.OLED, 90, -1.1F))
             .fireproof().rarity(Rarity.EPIC)));
-    public static final PickaxeItem OLED_PICKAXE = register("oled_pickaxe", new PickaxeItem(ToolMaterials.OLED, new Item.Settings()
-            .attributeModifiers(PickaxeItem.createAttributeModifiers(ToolMaterials.OLED, 70, -0.2F))
+    public static final ConvertPickaxeItem OLED_PICKAXE = register("oled_pickaxe", new ConvertPickaxeItem(5, ToolMaterials.OLED, new Item.Settings()
+            .attributeModifiers(ConvertPickaxeItem.createAttributeModifiers(ToolMaterials.OLED, 70, -0.2F))
             .fireproof().rarity(Rarity.EPIC)));
     public static final ShovelItem OLED_SHOVEL = register("oled_shovel", new ShovelItem(ToolMaterials.OLED, new Item.Settings()
             .attributeModifiers(ShovelItem.createAttributeModifiers(ToolMaterials.OLED, 80, -1.1F))
@@ -285,8 +285,8 @@ public class ItemInit {
     public static final AxeItem ANCIENT_AXE = register("ancient_axe", new AxeItem(ToolMaterials.ANCIENT, new Item.Settings()
             .attributeModifiers(AxeItem.createAttributeModifiers(ToolMaterials.ANCIENT, 90, -1.1F))
             .fireproof().rarity(Rarity.EPIC)));
-    public static final PickaxeItem ANCIENT_PICKAXE = register("ancient_pickaxe", new PickaxeItem(ToolMaterials.ANCIENT, new Item.Settings()
-            .attributeModifiers(PickaxeItem.createAttributeModifiers(ToolMaterials.ANCIENT, 70, -0.2F))
+    public static final ConvertPickaxeItem ANCIENT_PICKAXE = register("ancient_pickaxe", new ConvertPickaxeItem(100, ToolMaterials.ANCIENT, new Item.Settings()
+            .attributeModifiers(ConvertPickaxeItem.createAttributeModifiers(ToolMaterials.ANCIENT, 70, -0.2F))
             .fireproof().rarity(Rarity.EPIC)));
     public static final ShovelItem ANCIENT_SHOVEL = register("ancient_shovel", new ShovelItem(ToolMaterials.ANCIENT, new Item.Settings()
             .attributeModifiers(ShovelItem.createAttributeModifiers(ToolMaterials.ANCIENT, 80, -1.1F))

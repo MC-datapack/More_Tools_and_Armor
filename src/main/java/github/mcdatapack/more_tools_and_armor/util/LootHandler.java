@@ -85,7 +85,6 @@ public class LootHandler {
 
             return original;
         });
-
     }
 
     public static void addItemsToLootTable(LootTable.Builder builder, RegistryKey<LootTable> target, RegistryKey<LootTable> lottTable, LootTableItem... entries) {
