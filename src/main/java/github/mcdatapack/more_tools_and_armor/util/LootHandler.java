@@ -60,7 +60,7 @@ public class LootHandler {
         });
         LootTableEvents.REPLACE.register((key, original, source, registries) -> {
             RegistryWrapper.Impl<Enchantment> impl = registries.getOrThrow(RegistryKeys.ENCHANTMENT);
-            if (Blocks.DEEPSLATE_EMERALD_ORE.getLootTableKey().equals(key)) {
+            if (Blocks.DEEPSLATE_EMERALD_ORE.getLootTableKey().get().equals(key)) {
                 LootPool.Builder poolBuilder = LootPool.builder()
                         .rolls(ConstantLootNumberProvider.create(1))
                         .with(ItemEntry.builder(ItemInit.DEEPSLATE_EMERALD).conditionally(
