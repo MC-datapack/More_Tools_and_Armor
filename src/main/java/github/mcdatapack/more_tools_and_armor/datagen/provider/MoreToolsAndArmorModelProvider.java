@@ -11,6 +11,7 @@ import net.minecraft.client.data.ItemModelGenerator;
 
 import static github.mcdatapack.more_tools_and_armor.init.ItemInit.*;
 import static github.mcdatapack.more_tools_and_armor.init.ItemInit.ONETHDENDERITE_PAXEL;
+import static net.minecraft.client.data.ItemModelGenerator.*;
 
 public class MoreToolsAndArmorModelProvider extends FabricModelProvider {
     public MoreToolsAndArmorModelProvider(FabricDataOutput output) {
@@ -63,80 +64,80 @@ public class MoreToolsAndArmorModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ItemInit.BUDDING_AMETHYST_PICKAXE, Models.HANDHELD);
         itemModelGenerator.register(ItemInit.BUDDING_AMETHYST_SHOVEL, Models.HANDHELD);
         itemModelGenerator.register(ItemInit.BUDDING_AMETHYST_HOE, Models.HANDHELD);
-        itemModelGenerator.registerArmor(ItemInit.BUDDING_AMETHYST_HELMET, EquipmentModelInit.BUDDING_AMETHYST, "helmet",false);
-        itemModelGenerator.registerArmor(ItemInit.BUDDING_AMETHYST_CHESTPLATE, EquipmentModelInit.BUDDING_AMETHYST, "chestplate",false);
-        itemModelGenerator.registerArmor(ItemInit.BUDDING_AMETHYST_LEGGINGS, EquipmentModelInit.BUDDING_AMETHYST, "leggings",false);
-        itemModelGenerator.registerArmor(ItemInit.BUDDING_AMETHYST_BOOTS, EquipmentModelInit.BUDDING_AMETHYST, "boots",false);
+        itemModelGenerator.registerArmor(ItemInit.BUDDING_AMETHYST_HELMET, EquipmentModelInit.BUDDING_AMETHYST, HELMET_TRIM_ID_PREFIX,false);
+        itemModelGenerator.registerArmor(ItemInit.BUDDING_AMETHYST_CHESTPLATE, EquipmentModelInit.BUDDING_AMETHYST, CHESTPLATE_TRIM_ID_PREFIX,false);
+        itemModelGenerator.registerArmor(ItemInit.BUDDING_AMETHYST_LEGGINGS, EquipmentModelInit.BUDDING_AMETHYST, LEGGINGS_TRIM_ID_PREFIX,false);
+        itemModelGenerator.registerArmor(ItemInit.BUDDING_AMETHYST_BOOTS, EquipmentModelInit.BUDDING_AMETHYST, BOOTS_TRIM_ID_PREFIX,false);
 
         itemModelGenerator.register(ItemInit.COPPER_SWORD, Models.HANDHELD);
         itemModelGenerator.register(ItemInit.COPPER_AXE, Models.HANDHELD);
         itemModelGenerator.register(ItemInit.COPPER_PICKAXE, Models.HANDHELD);
         itemModelGenerator.register(ItemInit.COPPER_SHOVEL, Models.HANDHELD);
         itemModelGenerator.register(ItemInit.COPPER_HOE, Models.HANDHELD);
-        itemModelGenerator.registerArmor(ItemInit.COPPER_HELMET, EquipmentModelInit.COPPER, "helmet",false);
-        itemModelGenerator.registerArmor(ItemInit.COPPER_CHESTPLATE,EquipmentModelInit.COPPER, "chestplate",false);
-        itemModelGenerator.registerArmor(ItemInit.COPPER_LEGGINGS, EquipmentModelInit.COPPER, "leggings",false);
-        itemModelGenerator.registerArmor(ItemInit.COPPER_BOOTS, EquipmentModelInit.COPPER, "boots",false);
+        itemModelGenerator.registerArmor(ItemInit.COPPER_HELMET, EquipmentModelInit.COPPER, HELMET_TRIM_ID_PREFIX,false);
+        itemModelGenerator.registerArmor(ItemInit.COPPER_CHESTPLATE,EquipmentModelInit.COPPER, CHESTPLATE_TRIM_ID_PREFIX,false);
+        itemModelGenerator.registerArmor(ItemInit.COPPER_LEGGINGS, EquipmentModelInit.COPPER, LEGGINGS_TRIM_ID_PREFIX,false);
+        itemModelGenerator.registerArmor(ItemInit.COPPER_BOOTS, EquipmentModelInit.COPPER, BOOTS_TRIM_ID_PREFIX,false);
 
         itemModelGenerator.register(ItemInit.EMERALD_SWORD, Models.HANDHELD);
         itemModelGenerator.register(ItemInit.EMERALD_AXE, Models.HANDHELD);
         itemModelGenerator.register(ItemInit.EMERALD_PICKAXE, Models.HANDHELD);
         itemModelGenerator.register(ItemInit.EMERALD_SHOVEL, Models.HANDHELD);
         itemModelGenerator.register(ItemInit.EMERALD_HOE, Models.HANDHELD);
-        itemModelGenerator.registerArmor(ItemInit.EMERALD_HELMET, EquipmentModelInit.EMERALD, "helmet",false);
-        itemModelGenerator.registerArmor(ItemInit.EMERALD_CHESTPLATE,EquipmentModelInit.EMERALD, "chestplate",false);
-        itemModelGenerator.registerArmor(ItemInit.EMERALD_LEGGINGS, EquipmentModelInit.EMERALD, "leggings",false);
-        itemModelGenerator.registerArmor(ItemInit.EMERALD_BOOTS, EquipmentModelInit.EMERALD, "boots",false);
+        itemModelGenerator.registerArmor(ItemInit.EMERALD_HELMET, EquipmentModelInit.EMERALD, HELMET_TRIM_ID_PREFIX,false);
+        itemModelGenerator.registerArmor(ItemInit.EMERALD_CHESTPLATE,EquipmentModelInit.EMERALD, CHESTPLATE_TRIM_ID_PREFIX,false);
+        itemModelGenerator.registerArmor(ItemInit.EMERALD_LEGGINGS, EquipmentModelInit.EMERALD, LEGGINGS_TRIM_ID_PREFIX,false);
+        itemModelGenerator.registerArmor(ItemInit.EMERALD_BOOTS, EquipmentModelInit.EMERALD, BOOTS_TRIM_ID_PREFIX,false);
 
         itemModelGenerator.register(ItemInit.OBSIDIAN_SWORD, Models.HANDHELD);
         itemModelGenerator.register(ItemInit.OBSIDIAN_AXE, Models.HANDHELD);
         itemModelGenerator.register(ItemInit.OBSIDIAN_PICKAXE, Models.HANDHELD);
         itemModelGenerator.register(ItemInit.OBSIDIAN_SHOVEL, Models.HANDHELD);
         itemModelGenerator.register(ItemInit.OBSIDIAN_HOE, Models.HANDHELD);
-        itemModelGenerator.registerArmor(ItemInit.OBSIDIAN_HELMET, EquipmentModelInit.OBSIDIAN, "helmet",false);
-        itemModelGenerator.registerArmor(ItemInit.OBSIDIAN_CHESTPLATE,EquipmentModelInit.OBSIDIAN, "chestplate",false);
-        itemModelGenerator.registerArmor(ItemInit.OBSIDIAN_LEGGINGS, EquipmentModelInit.OBSIDIAN, "leggings",false);
-        itemModelGenerator.registerArmor(ItemInit.OBSIDIAN_BOOTS, EquipmentModelInit.OBSIDIAN, "boots",false);
+        itemModelGenerator.registerArmor(ItemInit.OBSIDIAN_HELMET, EquipmentModelInit.OBSIDIAN, HELMET_TRIM_ID_PREFIX,false);
+        itemModelGenerator.registerArmor(ItemInit.OBSIDIAN_CHESTPLATE,EquipmentModelInit.OBSIDIAN, CHESTPLATE_TRIM_ID_PREFIX,false);
+        itemModelGenerator.registerArmor(ItemInit.OBSIDIAN_LEGGINGS, EquipmentModelInit.OBSIDIAN, LEGGINGS_TRIM_ID_PREFIX,false);
+        itemModelGenerator.registerArmor(ItemInit.OBSIDIAN_BOOTS, EquipmentModelInit.OBSIDIAN, BOOTS_TRIM_ID_PREFIX,false);
 
         itemModelGenerator.register(ItemInit.DEEPSLATE_EMERALD_SWORD, Models.HANDHELD);
         itemModelGenerator.register(ItemInit.DEEPSLATE_EMERALD_AXE, Models.HANDHELD);
         itemModelGenerator.register(ItemInit.DEEPSLATE_EMERALD_PICKAXE, Models.HANDHELD);
         itemModelGenerator.register(ItemInit.DEEPSLATE_EMERALD_SHOVEL, Models.HANDHELD);
         itemModelGenerator.register(ItemInit.DEEPSLATE_EMERALD_HOE, Models.HANDHELD);
-        itemModelGenerator.registerArmor(ItemInit.DEEPSLATE_EMERALD_HELMET, EquipmentModelInit.DEEPSLATE_EMERALD, "helmet",false);
-        itemModelGenerator.registerArmor(ItemInit.DEEPSLATE_EMERALD_CHESTPLATE,EquipmentModelInit.DEEPSLATE_EMERALD, "chestplate",false);
-        itemModelGenerator.registerArmor(ItemInit.DEEPSLATE_EMERALD_LEGGINGS, EquipmentModelInit.DEEPSLATE_EMERALD, "leggings",false);
-        itemModelGenerator.registerArmor(ItemInit.DEEPSLATE_EMERALD_BOOTS, EquipmentModelInit.DEEPSLATE_EMERALD, "boots",false);
+        itemModelGenerator.registerArmor(ItemInit.DEEPSLATE_EMERALD_HELMET, EquipmentModelInit.DEEPSLATE_EMERALD, HELMET_TRIM_ID_PREFIX,false);
+        itemModelGenerator.registerArmor(ItemInit.DEEPSLATE_EMERALD_CHESTPLATE,EquipmentModelInit.DEEPSLATE_EMERALD, CHESTPLATE_TRIM_ID_PREFIX,false);
+        itemModelGenerator.registerArmor(ItemInit.DEEPSLATE_EMERALD_LEGGINGS, EquipmentModelInit.DEEPSLATE_EMERALD, LEGGINGS_TRIM_ID_PREFIX,false);
+        itemModelGenerator.registerArmor(ItemInit.DEEPSLATE_EMERALD_BOOTS, EquipmentModelInit.DEEPSLATE_EMERALD, BOOTS_TRIM_ID_PREFIX,false);
 
         itemModelGenerator.register(ItemInit.END_DIAMOND_SWORD, Models.HANDHELD);
         itemModelGenerator.register(ItemInit.END_DIAMOND_AXE, Models.HANDHELD);
         itemModelGenerator.register(ItemInit.END_DIAMOND_PICKAXE, Models.HANDHELD);
         itemModelGenerator.register(ItemInit.END_DIAMOND_SHOVEL, Models.HANDHELD);
         itemModelGenerator.register(ItemInit.END_DIAMOND_HOE, Models.HANDHELD);
-        itemModelGenerator.registerArmor(ItemInit.END_DIAMOND_HELMET, EquipmentModelInit.END_DIAMOND, "helmet",false);
-        itemModelGenerator.registerArmor(ItemInit.END_DIAMOND_CHESTPLATE,EquipmentModelInit.END_DIAMOND, "chestplate",false);
-        itemModelGenerator.registerArmor(ItemInit.END_DIAMOND_LEGGINGS, EquipmentModelInit.END_DIAMOND, "leggings",false);
-        itemModelGenerator.registerArmor(ItemInit.END_DIAMOND_BOOTS, EquipmentModelInit.END_DIAMOND, "boots",false);
+        itemModelGenerator.registerArmor(ItemInit.END_DIAMOND_HELMET, EquipmentModelInit.END_DIAMOND, HELMET_TRIM_ID_PREFIX,false);
+        itemModelGenerator.registerArmor(ItemInit.END_DIAMOND_CHESTPLATE,EquipmentModelInit.END_DIAMOND, CHESTPLATE_TRIM_ID_PREFIX,false);
+        itemModelGenerator.registerArmor(ItemInit.END_DIAMOND_LEGGINGS, EquipmentModelInit.END_DIAMOND, LEGGINGS_TRIM_ID_PREFIX,false);
+        itemModelGenerator.registerArmor(ItemInit.END_DIAMOND_BOOTS, EquipmentModelInit.END_DIAMOND, BOOTS_TRIM_ID_PREFIX,false);
 
         itemModelGenerator.register(ItemInit.VOID_SWORD, Models.HANDHELD);
         itemModelGenerator.register(ItemInit.VOID_AXE, Models.HANDHELD);
         itemModelGenerator.register(ItemInit.VOID_PICKAXE, Models.HANDHELD);
         itemModelGenerator.register(ItemInit.VOID_SHOVEL, Models.HANDHELD);
         itemModelGenerator.register(ItemInit.VOID_HOE, Models.HANDHELD);
-        itemModelGenerator.registerArmor(ItemInit.VOID_HELMET, EquipmentModelInit.VOID, "helmet",false);
-        itemModelGenerator.registerArmor(ItemInit.VOID_CHESTPLATE,EquipmentModelInit.VOID, "chestplate",false);
-        itemModelGenerator.registerArmor(ItemInit.VOID_LEGGINGS, EquipmentModelInit.VOID, "leggings",false);
-        itemModelGenerator.registerArmor(ItemInit.VOID_BOOTS, EquipmentModelInit.VOID, "boots",false);
+        itemModelGenerator.registerArmor(ItemInit.VOID_HELMET, EquipmentModelInit.VOID, HELMET_TRIM_ID_PREFIX,false);
+        itemModelGenerator.registerArmor(ItemInit.VOID_CHESTPLATE,EquipmentModelInit.VOID, CHESTPLATE_TRIM_ID_PREFIX,false);
+        itemModelGenerator.registerArmor(ItemInit.VOID_LEGGINGS, EquipmentModelInit.VOID, LEGGINGS_TRIM_ID_PREFIX,false);
+        itemModelGenerator.registerArmor(ItemInit.VOID_BOOTS, EquipmentModelInit.VOID, BOOTS_TRIM_ID_PREFIX,false);
 
         itemModelGenerator.register(ItemInit.ONETHDENDERITE_SWORD, Models.HANDHELD);
         itemModelGenerator.register(ItemInit.ONETHDENDERITE_AXE, Models.HANDHELD);
         itemModelGenerator.register(ItemInit.ONETHDENDERITE_PICKAXE, Models.HANDHELD);
         itemModelGenerator.register(ItemInit.ONETHDENDERITE_SHOVEL, Models.HANDHELD);
         itemModelGenerator.register(ItemInit.ONETHDENDERITE_HOE, Models.HANDHELD);
-        itemModelGenerator.registerArmor(ItemInit.ONETHDENDERITE_HELMET, EquipmentModelInit.ONETHDENDERITE, "helmet",false);
-        itemModelGenerator.registerArmor(ItemInit.ONETHDENDERITE_CHESTPLATE,EquipmentModelInit.ONETHDENDERITE, "chestplate",false);
-        itemModelGenerator.registerArmor(ItemInit.ONETHDENDERITE_LEGGINGS, EquipmentModelInit.ONETHDENDERITE, "leggings",false);
-        itemModelGenerator.registerArmor(ItemInit.ONETHDENDERITE_BOOTS, EquipmentModelInit.ONETHDENDERITE, "boots",false);
+        itemModelGenerator.registerArmor(ItemInit.ONETHDENDERITE_HELMET, EquipmentModelInit.ONETHDENDERITE, HELMET_TRIM_ID_PREFIX,false);
+        itemModelGenerator.registerArmor(ItemInit.ONETHDENDERITE_CHESTPLATE,EquipmentModelInit.ONETHDENDERITE, CHESTPLATE_TRIM_ID_PREFIX,false);
+        itemModelGenerator.registerArmor(ItemInit.ONETHDENDERITE_LEGGINGS, EquipmentModelInit.ONETHDENDERITE, LEGGINGS_TRIM_ID_PREFIX,false);
+        itemModelGenerator.registerArmor(ItemInit.ONETHDENDERITE_BOOTS, EquipmentModelInit.ONETHDENDERITE, BOOTS_TRIM_ID_PREFIX,false);
 
         itemModelGenerator.register(OLED_INGOT, Models.GENERATED);
         itemModelGenerator.register(OLED_UPGRADE_SMITHING_TEMPLATE, Models.GENERATED);
@@ -146,20 +147,20 @@ public class MoreToolsAndArmorModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ItemInit.OLED_PICKAXE, Models.HANDHELD);
         itemModelGenerator.register(ItemInit.OLED_SHOVEL, Models.HANDHELD);
         itemModelGenerator.register(ItemInit.OLED_HOE, Models.HANDHELD);
-        itemModelGenerator.registerArmor(ItemInit.OLED_HELMET, EquipmentModelInit.OLED, "helmet", false);
-        itemModelGenerator.registerArmor(ItemInit.OLED_CHESTPLATE, EquipmentModelInit.OLED, "chestplate", false);
-        itemModelGenerator.registerArmor(ItemInit.OLED_LEGGINGS, EquipmentModelInit.OLED, "leggings", false);
-        itemModelGenerator.registerArmor(ItemInit.OLED_BOOTS, EquipmentModelInit.OLED, "boots", false);
+        itemModelGenerator.registerArmor(ItemInit.OLED_HELMET, EquipmentModelInit.OLED, HELMET_TRIM_ID_PREFIX, false);
+        itemModelGenerator.registerArmor(ItemInit.OLED_CHESTPLATE, EquipmentModelInit.OLED, CHESTPLATE_TRIM_ID_PREFIX, false);
+        itemModelGenerator.registerArmor(ItemInit.OLED_LEGGINGS, EquipmentModelInit.OLED, LEGGINGS_TRIM_ID_PREFIX, false);
+        itemModelGenerator.registerArmor(ItemInit.OLED_BOOTS, EquipmentModelInit.OLED, BOOTS_TRIM_ID_PREFIX, false);
 
         itemModelGenerator.register(ItemInit.ANCIENT_SWORD, Models.HANDHELD);
         itemModelGenerator.register(ItemInit.ANCIENT_AXE, Models.HANDHELD);
         itemModelGenerator.register(ItemInit.ANCIENT_PICKAXE, Models.HANDHELD);
         itemModelGenerator.register(ItemInit.ANCIENT_SHOVEL, Models.HANDHELD);
         itemModelGenerator.register(ItemInit.ANCIENT_HOE, Models.HANDHELD);
-        itemModelGenerator.registerArmor(ItemInit.ANCIENT_HELMET, EquipmentModelInit.ANCIENT, "helmet", false);
-        itemModelGenerator.registerArmor(ItemInit.ANCIENT_CHESTPLATE, EquipmentModelInit.ANCIENT, "chestplate", false);
-        itemModelGenerator.registerArmor(ItemInit.ANCIENT_LEGGINGS, EquipmentModelInit.ANCIENT, "leggings", false);
-        itemModelGenerator.registerArmor(ItemInit.ANCIENT_BOOTS, EquipmentModelInit.ANCIENT, "boots", false);
+        itemModelGenerator.registerArmor(ItemInit.ANCIENT_HELMET, EquipmentModelInit.ANCIENT, HELMET_TRIM_ID_PREFIX, false);
+        itemModelGenerator.registerArmor(ItemInit.ANCIENT_CHESTPLATE, EquipmentModelInit.ANCIENT, CHESTPLATE_TRIM_ID_PREFIX, false);
+        itemModelGenerator.registerArmor(ItemInit.ANCIENT_LEGGINGS, EquipmentModelInit.ANCIENT, LEGGINGS_TRIM_ID_PREFIX, false);
+        itemModelGenerator.registerArmor(ItemInit.ANCIENT_BOOTS, EquipmentModelInit.ANCIENT, BOOTS_TRIM_ID_PREFIX, false);
 
         itemModelGenerator.register(WOODEN_PAXEL, Models.HANDHELD);
         itemModelGenerator.register(STONE_PAXEL, Models.HANDHELD);

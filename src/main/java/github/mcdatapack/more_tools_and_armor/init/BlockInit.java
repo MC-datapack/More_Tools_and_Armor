@@ -117,7 +117,7 @@ public class BlockInit {
     public static <T extends Block> T registerWithItem(String name, Function<AbstractBlock.Settings, T> block) {
         return registerWithItemDefault(name, block.apply(
                         AbstractBlock.Settings.create().registryKey(RegistryKey.of(RegistryKeys.BLOCK, MoreToolsAndArmor.id(name)))),
-                new Item.Settings().registryKey(RegistryKey.of(RegistryKeys.ITEM, MoreToolsAndArmor.id(name))));
+                new Item.Settings().registryKey(RegistryKey.of(RegistryKeys.ITEM, MoreToolsAndArmor.id(name))).useBlockPrefixedTranslationKey());
     }
 
     public static  <T extends Block> T registerWithItemDefault(String name, T block, Item.Settings settings) {

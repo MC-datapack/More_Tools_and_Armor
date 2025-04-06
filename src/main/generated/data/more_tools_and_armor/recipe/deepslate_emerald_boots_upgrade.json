@@ -3,7 +3,6 @@
   "addition": "more_tools_and_armor:deepslate_emerald",
   "base": "minecraft:netherite_boots",
   "result": {
-    "count": 1,
     "id": "more_tools_and_armor:deepslate_emerald_boots"
   },
   "template": "more_tools_and_armor:deepslate_emerald_upgrade_smithing_template"

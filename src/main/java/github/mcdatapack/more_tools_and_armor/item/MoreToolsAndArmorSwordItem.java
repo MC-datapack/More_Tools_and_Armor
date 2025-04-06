@@ -1,13 +1,13 @@
 package github.mcdatapack.more_tools_and_armor.item;
 
-import net.minecraft.item.SwordItem;
+import net.minecraft.item.Item;
 import net.minecraft.item.ToolMaterial;
 
-public class MoreToolsAndArmorSwordItem extends SwordItem implements MoreToolsAndArmorItem<ToolMaterial> {
+public class MoreToolsAndArmorSwordItem extends Item implements MoreToolsAndArmorItem<ToolMaterial> {
     private final ToolMaterial material;
 
     public MoreToolsAndArmorSwordItem(ToolMaterial material, float attackDamage, float attackSpeed, Settings settings) {
-        super(material, attackDamage, attackSpeed, settings);
+        super(settings.sword(material, attackDamage, attackSpeed));
         this.material = material;
     }
 
