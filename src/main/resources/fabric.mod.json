@@ -14,9 +14,6 @@
 		"main": [
 			"github.mcdatapack.more_tools_and_armor.MoreToolsAndArmor"
 		],
-	  	"fabric-datagen": [
-			"github.mcdatapack.more_tools_and_armor.MoreToolsAndArmorDataGenerator"
-	  	],
 	  	"modmenu": [
 		  	"github.mcdatapack.more_tools_and_armor.config.ModMenuIntegration"
 		]
