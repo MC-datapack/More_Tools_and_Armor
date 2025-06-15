@@ -26,6 +26,8 @@ public abstract class ToolTipHandler {
 
     @Inject(method = "getTooltip", at = @At(value = "INVOKE", target = "Lnet/minecraft/item/ItemStack;appendAttributeModifiersTooltip(Ljava/util/function/Consumer;Lnet/minecraft/entity/player/PlayerEntity;)V", shift = At.Shift.BEFORE))
     private void getTooltip(Item.TooltipContext context, PlayerEntity player, TooltipType tooltipType, CallbackInfoReturnable<List<Text>> info, @Local(ordinal = 0) List<Text> list) {
+        if (!MoreToolsAndArmorConfig.getConfig().showTooltip)
+            return;
         if (getItem() instanceof ArmorItem armorItem) {
             var material = armorItem.getMaterial();
             if (material == ArmorMaterialInit.DEEPSLATE_EMERALD) {

@@ -23,5 +23,7 @@ public class TagList {
         }
     }
 
-    public static class ItemTags {}
+    public static class ItemTags {
+        public static final TagKey<Item> HAMMER_ENCHANTABLE = TagKey.of(RegistryKeys.ITEM, MoreToolsAndArmor.id("enchantable/hammer"));
+    }
 }

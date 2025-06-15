@@ -17,15 +17,75 @@ import net.minecraft.sound.SoundEvents;
 public class ArmorMaterialInit {
 //Armor Materials
 
+    public static final RegistryEntry<ArmorMaterial> COAL = register("coal", Map.of(
+                    ArmorItem.Type.HELMET, 2,
+                    ArmorItem.Type.CHESTPLATE, 3,
+                    ArmorItem.Type.LEGGINGS, 2,
+                    ArmorItem.Type.BOOTS, 1),
+            6,
+            SoundEvents.ITEM_ARMOR_EQUIP_GENERIC,
+            () -> Ingredient.ofItems(Items.COAL),
+            0,
+            0,
+            false);
+
     public static final RegistryEntry<ArmorMaterial> COPPER = register("copper", Map.of(
+                    ArmorItem.Type.HELMET, 3,
+                    ArmorItem.Type.CHESTPLATE, 5,
+                    ArmorItem.Type.LEGGINGS, 4,
+                    ArmorItem.Type.BOOTS, 2),
+            15,
+            SoundEvents.ITEM_ARMOR_EQUIP_GENERIC,
+            () -> Ingredient.ofItems(Items.COPPER_INGOT),
+            0,
+            0,
+            false);
+
+    public static final RegistryEntry<ArmorMaterial> EXPOSED_COPPER = register("exposed_copper", Map.of(
                     ArmorItem.Type.HELMET, 2,
                     ArmorItem.Type.CHESTPLATE, 5,
                     ArmorItem.Type.LEGGINGS, 4,
                     ArmorItem.Type.BOOTS, 1),
-            18,
+            12,
             SoundEvents.ITEM_ARMOR_EQUIP_GENERIC,
-            () -> Ingredient.ofItems(Items.COPPER_INGOT),
+            () -> Ingredient.ofItems(ItemInit.EXPOSED_COPPER_INGOT),
             0,
+            0,
+            false);
+
+    public static final RegistryEntry<ArmorMaterial> WEATHERED_COPPER = register("weathered_copper", Map.of(
+                    ArmorItem.Type.HELMET, 2,
+                    ArmorItem.Type.CHESTPLATE, 4,
+                    ArmorItem.Type.LEGGINGS, 3,
+                    ArmorItem.Type.BOOTS, 1),
+            10,
+            SoundEvents.ITEM_ARMOR_EQUIP_GENERIC,
+            () -> Ingredient.ofItems(ItemInit.WEATHERED_COPPER_INGOT),
+            0,
+            0,
+            false);
+
+    public static final RegistryEntry<ArmorMaterial> OXIDIZED_COPPER = register("oxidized_copper", Map.of(
+                    ArmorItem.Type.HELMET, 1,
+                    ArmorItem.Type.CHESTPLATE, 3,
+                    ArmorItem.Type.LEGGINGS, 2,
+                    ArmorItem.Type.BOOTS, 1),
+            5,
+            SoundEvents.ITEM_ARMOR_EQUIP_GENERIC,
+            () -> Ingredient.ofItems(ItemInit.OXIDIZED_COPPER_INGOT),
+            0,
+            0,
+            false);
+
+    public static final RegistryEntry<ArmorMaterial> LAPIS = register("lapis", Map.of(
+                    ArmorItem.Type.HELMET, 3,
+                    ArmorItem.Type.CHESTPLATE, 6,
+                    ArmorItem.Type.LEGGINGS, 5,
+                    ArmorItem.Type.BOOTS, 2),
+            12,
+            SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND,
+            () -> Ingredient.ofItems(Items.LAPIS_LAZULI),
+            1,
             0,
             false);
 
@@ -50,6 +110,18 @@ public class ArmorMaterialInit {
             SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND,
             () -> Ingredient.ofItems(Items.EMERALD),
             0,
+            0,
+            false);
+
+    public static final RegistryEntry<ArmorMaterial> REDSTONE = register("redstone", Map.of(
+                    ArmorItem.Type.HELMET, 3,
+                    ArmorItem.Type.CHESTPLATE, 7,
+                    ArmorItem.Type.LEGGINGS, 6,
+                    ArmorItem.Type.BOOTS, 3),
+            10,
+            SoundEvents.ITEM_ARMOR_EQUIP_NETHERITE,
+            () -> Ingredient.ofItems(Items.REDSTONE),
+            2,
             0,
             false);
 

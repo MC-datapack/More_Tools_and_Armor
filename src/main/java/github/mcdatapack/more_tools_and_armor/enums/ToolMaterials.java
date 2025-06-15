@@ -13,17 +13,39 @@ public enum ToolMaterials implements ToolMaterial {
     //DEV NOTE 14w34a = 14, w->23->2+3, 34->3+4, a->1
     //DEV NOTE 14571(10) -> 431241(5)
     //DEV NOTE PI 3.1415926535897932384626433832795
+    COAL(
+            135, 3F, 1F, BlockTags.INCORRECT_FOR_STONE_TOOL, 6,
+            Ingredient.ofItems(Items.COAL)
+    ),
     BUDDING_AMETHYST(
             500, 7F, 1F, BlockTags.INCORRECT_FOR_IRON_TOOL, 12,
             Ingredient.ofItems(ItemInit.BUDDING_AMETHYST_CRYSTAL)
     ),
     COPPER(
-            121, 6F, 1F, BlockTags.INCORRECT_FOR_STONE_TOOL, 18,
+            210, 6F, 1F, BlockTags.INCORRECT_FOR_STONE_TOOL, 15,
             Ingredient.ofItems(Items.COPPER_INGOT)
+    ),
+    EXPOSED_COPPER(
+            180, 5F, 0.8F, BlockTags.INCORRECT_FOR_STONE_TOOL, 12,
+            Ingredient.ofItems(ItemInit.EXPOSED_COPPER_INGOT)
+    ),
+    WEATHERED_COPPER(
+            150, 4F, 0.6F, BlockTags.INCORRECT_FOR_STONE_TOOL, 10,
+            Ingredient.ofItems(ItemInit.WEATHERED_COPPER_INGOT)
+    ),
+    OXIDIZED_COPPER(
+            121, 3F, 0.5F, BlockTags.INCORRECT_FOR_WOODEN_TOOL, 5,
+            Ingredient.ofItems(ItemInit.OXIDIZED_COPPER_INGOT)
+    ),
+    LAPIS(280, 5F, 1F, BlockTags.INCORRECT_FOR_IRON_TOOL, 8,
+            Ingredient.ofItems(Items.LAPIS_LAZULI)
     ),
     EMERALD(
             375, 6.5F, 1F, BlockTags.INCORRECT_FOR_IRON_TOOL, 14,
             Ingredient.ofItems(Items.EMERALD)
+    ),
+    REDSTONE(855, 7.5F, 1F, BlockTags.INCORRECT_FOR_DIAMOND_TOOL, 13,
+            Ingredient.ofItems(Items.REDSTONE)
     ),
     OBSIDIAN(
             1831, 8.5F, 1F, BlockTags.INCORRECT_FOR_DIAMOND_TOOL, 10,

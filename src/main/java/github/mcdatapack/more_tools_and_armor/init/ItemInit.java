@@ -11,6 +11,15 @@ import net.minecraft.registry.Registry;
 import net.minecraft.util.Rarity;
 
 public class ItemInit {
+    public static final Item WAXED_COPPER_INGOT = register("waxed_copper_ingot", new Item(new Item.Settings()));
+    public static final Item WAXED_EXPOSED_COPPER_INGOT = register("waxed_exposed_copper_ingot", new Item(new Item.Settings()));
+    public static final Item WAXED_WEATHERED_COPPER_INGOT = register("waxed_weathered_copper_ingot", new Item(new Item.Settings()));
+    public static final Item WAXED_OXIDIZED_COPPER_INGOT = register("waxed_oxidized_copper_ingot", new Item(new Item.Settings()));
+    public static final Item EXPOSED_COPPER_INGOT = register("exposed_copper_ingot", new Item(new Item.Settings()));
+    public static final Item WEATHERED_COPPER_INGOT = register("weathered_copper_ingot", new Item(new Item.Settings()));
+    public static final Item OXIDIZED_COPPER_INGOT = register("oxidized_copper_ingot", new Item(new Item.Settings()));
+
+
     public static final HoneyBottleItem ANCIENT_HONEY_BOTTLE = register("ancient_honey_bottle", new HoneyBottleItem(new Item.Settings()
             .recipeRemainder(Items.GLASS_BOTTLE)
             .food(FoodList.ANCIENT_HONEY_BOTTLE)));
@@ -65,6 +74,12 @@ public class ItemInit {
             .attributeModifiers(PaxelItem.createAttributeModifiers(net.minecraft.item.ToolMaterials.NETHERITE, 6.0F, -2.4F))));
     public static final PaxelItem COPPER_PAXEL = register("copper_paxel", new PaxelItem(ToolMaterials.COPPER, new Item.Settings()
                     .attributeModifiers(PaxelItem.createAttributeModifiers(ToolMaterials.COPPER, 7, -2.4F))));
+    public static final PaxelItem EXPOSED_COPPER_PAXEL = register("exposed_copper_paxel", new PaxelItem(ToolMaterials.EXPOSED_COPPER, new Item.Settings()
+            .attributeModifiers(PaxelItem.createAttributeModifiers(ToolMaterials.EXPOSED_COPPER, 7, -2.4F))));
+    public static final PaxelItem WEATHERED_COPPER_PAXEL = register("weathered_copper_paxel", new PaxelItem(ToolMaterials.WEATHERED_COPPER, new Item.Settings()
+            .attributeModifiers(PaxelItem.createAttributeModifiers(ToolMaterials.WEATHERED_COPPER, 7, -2.4F))));
+    public static final PaxelItem OXIDIZED_COPPER_PAXEL = register("oxidized_copper_paxel", new PaxelItem(ToolMaterials.OXIDIZED_COPPER, new Item.Settings()
+            .attributeModifiers(PaxelItem.createAttributeModifiers(ToolMaterials.OXIDIZED_COPPER, 7, -2.4F))));
     public static final PaxelItem BUDDING_AMETHYST_PAXEL = register("budding_amethyst_paxel", new PaxelItem(ToolMaterials.BUDDING_AMETHYST, new Item.Settings()
             .attributeModifiers(PaxelItem.createAttributeModifiers(ToolMaterials.BUDDING_AMETHYST, 7, -2.4F))));
     public static final PaxelItem EMERALD_PAXEL = register("emerald_paxel", new PaxelItem(ToolMaterials.EMERALD, new Item.Settings()
@@ -91,6 +106,53 @@ public class ItemInit {
             .attributeModifiers(ConvertPaxelItem.createAttributeModifiers(ToolMaterials.ANCIENT, 100, 0))
             .fireproof().rarity(Rarity.EPIC)));
 
+    public static final HammerItem WOODEN_HAMMER = register("wooden_hammer", new HammerItem(net.minecraft.item.ToolMaterials.WOOD, new Item.Settings()
+            .attributeModifiers(HammerItem.createAttributeModifiers(net.minecraft.item.ToolMaterials.WOOD, 6.0F, -2.4F)), 1));
+    public static final HammerItem STONE_HAMMER = register("stone_hammer", new HammerItem(net.minecraft.item.ToolMaterials.STONE, new Item.Settings()
+            .attributeModifiers(HammerItem.createAttributeModifiers(net.minecraft.item.ToolMaterials.STONE, 7.0F, -2.4F)), 1));
+    public static final HammerItem IRON_HAMMER = register("iron_hammer", new HammerItem(net.minecraft.item.ToolMaterials.IRON, new Item.Settings()
+            .attributeModifiers(HammerItem.createAttributeModifiers(net.minecraft.item.ToolMaterials.IRON, 6.0F, -2.4F)), 1));
+    public static final HammerItem GOLDEN_HAMMER = register("golden_hammer", new HammerItem(net.minecraft.item.ToolMaterials.GOLD, new Item.Settings()
+            .attributeModifiers(HammerItem.createAttributeModifiers(net.minecraft.item.ToolMaterials.GOLD, 6.0F, -2.4F)), 1));
+    public static final HammerItem DIAMOND_HAMMER = register("diamond_hammer", new HammerItem(net.minecraft.item.ToolMaterials.DIAMOND, new Item.Settings()
+            .attributeModifiers(HammerItem.createAttributeModifiers(net.minecraft.item.ToolMaterials.DIAMOND, 6.0F, -2.4F)), 1));
+    public static final HammerItem NETHERITE_HAMMER = register("netherite_hammer", new HammerItem(net.minecraft.item.ToolMaterials.NETHERITE,
+            new Item.Settings()
+                    .attributeModifiers(HammerItem.createAttributeModifiers(net.minecraft.item.ToolMaterials.NETHERITE, 6.0F, -2.4F)), 1));
+    public static final HammerItem COPPER_HAMMER = register("copper_hammer", new HammerItem(ToolMaterials.COPPER, new Item.Settings()
+            .attributeModifiers(HammerItem.createAttributeModifiers(ToolMaterials.COPPER, 7, -2.4F)), 1));
+    public static final HammerItem EXPOSED_COPPER_HAMMER = register("exposed_copper_hammer", new HammerItem(ToolMaterials.EXPOSED_COPPER, new Item.Settings()
+            .attributeModifiers(HammerItem.createAttributeModifiers(ToolMaterials.EXPOSED_COPPER, 7, -2.4F)), 1));
+    public static final HammerItem WEATHERED_COPPER_HAMMER = register("weathered_copper_hammer", new HammerItem(ToolMaterials.WEATHERED_COPPER, new Item.Settings()
+            .attributeModifiers(HammerItem.createAttributeModifiers(ToolMaterials.WEATHERED_COPPER, 7, -2.4F)), 1));
+    public static final HammerItem OXIDIZED_COPPER_HAMMER = register("oxidized_copper_hammer", new HammerItem(ToolMaterials.OXIDIZED_COPPER, new Item.Settings()
+            .attributeModifiers(HammerItem.createAttributeModifiers(ToolMaterials.OXIDIZED_COPPER, 7, -2.4F)), 1));
+    public static final HammerItem BUDDING_AMETHYST_HAMMER = register("budding_amethyst_hammer", new HammerItem(ToolMaterials.BUDDING_AMETHYST, new Item.Settings()
+            .attributeModifiers(HammerItem.createAttributeModifiers(ToolMaterials.BUDDING_AMETHYST, 7, -2.4F)), 1));
+    public static final HammerItem EMERALD_HAMMER = register("emerald_hammer", new HammerItem(ToolMaterials.EMERALD, new Item.Settings()
+            .attributeModifiers(HammerItem.createAttributeModifiers(ToolMaterials.EMERALD, 5, -2.4F)), 1));
+    public static final HammerItem OBSIDIAN_HAMMER = register("obsidian_hammer", new HammerItem(ToolMaterials.OBSIDIAN, new Item.Settings()
+            .attributeModifiers(HammerItem.createAttributeModifiers(ToolMaterials.OBSIDIAN, 7, -2.6F)), 1));
+    public static final HammerItem DEEPSLATE_EMERALD_HAMMER = register("deepslate_emerald_hammer", new HammerItem(ToolMaterials.DEEPSLATE_EMERALD,
+            new Item.Settings()
+                    .attributeModifiers(HammerItem.createAttributeModifiers(ToolMaterials.DEEPSLATE_EMERALD, 15, -2.0F))
+                    .fireproof().rarity(Rarity.EPIC), 1));
+    public static final HammerItem END_DIAMOND_HAMMER = register("end_diamond_hammer", new HammerItem(ToolMaterials.END_DIAMOND, new Item.Settings()
+            .attributeModifiers(HammerItem.createAttributeModifiers(ToolMaterials.END_DIAMOND, 17, -2.0F))
+            .fireproof().rarity(Rarity.EPIC), 1));
+    public static final HammerItem VOID_HAMMER = register("void_hammer", new HammerItem(ToolMaterials.VOID, new Item.Settings()
+            .attributeModifiers(HammerItem.createAttributeModifiers(ToolMaterials.VOID, 22, -1.8F))
+            .fireproof().rarity(Rarity.EPIC), 1));
+    public static final ConvertHammerItem ONETHDENDERITE_HAMMER = register("onethdenderite_hammer", new ConvertHammerItem(3, ToolMaterials.ONETHDENDERITE, new Item.Settings()
+            .attributeModifiers(ConvertHammerItem.createAttributeModifiers(ToolMaterials.ONETHDENDERITE, 33, -1.6F))
+            .fireproof().rarity(Rarity.EPIC), 1));
+    public static final ConvertHammerItem OLED_HAMMER = register("oled_hammer", new ConvertHammerItem(5, ToolMaterials.OLED, new Item.Settings()
+            .attributeModifiers(ConvertHammerItem.createAttributeModifiers(ToolMaterials.OLED, 100, 0))
+            .fireproof().rarity(Rarity.EPIC), 1));
+    public static final ConvertHammerItem ANCIENT_HAMMER = register("ancient_hammer", new ConvertHammerItem(100, ToolMaterials.ANCIENT, new Item.Settings()
+            .attributeModifiers(ConvertHammerItem.createAttributeModifiers(ToolMaterials.ANCIENT, 100, 0))
+            .fireproof().rarity(Rarity.EPIC), 1));
+
 //Budding Amethyst
     public static final SwordItem BUDDING_AMETHYST_SWORD = register("budding_amethyst_sword", new SwordItem(ToolMaterials.BUDDING_AMETHYST, new Item.Settings()
             .attributeModifiers(SwordItem.createAttributeModifiers(ToolMaterials.BUDDING_AMETHYST, 5, -2.4F))));
@@ -110,6 +172,26 @@ public class ItemInit {
             .maxDamage(ArmorItem.Type.LEGGINGS.getMaxDamage(20))));
     public static final ArmorItem BUDDING_AMETHYST_BOOTS = register("budding_amethyst_boots", new ArmorItem(ArmorMaterialInit.BUDDING_AMETHYST, ArmorItem.Type.BOOTS, new Item.Settings()
             .maxDamage(ArmorItem.Type.BOOTS.getMaxDamage(20))));
+
+    public static final SwordItem COAL_SWORD = register("coal_sword", new SwordItem(ToolMaterials.COAL, new Item.Settings()
+            .attributeModifiers(SwordItem.createAttributeModifiers(ToolMaterials.COAL, 2, -2.4F))));
+    public static final AxeItem COAL_AXE = register("coal_axe", new AxeItem(ToolMaterials.COAL, new Item.Settings()
+            .attributeModifiers(AxeItem.createAttributeModifiers(ToolMaterials.COAL, 6, -3.2F))));
+    public static final PickaxeItem COAL_PICKAXE = register("coal_pickaxe", new PickaxeItem(ToolMaterials.COAL, new Item.Settings()
+            .attributeModifiers(PickaxeItem.createAttributeModifiers(ToolMaterials.COAL, 1, -2.8F))));
+    public static final ShovelItem COAL_SHOVEL = register("coal_shovel", new ShovelItem(ToolMaterials.COAL, new Item.Settings()
+            .attributeModifiers(ShovelItem.createAttributeModifiers(ToolMaterials.COAL, 2, -3F))));
+    public static final HoeItem COAL_HOE = register("coal_hoe", new HoeItem(ToolMaterials.COAL, new Item.Settings()
+            .attributeModifiers(HoeItem.createAttributeModifiers(ToolMaterials.COAL, -1, -2F))));
+    public static final ArmorItem COAL_HELMET = register("coal_helmet", new ArmorItem(ArmorMaterialInit.COAL, ArmorItem.Type.HELMET, new Item.Settings()
+            .maxDamage(ArmorItem.Type.HELMET.getMaxDamage(12))));
+    public static final ArmorItem COAL_CHESTPLATE = register("coal_chestplate", new ArmorItem(ArmorMaterialInit.COAL, ArmorItem.Type.CHESTPLATE, new Item.Settings()
+            .maxDamage(ArmorItem.Type.CHESTPLATE.getMaxDamage(12))));
+    public static final ArmorItem COAL_LEGGINGS = register("coal_leggings", new ArmorItem(ArmorMaterialInit.COAL, ArmorItem.Type.LEGGINGS, new Item.Settings()
+            .maxDamage(ArmorItem.Type.LEGGINGS.getMaxDamage(12))));
+    public static final ArmorItem COAL_BOOTS = register("coal_boots", new ArmorItem(ArmorMaterialInit.COAL, ArmorItem.Type.BOOTS, new Item.Settings()
+            .maxDamage(ArmorItem.Type.BOOTS.getMaxDamage(12))));
+
 //Copper
     public static final SwordItem COPPER_SWORD = register("copper_sword", new SwordItem(ToolMaterials.COPPER, new Item.Settings()
         .attributeModifiers(SwordItem.createAttributeModifiers(ToolMaterials.COPPER, 3, -2.4F))));
@@ -122,13 +204,89 @@ public class ItemInit {
     public static final HoeItem COPPER_HOE = register("copper_hoe", new HoeItem(ToolMaterials.COPPER, new Item.Settings()
             .attributeModifiers(HoeItem.createAttributeModifiers(ToolMaterials.COPPER, -1, -2F))));
     public static final ArmorItem COPPER_HELMET = register("copper_helmet", new ArmorItem(ArmorMaterialInit.COPPER, ArmorItem.Type.HELMET, new Item.Settings()
-            .maxDamage(ArmorItem.Type.HELMET.getMaxDamage(15))));
+            .maxDamage(ArmorItem.Type.HELMET.getMaxDamage(20))));
     public static final ArmorItem COPPER_CHESTPLATE = register("copper_chestplate", new ArmorItem(ArmorMaterialInit.COPPER, ArmorItem.Type.CHESTPLATE, new Item.Settings()
-            .maxDamage(ArmorItem.Type.CHESTPLATE.getMaxDamage(15))));
+            .maxDamage(ArmorItem.Type.CHESTPLATE.getMaxDamage(20))));
     public static final ArmorItem COPPER_LEGGINGS = register("copper_leggings", new ArmorItem(ArmorMaterialInit.COPPER, ArmorItem.Type.LEGGINGS, new Item.Settings()
-            .maxDamage(ArmorItem.Type.LEGGINGS.getMaxDamage(15))));
+            .maxDamage(ArmorItem.Type.LEGGINGS.getMaxDamage(20))));
     public static final ArmorItem COPPER_BOOTS = register("copper_boots", new ArmorItem(ArmorMaterialInit.COPPER, ArmorItem.Type.BOOTS, new Item.Settings()
+            .maxDamage(ArmorItem.Type.BOOTS.getMaxDamage(20))));
+
+    public static final SwordItem EXPOSED_COPPER_SWORD = register("exposed_opper_sword", new SwordItem(ToolMaterials.EXPOSED_COPPER, new Item.Settings()
+            .attributeModifiers(SwordItem.createAttributeModifiers(ToolMaterials.EXPOSED_COPPER, 3, -2.4F))));
+    public static final AxeItem EXPOSED_COPPER_AXE = register("exposed_copper_axe", new AxeItem(ToolMaterials.EXPOSED_COPPER, new Item.Settings()
+            .attributeModifiers(AxeItem.createAttributeModifiers(ToolMaterials.EXPOSED_COPPER, 6, -3.2F))));
+    public static final PickaxeItem EXPOSED_COPPER_PICKAXE = register("exposed_copper_pickaxe", new PickaxeItem(ToolMaterials.EXPOSED_COPPER, new Item.Settings()
+            .attributeModifiers(PickaxeItem.createAttributeModifiers(ToolMaterials.EXPOSED_COPPER, 1, -2.8F))));
+    public static final ShovelItem EXPOSED_COPPER_SHOVEL = register("exposed_copper_shovel", new ShovelItem(ToolMaterials.EXPOSED_COPPER, new Item.Settings()
+            .attributeModifiers(ShovelItem.createAttributeModifiers(ToolMaterials.EXPOSED_COPPER, 1, -3F))));
+    public static final HoeItem EXPOSED_COPPER_HOE = register("exposed_copper_hoe", new HoeItem(ToolMaterials.EXPOSED_COPPER, new Item.Settings()
+            .attributeModifiers(HoeItem.createAttributeModifiers(ToolMaterials.EXPOSED_COPPER, -1, -2F))));
+    public static final ArmorItem EXPOSED_COPPER_HELMET = register("exposed_copper_helmet", new ArmorItem(ArmorMaterialInit.EXPOSED_COPPER, ArmorItem.Type.HELMET, new Item.Settings()
+            .maxDamage(ArmorItem.Type.HELMET.getMaxDamage(18))));
+    public static final ArmorItem EXPOSED_COPPER_CHESTPLATE = register("exposed_copper_chestplate", new ArmorItem(ArmorMaterialInit.EXPOSED_COPPER, ArmorItem.Type.CHESTPLATE, new Item.Settings()
+            .maxDamage(ArmorItem.Type.CHESTPLATE.getMaxDamage(18))));
+    public static final ArmorItem EXPOSED_COPPER_LEGGINGS = register("exposed_copper_leggings", new ArmorItem(ArmorMaterialInit.EXPOSED_COPPER, ArmorItem.Type.LEGGINGS, new Item.Settings()
+            .maxDamage(ArmorItem.Type.LEGGINGS.getMaxDamage(18))));
+    public static final ArmorItem EXPOSED_COPPER_BOOTS = register("exposed_copper_boots", new ArmorItem(ArmorMaterialInit.EXPOSED_COPPER, ArmorItem.Type.BOOTS, new Item.Settings()
+            .maxDamage(ArmorItem.Type.BOOTS.getMaxDamage(18))));
+
+    public static final SwordItem WEATHERED_COPPER_SWORD = register("weathered_opper_sword", new SwordItem(ToolMaterials.WEATHERED_COPPER, new Item.Settings()
+            .attributeModifiers(SwordItem.createAttributeModifiers(ToolMaterials.WEATHERED_COPPER, 2, -2.4F))));
+    public static final AxeItem WEATHERED_COPPER_AXE = register("weathered_copper_axe", new AxeItem(ToolMaterials.WEATHERED_COPPER, new Item.Settings()
+            .attributeModifiers(AxeItem.createAttributeModifiers(ToolMaterials.WEATHERED_COPPER, 5, -3.2F))));
+    public static final PickaxeItem WEATHERED_COPPER_PICKAXE = register("weathered_copper_pickaxe", new PickaxeItem(ToolMaterials.WEATHERED_COPPER, new Item.Settings()
+            .attributeModifiers(PickaxeItem.createAttributeModifiers(ToolMaterials.WEATHERED_COPPER, 0, -2.8F))));
+    public static final ShovelItem WEATHERED_COPPER_SHOVEL = register("weathered_copper_shovel", new ShovelItem(ToolMaterials.WEATHERED_COPPER, new Item.Settings()
+            .attributeModifiers(ShovelItem.createAttributeModifiers(ToolMaterials.WEATHERED_COPPER, 0, -3F))));
+    public static final HoeItem WEATHERED_COPPER_HOE = register("weathered_copper_hoe", new HoeItem(ToolMaterials.WEATHERED_COPPER, new Item.Settings()
+            .attributeModifiers(HoeItem.createAttributeModifiers(ToolMaterials.WEATHERED_COPPER, -2, -2F))));
+    public static final ArmorItem WEATHERED_COPPER_HELMET = register("weathered_copper_helmet", new ArmorItem(ArmorMaterialInit.WEATHERED_COPPER, ArmorItem.Type.HELMET, new Item.Settings()
+            .maxDamage(ArmorItem.Type.HELMET.getMaxDamage(15))));
+    public static final ArmorItem WEATHERED_COPPER_CHESTPLATE = register("weathered_copper_chestplate", new ArmorItem(ArmorMaterialInit.WEATHERED_COPPER, ArmorItem.Type.CHESTPLATE, new Item.Settings()
+            .maxDamage(ArmorItem.Type.CHESTPLATE.getMaxDamage(15))));
+    public static final ArmorItem WEATHERED_COPPER_LEGGINGS = register("weathered_copper_leggings", new ArmorItem(ArmorMaterialInit.WEATHERED_COPPER, ArmorItem.Type.LEGGINGS, new Item.Settings()
+            .maxDamage(ArmorItem.Type.LEGGINGS.getMaxDamage(15))));
+    public static final ArmorItem WEATHERED_COPPER_BOOTS = register("weathered_copper_boots", new ArmorItem(ArmorMaterialInit.WEATHERED_COPPER, ArmorItem.Type.BOOTS, new Item.Settings()
             .maxDamage(ArmorItem.Type.BOOTS.getMaxDamage(15))));
+
+    public static final SwordItem OXIDIZED_COPPER_SWORD = register("oxidized_opper_sword", new SwordItem(ToolMaterials.OXIDIZED_COPPER, new Item.Settings()
+            .attributeModifiers(SwordItem.createAttributeModifiers(ToolMaterials.OXIDIZED_COPPER, 1, -2.4F))));
+    public static final AxeItem OXIDIZED_COPPER_AXE = register("oxidized_copper_axe", new AxeItem(ToolMaterials.OXIDIZED_COPPER, new Item.Settings()
+            .attributeModifiers(AxeItem.createAttributeModifiers(ToolMaterials.OXIDIZED_COPPER, 3, -3.2F))));
+    public static final PickaxeItem OXIDIZED_COPPER_PICKAXE = register("oxidized_copper_pickaxe", new PickaxeItem(ToolMaterials.OXIDIZED_COPPER, new Item.Settings()
+            .attributeModifiers(PickaxeItem.createAttributeModifiers(ToolMaterials.OXIDIZED_COPPER, 0, -2.8F))));
+    public static final ShovelItem OXIDIZED_COPPER_SHOVEL = register("oxidized_copper_shovel", new ShovelItem(ToolMaterials.OXIDIZED_COPPER, new Item.Settings()
+            .attributeModifiers(ShovelItem.createAttributeModifiers(ToolMaterials.OXIDIZED_COPPER, 0, -3F))));
+    public static final HoeItem OXIDIZED_COPPER_HOE = register("oxidized_copper_hoe", new HoeItem(ToolMaterials.OXIDIZED_COPPER, new Item.Settings()
+            .attributeModifiers(HoeItem.createAttributeModifiers(ToolMaterials.OXIDIZED_COPPER, -2, -2F))));
+    public static final ArmorItem OXIDIZED_COPPER_HELMET = register("oxidized_copper_helmet", new ArmorItem(ArmorMaterialInit.OXIDIZED_COPPER, ArmorItem.Type.HELMET, new Item.Settings()
+            .maxDamage(ArmorItem.Type.HELMET.getMaxDamage(10))));
+    public static final ArmorItem OXIDIZED_COPPER_CHESTPLATE = register("oxidized_copper_chestplate", new ArmorItem(ArmorMaterialInit.OXIDIZED_COPPER, ArmorItem.Type.CHESTPLATE, new Item.Settings()
+            .maxDamage(ArmorItem.Type.CHESTPLATE.getMaxDamage(10))));
+    public static final ArmorItem OXIDIZED_COPPER_LEGGINGS = register("oxidized_copper_leggings", new ArmorItem(ArmorMaterialInit.OXIDIZED_COPPER, ArmorItem.Type.LEGGINGS, new Item.Settings()
+            .maxDamage(ArmorItem.Type.LEGGINGS.getMaxDamage(10))));
+    public static final ArmorItem OXIDIZED_COPPER_BOOTS = register("oxidized_copper_boots", new ArmorItem(ArmorMaterialInit.OXIDIZED_COPPER, ArmorItem.Type.BOOTS, new Item.Settings()
+            .maxDamage(ArmorItem.Type.BOOTS.getMaxDamage(10))));
+
+    public static final SwordItem LAPIS_SWORD = register("lapis_sword", new SwordItem(ToolMaterials.LAPIS, new Item.Settings()
+            .attributeModifiers(SwordItem.createAttributeModifiers(ToolMaterials.LAPIS, 4, -2.4F))));
+    public static final AxeItem LAPIS_AXE = register("lapis_axe", new AxeItem(ToolMaterials.LAPIS, new Item.Settings()
+            .attributeModifiers(AxeItem.createAttributeModifiers(ToolMaterials.LAPIS, 6, -3))));
+    public static final PickaxeItem LAPIS_PICKAXE = register("lapis_pickaxe", new PickaxeItem(ToolMaterials.LAPIS, new Item.Settings()
+            .attributeModifiers(PickaxeItem.createAttributeModifiers(ToolMaterials.LAPIS, 1, -2.8F))));
+    public static final ShovelItem LAPIS_SHOVEL = register("lapis_shovel", new ShovelItem(ToolMaterials.LAPIS, new Item.Settings()
+            .attributeModifiers(ShovelItem.createAttributeModifiers(ToolMaterials.LAPIS, 2, -3F))));
+    public static final HoeItem LAPIS_HOE = register("lapis_hoe", new HoeItem(ToolMaterials.LAPIS, new Item.Settings()
+            .attributeModifiers(HoeItem.createAttributeModifiers(ToolMaterials.LAPIS, -1, -0F))));
+    public static final ArmorItem LAPIS_HELMET = register("lapis_helmet", new ArmorItem(ArmorMaterialInit.LAPIS, ArmorItem.Type.HELMET, new Item.Settings()
+            .maxDamage(ArmorItem.Type.HELMET.getMaxDamage(21))));
+    public static final ArmorItem LAPIS_CHESTPLATE = register("lapis_chestplate", new ArmorItem(ArmorMaterialInit.LAPIS, ArmorItem.Type.CHESTPLATE, new Item.Settings()
+            .maxDamage(ArmorItem.Type.CHESTPLATE.getMaxDamage(21))));
+    public static final ArmorItem LAPIS_LEGGINGS = register("lapis_leggings", new ArmorItem(ArmorMaterialInit.LAPIS, ArmorItem.Type.LEGGINGS, new Item.Settings()
+            .maxDamage(ArmorItem.Type.LEGGINGS.getMaxDamage(21))));
+    public static final ArmorItem LAPIS_BOOTS = register("lapis_boots", new ArmorItem(ArmorMaterialInit.LAPIS, ArmorItem.Type.BOOTS, new Item.Settings()
+            .maxDamage(ArmorItem.Type.BOOTS.getMaxDamage(21))));
 
 //Emerald
     public static final SwordItem EMERALD_SWORD = register("emerald_sword", new SwordItem(ToolMaterials.EMERALD, new Item.Settings()
@@ -149,6 +307,25 @@ public class ItemInit {
             .maxDamage(ArmorItem.Type.LEGGINGS.getMaxDamage(21))));
     public static final ArmorItem EMERALD_BOOTS = register("emerald_boots", new ArmorItem(ArmorMaterialInit.EMERALD, ArmorItem.Type.BOOTS, new Item.Settings()
             .maxDamage(ArmorItem.Type.BOOTS.getMaxDamage(21))));
+
+    public static final SwordItem REDSTONE_SWORD = register("obsidian_sword", new SwordItem(ToolMaterials.REDSTONE, new Item.Settings()
+            .attributeModifiers(SwordItem.createAttributeModifiers(ToolMaterials.REDSTONE, 6, -2.6F))));
+    public static final AxeItem REDSTONE_AXE = register("obsidian_axe", new AxeItem(ToolMaterials.REDSTONE, new Item.Settings()
+            .attributeModifiers(AxeItem.createAttributeModifiers(ToolMaterials.REDSTONE, 9, -3.2F))));
+    public static final PickaxeItem REDSTONE_PICKAXE = register("obsidian_pickaxe", new PickaxeItem(ToolMaterials.REDSTONE, new Item.Settings()
+            .attributeModifiers(PickaxeItem.createAttributeModifiers(ToolMaterials.REDSTONE, 4, -2.8F))));
+    public static final ShovelItem REDSTONE_SHOVEL = register("obsidian_shovel", new ShovelItem(ToolMaterials.REDSTONE, new Item.Settings()
+            .attributeModifiers(ShovelItem.createAttributeModifiers(ToolMaterials.REDSTONE, 4, -3F))));
+    public static final HoeItem REDSTONE_HOE = register("obsidian_hoe", new HoeItem(ToolMaterials.REDSTONE, new Item.Settings()
+            .attributeModifiers(HoeItem.createAttributeModifiers(ToolMaterials.REDSTONE, 0, -0F))));
+    public static final ArmorItem REDSTONE_HELMET = register("obsidian_helmet", new ArmorItem(ArmorMaterialInit.REDSTONE, ArmorItem.Type.HELMET, new Item.Settings()
+            .maxDamage(ArmorItem.Type.HELMET.getMaxDamage(28))));
+    public static final ArmorItem REDSTONE_CHESTPLATE = register("obsidian_chestplate", new ArmorItem(ArmorMaterialInit.REDSTONE, ArmorItem.Type.CHESTPLATE, new Item.Settings()
+            .maxDamage(ArmorItem.Type.CHESTPLATE.getMaxDamage(28))));
+    public static final ArmorItem REDSTONE_LEGGINGS = register("obsidian_leggings", new ArmorItem(ArmorMaterialInit.REDSTONE, ArmorItem.Type.LEGGINGS, new Item.Settings()
+            .maxDamage(ArmorItem.Type.LEGGINGS.getMaxDamage(28))));
+    public static final ArmorItem REDSTONE_BOOTS = register("obsidian_boots", new ArmorItem(ArmorMaterialInit.REDSTONE, ArmorItem.Type.BOOTS, new Item.Settings()
+            .maxDamage(ArmorItem.Type.BOOTS.getMaxDamage(28))));
 
 //Obsidian
     public static final SwordItem OBSIDIAN_SWORD = register("obsidian_sword", new SwordItem(ToolMaterials.OBSIDIAN, new Item.Settings()

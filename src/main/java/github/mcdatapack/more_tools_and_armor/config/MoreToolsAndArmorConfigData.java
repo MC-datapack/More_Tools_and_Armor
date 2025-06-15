@@ -7,34 +7,37 @@ import me.shedaniel.cloth.clothconfig.shadowed.blue.endless.jankson.Comment;
 
 @Config(name = "more_tools_and_armor")
 public class MoreToolsAndArmorConfigData implements ConfigData {
-    @ConfigEntry.Gui.CollapsibleObject
+    @ConfigEntry.Gui.TransitiveObject
+    public boolean showTooltip = true;
+
+    @ConfigEntry.Gui.TransitiveObject
     public boolean endermanSave = true;
 
-    @ConfigEntry.Gui.CollapsibleObject
+    @ConfigEntry.Gui.TransitiveObject
     public boolean powderSnowWalk = true;
 
-    @ConfigEntry.Gui.CollapsibleObject
+    @ConfigEntry.Gui.TransitiveObject
     public boolean piglinPassive = true;
 
-    @ConfigEntry.Gui.CollapsibleObject
+    @ConfigEntry.Gui.TransitiveObject
     public boolean ironGolemPassive = true;
 
-    @ConfigEntry.Gui.CollapsibleObject
+    @ConfigEntry.Gui.TransitiveObject
     public boolean endermanPassive = true;
 
-    @ConfigEntry.Gui.CollapsibleObject
+    @ConfigEntry.Gui.TransitiveObject
     public boolean phantomPassive = true;
 
-    @ConfigEntry.Gui.CollapsibleObject
+    @ConfigEntry.Gui.TransitiveObject
     @Comment("Instand Damage always gets applied")
     public boolean statusEffectImmune = true;
 
-    @ConfigEntry.Gui.CollapsibleObject
+    @ConfigEntry.Gui.TransitiveObject
     public boolean bedrockMining = true;
 
-    @ConfigEntry.Gui.CollapsibleObject
+    @ConfigEntry.Gui.TransitiveObject
     public boolean randomOre = true;
 
-    @ConfigEntry.Gui.CollapsibleObject
+    @ConfigEntry.Gui.TransitiveObject
     public boolean moreXP = true;
 }
