@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "A": {
+      "item": "minecraft:coal"
+    }
+  },
+  "pattern": [
+    "AAA",
+    "A A"
+  ],
+  "result": {
+    "count": 1,
+    "id": "more_tools_and_armor:coal_helmet"
+  }
+}

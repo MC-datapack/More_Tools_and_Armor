@@ -59,7 +59,10 @@ public class MoreToolsAndArmorTagProvider{
                     .add(BlockInit.END_EMERALD_BLOCK)
                     .add(BlockInit.BLACKSTONE_EMERALD_ORE)
                     .add(BlockInit.SCULK_EMERALD_BLOCK)
-                    .add(BlockInit.BLACKSTONE_EMERALD_BLOCK);
+                    .add(BlockInit.BLACKSTONE_EMERALD_BLOCK)
+                    .add(BlockInit.OVERWORLD_UNSTABLE_ORE)
+                    .add(BlockInit.NETHER_UNSTABLE_ORE)
+                    .add(BlockInit.END_UNSTABLE_ORE);
             getOrCreateTagBuilder(BlockTags.HOE_MINEABLE)
                     .add(BlockInit.SCULK_EMERALD_ORE);
             getOrCreateTagBuilder(BlockTags.NEEDS_STONE_TOOL)
@@ -90,7 +93,7 @@ public class MoreToolsAndArmorTagProvider{
         @Override
         protected void configure(RegistryWrapper.WrapperLookup wrapperLookup) {
             getOrCreateTagBuilder(ItemTags.SWORDS)
-                    .add(ItemInit.BUDDING_AMETHYST_SWORD)
+                    .add(ItemInit.BUDDING_AMETHYST_SWORD, ItemInit.COAL_SWORD, ItemInit.LAPIS_SWORD, ItemInit.REDSTONE_SWORD)
                     .add(ItemInit.COPPER_SWORD)
                     .add(ItemInit.EMERALD_SWORD)
                     .add(ItemInit.OBSIDIAN_SWORD)
@@ -101,7 +104,7 @@ public class MoreToolsAndArmorTagProvider{
                     .add(ItemInit.OLED_SWORD)
                     .add(ItemInit.ANCIENT_SWORD);
             getOrCreateTagBuilder(ItemTags.AXES)
-                    .add(ItemInit.BUDDING_AMETHYST_AXE)
+                    .add(ItemInit.BUDDING_AMETHYST_AXE, ItemInit.COAL_AXE, ItemInit.LAPIS_AXE, ItemInit.REDSTONE_AXE)
                     .add(ItemInit.COPPER_AXE)
                     .add(ItemInit.EMERALD_AXE)
                     .add(ItemInit.OBSIDIAN_AXE)
@@ -111,11 +114,12 @@ public class MoreToolsAndArmorTagProvider{
                     .add(ItemInit.ONETHDENDERITE_AXE)
                     .add(ItemInit.OLED_AXE)
                     .add(ItemInit.ANCIENT_AXE)
-                    .add(ItemInit.WOODEN_PAXEL, ItemInit.STONE_PAXEL, ItemInit.IRON_PAXEL, ItemInit.GOLDEN_PAXEL, ItemInit.DIAMOND_PAXEL,
+                    .add(ItemInit.WOODEN_PAXEL, ItemInit.STONE_PAXEL, ItemInit.IRON_PAXEL, ItemInit.GOLDEN_PAXEL, ItemInit.DIAMOND_PAXEL, ItemInit.COAL_PAXEL, ItemInit.LAPIS_PAXEL,
+                            ItemInit.REDSTONE_PAXEL,
                             ItemInit.NETHERITE_PAXEL, ItemInit.COPPER_PAXEL, ItemInit.BUDDING_AMETHYST_PAXEL, ItemInit.EMERALD_PAXEL, ItemInit.OBSIDIAN_PAXEL,
                             ItemInit.DEEPSLATE_EMERALD_PAXEL, ItemInit.END_DIAMOND_PAXEL, ItemInit.VOID_PAXEL, ItemInit.ONETHDENDERITE_PAXEL, ItemInit.OLED_PAXEL, ItemInit.ANCIENT_PAXEL);
             getOrCreateTagBuilder(ItemTags.PICKAXES)
-                    .add(ItemInit.BUDDING_AMETHYST_PICKAXE)
+                    .add(ItemInit.BUDDING_AMETHYST_PICKAXE, ItemInit.COAL_PICKAXE, ItemInit.LAPIS_PICKAXE, ItemInit.REDSTONE_PICKAXE)
                     .add(ItemInit.COPPER_PICKAXE)
                     .add(ItemInit.EMERALD_PICKAXE)
                     .add(ItemInit.OBSIDIAN_PICKAXE)
@@ -126,7 +130,7 @@ public class MoreToolsAndArmorTagProvider{
                     .add(ItemInit.OLED_PICKAXE)
                     .add(ItemInit.ANCIENT_PICKAXE);
             getOrCreateTagBuilder(ItemTags.SHOVELS)
-                    .add(ItemInit.BUDDING_AMETHYST_SHOVEL)
+                    .add(ItemInit.BUDDING_AMETHYST_SHOVEL, ItemInit.COAL_SHOVEL, ItemInit.LAPIS_SHOVEL, ItemInit.REDSTONE_SHOVEL)
                     .add(ItemInit.COPPER_SHOVEL)
                     .add(ItemInit.EMERALD_SHOVEL)
                     .add(ItemInit.OBSIDIAN_SHOVEL)
@@ -137,7 +141,7 @@ public class MoreToolsAndArmorTagProvider{
                     .add(ItemInit.OLED_SHOVEL)
                     .add(ItemInit.ANCIENT_SHOVEL);
             getOrCreateTagBuilder(ItemTags.HOES)
-                    .add(ItemInit.BUDDING_AMETHYST_HOE)
+                    .add(ItemInit.BUDDING_AMETHYST_HOE, ItemInit.COAL_HOE, ItemInit.LAPIS_HOE, ItemInit.REDSTONE_HOE)
                     .add(ItemInit.COPPER_HOE)
                     .add(ItemInit.EMERALD_HOE)
                     .add(ItemInit.OBSIDIAN_HOE)
@@ -148,7 +152,7 @@ public class MoreToolsAndArmorTagProvider{
                     .add(ItemInit.OLED_HOE)
                     .add(ItemInit.ANCIENT_HOE);
             getOrCreateTagBuilder(ItemTags.HEAD_ARMOR)
-                    .add(ItemInit.BUDDING_AMETHYST_HELMET)
+                    .add(ItemInit.BUDDING_AMETHYST_HELMET, ItemInit.COAL_HELMET, ItemInit.LAPIS_HELMET, ItemInit.REDSTONE_HELMET)
                     .add(ItemInit.COPPER_HELMET)
                     .add(ItemInit.EMERALD_HELMET)
                     .add(ItemInit.OBSIDIAN_HELMET)
@@ -159,7 +163,7 @@ public class MoreToolsAndArmorTagProvider{
                     .add(ItemInit.OLED_HELMET)
                     .add(ItemInit.ANCIENT_HELMET);
             getOrCreateTagBuilder(ItemTags.CHEST_ARMOR)
-                    .add(ItemInit.BUDDING_AMETHYST_CHESTPLATE)
+                    .add(ItemInit.BUDDING_AMETHYST_CHESTPLATE, ItemInit.COAL_CHESTPLATE, ItemInit.LAPIS_CHESTPLATE, ItemInit.REDSTONE_CHESTPLATE)
                     .add(ItemInit.COPPER_CHESTPLATE)
                     .add(ItemInit.EMERALD_CHESTPLATE)
                     .add(ItemInit.OBSIDIAN_CHESTPLATE)
@@ -170,7 +174,7 @@ public class MoreToolsAndArmorTagProvider{
                     .add(ItemInit.OLED_CHESTPLATE)
                     .add(ItemInit.ANCIENT_CHESTPLATE);
             getOrCreateTagBuilder(ItemTags.LEG_ARMOR)
-                    .add(ItemInit.BUDDING_AMETHYST_LEGGINGS)
+                    .add(ItemInit.BUDDING_AMETHYST_LEGGINGS, ItemInit.COAL_LEGGINGS, ItemInit.LAPIS_LEGGINGS, ItemInit.REDSTONE_LEGGINGS)
                     .add(ItemInit.COPPER_LEGGINGS)
                     .add(ItemInit.EMERALD_LEGGINGS)
                     .add(ItemInit.OBSIDIAN_LEGGINGS)
@@ -181,7 +185,7 @@ public class MoreToolsAndArmorTagProvider{
                     .add(ItemInit.OLED_LEGGINGS)
                     .add(ItemInit.ANCIENT_LEGGINGS);
             getOrCreateTagBuilder(ItemTags.FOOT_ARMOR)
-                    .add(ItemInit.BUDDING_AMETHYST_BOOTS)
+                    .add(ItemInit.BUDDING_AMETHYST_BOOTS, ItemInit.COAL_BOOTS, ItemInit.LAPIS_BOOTS, ItemInit.REDSTONE_BOOTS)
                     .add(ItemInit.COPPER_BOOTS)
                     .add(ItemInit.EMERALD_BOOTS)
                     .add(ItemInit.OBSIDIAN_BOOTS)
@@ -191,6 +195,15 @@ public class MoreToolsAndArmorTagProvider{
                     .add(ItemInit.ONETHDENDERITE_BOOTS)
                     .add(ItemInit.OLED_BOOTS)
                     .add(ItemInit.ANCIENT_BOOTS);
+            getOrCreateTagBuilder(TagList.ItemTags.HAMMER_ENCHANTABLE)
+                    .add(ItemInit.WOODEN_HAMMER, ItemInit.STONE_HAMMER, ItemInit.IRON_HAMMER, ItemInit.GOLDEN_HAMMER, ItemInit.DIAMOND_HAMMER, ItemInit.COAL_HAMMER, ItemInit.LAPIS_HAMMER,
+                            ItemInit.REDSTONE_HAMMER,
+                            ItemInit.NETHERITE_HAMMER, ItemInit.COPPER_HAMMER, ItemInit.BUDDING_AMETHYST_HAMMER, ItemInit.EMERALD_HAMMER, ItemInit.OBSIDIAN_HAMMER,
+                            ItemInit.DEEPSLATE_EMERALD_HAMMER, ItemInit.END_DIAMOND_HAMMER, ItemInit.VOID_HAMMER, ItemInit.ONETHDENDERITE_HAMMER, ItemInit.OLED_HAMMER, ItemInit.ANCIENT_HAMMER);
+            getOrCreateTagBuilder(ItemTags.DURABILITY_ENCHANTABLE)
+                    .addTag(TagList.ItemTags.HAMMER_ENCHANTABLE);
+            getOrCreateTagBuilder(ItemTags.MINING_ENCHANTABLE)
+                    .addTag(TagList.ItemTags.HAMMER_ENCHANTABLE);
         }
     }
 }

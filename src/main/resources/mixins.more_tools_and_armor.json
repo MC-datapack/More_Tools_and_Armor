@@ -13,10 +13,7 @@
 	"ability.PiglinBrainMixin",
 	"ability.PlayerEntityMixin",
 	"ability.PowderSnowBlockMixin",
-	"ability.TargetPredicateMixin",
-	"copper.BlockItemMixin",
-	"copper.ItemEntityMixin",
-	"copper.ItemMixin"
+	"ability.TargetPredicateMixin"
   ],
   "client": [
 	"ability.ClientPlayerEntityMixin"

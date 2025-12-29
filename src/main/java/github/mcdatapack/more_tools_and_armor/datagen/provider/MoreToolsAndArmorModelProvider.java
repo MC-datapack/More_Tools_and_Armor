@@ -34,10 +34,16 @@ public class MoreToolsAndArmorModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerSimpleCubeAll(BlockInit.SCULK_EMERALD_BLOCK);
         blockStateModelGenerator.registerSimpleCubeAll(BlockInit.BLACKSTONE_EMERALD_BLOCK);
         blockStateModelGenerator.registerSimpleCubeAll(BlockInit.ANCIENT_HONEY_BLOCK);
+        blockStateModelGenerator.registerSimpleCubeAll(BlockInit.OVERWORLD_UNSTABLE_ORE);
+        blockStateModelGenerator.registerSimpleCubeAll(BlockInit.NETHER_UNSTABLE_ORE);
+        blockStateModelGenerator.registerSimpleCubeAll(BlockInit.END_UNSTABLE_ORE);
     }
 
     @Override
     public void generateItemModels(ItemModelGenerator itemModelGenerator) {
+        itemModelGenerator.register(ItemInit.OVERWORLD_SHARD, Models.GENERATED);
+        itemModelGenerator.register(ItemInit.NETHER_SHARD, Models.GENERATED);
+        itemModelGenerator.register(ItemInit.END_SHARD, Models.GENERATED);
         itemModelGenerator.register(ItemInit.BUDDING_AMETHYST_CRYSTAL, Models.GENERATED);
         itemModelGenerator.register(ItemInit.DEEPSLATE_EMERALD, Models.GENERATED);
         itemModelGenerator.register(ItemInit.DEEPSLATE_EMERALD_UPGRADE_SMITHING_TEMPLATE, Models.GENERATED);
@@ -159,7 +165,38 @@ public class MoreToolsAndArmorModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ItemInit.ANCIENT_LEGGINGS, Models.GENERATED);
         itemModelGenerator.register(ItemInit.ANCIENT_BOOTS, Models.GENERATED);
 
+        itemModelGenerator.register(ItemInit.COAL_SWORD, Models.HANDHELD);
+        itemModelGenerator.register(ItemInit.COAL_AXE, Models.HANDHELD);
+        itemModelGenerator.register(ItemInit.COAL_PICKAXE, Models.HANDHELD);
+        itemModelGenerator.register(ItemInit.COAL_SHOVEL, Models.HANDHELD);
+        itemModelGenerator.register(ItemInit.COAL_HOE, Models.HANDHELD);
+        itemModelGenerator.register(ItemInit.COAL_HELMET, Models.GENERATED);
+        itemModelGenerator.register(ItemInit.COAL_CHESTPLATE, Models.GENERATED);
+        itemModelGenerator.register(ItemInit.COAL_LEGGINGS, Models.GENERATED);
+        itemModelGenerator.register(ItemInit.COAL_BOOTS, Models.GENERATED);
+        itemModelGenerator.register(ItemInit.REDSTONE_SWORD, Models.HANDHELD);
+        itemModelGenerator.register(ItemInit.REDSTONE_AXE, Models.HANDHELD);
+        itemModelGenerator.register(ItemInit.REDSTONE_PICKAXE, Models.HANDHELD);
+        itemModelGenerator.register(ItemInit.REDSTONE_SHOVEL, Models.HANDHELD);
+        itemModelGenerator.register(ItemInit.REDSTONE_HOE, Models.HANDHELD);
+        itemModelGenerator.register(ItemInit.REDSTONE_HELMET, Models.GENERATED);
+        itemModelGenerator.register(ItemInit.REDSTONE_CHESTPLATE, Models.GENERATED);
+        itemModelGenerator.register(ItemInit.REDSTONE_LEGGINGS, Models.GENERATED);
+        itemModelGenerator.register(ItemInit.REDSTONE_BOOTS, Models.GENERATED);
+        itemModelGenerator.register(ItemInit.LAPIS_SWORD, Models.HANDHELD);
+        itemModelGenerator.register(ItemInit.LAPIS_AXE, Models.HANDHELD);
+        itemModelGenerator.register(ItemInit.LAPIS_PICKAXE, Models.HANDHELD);
+        itemModelGenerator.register(ItemInit.LAPIS_SHOVEL, Models.HANDHELD);
+        itemModelGenerator.register(ItemInit.LAPIS_HOE, Models.HANDHELD);
+        itemModelGenerator.register(ItemInit.LAPIS_HELMET, Models.GENERATED);
+        itemModelGenerator.register(ItemInit.LAPIS_CHESTPLATE, Models.GENERATED);
+        itemModelGenerator.register(ItemInit.LAPIS_LEGGINGS, Models.GENERATED);
+        itemModelGenerator.register(ItemInit.LAPIS_BOOTS, Models.GENERATED);
+
         itemModelGenerator.register(WOODEN_PAXEL, Models.HANDHELD);
+        itemModelGenerator.register(COAL_PAXEL, Models.HANDHELD);
+        itemModelGenerator.register(LAPIS_PAXEL, Models.HANDHELD);
+        itemModelGenerator.register(REDSTONE_PAXEL, Models.HANDHELD);
         itemModelGenerator.register(STONE_PAXEL, Models.HANDHELD);
         itemModelGenerator.register(IRON_PAXEL, Models.HANDHELD);
         itemModelGenerator.register(GOLDEN_PAXEL, Models.HANDHELD);
@@ -175,5 +212,24 @@ public class MoreToolsAndArmorModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ONETHDENDERITE_PAXEL, Models.HANDHELD);
         itemModelGenerator.register(OLED_PAXEL, Models.HANDHELD);
         itemModelGenerator.register(ANCIENT_PAXEL, Models.HANDHELD);
+        itemModelGenerator.register(WOODEN_HAMMER, Models.HANDHELD);
+        itemModelGenerator.register(COAL_HAMMER, Models.HANDHELD);
+        itemModelGenerator.register(LAPIS_HAMMER, Models.HANDHELD);
+        itemModelGenerator.register(REDSTONE_HAMMER, Models.HANDHELD);
+        itemModelGenerator.register(STONE_HAMMER, Models.HANDHELD);
+        itemModelGenerator.register(IRON_HAMMER, Models.HANDHELD);
+        itemModelGenerator.register(GOLDEN_HAMMER, Models.HANDHELD);
+        itemModelGenerator.register(DIAMOND_HAMMER, Models.HANDHELD);
+        itemModelGenerator.register(NETHERITE_HAMMER, Models.HANDHELD);
+        itemModelGenerator.register(COPPER_HAMMER, Models.HANDHELD);
+        itemModelGenerator.register(BUDDING_AMETHYST_HAMMER, Models.HANDHELD);
+        itemModelGenerator.register(EMERALD_HAMMER, Models.HANDHELD);
+        itemModelGenerator.register(OBSIDIAN_HAMMER, Models.HANDHELD);
+        itemModelGenerator.register(DEEPSLATE_EMERALD_HAMMER, Models.HANDHELD);
+        itemModelGenerator.register(END_DIAMOND_HAMMER, Models.HANDHELD);
+        itemModelGenerator.register(VOID_HAMMER, Models.HANDHELD);
+        itemModelGenerator.register(ONETHDENDERITE_HAMMER, Models.HANDHELD);
+        itemModelGenerator.register(OLED_HAMMER, Models.HANDHELD);
+        itemModelGenerator.register(ANCIENT_HAMMER, Models.HANDHELD);
     }
 }

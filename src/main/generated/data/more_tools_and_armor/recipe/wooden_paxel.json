@@ -3,10 +3,10 @@
   "category": "equipment",
   "ingredients": [
     {
-      "item": "minecraft:wooden_axe"
+      "item": "minecraft:wooden_pickaxe"
     },
     {
-      "item": "minecraft:wooden_pickaxe"
+      "item": "minecraft:wooden_axe"
     },
     {
       "item": "minecraft:wooden_shovel"

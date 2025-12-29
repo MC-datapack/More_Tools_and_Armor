@@ -25,18 +25,6 @@ public enum ToolMaterials implements ToolMaterial {
             210, 6F, 1F, BlockTags.INCORRECT_FOR_STONE_TOOL, 15,
             Ingredient.ofItems(Items.COPPER_INGOT)
     ),
-    EXPOSED_COPPER(
-            180, 5F, 0.8F, BlockTags.INCORRECT_FOR_STONE_TOOL, 12,
-            Ingredient.ofItems(ItemInit.EXPOSED_COPPER_INGOT)
-    ),
-    WEATHERED_COPPER(
-            150, 4F, 0.6F, BlockTags.INCORRECT_FOR_STONE_TOOL, 10,
-            Ingredient.ofItems(ItemInit.WEATHERED_COPPER_INGOT)
-    ),
-    OXIDIZED_COPPER(
-            121, 3F, 0.5F, BlockTags.INCORRECT_FOR_WOODEN_TOOL, 5,
-            Ingredient.ofItems(ItemInit.OXIDIZED_COPPER_INGOT)
-    ),
     LAPIS(280, 5F, 1F, BlockTags.INCORRECT_FOR_IRON_TOOL, 8,
             Ingredient.ofItems(Items.LAPIS_LAZULI)
     ),
@@ -48,27 +36,27 @@ public enum ToolMaterials implements ToolMaterial {
             Ingredient.ofItems(Items.REDSTONE)
     ),
     OBSIDIAN(
-            1831, 8.5F, 1F, BlockTags.INCORRECT_FOR_DIAMOND_TOOL, 10,
+            1331, 8.5F, 1F, BlockTags.INCORRECT_FOR_DIAMOND_TOOL, 10,
             Ingredient.ofItems(Items.OBSIDIAN)
     ),
     DEEPSLATE_EMERALD(
-            14571, 40F, 1F, TagList.BlockTags.INCORRECT_FOR_DEEPSLATE_EMERALD_TOOL, 100,
+            14_571, 40F, 1F, TagList.BlockTags.INCORRECT_FOR_DEEPSLATE_EMERALD_TOOL, 100,
             Ingredient.ofItems(ItemInit.DEEPSLATE_EMERALD)
     ),
     END_DIAMOND(
-            24581, 80F, 1F, TagList.BlockTags.INCORRECT_FOR_END_DIAMOND_TOOL, 100,
+            24_581, 80F, 1F, TagList.BlockTags.INCORRECT_FOR_END_DIAMOND_TOOL, 100,
             Ingredient.ofItems(ItemInit.END_DIAMOND)
     ),
     VOID(
-            431241, 256F, 1F, TagList.BlockTags.INCORRECT_FOR_VOID_TOOL, 100,
+            431_241, 256F, 1F, TagList.BlockTags.INCORRECT_FOR_VOID_TOOL, 100,
             Ingredient.ofItems(ItemInit.VOID_INGOT)
     ),
     ONETHDENDERITE(
-            3141592, 1256F, 1F, TagList.BlockTags.INCORRECT_FOR_ONETHDENDERITE_TOOL, 100,
+            3_141_592, 1256F, 1F, TagList.BlockTags.INCORRECT_FOR_ONETHDENDERITE_TOOL, 100,
             Ingredient.ofItems(ItemInit.ONETHDENDERITE_INGOT)
     ),
     OLED(
-             Integer.MAX_VALUE, 3141F, 1F, TagList.BlockTags.INCORRECT_FOR_OLED_TOOL, 100,
+            31_415_926, 3141F, 1F, TagList.BlockTags.INCORRECT_FOR_OLED_TOOL, 100,
             Ingredient.ofItems(ItemInit.OLED_INGOT)
     ),
     ANCIENT(

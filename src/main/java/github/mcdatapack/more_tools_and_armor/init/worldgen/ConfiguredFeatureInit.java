@@ -28,11 +28,18 @@ public class ConfiguredFeatureInit {
     public static final RegistryKey<ConfiguredFeature<?, ?>> BLACKSTONE_EMERALD_ORE_KEY = registerKey("blackstone_emerald_ore");
 
 
+    public static final RegistryKey<ConfiguredFeature<?, ?>> OVERWORLD_UNSTABLE_ORE = registerKey("overworld_unstable_ore");
+    public static final RegistryKey<ConfiguredFeature<?, ?>> NETHER_UNSTABLE_ORE = registerKey("nether_unstable_ore");
+    public static final RegistryKey<ConfiguredFeature<?, ?>> END_UNSTABLE_ORE = registerKey("end_unstable_ore");
+
+
 
     public static  void bootstrap(Registerable<ConfiguredFeature<?, ?>> context) {
         RuleTest endOreReplaceables = new BlockMatchRuleTest(Blocks.END_STONE);
         RuleTest sculkOreReplacebles = new BlockMatchRuleTest(Blocks.SCULK);
         RuleTest blackstoneOreReplacebles = new BlockMatchRuleTest(Blocks.BLACKSTONE);
+        RuleTest basaltOreReplacebles = new BlockMatchRuleTest(Blocks.BASALT);
+        RuleTest tuffOreReplacables = new BlockMatchRuleTest(Blocks.TUFF);
 
         List<OreFeatureConfig.Target> endTargetsCoal = List.of(
                 OreFeatureConfig.createTarget(endOreReplaceables, BlockInit.END_COAL_ORE.getDefaultState()));
@@ -55,6 +62,13 @@ public class ConfiguredFeatureInit {
         List<OreFeatureConfig.Target> netherTargetsBlackstoneEmerald = List.of(
                 OreFeatureConfig.createTarget(blackstoneOreReplacebles, BlockInit.BLACKSTONE_EMERALD_ORE.getDefaultState()));
 
+        List<OreFeatureConfig.Target> overworldTargetsUnstableOre = List.of(
+                OreFeatureConfig.createTarget(tuffOreReplacables, BlockInit.OVERWORLD_UNSTABLE_ORE.getDefaultState()));
+        List<OreFeatureConfig.Target> netherTargetsUnstableOre = List.of(
+                OreFeatureConfig.createTarget(basaltOreReplacebles, BlockInit.NETHER_UNSTABLE_ORE.getDefaultState()));
+        List<OreFeatureConfig.Target> endTargetsUnstableOre = List.of(
+                OreFeatureConfig.createTarget(endOreReplaceables, BlockInit.END_UNSTABLE_ORE.getDefaultState()));
+
         register(context, END_COAL_ORE_KEY, Feature.ORE, new OreFeatureConfig(endTargetsCoal, 17,0F));
         register(context, END_COPPER_ORE_KEY, Feature.ORE, new OreFeatureConfig(endTargetsCopper, 10,0F));
         register(context, END_IRON_ORE_KEY, Feature.ORE, new OreFeatureConfig(endTargetsIron, 9,0F));
@@ -65,6 +79,10 @@ public class ConfiguredFeatureInit {
         register(context, END_DIAMOND_ORE_KEY, Feature.ORE, new OreFeatureConfig(endTargetsDiamond, 8,0.75F));
         register(context, SCULK_EMERALD_ORE_KEY, Feature.ORE, new OreFeatureConfig(overworldTargetsSculkEmerald, 8, 0F));
         register(context, BLACKSTONE_EMERALD_ORE_KEY, Feature.ORE, new OreFeatureConfig(netherTargetsBlackstoneEmerald, 8, 0F));
+
+        register(context, OVERWORLD_UNSTABLE_ORE, Feature.ORE, new OreFeatureConfig(overworldTargetsUnstableOre, 4, 1F));
+        register(context, NETHER_UNSTABLE_ORE, Feature.ORE, new OreFeatureConfig(netherTargetsUnstableOre, 4, 1F));
+        register(context, END_UNSTABLE_ORE, Feature.ORE, new OreFeatureConfig(endTargetsUnstableOre, 4, 1F));
     }
 
 

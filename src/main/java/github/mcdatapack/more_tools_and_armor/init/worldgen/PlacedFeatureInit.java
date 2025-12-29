@@ -11,7 +11,6 @@ import net.minecraft.world.gen.placementmodifier.*;
 import java.util.List;
 
 public class PlacedFeatureInit {
-
     public static final RegistryKey<PlacedFeature> END_COAL_ORE = registerKey("end_coal_ore");
     public static final RegistryKey<PlacedFeature> END_COPPER_ORE = registerKey("end_copper_ore");
     public static final RegistryKey<PlacedFeature> END_IRON_ORE = registerKey("end_iron_ore");
@@ -22,6 +21,11 @@ public class PlacedFeatureInit {
     public static final RegistryKey<PlacedFeature> END_DIAMOND_ORE = registerKey("end_diamond_ore");
     public static final RegistryKey<PlacedFeature> SCULK_EMERALD_ORE = registerKey("sculk_emerald_ore");
     public static final RegistryKey<PlacedFeature> BLACKSTONE_EMERALD_ORE = registerKey("blackstone_emerald_ore");
+
+
+    public static final RegistryKey<PlacedFeature> OVERWORLD_UNSTABLE_ORE = registerKey("overworld_unstable_ore");
+    public static final RegistryKey<PlacedFeature> NETHER_UNSTABLE_ORE = registerKey("nether_unstable_ore");
+    public static final RegistryKey<PlacedFeature> END_UNSTABLE_ORE = registerKey("end_unstable_ore");
 
 
     public static void bootstrap(Registerable<PlacedFeature> context) {
@@ -48,6 +52,15 @@ public class PlacedFeatureInit {
                 Modifiers.modifiersCount(6, HeightRangePlacementModifier.uniform(YOffset.fixed(-64), YOffset.fixed(0))));
         register(context, BLACKSTONE_EMERALD_ORE, registryLookup.getOrThrow(ConfiguredFeatureInit.BLACKSTONE_EMERALD_ORE_KEY),
                 Modifiers.modifiersCount(6, HeightRangePlacementModifier.uniform(YOffset.fixed(0), YOffset.fixed(30))));
+
+
+
+        register(context, OVERWORLD_UNSTABLE_ORE, registryLookup.getOrThrow(ConfiguredFeatureInit.OVERWORLD_UNSTABLE_ORE),
+                Modifiers.modifiersCount(12, HeightRangePlacementModifier.uniform(YOffset.fixed(-64), YOffset.fixed(-40))));
+        register(context, NETHER_UNSTABLE_ORE, registryLookup.getOrThrow(ConfiguredFeatureInit.NETHER_UNSTABLE_ORE),
+                Modifiers.modifiersCount(12, HeightRangePlacementModifier.uniform(YOffset.fixed(0), YOffset.fixed(15))));
+        register(context, END_UNSTABLE_ORE, registryLookup.getOrThrow(ConfiguredFeatureInit.END_UNSTABLE_ORE),
+                Modifiers.modifiersCount(12, HeightRangePlacementModifier.uniform(YOffset.fixed(0), YOffset.fixed(32))));
     }
 
 

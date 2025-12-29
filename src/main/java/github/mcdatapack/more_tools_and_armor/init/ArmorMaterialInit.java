@@ -41,42 +41,6 @@ public class ArmorMaterialInit {
             0,
             false);
 
-    public static final RegistryEntry<ArmorMaterial> EXPOSED_COPPER = register("exposed_copper", Map.of(
-                    ArmorItem.Type.HELMET, 2,
-                    ArmorItem.Type.CHESTPLATE, 5,
-                    ArmorItem.Type.LEGGINGS, 4,
-                    ArmorItem.Type.BOOTS, 1),
-            12,
-            SoundEvents.ITEM_ARMOR_EQUIP_GENERIC,
-            () -> Ingredient.ofItems(ItemInit.EXPOSED_COPPER_INGOT),
-            0,
-            0,
-            false);
-
-    public static final RegistryEntry<ArmorMaterial> WEATHERED_COPPER = register("weathered_copper", Map.of(
-                    ArmorItem.Type.HELMET, 2,
-                    ArmorItem.Type.CHESTPLATE, 4,
-                    ArmorItem.Type.LEGGINGS, 3,
-                    ArmorItem.Type.BOOTS, 1),
-            10,
-            SoundEvents.ITEM_ARMOR_EQUIP_GENERIC,
-            () -> Ingredient.ofItems(ItemInit.WEATHERED_COPPER_INGOT),
-            0,
-            0,
-            false);
-
-    public static final RegistryEntry<ArmorMaterial> OXIDIZED_COPPER = register("oxidized_copper", Map.of(
-                    ArmorItem.Type.HELMET, 1,
-                    ArmorItem.Type.CHESTPLATE, 3,
-                    ArmorItem.Type.LEGGINGS, 2,
-                    ArmorItem.Type.BOOTS, 1),
-            5,
-            SoundEvents.ITEM_ARMOR_EQUIP_GENERIC,
-            () -> Ingredient.ofItems(ItemInit.OXIDIZED_COPPER_INGOT),
-            0,
-            0,
-            false);
-
     public static final RegistryEntry<ArmorMaterial> LAPIS = register("lapis", Map.of(
                     ArmorItem.Type.HELMET, 3,
                     ArmorItem.Type.CHESTPLATE, 6,

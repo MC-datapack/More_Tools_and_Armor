@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:smithing_transform",
+  "addition": {
+    "item": "minecraft:sculk"
+  },
+  "base": {
+    "item": "more_tools_and_armor:overworld_shard"
+  },
+  "result": {
+    "count": 1,
+    "id": "more_tools_and_armor:sculk_emerald"
+  },
+  "template": []
+}

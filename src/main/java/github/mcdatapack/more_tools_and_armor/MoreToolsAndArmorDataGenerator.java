@@ -9,7 +9,6 @@ import github.mcdatapack.more_tools_and_armor.init.worldgen.ConfiguredFeatureIni
 import github.mcdatapack.more_tools_and_armor.init.worldgen.PlacedFeatureInit;
 import net.fabricmc.fabric.api.datagen.v1.DataGeneratorEntrypoint;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataGenerator;
-import net.minecraft.registry.Registry;
 import net.minecraft.registry.RegistryBuilder;
 import net.minecraft.registry.RegistryKeys;
 

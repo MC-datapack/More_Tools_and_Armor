@@ -54,6 +54,23 @@ public class BlockInit {
     public static final ExperienceDroppingBlock BLACKSTONE_EMERALD_ORE = registerWithItem("blackstone_emerald_ore",
             new ExperienceDroppingBlock(UniformIntProvider.create(5, 10), AbstractBlock.Settings.copy(Blocks.DEEPSLATE_EMERALD_ORE).sounds(BlockSoundGroup.STONE)));
 
+    public static final ExperienceDroppingBlock OVERWORLD_UNSTABLE_ORE = registerWithItem("overworld_unstable_ore",
+            new ExperienceDroppingBlock(UniformIntProvider.create(25, 100), AbstractBlock.Settings.create()
+                    .strength(15, 20000)
+                    .sounds(BlockSoundGroup.TUFF)
+                    .requiresTool()));
+    public static final ExperienceDroppingBlock NETHER_UNSTABLE_ORE = registerWithItem("nether_unstable_ore",
+            new ExperienceDroppingBlock(UniformIntProvider.create(25, 100), AbstractBlock.Settings.create()
+                    .strength(15, 20000)
+                    .sounds(BlockSoundGroup.BASALT)
+                    .requiresTool()));
+    public static final ExperienceDroppingBlock END_UNSTABLE_ORE = registerWithItem("end_unstable_ore",
+            new ExperienceDroppingBlock(UniformIntProvider.create(25, 100), AbstractBlock.Settings.create()
+                    .strength(15, 20000)
+                    .sounds(BlockSoundGroup.STONE)
+                    .requiresTool()));
+
+
     public static <T extends Block> T register(String name, T block) {
         return Registry.register(Registries.BLOCK, MoreToolsAndArmor.id(name), block);
     }

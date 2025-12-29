@@ -5,7 +5,6 @@ import com.google.common.collect.ImmutableMap;
 import com.google.common.collect.Maps;
 import com.mojang.datafixers.util.Pair;
 import github.mcdatapack.more_tools_and_armor.list.TagList;
-import net.fabricmc.fabric.api.registry.StrippableBlockRegistry;
 import net.fabricmc.fabric.mixin.content.registry.AxeItemAccessor;
 import net.minecraft.advancement.criterion.Criteria;
 import net.minecraft.block.*;
@@ -22,7 +21,6 @@ import net.minecraft.util.math.Direction;
 import net.minecraft.world.World;
 import net.minecraft.world.WorldEvents;
 import net.minecraft.world.event.GameEvent;
-import org.jetbrains.annotations.Nullable;
 
 import java.util.Map;
 import java.util.Optional;
@@ -37,26 +35,18 @@ public class PaxelItem extends MiningToolItem {
     protected static final Map<Block, Block> STRIPPED_BLOCKS = AxeItemAccessor.getStrippedBlocks();
 
     protected static final Map<Block, Pair<Predicate<ItemUsageContext>, Consumer<ItemUsageContext>>> TILLING_ACTIONS = Maps.newHashMap(
-            ImmutableMap.of(
-                    Blocks.GRASS_BLOCK,
-                    Pair.of(PaxelItem::canTillFarmland, createTillAction(Blocks.DIRT_PATH.getDefaultState())),
-                    Blocks.DIRT_PATH,
-                    Pair.of(PaxelItem::canTillFarmland, createTillAction(Blocks.FARMLAND.getDefaultState())),
-                    Blocks.DIRT,
-                    Pair.of(PaxelItem::canTillFarmland, createTillAction(Blocks.DIRT_PATH.getDefaultState())),
-                    Blocks.COARSE_DIRT,
-                    Pair.of(PaxelItem::canTillFarmland, createTillAction(Blocks.DIRT.getDefaultState())),
-                    Blocks.ROOTED_DIRT,
-                    Pair.of(itemUsageContext -> true, createTillAndDropAction(Blocks.DIRT.getDefaultState(), Items.HANGING_ROOTS)),
-                    Blocks.MOSS_BLOCK,
-                    Pair.of(PaxelItem::canTillFarmland, createTillAction(Blocks.GRASS_BLOCK.getDefaultState())),
-                    Blocks.PODZOL,
-                    Pair.of(PaxelItem::canTillFarmland, createTillAndDropAction(Blocks.DIRT_PATH.getDefaultState(),
-                            random(Items.BROWN_MUSHROOM, Items.RED_MUSHROOM))),
-                    Blocks.MYCELIUM,
-                    Pair.of(PaxelItem::canTillFarmland, createTillAndDropAction(Blocks.DIRT_PATH.getDefaultState(),
-                            random(Items.BROWN_MUSHROOM, Items.RED_MUSHROOM)))
-            )
+            new ImmutableMap.Builder<Block, Pair<Predicate<ItemUsageContext>, Consumer<ItemUsageContext>>>()
+                    .put(Blocks.GRASS_BLOCK, Pair.of(PaxelItem::canTillFarmland, createTillAction(Blocks.DIRT_PATH.getDefaultState())))
+                    .put(Blocks.DIRT_PATH, Pair.of(PaxelItem::canTillFarmland, createTillAction(Blocks.FARMLAND.getDefaultState())))
+                    .put(Blocks.DIRT, Pair.of(PaxelItem::canTillFarmland, createTillAction(Blocks.DIRT_PATH.getDefaultState())))
+                    .put(Blocks.COARSE_DIRT, Pair.of(PaxelItem::canTillFarmland, createTillAction(Blocks.DIRT.getDefaultState())))
+                    .put(Blocks.ROOTED_DIRT, Pair.of(itemUsageContext -> true, createTillAndDropAction(Blocks.DIRT.getDefaultState(), Items.HANGING_ROOTS)))
+                    .put(Blocks.MOSS_BLOCK, Pair.of(PaxelItem::canTillFarmland, createTillAction(Blocks.GRASS_BLOCK.getDefaultState())))
+                    .put(Blocks.PODZOL, Pair.of(PaxelItem::canTillFarmland, createTillAndDropAction(Blocks.DIRT_PATH.getDefaultState(),
+                            random(Items.BROWN_MUSHROOM, Items.RED_MUSHROOM))))
+                    .put(Blocks.MYCELIUM, Pair.of(PaxelItem::canTillFarmland, createTillAndDropAction(Blocks.DIRT_PATH.getDefaultState(),
+                            random(Items.BROWN_MUSHROOM, Items.RED_MUSHROOM))))
+                    .build()
     );
 
     public PaxelItem(ToolMaterial toolMaterial, Item.Settings settings) {
@@ -120,7 +110,7 @@ public class PaxelItem extends MiningToolItem {
         return playerEntity.getOffHandStack().isOf(Items.SHIELD) && !playerEntity.shouldCancelInteraction();
     }
 
-    private Optional<BlockState> tryStrip(World world, BlockPos pos, @Nullable PlayerEntity player, BlockState state) {
+    private Optional<BlockState> tryStrip(World world, BlockPos pos, PlayerEntity player, BlockState state) {
         Optional<BlockState> optional = this.getStrippedState(state);
         if (optional.isPresent()) {
             world.playSound(player, pos, SoundEvents.ITEM_AXE_STRIP, SoundCategory.BLOCKS, 1.0F, 1.0F);

@@ -8,6 +8,7 @@ import net.minecraft.enchantment.Enchantment;
 import net.minecraft.enchantment.Enchantments;
 import net.minecraft.entity.EntityType;
 import net.minecraft.item.ItemConvertible;
+import net.minecraft.item.Items;
 import net.minecraft.loot.LootPool;
 import net.minecraft.loot.LootTable;
 import net.minecraft.loot.LootTables;
@@ -44,19 +45,25 @@ public class LootHandler {
             addItemsToLootTable(builder, LootTables.DESERT_PYRAMID_ARCHAEOLOGY, lootTable,
                     new LootTableItem(ItemInit.ANCIENT_UPGRADE_SMITHING_TEMPLATE, 0.05F));
             addItemsToLootTable(builder, LootTables.DESERT_PYRAMID_CHEST, lootTable,
-                    new LootTableItem(ItemInit.ANCIENT_UPGRADE_SMITHING_TEMPLATE, 0.025F));
+                    new LootTableItem(ItemInit.ANCIENT_UPGRADE_SMITHING_TEMPLATE, 0.0125F));
             addItemsToLootTable(builder, LootTables.ANCIENT_CITY_CHEST, lootTable,
-                    new LootTableItem(Blocks.DEEPSLATE_EMERALD_ORE, UniformLootNumberProvider.create(1, 3), 0.025F),
-                    new LootTableItem(ItemInit.SCULK_EMERALD, UniformLootNumberProvider.create(1, 2), 0.045F));
+                    new LootTableItem(Blocks.DEEPSLATE_EMERALD_ORE, UniformLootNumberProvider.create(1, 3), 0.075F),
+                    new LootTableItem(ItemInit.SCULK_EMERALD, UniformLootNumberProvider.create(1, 2), 0.12F));
             addItemsToLootTable(builder, LootTables.END_CITY_TREASURE_CHEST, lootTable,
-                    new LootTableItem(ItemInit.END_DIAMOND, UniformLootNumberProvider.create(1, 2), 0.03F),
-                    new LootTableItem(ItemInit.END_EMERALD, UniformLootNumberProvider.create(1, 4), 0.05F));
+                    new LootTableItem(ItemInit.END_DIAMOND, UniformLootNumberProvider.create(1, 2), 0.075F),
+                    new LootTableItem(ItemInit.END_EMERALD, UniformLootNumberProvider.create(1, 4), 0.075F),
+                    new LootTableItem(Items.DIAMOND_BLOCK, 0.12F));
             addItemsToLootTable(builder, LootTables.BASTION_TREASURE_CHEST, lootTable,
-                    new LootTableItem(ItemInit.BLACKSTONE_EMERALD, UniformLootNumberProvider.create(1, 2), 0.05F));
+                    new LootTableItem(ItemInit.BLACKSTONE_EMERALD, UniformLootNumberProvider.create(1, 2), 0.1F),
+                    new LootTableItem(Items.NETHERITE_INGOT, UniformLootNumberProvider.create(1, 4), 0.25F));
             addItemsToLootTable(builder, LootTables.BASTION_OTHER_CHEST, lootTable,
-                    new LootTableItem(ItemInit.BLACKSTONE_EMERALD, 0.0125F));
+                    new LootTableItem(ItemInit.BLACKSTONE_EMERALD, 0.075F));
             addItemsToLootTable(builder, LootTables.BASTION_BRIDGE_CHEST, lootTable,
                     new LootTableItem(BlockInit.BLACKSTONE_EMERALD_ORE, 0.1F));
+            addItemsToLootTable(builder, LootTables.STRONGHOLD_CROSSING_CHEST, lootTable,
+                    new LootTableItem(ItemInit.DEEPSLATE_EMERALD, 0.5F));
+            addItemsToLootTable(builder, LootTables.STRONGHOLD_CORRIDOR_CHEST, lootTable,
+                    new LootTableItem(ItemInit.DEEPSLATE_EMERALD, 0.1F));
         });
         LootTableEvents.REPLACE.register((key, original, source, registries) -> {
             RegistryWrapper.Impl<Enchantment> impl = registries.getWrapperOrThrow(RegistryKeys.ENCHANTMENT);

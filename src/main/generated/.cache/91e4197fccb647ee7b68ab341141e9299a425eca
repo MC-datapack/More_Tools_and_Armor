@@ -1,10 +1,13 @@
-// 1.21.1	2025-06-11T14:46:53.0857308	More Tools and Armor/Tags for minecraft:item
-9ef9e428d8ff302e754677df4c2f93b6b5f37a4b data\minecraft\tags\item\axes.json
-b27b0c49a4113903a7f8c362941a750f6901272f data\minecraft\tags\item\chest_armor.json
-edaa8aa886fb7f1326baf77e7476d3b44ee99497 data\minecraft\tags\item\leg_armor.json
-cd446c9021f6514500a3d51270f5377081ecd195 data\minecraft\tags\item\hoes.json
-0b15b605f2c20fc5cb4c6f8421ecc6b4e26122f1 data\minecraft\tags\item\shovels.json
-6c35baf55bbf028e4cbdc7194473da0a095d71c7 data\minecraft\tags\item\foot_armor.json
-034a0d94b80ddf4a0d442d303f4db0fcb19ce98d data\minecraft\tags\item\swords.json
-9fd926633b9719cae2ce1a2811390d024b4da005 data\minecraft\tags\item\pickaxes.json
-92d0b268dfa0533640a9a120ce58c504b072c706 data\minecraft\tags\item\head_armor.json
+// 1.21.1	2025-12-29T21:30:03.89901	More Tools and Armor/Tags for minecraft:item
+dac85ca4916141f3dc71a6f37e3ab0e8bb65b2b7 data\minecraft\tags\item\leg_armor.json
+543b570576b494b5219860ded458fe77ef27b43b data\minecraft\tags\item\foot_armor.json
+48296411b78687af4b90e6a4eff067cb547cf9d5 data\minecraft\tags\item\head_armor.json
+db61959f91577348de75a29f965333fdc96d008c data\more_tools_and_armor\tags\item\enchantable\hammer.json
+1bc9dffba90f9661ba29265655615b57ff4ce454 data\minecraft\tags\item\axes.json
+0d570c022cbe60ee573972d32a457ee8ba58a9ec data\minecraft\tags\item\chest_armor.json
+39c6d9cf6e0613f1500e19d0eea997c5de00b10c data\minecraft\tags\item\hoes.json
+4fe21614ceed2fbb276b752f107f20fac4c801bd data\minecraft\tags\item\enchantable\durability.json
+c2884030f3474027095d2d6192cd11651cb387c6 data\minecraft\tags\item\shovels.json
+968e535d6abfe5451b502556bc95cc419768f812 data\minecraft\tags\item\swords.json
+18507e0129eaedba68ed18673c063b681341944a data\minecraft\tags\item\pickaxes.json
+4fe21614ceed2fbb276b752f107f20fac4c801bd data\minecraft\tags\item\enchantable\mining.json

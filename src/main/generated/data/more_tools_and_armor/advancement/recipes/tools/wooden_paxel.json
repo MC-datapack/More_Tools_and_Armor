@@ -7,11 +7,11 @@
       },
       "trigger": "minecraft:recipe_unlocked"
     },
-    "has_wooden_pickaxe": {
+    "has_wooden_axe": {
       "conditions": {
         "items": [
           {
-            "items": "minecraft:wooden_pickaxe"
+            "items": "minecraft:wooden_axe"
           }
         ]
       },
@@ -21,7 +21,7 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_wooden_pickaxe"
+      "has_wooden_axe"
     ]
   ],
   "rewards": {

@@ -3,10 +3,10 @@
   "category": "equipment",
   "ingredients": [
     {
-      "item": "minecraft:golden_axe"
+      "item": "minecraft:golden_pickaxe"
     },
     {
-      "item": "minecraft:golden_pickaxe"
+      "item": "minecraft:golden_axe"
     },
     {
       "item": "minecraft:golden_shovel"

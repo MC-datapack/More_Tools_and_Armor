@@ -1,0 +1,20 @@
+{
+  "anvil_cost": 7,
+  "description": {
+    "translate": "enchantment.more_tools_and_armor.range"
+  },
+  "max_cost": {
+    "base": 4,
+    "per_level_above_first": 7
+  },
+  "max_level": 3,
+  "min_cost": {
+    "base": 3,
+    "per_level_above_first": 4
+  },
+  "slots": [
+    "hand"
+  ],
+  "supported_items": "#more_tools_and_armor:enchantable/hammer",
+  "weight": 1
+}

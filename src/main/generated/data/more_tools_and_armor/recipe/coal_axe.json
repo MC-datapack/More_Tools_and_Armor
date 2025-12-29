@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "A": {
+      "item": "minecraft:coal"
+    },
+    "B": {
+      "tag": "c:rods/wooden"
+    }
+  },
+  "pattern": [
+    "AA",
+    "BA",
+    "B "
+  ],
+  "result": {
+    "count": 1,
+    "id": "more_tools_and_armor:coal_axe"
+  }
+}

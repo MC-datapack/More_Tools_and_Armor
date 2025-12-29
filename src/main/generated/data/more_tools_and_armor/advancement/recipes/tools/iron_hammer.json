@@ -1,11 +1,11 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_netherite_pickaxe": {
+    "has_iron_ingot": {
       "conditions": {
         "items": [
           {
-            "items": "minecraft:netherite_pickaxe"
+            "items": "minecraft:iron_ingot"
           }
         ]
       },
@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "more_tools_and_armor:netherite_paxel"
+        "recipe": "more_tools_and_armor:iron_hammer"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -21,12 +21,12 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_netherite_pickaxe"
+      "has_iron_ingot"
     ]
   ],
   "rewards": {
     "recipes": [
-      "more_tools_and_armor:netherite_paxel"
+      "more_tools_and_armor:iron_hammer"
     ]
   }
 }

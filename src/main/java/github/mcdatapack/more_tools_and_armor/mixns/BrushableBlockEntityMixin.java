@@ -8,7 +8,7 @@ import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Redirect;
 
-@Mixin(BrushableBlockEntity.class)
+@Mixin(value = BrushableBlockEntity.class, remap = false)
 public class BrushableBlockEntityMixin {
     @Redirect(method = "generateItem", at = @At(value = "INVOKE", target = "Lit/unimi/dsi/fastutil/objects/ObjectArrayList;size()I"))
     private int generateItem(ObjectArrayList<ItemStack> instance) {

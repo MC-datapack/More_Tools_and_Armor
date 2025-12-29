@@ -57,5 +57,21 @@ public class BiomeModificationInit {
                 GenerationStep.Feature.UNDERGROUND_ORES,
                 PlacedFeatureInit.BLACKSTONE_EMERALD_ORE
         );
+
+        BiomeModifications.addFeature(
+                BiomeSelectors.foundInOverworld(),
+                GenerationStep.Feature.UNDERGROUND_ORES,
+                PlacedFeatureInit.OVERWORLD_UNSTABLE_ORE
+        );
+        BiomeModifications.addFeature(
+                BiomeSelectors.foundInTheNether(),
+                GenerationStep.Feature.UNDERGROUND_ORES,
+                PlacedFeatureInit.NETHER_UNSTABLE_ORE
+        );
+        BiomeModifications.addFeature(
+                BiomeSelectors.foundInTheEnd(),
+                GenerationStep.Feature.UNDERGROUND_ORES,
+                PlacedFeatureInit.END_UNSTABLE_ORE
+        );
     }
 }

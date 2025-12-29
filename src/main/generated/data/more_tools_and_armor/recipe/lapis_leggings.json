@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "A": {
+      "item": "minecraft:lapis_lazuli"
+    }
+  },
+  "pattern": [
+    "AAA",
+    "A A",
+    "A A"
+  ],
+  "result": {
+    "count": 1,
+    "id": "more_tools_and_armor:lapis_leggings"
+  }
+}

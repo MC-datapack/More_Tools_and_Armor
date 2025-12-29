@@ -1,11 +1,11 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_stone_pickaxe": {
+    "has_stone_axe": {
       "conditions": {
         "items": [
           {
-            "items": "minecraft:stone_pickaxe"
+            "items": "minecraft:stone_axe"
           }
         ]
       },
@@ -21,7 +21,7 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_stone_pickaxe"
+      "has_stone_axe"
     ]
   ],
   "rewards": {
