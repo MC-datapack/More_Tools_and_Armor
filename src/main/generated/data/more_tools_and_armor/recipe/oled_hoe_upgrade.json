@@ -1,16 +1,10 @@
 {
   "type": "minecraft:smithing_transform",
-  "addition": {
-    "item": "more_tools_and_armor:oled_ingot"
-  },
-  "base": {
-    "item": "more_tools_and_armor:onethdenderite_hoe"
-  },
+  "addition": "more_tools_and_armor:oled_ingot",
+  "base": "more_tools_and_armor:onethdenderite_hoe",
   "result": {
     "count": 1,
     "id": "more_tools_and_armor:oled_hoe"
   },
-  "template": {
-    "item": "more_tools_and_armor:oled_upgrade_smithing_template"
-  }
+  "template": "more_tools_and_armor:oled_upgrade_smithing_template"
 }

@@ -6,6 +6,7 @@ import github.mcdatapack.more_tools_and_armor.init.worldgen.BiomeModificationIni
 import github.mcdatapack.more_tools_and_armor.util.LootHandler;
 import github.mcdatapack.more_tools_and_armor.util.TradeHandler;
 import net.fabricmc.api.ModInitializer;
+import net.fabricmc.fabric.api.entity.event.v1.EntityElytraEvents;
 import net.minecraft.util.Identifier;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

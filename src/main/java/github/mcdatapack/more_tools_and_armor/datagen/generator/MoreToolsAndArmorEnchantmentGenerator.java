@@ -20,7 +20,7 @@ public class MoreToolsAndArmorEnchantmentGenerator extends FabricDynamicRegistry
 
     @Override
     protected void configure(RegistryWrapper.WrapperLookup wrapperLookup, Entries entries) {
-        RegistryEntryList<Item> hammerEnchantable = wrapperLookup.getWrapperOrThrow(RegistryKeys.ITEM).getOrThrow(TagList.ItemTags.HAMMER_ENCHANTABLE);
+        RegistryEntryList<Item> hammerEnchantable = wrapperLookup.getOrThrow(RegistryKeys.ITEM).getOrThrow(TagList.ItemTags.HAMMER_ENCHANTABLE);
         entries.add(EnchantmentInit.RANGE, Enchantment.builder(
                 Enchantment.definition(
                         hammerEnchantable,

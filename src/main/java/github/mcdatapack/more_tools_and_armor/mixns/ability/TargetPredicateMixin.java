@@ -9,6 +9,7 @@ import net.minecraft.entity.mob.PhantomEntity;
 import net.minecraft.entity.mob.ZombifiedPiglinEntity;
 import net.minecraft.entity.passive.IronGolemEntity;
 import net.minecraft.entity.player.PlayerEntity;
+import net.minecraft.server.world.ServerWorld;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
@@ -17,7 +18,7 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 @Mixin(TargetPredicate.class)
 public class TargetPredicateMixin {
     @Inject(method = "test", at = @At("RETURN"), cancellable = true)
-    private void canTarget(LivingEntity baseEntity, LivingEntity targetEntity, CallbackInfoReturnable<Boolean> cir) {
+    private void canTarget(ServerWorld world, LivingEntity baseEntity, LivingEntity targetEntity, CallbackInfoReturnable<Boolean> cir) {
         if (baseEntity instanceof IronGolemEntity ironGolem && targetEntity instanceof PlayerEntity player) {
             if (Abilities.isWearingIronGolemPassiveArmor(player)) {
                 cir.setReturnValue(false);

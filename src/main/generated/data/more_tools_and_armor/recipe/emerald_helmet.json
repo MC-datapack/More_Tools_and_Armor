@@ -2,9 +2,7 @@
   "type": "minecraft:crafting_shaped",
   "category": "equipment",
   "key": {
-    "A": {
-      "item": "minecraft:emerald"
-    }
+    "A": "minecraft:emerald"
   },
   "pattern": [
     "AAA",

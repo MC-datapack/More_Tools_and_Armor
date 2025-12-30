@@ -2,9 +2,7 @@
   "type": "minecraft:crafting_shaped",
   "category": "equipment",
   "key": {
-    "A": {
-      "item": "more_tools_and_armor:budding_amethyst_crystal"
-    }
+    "A": "more_tools_and_armor:budding_amethyst_crystal"
   },
   "pattern": [
     "A A",

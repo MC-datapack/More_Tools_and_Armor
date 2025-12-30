@@ -10,7 +10,7 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 
 @Mixin(PiglinBrain.class)
 public abstract class PiglinBrainMixin {
-    @Inject(method = "wearsGoldArmor", at = @At("RETURN"), cancellable = true)
+    @Inject(method = "isWearingPiglinSafeArmor", at = @At("RETURN"), cancellable = true)
     private static void wearsGoldArmor(LivingEntity entity, CallbackInfoReturnable<Boolean> cir) {
         if (!cir.getReturnValue()) {
             if (Abilities.isWearingPiglinSaveArmor(entity)) {

@@ -1,16 +1,10 @@
 {
   "type": "minecraft:smithing_transform",
-  "addition": {
-    "item": "more_tools_and_armor:onethdenderite_ingot"
-  },
-  "base": {
-    "item": "more_tools_and_armor:void_pickaxe"
-  },
+  "addition": "more_tools_and_armor:onethdenderite_ingot",
+  "base": "more_tools_and_armor:void_pickaxe",
   "result": {
     "count": 1,
     "id": "more_tools_and_armor:onethdenderite_pickaxe"
   },
-  "template": {
-    "item": "more_tools_and_armor:onethdenderite_upgrade_smithing_template"
-  }
+  "template": "more_tools_and_armor:onethdenderite_upgrade_smithing_template"
 }

@@ -22,42 +22,12 @@ import net.minecraft.world.World;
 
 public class HammerItem extends PaxelItem {
     private final int range;
-    private final ToolMaterial pMaterial;
 
-    public HammerItem(ToolMaterial toolMaterial, Settings settings, int range) {
-        super(new ToolMaterial() {
-            @Override
-            public int getDurability() {
-                return toolMaterial.getDurability() / 4;
-            }
-
-            @Override
-            public float getMiningSpeedMultiplier() {
-                return toolMaterial.getMiningSpeedMultiplier();
-            }
-
-            @Override
-            public float getAttackDamage() {
-                return toolMaterial.getAttackDamage();
-            }
-
-            @Override
-            public TagKey<Block> getInverseTag() {
-                return toolMaterial.getInverseTag();
-            }
-
-            @Override
-            public int getEnchantability() {
-                return toolMaterial.getEnchantability() / 2;
-            }
-
-            @Override
-            public Ingredient getRepairIngredient() {
-                return toolMaterial.getRepairIngredient();
-            }
-        }, settings);
+    public HammerItem(ToolMaterial toolMaterial, float attackDamage, float attackSpeed, Settings settings, int range) {
+        super(new ToolMaterial(toolMaterial.incorrectBlocksForDrops(), toolMaterial.durability() / 4,
+                toolMaterial.speed(), toolMaterial.attackDamageBonus(), toolMaterial.enchantmentValue(), toolMaterial.repairItems()),
+                attackDamage, attackSpeed, settings);
         this.range = range;
-        this.pMaterial = toolMaterial;
     }
 
     @Override
@@ -68,7 +38,7 @@ public class HammerItem extends PaxelItem {
         }
 
         if (!world.isClient && state.getHardness(world, pos) != 0.0F && isCorrectForDrops(stack, state)) {
-            Registry<Enchantment> registryWrapper = world.getRegistryManager().get(RegistryKeys.ENCHANTMENT);
+            Registry<Enchantment> registryWrapper = world.getRegistryManager().getOrThrow(RegistryKeys.ENCHANTMENT);
             int range = this.range + stack.getEnchantments().getLevel(registryWrapper.getEntry(registryWrapper.get(EnchantmentInit.RANGE)));
 
             for (int x = -range; x <= range; x++) {
@@ -91,10 +61,5 @@ public class HammerItem extends PaxelItem {
         }
 
         return true;
-    }
-
-    @Override
-    public ToolMaterial getMaterial() {
-        return pMaterial;
     }
 }

@@ -36,11 +36,11 @@ public class LootHandler {
         LootTableEvents.MODIFY.register((lootTable, builder, lootTableSource, wrapperLookup) -> {
             addItemsToLootTable(builder, LootTables.SNIFFER_DIGGING_GAMEPLAY, lootTable,
                     new LootTableItem(ItemInit.ANCIENT_HONEY_BOTTLE, 0.01F));
-            addItemsToLootTable(builder, EntityType.BAT.getLootTableId(), lootTable,
+            addItemsToLootTable(builder, EntityType.BAT.getLootTableKey().get(), lootTable,
                     new LootTableItem(ItemInit.BAT_WING, 0.1F));
             addItemsToLootTable(builder, LootTables.DESERT_WELL_ARCHAEOLOGY, lootTable,
                     new LootTableItem(ItemInit.ANCIENT_COIN, 0.15F));
-            addItemsToLootTable(builder, Blocks.BUDDING_AMETHYST.getLootTableKey(), lootTable,
+            addItemsToLootTable(builder, Blocks.BUDDING_AMETHYST.getLootTableKey().get(), lootTable,
                     new LootTableItem(ItemInit.BUDDING_AMETHYST_CRYSTAL, UniformLootNumberProvider.create(1, 3)));
             addItemsToLootTable(builder, LootTables.DESERT_PYRAMID_ARCHAEOLOGY, lootTable,
                     new LootTableItem(ItemInit.ANCIENT_UPGRADE_SMITHING_TEMPLATE, 0.05F));
@@ -66,7 +66,7 @@ public class LootHandler {
                     new LootTableItem(ItemInit.DEEPSLATE_EMERALD, 0.1F));
         });
         LootTableEvents.REPLACE.register((key, original, source, registries) -> {
-            RegistryWrapper.Impl<Enchantment> impl = registries.getWrapperOrThrow(RegistryKeys.ENCHANTMENT);
+            RegistryWrapper.Impl<Enchantment> impl = registries.getOrThrow(RegistryKeys.ENCHANTMENT);
             if (Blocks.DEEPSLATE_EMERALD_ORE.getLootTableKey().equals(key)) {
                 LootPool.Builder poolBuilder = LootPool.builder()
                         .rolls(ConstantLootNumberProvider.create(1))

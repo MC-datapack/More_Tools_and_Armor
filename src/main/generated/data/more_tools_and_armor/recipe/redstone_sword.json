@@ -2,12 +2,8 @@
   "type": "minecraft:crafting_shaped",
   "category": "equipment",
   "key": {
-    "A": {
-      "item": "minecraft:redstone"
-    },
-    "B": {
-      "tag": "c:rods/wooden"
-    }
+    "A": "minecraft:redstone",
+    "B": "#c:rods/wooden"
   },
   "pattern": [
     "A",

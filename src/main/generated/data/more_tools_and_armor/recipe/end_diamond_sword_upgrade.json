@@ -1,16 +1,10 @@
 {
   "type": "minecraft:smithing_transform",
-  "addition": {
-    "item": "more_tools_and_armor:end_diamond"
-  },
-  "base": {
-    "item": "more_tools_and_armor:deepslate_emerald_sword"
-  },
+  "addition": "more_tools_and_armor:end_diamond",
+  "base": "more_tools_and_armor:deepslate_emerald_sword",
   "result": {
     "count": 1,
     "id": "more_tools_and_armor:end_diamond_sword"
   },
-  "template": {
-    "item": "more_tools_and_armor:end_diamond_upgrade_smithing_template"
-  }
+  "template": "more_tools_and_armor:end_diamond_upgrade_smithing_template"
 }

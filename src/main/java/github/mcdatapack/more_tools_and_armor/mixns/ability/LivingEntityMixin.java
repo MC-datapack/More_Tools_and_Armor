@@ -24,11 +24,6 @@ public abstract class LivingEntityMixin {
 
     @Shadow public abstract int getXpToDrop(ServerWorld world, @Nullable Entity attacker);
 
-    @Redirect(method = "tickFallFlying", at = @At(value = "INVOKE", target = "Lnet/minecraft/item/ItemStack;isOf(Lnet/minecraft/item/Item;)Z"))
-    private boolean isOf(ItemStack instance, Item item) {
-        return instance.isOf(Items.ELYTRA) || instance.isOf(ItemInit.ANCIENT_CHESTPLATE);
-    }
-
     @Inject(method = "addStatusEffect(Lnet/minecraft/entity/effect/StatusEffectInstance;Lnet/minecraft/entity/Entity;)Z", at = @At("HEAD"), cancellable = true)
     private void addStatusEffect(StatusEffectInstance effect, Entity source, CallbackInfoReturnable<Boolean> cir) {
         if (Abilities.isWearingStatusEffectImmuneArmor( (LivingEntity) (Object) this) && effect.getEffectType().value().getCategory() == StatusEffectCategory.HARMFUL) {

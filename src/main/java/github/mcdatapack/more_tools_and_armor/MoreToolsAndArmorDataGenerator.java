@@ -1,5 +1,6 @@
 package github.mcdatapack.more_tools_and_armor;
 
+import github.mcdatapack.more_tools_and_armor.datagen.generator.EquipmentModelGenerator;
 import github.mcdatapack.more_tools_and_armor.datagen.generator.MoreToolsAndArmorEnchantmentGenerator;
 import github.mcdatapack.more_tools_and_armor.datagen.generator.MoreToolsAndArmorWorldGenerator;
 import github.mcdatapack.more_tools_and_armor.datagen.provider.MoreToolsAndArmorModelProvider;
@@ -22,6 +23,7 @@ public class MoreToolsAndArmorDataGenerator implements DataGeneratorEntrypoint {
 		pack.addProvider(MoreToolsAndArmorTagProvider.BlockTagProvider::new);
 		pack.addProvider(MoreToolsAndArmorTagProvider.ItemTagProvider::new);
 		pack.addProvider(MoreToolsAndArmorEnchantmentGenerator::new);
+		pack.addProvider((FabricDataGenerator.Pack.Factory<EquipmentModelGenerator>) EquipmentModelGenerator::new);
 	}
 	@Override
 	public void buildRegistry(RegistryBuilder registryBuilder) {

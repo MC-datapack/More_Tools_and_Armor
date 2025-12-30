@@ -14,8 +14,8 @@ import static github.mcdatapack.more_tools_and_armor.item.ConvertTo.replace;
 public class ConvertPickaxeItem extends PickaxeItem {
     private final int max;
 
-    public ConvertPickaxeItem(int max, ToolMaterial material, Settings settings) {
-        super(material, settings);
+    public ConvertPickaxeItem(int max, ToolMaterial material, float attackDamage, float attackSpeed, Settings settings) {
+        super(material, attackDamage, attackSpeed, settings);
         this.max = max;
     }
 

@@ -14,8 +14,8 @@ import static github.mcdatapack.more_tools_and_armor.item.ConvertTo.replace;
 public class ConvertPaxelItem extends PaxelItem {
     private final int max;
 
-    public ConvertPaxelItem(int max, ToolMaterial material, Item.Settings settings) {
-        super(material, settings);
+    public ConvertPaxelItem(int max, ToolMaterial material, float attackDamage, float attackSpeed, Item.Settings settings) {
+        super(material, attackDamage, attackSpeed, settings);
         this.max = max;
     }
 

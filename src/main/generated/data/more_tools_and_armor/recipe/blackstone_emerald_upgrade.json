@@ -1,14 +1,10 @@
 {
   "type": "minecraft:smithing_transform",
-  "addition": {
-    "item": "minecraft:emerald"
-  },
-  "base": {
-    "item": "more_tools_and_armor:nether_shard"
-  },
+  "addition": "minecraft:emerald",
+  "base": "more_tools_and_armor:nether_shard",
   "result": {
     "count": 1,
     "id": "more_tools_and_armor:blackstone_emerald"
   },
-  "template": []
+  "template": "minecraft:diamond"
 }

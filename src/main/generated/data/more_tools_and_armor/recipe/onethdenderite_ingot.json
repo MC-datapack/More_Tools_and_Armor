@@ -2,33 +2,15 @@
   "type": "minecraft:crafting_shapeless",
   "category": "misc",
   "ingredients": [
-    {
-      "item": "more_tools_and_armor:sculk_emerald"
-    },
-    {
-      "item": "more_tools_and_armor:sculk_emerald"
-    },
-    {
-      "item": "more_tools_and_armor:end_emerald"
-    },
-    {
-      "item": "more_tools_and_armor:end_emerald"
-    },
-    {
-      "item": "more_tools_and_armor:blackstone_emerald"
-    },
-    {
-      "item": "more_tools_and_armor:blackstone_emerald"
-    },
-    {
-      "item": "more_tools_and_armor:void_ingot"
-    },
-    {
-      "item": "more_tools_and_armor:sculk_emerald_ore"
-    },
-    {
-      "item": "more_tools_and_armor:blackstone_emerald_ore"
-    }
+    "more_tools_and_armor:sculk_emerald",
+    "more_tools_and_armor:sculk_emerald",
+    "more_tools_and_armor:end_emerald",
+    "more_tools_and_armor:end_emerald",
+    "more_tools_and_armor:blackstone_emerald",
+    "more_tools_and_armor:blackstone_emerald",
+    "more_tools_and_armor:void_ingot",
+    "more_tools_and_armor:sculk_emerald_ore",
+    "more_tools_and_armor:blackstone_emerald_ore"
   ],
   "result": {
     "count": 2,

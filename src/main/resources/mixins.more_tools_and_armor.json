@@ -8,15 +8,12 @@
 	"ToolTipHandler",
 	"ability.AbstractBlockMixin",
 	"ability.AbstractBlockSettingsMixin",
+	"ability.ArmorItemMaterialAccessor",
 	"ability.EndermanEntityMixin",
 	"ability.LivingEntityMixin",
 	"ability.PiglinBrainMixin",
-	"ability.PlayerEntityMixin",
 	"ability.PowderSnowBlockMixin",
 	"ability.TargetPredicateMixin"
-  ],
-  "client": [
-	"ability.ClientPlayerEntityMixin"
   ],
   "injectors": {
 	"defaultRequire": 1

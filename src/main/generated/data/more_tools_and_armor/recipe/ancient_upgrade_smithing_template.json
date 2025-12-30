@@ -2,15 +2,9 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "key": {
-    "A": {
-      "item": "minecraft:diamond"
-    },
-    "B": {
-      "item": "more_tools_and_armor:ancient_ingot"
-    },
-    "C": {
-      "item": "more_tools_and_armor:oled_upgrade_smithing_template"
-    }
+    "A": "minecraft:diamond",
+    "B": "more_tools_and_armor:ancient_ingot",
+    "C": "more_tools_and_armor:oled_upgrade_smithing_template"
   },
   "pattern": [
     "BCB",

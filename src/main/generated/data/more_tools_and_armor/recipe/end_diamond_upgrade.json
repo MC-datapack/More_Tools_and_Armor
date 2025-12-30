@@ -1,14 +1,10 @@
 {
   "type": "minecraft:smithing_transform",
-  "addition": {
-    "item": "minecraft:diamond"
-  },
-  "base": {
-    "item": "more_tools_and_armor:end_shard"
-  },
+  "addition": "minecraft:diamond",
+  "base": "more_tools_and_armor:end_shard",
   "result": {
     "count": 1,
     "id": "more_tools_and_armor:end_diamond"
   },
-  "template": []
+  "template": "minecraft:diamond"
 }

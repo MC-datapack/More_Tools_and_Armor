@@ -2,15 +2,9 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "key": {
-    "A": {
-      "item": "more_tools_and_armor:end_diamond"
-    },
-    "B": {
-      "item": "minecraft:netherite_ingot"
-    },
-    "C": {
-      "item": "minecraft:elytra"
-    }
+    "A": "more_tools_and_armor:end_diamond",
+    "B": "minecraft:netherite_ingot",
+    "C": "minecraft:elytra"
   },
   "pattern": [
     "AAA",

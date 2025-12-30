@@ -3,10 +3,11 @@ package github.mcdatapack.more_tools_and_armor.util;
 import github.mcdatapack.more_tools_and_armor.config.MoreToolsAndArmorConfig;
 import github.mcdatapack.more_tools_and_armor.enums.ToolMaterials;
 import github.mcdatapack.more_tools_and_armor.init.ArmorMaterialInit;
-import github.mcdatapack.more_tools_and_armor.item.PaxelItem;
+import github.mcdatapack.more_tools_and_armor.item.*;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.player.PlayerEntity;
-import net.minecraft.item.*;
+import net.minecraft.item.ItemStack;
+import net.minecraft.item.equipment.ArmorMaterials;
 
 public class Abilities {
     public static boolean isWearingEndermanSaveArmor(PlayerEntity player) {
@@ -14,11 +15,11 @@ public class Abilities {
             return false;
         for (ItemStack itemStack : player.getArmorItems()) {
             if (itemStack.getItem() instanceof ArmorItem item) {
-                if (item.getMaterial() == ArmorMaterialInit.END_DIAMOND
-                 || item.getMaterial() == ArmorMaterialInit.VOID
-                || item.getMaterial() == ArmorMaterialInit.ONETHDENDERITE
-                || item.getMaterial() == ArmorMaterialInit.OLED
-                || item.getMaterial() == ArmorMaterialInit.ANCIENT) {
+                if (item.material == ArmorMaterialInit.END_DIAMOND
+                 || item.material == ArmorMaterialInit.VOID
+                || item.material == ArmorMaterialInit.ONETHDENDERITE
+                || item.material == ArmorMaterialInit.OLED
+                || item.material == ArmorMaterialInit.ANCIENT) {
                     return true;
                 }
             }
@@ -28,12 +29,12 @@ public class Abilities {
     public static boolean isWearingPiglinSaveArmor(LivingEntity player) {
         for (ItemStack itemStack : player.getArmorItems()) {
             if (itemStack.getItem() instanceof ArmorItem item) {
-                if (item.getMaterial() == ArmorMaterials.NETHERITE ||
-                        item.getMaterial() == ArmorMaterialInit.DEEPSLATE_EMERALD ||
-                        item.getMaterial() == ArmorMaterialInit.END_DIAMOND ||
-                        item.getMaterial() == ArmorMaterialInit.VOID ||
-                        item.getMaterial() == ArmorMaterialInit.ONETHDENDERITE ||
-                        item.getMaterial() == ArmorMaterialInit.OLED) {
+                if (item.material == ArmorMaterials.NETHERITE ||
+                        item.material == ArmorMaterialInit.DEEPSLATE_EMERALD ||
+                        item.material == ArmorMaterialInit.END_DIAMOND ||
+                        item.material == ArmorMaterialInit.VOID ||
+                        item.material == ArmorMaterialInit.ONETHDENDERITE ||
+                        item.material == ArmorMaterialInit.OLED) {
                     return true;
                 }
             }
@@ -45,9 +46,9 @@ public class Abilities {
             return false;
         for (ItemStack itemStack : player.getArmorItems()) {
             if (itemStack.getItem() instanceof ArmorItem item) {
-                if (item.getMaterial() == ArmorMaterialInit.ONETHDENDERITE
-                        || item.getMaterial() == ArmorMaterialInit.OLED
-                        || item.getMaterial() == ArmorMaterialInit.ANCIENT) {
+                if (item.material == ArmorMaterialInit.ONETHDENDERITE
+                        || item.material == ArmorMaterialInit.OLED
+                        || item.material == ArmorMaterialInit.ANCIENT) {
                     return true;
                 }
             }
@@ -59,8 +60,8 @@ public class Abilities {
             return false;
         for (ItemStack itemStack : player.getArmorItems()) {
             if (itemStack.getItem() instanceof ArmorItem item) {
-                if (item.getMaterial() == ArmorMaterialInit.OLED
-                        || item.getMaterial() == ArmorMaterialInit.ANCIENT) {
+                if (item.material == ArmorMaterialInit.OLED
+                        || item.material == ArmorMaterialInit.ANCIENT) {
                     return true;
                 }
             }
@@ -72,8 +73,8 @@ public class Abilities {
             return false;
         for (ItemStack itemStack : player.getArmorItems()) {
             if (itemStack.getItem() instanceof ArmorItem item) {
-                if (item.getMaterial() == ArmorMaterialInit.OLED
-                        || item.getMaterial() == ArmorMaterialInit.ANCIENT) {
+                if (item.material == ArmorMaterialInit.OLED
+                        || item.material == ArmorMaterialInit.ANCIENT) {
                     return true;
                 }
             }
@@ -85,11 +86,11 @@ public class Abilities {
             return false;
         for (ItemStack itemStack : player.getArmorItems()) {
             if (itemStack.getItem() instanceof ArmorItem item) {
-                if (item.getMaterial() == ArmorMaterialInit.DEEPSLATE_EMERALD ||
-                        item.getMaterial() == ArmorMaterialInit.END_DIAMOND ||
-                        item.getMaterial() == ArmorMaterialInit.VOID ||
-                        item.getMaterial() == ArmorMaterialInit.ONETHDENDERITE ||
-                        item.getMaterial() == ArmorMaterialInit.OLED) {
+                if (item.material == ArmorMaterialInit.DEEPSLATE_EMERALD ||
+                        item.material == ArmorMaterialInit.END_DIAMOND ||
+                        item.material == ArmorMaterialInit.VOID ||
+                        item.material == ArmorMaterialInit.ONETHDENDERITE ||
+                        item.material == ArmorMaterialInit.OLED) {
                     return true;
                 }
             }
@@ -102,10 +103,10 @@ public class Abilities {
             return false;
         for (ItemStack itemStack : entity.getArmorItems()) {
             if (itemStack.getItem() instanceof ArmorItem item) {
-                if (item.getMaterial() == ArmorMaterialInit.VOID
-                        || item.getMaterial() == ArmorMaterialInit.ONETHDENDERITE
-                        || item.getMaterial() == ArmorMaterialInit.OLED
-                        || item.getMaterial() == ArmorMaterialInit.ANCIENT) {
+                if (item.material == ArmorMaterialInit.VOID
+                        || item.material == ArmorMaterialInit.ONETHDENDERITE
+                        || item.material == ArmorMaterialInit.OLED
+                        || item.material == ArmorMaterialInit.ANCIENT) {
                     return true;
                 }
             }
@@ -118,7 +119,7 @@ public class Abilities {
             return false;
         for (ItemStack itemStack : player.getArmorItems()) {
             if (itemStack.getItem() instanceof ArmorItem item) {
-                if (item.getMaterial() == ArmorMaterialInit.ANCIENT) {
+                if (item.material == ArmorMaterialInit.ANCIENT) {
                     return true;
                 }
             }
@@ -129,7 +130,7 @@ public class Abilities {
     public static boolean isHoldingBedrockBreakingTool(PlayerEntity player) {
         if (!MoreToolsAndArmorConfig.getConfig().bedrockMining)
             return false;
-        return (player.getMainHandStack().getItem() instanceof PickaxeItem pickaxe && pickaxe.getMaterial() == ToolMaterials.ANCIENT) ||
-                (player.getMainHandStack().getItem() instanceof PaxelItem paxel && paxel.getMaterial() == ToolMaterials.ANCIENT);
+        return (player.getMainHandStack().getItem() instanceof PickaxeItem pickaxe && pickaxe.material == ToolMaterials.ANCIENT) ||
+                (player.getMainHandStack().getItem() instanceof PaxelItem paxel && paxel.material == ToolMaterials.ANCIENT);
     }
 }

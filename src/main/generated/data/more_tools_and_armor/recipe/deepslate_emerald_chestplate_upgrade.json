@@ -1,16 +1,10 @@
 {
   "type": "minecraft:smithing_transform",
-  "addition": {
-    "item": "more_tools_and_armor:deepslate_emerald"
-  },
-  "base": {
-    "item": "minecraft:netherite_chestplate"
-  },
+  "addition": "more_tools_and_armor:deepslate_emerald",
+  "base": "minecraft:netherite_chestplate",
   "result": {
     "count": 1,
     "id": "more_tools_and_armor:deepslate_emerald_chestplate"
   },
-  "template": {
-    "item": "more_tools_and_armor:deepslate_emerald_upgrade_smithing_template"
-  }
+  "template": "more_tools_and_armor:deepslate_emerald_upgrade_smithing_template"
 }

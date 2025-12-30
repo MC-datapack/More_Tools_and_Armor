@@ -1,16 +1,10 @@
 {
   "type": "minecraft:smithing_transform",
-  "addition": {
-    "item": "more_tools_and_armor:ancient_ingot"
-  },
-  "base": {
-    "item": "more_tools_and_armor:oled_paxel"
-  },
+  "addition": "more_tools_and_armor:ancient_ingot",
+  "base": "more_tools_and_armor:oled_paxel",
   "result": {
     "count": 1,
     "id": "more_tools_and_armor:ancient_paxel"
   },
-  "template": {
-    "item": "more_tools_and_armor:ancient_upgrade_smithing_template"
-  }
+  "template": "more_tools_and_armor:ancient_upgrade_smithing_template"
 }

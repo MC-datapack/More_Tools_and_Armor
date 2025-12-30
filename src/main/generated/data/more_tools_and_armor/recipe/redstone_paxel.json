@@ -2,18 +2,10 @@
   "type": "minecraft:crafting_shapeless",
   "category": "equipment",
   "ingredients": [
-    {
-      "item": "more_tools_and_armor:redstone_axe"
-    },
-    {
-      "item": "more_tools_and_armor:redstone_pickaxe"
-    },
-    {
-      "item": "more_tools_and_armor:redstone_shovel"
-    },
-    {
-      "item": "more_tools_and_armor:redstone_hoe"
-    }
+    "more_tools_and_armor:redstone_axe",
+    "more_tools_and_armor:redstone_pickaxe",
+    "more_tools_and_armor:redstone_shovel",
+    "more_tools_and_armor:redstone_hoe"
   ],
   "result": {
     "count": 1,

@@ -16,8 +16,8 @@ import static github.mcdatapack.more_tools_and_armor.item.ConvertTo.replace;
 public class ConvertHammerItem extends HammerItem {
     private final int max;
 
-    public ConvertHammerItem(int max, ToolMaterial toolMaterial, Settings settings, int range) {
-        super(toolMaterial, settings, range);
+    public ConvertHammerItem(int max, ToolMaterial toolMaterial, float attackDamage, float attackSpeed, Settings settings, int range) {
+        super(toolMaterial, attackDamage, attackSpeed, settings, range);
         this.max = max;
     }
 

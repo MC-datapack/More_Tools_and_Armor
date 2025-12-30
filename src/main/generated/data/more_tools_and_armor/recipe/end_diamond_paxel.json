@@ -2,18 +2,10 @@
   "type": "minecraft:crafting_shapeless",
   "category": "equipment",
   "ingredients": [
-    {
-      "item": "more_tools_and_armor:end_diamond_axe"
-    },
-    {
-      "item": "more_tools_and_armor:end_diamond_pickaxe"
-    },
-    {
-      "item": "more_tools_and_armor:end_diamond_shovel"
-    },
-    {
-      "item": "more_tools_and_armor:end_diamond_hoe"
-    }
+    "more_tools_and_armor:end_diamond_axe",
+    "more_tools_and_armor:end_diamond_pickaxe",
+    "more_tools_and_armor:end_diamond_shovel",
+    "more_tools_and_armor:end_diamond_hoe"
   ],
   "result": {
     "count": 1,

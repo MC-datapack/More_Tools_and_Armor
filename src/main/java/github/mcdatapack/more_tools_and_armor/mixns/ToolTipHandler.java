@@ -5,9 +5,10 @@ import github.mcdatapack.more_tools_and_armor.config.MoreToolsAndArmorConfig;
 import github.mcdatapack.more_tools_and_armor.enums.ToolMaterials;
 import github.mcdatapack.more_tools_and_armor.init.ArmorMaterialInit;
 import github.mcdatapack.more_tools_and_armor.init.ItemInit;
-import github.mcdatapack.more_tools_and_armor.item.PaxelItem;
+import github.mcdatapack.more_tools_and_armor.item.*;
 import net.minecraft.entity.player.PlayerEntity;
-import net.minecraft.item.*;
+import net.minecraft.item.Item;
+import net.minecraft.item.ItemStack;
 import net.minecraft.item.tooltip.TooltipType;
 import net.minecraft.text.Text;
 import org.spongepowered.asm.mixin.Mixin;
@@ -29,7 +30,7 @@ public abstract class ToolTipHandler {
         if (!MoreToolsAndArmorConfig.getConfig().showTooltip)
             return;
         if (getItem() instanceof ArmorItem armorItem) {
-            var material = armorItem.getMaterial();
+            var material = armorItem.material;
             if (material == ArmorMaterialInit.DEEPSLATE_EMERALD) {
                 addPhantomPassive(list);
             } else if (material == ArmorMaterialInit.END_DIAMOND) {
@@ -65,41 +66,41 @@ public abstract class ToolTipHandler {
             }
         }
         if (getItem() instanceof PickaxeItem pickaxeItem) {
-            if (pickaxeItem.getMaterial() == ToolMaterials.ONETHDENDERITE) {
+            if (pickaxeItem.material == ToolMaterials.ONETHDENDERITE) {
                 addRandomOre(list);
             }
-            if (pickaxeItem.getMaterial() == ToolMaterials.OLED) {
+            if (pickaxeItem.material == ToolMaterials.OLED) {
                 addRandomOre(list);
             }
-            if (pickaxeItem.getMaterial() == ToolMaterials.ANCIENT) {
+            if (pickaxeItem.material == ToolMaterials.ANCIENT) {
                 addRandomOre(list);
                 addBedrockMining(list);
             }
         }
         if (getItem() instanceof PaxelItem paxelItem) {
-            if (paxelItem.getMaterial() == ToolMaterials.ONETHDENDERITE) {
+            if (paxelItem.material == ToolMaterials.ONETHDENDERITE) {
                 addRandomOre(list);
             }
-            if (paxelItem.getMaterial() == ToolMaterials.OLED) {
+            if (paxelItem.material == ToolMaterials.OLED) {
                 addRandomOre(list);
             }
-            if (paxelItem.getMaterial() == ToolMaterials.ANCIENT) {
+            if (paxelItem.material == ToolMaterials.ANCIENT) {
                 addRandomOre(list);
                 addBedrockMining(list);
             }
         }
         if (getItem() instanceof SwordItem swordItem) {
-            if (swordItem.getMaterial() == ToolMaterials.DEEPSLATE_EMERALD)
+            if (swordItem.material == ToolMaterials.DEEPSLATE_EMERALD)
                 addMoreXP(5, list);
-            if (swordItem.getMaterial() == ToolMaterials.END_DIAMOND)
+            if (swordItem.material == ToolMaterials.END_DIAMOND)
                 addMoreXP(10, list);
-            if (swordItem.getMaterial() == ToolMaterials.VOID)
+            if (swordItem.material == ToolMaterials.VOID)
                 addMoreXP(50, list);
-            if (swordItem.getMaterial() == ToolMaterials.ONETHDENDERITE)
+            if (swordItem.material == ToolMaterials.ONETHDENDERITE)
                 addMoreXP(100, list);
-            if (swordItem.getMaterial() == ToolMaterials.OLED)
+            if (swordItem.material == ToolMaterials.OLED)
                 addMoreXP(500, list);
-            if (swordItem.getMaterial() == ToolMaterials.ANCIENT)
+            if (swordItem.material == ToolMaterials.ANCIENT)
                 addMoreXP(1000, list);
         }
     }

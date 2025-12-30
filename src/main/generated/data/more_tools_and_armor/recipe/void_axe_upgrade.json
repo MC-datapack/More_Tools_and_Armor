@@ -1,16 +1,10 @@
 {
   "type": "minecraft:smithing_transform",
-  "addition": {
-    "item": "more_tools_and_armor:void_ingot"
-  },
-  "base": {
-    "item": "more_tools_and_armor:end_diamond_axe"
-  },
+  "addition": "more_tools_and_armor:void_ingot",
+  "base": "more_tools_and_armor:end_diamond_axe",
   "result": {
     "count": 1,
     "id": "more_tools_and_armor:void_axe"
   },
-  "template": {
-    "item": "more_tools_and_armor:void_upgrade_smithing_template"
-  }
+  "template": "more_tools_and_armor:void_upgrade_smithing_template"
 }

@@ -2,18 +2,10 @@
   "type": "minecraft:crafting_shapeless",
   "category": "equipment",
   "ingredients": [
-    {
-      "item": "more_tools_and_armor:obsidian_axe"
-    },
-    {
-      "item": "more_tools_and_armor:obsidian_pickaxe"
-    },
-    {
-      "item": "more_tools_and_armor:obsidian_shovel"
-    },
-    {
-      "item": "more_tools_and_armor:obsidian_hoe"
-    }
+    "more_tools_and_armor:obsidian_axe",
+    "more_tools_and_armor:obsidian_pickaxe",
+    "more_tools_and_armor:obsidian_shovel",
+    "more_tools_and_armor:obsidian_hoe"
   ],
   "result": {
     "count": 1,

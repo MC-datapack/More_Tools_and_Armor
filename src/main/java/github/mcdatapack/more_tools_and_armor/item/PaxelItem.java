@@ -32,6 +32,7 @@ import static net.minecraft.item.HoeItem.createTillAction;
 import static net.minecraft.item.HoeItem.createTillAndDropAction;
 
 public class PaxelItem extends MiningToolItem {
+    public final ToolMaterial material;
     protected static final Map<Block, Block> STRIPPED_BLOCKS = AxeItemAccessor.getStrippedBlocks();
 
     protected static final Map<Block, Pair<Predicate<ItemUsageContext>, Consumer<ItemUsageContext>>> TILLING_ACTIONS = Maps.newHashMap(
@@ -49,8 +50,9 @@ public class PaxelItem extends MiningToolItem {
                     .build()
     );
 
-    public PaxelItem(ToolMaterial toolMaterial, Item.Settings settings) {
-        super(toolMaterial, TagList.BlockTags.PAXEL_MINEABLE, settings);
+    public PaxelItem(ToolMaterial toolMaterial, float attackDamage, float attackSpeed, Item.Settings settings) {
+        super(toolMaterial, TagList.BlockTags.PAXEL_MINEABLE, attackDamage, attackSpeed, settings);
+        this.material = toolMaterial;
     }
 
     @Override
@@ -81,7 +83,7 @@ public class PaxelItem extends MiningToolItem {
                         }
                     }
 
-                    return ActionResult.success(world.isClient);
+                    return ActionResult.SUCCESS;
                 } else {
                     return ActionResult.PASS;
                 }
@@ -97,7 +99,7 @@ public class PaxelItem extends MiningToolItem {
                     itemStack.damage(1, playerEntity, LivingEntity.getSlotForHand(context.getHand()));
                 }
 
-                return ActionResult.success(world.isClient);
+                return ActionResult.SUCCESS;
             }
         }
         return ActionResult.PASS;

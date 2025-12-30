@@ -2,9 +2,7 @@
   "type": "minecraft:crafting_shaped",
   "category": "building",
   "key": {
-    "A": {
-      "item": "more_tools_and_armor:end_emerald"
-    }
+    "A": "more_tools_and_armor:end_emerald"
   },
   "pattern": [
     "AAA",

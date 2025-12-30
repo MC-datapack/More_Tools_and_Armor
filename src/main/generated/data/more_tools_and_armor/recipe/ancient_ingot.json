@@ -2,21 +2,11 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "key": {
-    "A": {
-      "item": "more_tools_and_armor:ancient_honey_block"
-    },
-    "B": {
-      "item": "more_tools_and_armor:bat_wing"
-    },
-    "C": {
-      "item": "more_tools_and_armor:ancient_coin"
-    },
-    "D": {
-      "item": "minecraft:torchflower"
-    },
-    "E": {
-      "item": "more_tools_and_armor:deepslate_emerald"
-    }
+    "A": "more_tools_and_armor:ancient_honey_block",
+    "B": "more_tools_and_armor:bat_wing",
+    "C": "more_tools_and_armor:ancient_coin",
+    "D": "minecraft:torchflower",
+    "E": "more_tools_and_armor:deepslate_emerald"
   },
   "pattern": [
     "EDE",

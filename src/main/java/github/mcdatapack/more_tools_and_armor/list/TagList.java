@@ -25,5 +25,13 @@ public class TagList {
 
     public static class ItemTags {
         public static final TagKey<Item> HAMMER_ENCHANTABLE = TagKey.of(RegistryKeys.ITEM, MoreToolsAndArmor.id("enchantable/hammer"));
+
+        public static final TagKey<Item> BUDDING_AMETHYSTS = TagKey.of(RegistryKeys.ITEM, MoreToolsAndArmor.id("budding_amethysts"));
+        public static final TagKey<Item> DEEPSLATE_EMERALDS = TagKey.of(RegistryKeys.ITEM, MoreToolsAndArmor.id("deepslate_emeralds"));
+        public static final TagKey<Item> END_DIAMONDS = TagKey.of(RegistryKeys.ITEM, MoreToolsAndArmor.id("end_diamonds"));
+        public static final TagKey<Item> VOID_INGOTS = TagKey.of(RegistryKeys.ITEM, MoreToolsAndArmor.id("void_ingots"));
+        public static final TagKey<Item> ONETHDENDERITE_INGOTS = TagKey.of(RegistryKeys.ITEM, MoreToolsAndArmor.id("onethdenderite_ingots"));
+        public static final TagKey<Item> OLED_INGOTS = TagKey.of(RegistryKeys.ITEM, MoreToolsAndArmor.id("oled_ingots"));
+        public static final TagKey<Item> ANCIENT_INGOTS = TagKey.of(RegistryKeys.ITEM, MoreToolsAndArmor.id("ancient_ingots"));
     }
 }
