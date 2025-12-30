@@ -3,7 +3,6 @@
   "addition": "more_tools_and_armor:deepslate_emerald",
   "base": "minecraft:netherite_leggings",
   "result": {
-    "count": 1,
     "id": "more_tools_and_armor:deepslate_emerald_leggings"
   },
   "template": "more_tools_and_armor:deepslate_emerald_upgrade_smithing_template"

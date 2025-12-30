@@ -3,7 +3,6 @@
   "addition": "minecraft:netherite_ingot",
   "base": "more_tools_and_armor:diamond_paxel",
   "result": {
-    "count": 1,
     "id": "more_tools_and_armor:netherite_paxel"
   },
   "template": "minecraft:netherite_upgrade_smithing_template"

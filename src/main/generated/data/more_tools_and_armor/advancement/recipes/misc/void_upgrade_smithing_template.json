@@ -3,7 +3,7 @@
   "criteria": {
     "has_the_recipe": {
       "conditions": {
-        "recipe": "minecraft:void_upgrade_smithing_template"
+        "recipe": "more_tools_and_armor:void_upgrade_smithing_template"
       },
       "trigger": "minecraft:recipe_unlocked"
     },
@@ -26,7 +26,7 @@
   ],
   "rewards": {
     "recipes": [
-      "minecraft:void_upgrade_smithing_template"
+      "more_tools_and_armor:void_upgrade_smithing_template"
     ]
   }
 }

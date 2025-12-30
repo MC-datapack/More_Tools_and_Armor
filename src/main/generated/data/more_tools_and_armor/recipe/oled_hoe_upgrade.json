@@ -3,7 +3,6 @@
   "addition": "more_tools_and_armor:oled_ingot",
   "base": "more_tools_and_armor:onethdenderite_hoe",
   "result": {
-    "count": 1,
     "id": "more_tools_and_armor:oled_hoe"
   },
   "template": "more_tools_and_armor:oled_upgrade_smithing_template"

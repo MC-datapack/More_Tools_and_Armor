@@ -11,6 +11,7 @@ import net.minecraft.block.*;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.*;
+import net.minecraft.registry.tag.BlockTags;
 import net.minecraft.server.network.ServerPlayerEntity;
 import net.minecraft.sound.SoundCategory;
 import net.minecraft.sound.SoundEvents;
@@ -31,7 +32,7 @@ import java.util.function.Predicate;
 import static net.minecraft.item.HoeItem.createTillAction;
 import static net.minecraft.item.HoeItem.createTillAndDropAction;
 
-public class PaxelItem extends MiningToolItem {
+public class PaxelItem extends Item {
     public final ToolMaterial material;
     protected static final Map<Block, Block> STRIPPED_BLOCKS = AxeItemAccessor.getStrippedBlocks();
 
@@ -51,7 +52,7 @@ public class PaxelItem extends MiningToolItem {
     );
 
     public PaxelItem(ToolMaterial toolMaterial, float attackDamage, float attackSpeed, Item.Settings settings) {
-        super(toolMaterial, TagList.BlockTags.PAXEL_MINEABLE, attackDamage, attackSpeed, settings);
+        super(settings.tool(toolMaterial, TagList.BlockTags.PAXEL_MINEABLE, attackDamage, attackSpeed, 0.0F));
         this.material = toolMaterial;
     }
 

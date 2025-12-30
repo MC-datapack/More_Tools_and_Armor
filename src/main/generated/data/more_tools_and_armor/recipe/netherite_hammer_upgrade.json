@@ -3,7 +3,6 @@
   "addition": "minecraft:netherite_ingot",
   "base": "more_tools_and_armor:diamond_hammer",
   "result": {
-    "count": 1,
     "id": "more_tools_and_armor:netherite_hammer"
   },
   "template": "minecraft:netherite_upgrade_smithing_template"

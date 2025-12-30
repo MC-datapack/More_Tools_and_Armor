@@ -12,7 +12,6 @@ import net.minecraft.item.Items;
 import net.minecraft.loot.LootPool;
 import net.minecraft.loot.LootTable;
 import net.minecraft.loot.LootTables;
-import net.minecraft.loot.condition.MatchToolLootCondition;
 import net.minecraft.loot.condition.RandomChanceLootCondition;
 import net.minecraft.loot.condition.RandomChanceWithEnchantedBonusLootCondition;
 import net.minecraft.loot.entry.ItemEntry;
@@ -20,11 +19,6 @@ import net.minecraft.loot.function.ApplyBonusLootFunction;
 import net.minecraft.loot.provider.number.ConstantLootNumberProvider;
 import net.minecraft.loot.provider.number.LootNumberProvider;
 import net.minecraft.loot.provider.number.UniformLootNumberProvider;
-import net.minecraft.predicate.NumberRange;
-import net.minecraft.predicate.item.EnchantmentPredicate;
-import net.minecraft.predicate.item.EnchantmentsPredicate;
-import net.minecraft.predicate.item.ItemPredicate;
-import net.minecraft.predicate.item.ItemSubPredicateTypes;
 import net.minecraft.registry.RegistryKey;
 import net.minecraft.registry.RegistryKeys;
 import net.minecraft.registry.RegistryWrapper;
@@ -70,15 +64,7 @@ public class LootHandler {
             if (Blocks.DEEPSLATE_EMERALD_ORE.getLootTableKey().equals(key)) {
                 LootPool.Builder poolBuilder = LootPool.builder()
                         .rolls(ConstantLootNumberProvider.create(1))
-                        .with(ItemEntry.builder(ItemInit.DEEPSLATE_EMERALD).conditionally(
-                                MatchToolLootCondition.builder(
-                                        ItemPredicate.Builder.create()
-                                                .subPredicate(
-                                                ItemSubPredicateTypes.ENCHANTMENTS,
-                                                EnchantmentsPredicate.enchantments(List.of(new EnchantmentPredicate(impl.getOrThrow(Enchantments.FORTUNE), NumberRange.IntRange.atLeast(1))))
-                                        )
-                                )
-                        ))
+                        .with(ItemEntry.builder(ItemInit.DEEPSLATE_EMERALD))
                         .with(ItemEntry.builder(ItemInit.DEEPSLATE_EMERALD).apply(
                                 ApplyBonusLootFunction.oreDrops(impl.getOrThrow(Enchantments.FORTUNE))
                         ))

@@ -8,7 +8,6 @@
 	"ToolTipHandler",
 	"ability.AbstractBlockMixin",
 	"ability.AbstractBlockSettingsMixin",
-	"ability.ArmorItemMaterialAccessor",
 	"ability.EndermanEntityMixin",
 	"ability.LivingEntityMixin",
 	"ability.PiglinBrainMixin",
