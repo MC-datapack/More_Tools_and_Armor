@@ -4,13 +4,9 @@ import github.mcdatapack.more_tools_and_armor.MoreToolsAndArmor;
 import github.mcdatapack.more_tools_and_armor.init.ItemInit;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricRecipeProvider;
-import net.minecraft.advancement.AdvancementCriterion;
-import net.minecraft.advancement.criterion.InventoryChangedCriterion;
-import net.minecraft.data.server.recipe.*;
+import net.minecraft.data.recipe.*;
 import net.minecraft.item.Item;
-import net.minecraft.item.ItemConvertible;
 import net.minecraft.item.Items;
-import net.minecraft.predicate.item.ItemPredicate;
 import net.minecraft.recipe.Ingredient;
 import net.minecraft.recipe.book.RecipeCategory;
 import net.minecraft.registry.Registries;
@@ -25,8 +21,6 @@ import java.util.concurrent.CompletableFuture;
 import static github.mcdatapack.more_tools_and_armor.init.BlockInit.*;
 import static github.mcdatapack.more_tools_and_armor.init.ItemInit.*;
 import static net.fabricmc.fabric.api.tag.convention.v2.ConventionalItemTags.*;
-import static net.minecraft.data.server.recipe.RecipeGenerator.conditionsFromPredicates;
-import static net.minecraft.data.server.recipe.RecipeGenerator.hasItem;
 import static net.minecraft.item.Items.*;
 
 public class MoreToolsAndArmorRecipeProvider extends FabricRecipeProvider {

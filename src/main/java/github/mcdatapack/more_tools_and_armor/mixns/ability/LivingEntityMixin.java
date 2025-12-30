@@ -22,7 +22,8 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 @Mixin(LivingEntity.class)
 public abstract class LivingEntityMixin {
 
-    @Shadow public abstract int getXpToDrop(ServerWorld world, @Nullable Entity attacker);
+    @Shadow
+    protected abstract int getExperienceToDrop(ServerWorld world);
 
     @Inject(method = "addStatusEffect(Lnet/minecraft/entity/effect/StatusEffectInstance;Lnet/minecraft/entity/Entity;)Z", at = @At("HEAD"), cancellable = true)
     private void addStatusEffect(StatusEffectInstance effect, Entity source, CallbackInfoReturnable<Boolean> cir) {
@@ -31,23 +32,23 @@ public abstract class LivingEntityMixin {
         }
     }
 
-    @Redirect(method = "dropXp", at = @At(value = "INVOKE", target = "Lnet/minecraft/entity/LivingEntity;getXpToDrop(Lnet/minecraft/server/world/ServerWorld;Lnet/minecraft/entity/Entity;)I"))
+    @Redirect(method = "dropExperience", at = @At(value = "INVOKE", target = "Lnet/minecraft/entity/LivingEntity;getExperienceToDrop(Lnet/minecraft/server/world/ServerWorld;Lnet/minecraft/entity/Entity;)I"))
     private int getXpToDrop(LivingEntity instance, ServerWorld world, Entity attacker) {
         if (attacker instanceof PlayerEntity player) {
             ItemStack hand = player.getMainHandStack();
             if (hand.isOf(ItemInit.DEEPSLATE_EMERALD_SWORD))
-                return getXpToDrop(world, attacker) * 5;
+                return getExperienceToDrop(world) * 5;
             if (hand.isOf(ItemInit.END_DIAMOND_SWORD))
-                return getXpToDrop(world, attacker) * 10;
+                return getExperienceToDrop(world) * 10;
             if (hand.isOf(ItemInit.VOID_SWORD))
-                return getXpToDrop(world, attacker) * 50;
+                return getExperienceToDrop(world) * 50;
             if (hand.isOf(ItemInit.ONETHDENDERITE_SWORD))
-                return getXpToDrop(world, attacker) * 100;
+                return getExperienceToDrop(world) * 100;
             if (hand.isOf(ItemInit.OLED_SWORD))
-                return getXpToDrop(world, attacker) * 500;
+                return getExperienceToDrop(world) * 500;
             if (hand.isOf(ItemInit.ANCIENT_SWORD))
-                return getXpToDrop(world, attacker) * 1000;
+                return getExperienceToDrop(world) * 1000;
         }
-        return getXpToDrop(world, attacker);
+        return getExperienceToDrop(world);
     }
 }

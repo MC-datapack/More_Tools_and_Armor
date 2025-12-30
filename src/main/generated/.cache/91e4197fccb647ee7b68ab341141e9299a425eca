@@ -1,13 +1,13 @@
-// 1.21.3	2025-12-30T15:47:18.4293638	More Tools and Armor/Tags for minecraft:item
-dac85ca4916141f3dc71a6f37e3ab0e8bb65b2b7 data\minecraft\tags\item\leg_armor.json
-543b570576b494b5219860ded458fe77ef27b43b data\minecraft\tags\item\foot_armor.json
-48296411b78687af4b90e6a4eff067cb547cf9d5 data\minecraft\tags\item\head_armor.json
-db61959f91577348de75a29f965333fdc96d008c data\more_tools_and_armor\tags\item\enchantable\hammer.json
-1bc9dffba90f9661ba29265655615b57ff4ce454 data\minecraft\tags\item\axes.json
-0d570c022cbe60ee573972d32a457ee8ba58a9ec data\minecraft\tags\item\chest_armor.json
-39c6d9cf6e0613f1500e19d0eea997c5de00b10c data\minecraft\tags\item\hoes.json
-4fe21614ceed2fbb276b752f107f20fac4c801bd data\minecraft\tags\item\enchantable\durability.json
-c2884030f3474027095d2d6192cd11651cb387c6 data\minecraft\tags\item\shovels.json
-968e535d6abfe5451b502556bc95cc419768f812 data\minecraft\tags\item\swords.json
-18507e0129eaedba68ed18673c063b681341944a data\minecraft\tags\item\pickaxes.json
-4fe21614ceed2fbb276b752f107f20fac4c801bd data\minecraft\tags\item\enchantable\mining.json
+// 1.21.4	-999999999-01-01T00:00:00	More Tools and Armor/Tags for minecraft:item
+1bc9dffba90f9661ba29265655615b57ff4ce454 data/minecraft/tags/item/axes.json
+0d570c022cbe60ee573972d32a457ee8ba58a9ec data/minecraft/tags/item/chest_armor.json
+4fe21614ceed2fbb276b752f107f20fac4c801bd data/minecraft/tags/item/enchantable/durability.json
+4fe21614ceed2fbb276b752f107f20fac4c801bd data/minecraft/tags/item/enchantable/mining.json
+543b570576b494b5219860ded458fe77ef27b43b data/minecraft/tags/item/foot_armor.json
+48296411b78687af4b90e6a4eff067cb547cf9d5 data/minecraft/tags/item/head_armor.json
+39c6d9cf6e0613f1500e19d0eea997c5de00b10c data/minecraft/tags/item/hoes.json
+dac85ca4916141f3dc71a6f37e3ab0e8bb65b2b7 data/minecraft/tags/item/leg_armor.json
+18507e0129eaedba68ed18673c063b681341944a data/minecraft/tags/item/pickaxes.json
+c2884030f3474027095d2d6192cd11651cb387c6 data/minecraft/tags/item/shovels.json
+968e535d6abfe5451b502556bc95cc419768f812 data/minecraft/tags/item/swords.json
+db61959f91577348de75a29f965333fdc96d008c data/more_tools_and_armor/tags/item/enchantable/hammer.json

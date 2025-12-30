@@ -1,17 +1,19 @@
 plugins {
-	id 'fabric-loom' version '1.8-SNAPSHOT'
+	id 'fabric-loom' version '1.9-SNAPSHOT'
 	id 'maven-publish'
 }
 
 version = project.mod_version
 group = project.maven_group
 
-base {
-	archivesName = project.archives_base_name
+fabricApi {
+	configureDataGeneration {
+		client = true
+	}
 }
 
-fabricApi {
-	configureDataGeneration()
+base {
+	archivesName = project.archives_base_name
 }
 
 repositories {

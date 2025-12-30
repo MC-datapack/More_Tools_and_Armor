@@ -1,42 +1,47 @@
 package github.mcdatapack.more_tools_and_armor.init;
 
 import github.mcdatapack.more_tools_and_armor.MoreToolsAndArmor;
-import net.minecraft.item.equipment.EquipmentModel;
+import net.minecraft.client.render.entity.equipment.EquipmentModel;
+import net.minecraft.item.equipment.EquipmentAsset;
+import net.minecraft.item.equipment.EquipmentAssetKeys;
+import net.minecraft.registry.Registerable;
+import net.minecraft.registry.RegistryKey;
 import net.minecraft.util.Identifier;
 
 import java.util.function.BiConsumer;
 
 public interface EquipmentModelInit {
-    Identifier COAL = MoreToolsAndArmor.id("coal");
-    Identifier COPPER = MoreToolsAndArmor.id("copper");
-    Identifier LAPIS = MoreToolsAndArmor.id("lapis");
-    Identifier BUDDING_AMETHYST = MoreToolsAndArmor.id("budding_amethyst");
-    Identifier EMERALD = MoreToolsAndArmor.id("emerald");
-    Identifier REDSTONE = MoreToolsAndArmor.id("redstone");
-    Identifier OBSIDIAN = MoreToolsAndArmor.id("obsidian");
-    Identifier DEEPSLATE_EMERALD = MoreToolsAndArmor.id("deepslate_emerald");
-    Identifier END_DIAMOND = MoreToolsAndArmor.id("end_diamond");
-    Identifier VOID = MoreToolsAndArmor.id("void");
-    Identifier ONETHDENDERITE = MoreToolsAndArmor.id("onethdenderite");
-    Identifier OLED = MoreToolsAndArmor.id("oled");
-    Identifier ANCIENT = MoreToolsAndArmor.id("ancient");
+    RegistryKey<EquipmentAsset> COAL = RegistryKey.of(EquipmentAssetKeys.REGISTRY_KEY, MoreToolsAndArmor.id("coal"));
+    RegistryKey<EquipmentAsset> COPPER = RegistryKey.of(EquipmentAssetKeys.REGISTRY_KEY, MoreToolsAndArmor.id("copper"));
+    RegistryKey<EquipmentAsset> LAPIS = RegistryKey.of(EquipmentAssetKeys.REGISTRY_KEY, MoreToolsAndArmor.id("lapis"));
+    RegistryKey<EquipmentAsset> BUDDING_AMETHYST = RegistryKey.of(EquipmentAssetKeys.REGISTRY_KEY, MoreToolsAndArmor.id("budding_amethyst"));
+    RegistryKey<EquipmentAsset> EMERALD = RegistryKey.of(EquipmentAssetKeys.REGISTRY_KEY, MoreToolsAndArmor.id("emerald"));
+    RegistryKey<EquipmentAsset> REDSTONE = RegistryKey.of(EquipmentAssetKeys.REGISTRY_KEY, MoreToolsAndArmor.id("redstone"));
+    RegistryKey<EquipmentAsset> OBSIDIAN = RegistryKey.of(EquipmentAssetKeys.REGISTRY_KEY, MoreToolsAndArmor.id("obsidian"));
+    RegistryKey<EquipmentAsset> DEEPSLATE_EMERALD = RegistryKey.of(EquipmentAssetKeys.REGISTRY_KEY, MoreToolsAndArmor.id("deepslate_emerald"));
+    RegistryKey<EquipmentAsset> END_DIAMOND = RegistryKey.of(EquipmentAssetKeys.REGISTRY_KEY, MoreToolsAndArmor.id("end_diamond"));
+    RegistryKey<EquipmentAsset> VOID = RegistryKey.of(EquipmentAssetKeys.REGISTRY_KEY, MoreToolsAndArmor.id("void"));
+    RegistryKey<EquipmentAsset> ONETHDENDERITE = RegistryKey.of(EquipmentAssetKeys.REGISTRY_KEY, MoreToolsAndArmor.id("onethdenderite"));
+    RegistryKey<EquipmentAsset> OLED = RegistryKey.of(EquipmentAssetKeys.REGISTRY_KEY, MoreToolsAndArmor.id("oled"));
+    RegistryKey<EquipmentAsset> ANCIENT = RegistryKey.of(EquipmentAssetKeys.REGISTRY_KEY, MoreToolsAndArmor.id("ancient"));
 
-    static void bootstrap(BiConsumer<Identifier, EquipmentModel> equipmentModelBiConsumer) {
-        equipmentModelBiConsumer.accept(COAL, buildHumanoid(COAL));
-        equipmentModelBiConsumer.accept(COPPER, buildHumanoid(COPPER));
-        equipmentModelBiConsumer.accept(LAPIS, buildHumanoid(LAPIS));
-        equipmentModelBiConsumer.accept(BUDDING_AMETHYST, buildHumanoid(BUDDING_AMETHYST));
-        equipmentModelBiConsumer.accept(EMERALD, buildHumanoid(EMERALD));
-        equipmentModelBiConsumer.accept(REDSTONE, buildHumanoid(REDSTONE));
-        equipmentModelBiConsumer.accept(OBSIDIAN, buildHumanoid(OBSIDIAN));
-        equipmentModelBiConsumer.accept(DEEPSLATE_EMERALD, buildHumanoid(DEEPSLATE_EMERALD));
-        equipmentModelBiConsumer.accept(VOID, buildHumanoid(VOID));
-        equipmentModelBiConsumer.accept(ONETHDENDERITE, buildHumanoid(ONETHDENDERITE));
-        equipmentModelBiConsumer.accept(OLED, buildHumanoid(OLED));
-        equipmentModelBiConsumer.accept(ANCIENT, buildHumanoid(ANCIENT));
+    static void bootstrap(BiConsumer<RegistryKey<EquipmentAsset>, EquipmentModel> context) {
+        context.accept(COAL, humanoid(COAL.getValue()));
+        context.accept(COPPER, humanoid(COPPER.getValue()));
+        context.accept(LAPIS, humanoid(LAPIS.getValue()));
+        context.accept(BUDDING_AMETHYST, humanoid(BUDDING_AMETHYST.getValue()));
+        context.accept(EMERALD, humanoid(EMERALD.getValue()));
+        context.accept(REDSTONE, humanoid(REDSTONE.getValue()));
+        context.accept(OBSIDIAN, humanoid(OBSIDIAN.getValue()));
+        context.accept(DEEPSLATE_EMERALD, humanoid(DEEPSLATE_EMERALD.getValue()));
+        context.accept(END_DIAMOND, humanoid(END_DIAMOND.getValue()));
+        context.accept(VOID, humanoid(VOID.getValue()));
+        context.accept(ONETHDENDERITE, humanoid(ONETHDENDERITE.getValue()));
+        context.accept(OLED, humanoid(OLED.getValue()));
+        context.accept(ANCIENT, humanoid(ANCIENT.getValue()));
     }
 
-    private static EquipmentModel buildHumanoid(Identifier path) {
-        return EquipmentModel.builder().addHumanoidLayers(path).build();
+    private static EquipmentModel humanoid(Identifier id) {
+        return EquipmentModel.builder().addHumanoidLayers(id).build();
     }
 }

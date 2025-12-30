@@ -6,7 +6,9 @@ import github.mcdatapack.more_tools_and_armor.list.TagList;
 import net.fabricmc.fabric.api.tag.convention.v2.ConventionalItemTags;
 import net.minecraft.item.Item;
 import net.minecraft.item.equipment.ArmorMaterial;
+import net.minecraft.item.equipment.EquipmentAsset;
 import net.minecraft.item.equipment.EquipmentType;
+import net.minecraft.registry.RegistryKey;
 import net.minecraft.registry.entry.RegistryEntry;
 import net.minecraft.registry.tag.ItemTags;
 import net.minecraft.registry.tag.TagKey;
@@ -177,7 +179,7 @@ public class ArmorMaterialInit {
                                          float toughness,
                                          float knockbackResistance,
                                          int durability,
-                                         Identifier model) {
+                                         RegistryKey<EquipmentAsset> model) {
         return new ArmorMaterial(durability, defensePoints,enchantablilty, equipSound, toughness, knockbackResistance,
                 repairIngredient, model);
     }
