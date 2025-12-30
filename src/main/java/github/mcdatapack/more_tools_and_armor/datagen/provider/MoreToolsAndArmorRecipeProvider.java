@@ -272,8 +272,6 @@ public class MoreToolsAndArmorRecipeProvider extends FabricRecipeProvider {
 
                 craftFromResourceRecipes(Items.COAL,
                         COAL_SWORD, COAL_AXE, COAL_PICKAXE, COAL_SHOVEL, COAL_HOE, COAL_HELMET, COAL_CHESTPLATE, COAL_LEGGINGS, COAL_BOOTS, COAL_PAXEL, COAL_HAMMER,itemLookup, exporter);
-                craftFromResourceRecipes(COPPER_INGOT, COPPER_SWORD, COPPER_AXE, COPPER_PICKAXE, COPPER_SHOVEL, COPPER_HOE,
-                        COPPER_HELMET, COPPER_CHESTPLATE, COPPER_LEGGINGS, COPPER_BOOTS, COPPER_PAXEL, COPPER_HAMMER,itemLookup, exporter);
                 craftFromResourceRecipes(LAPIS_LAZULI, LAPIS_SWORD, LAPIS_AXE, LAPIS_PICKAXE, LAPIS_SHOVEL, LAPIS_HOE,
                         LAPIS_HELMET, LAPIS_CHESTPLATE, LAPIS_LEGGINGS, LAPIS_BOOTS, LAPIS_PAXEL, LAPIS_HAMMER,itemLookup, exporter);
                 craftFromResourceRecipes(BUDDING_AMETHYST_CRYSTAL, BUDDING_AMETHYST_SWORD, BUDDING_AMETHYST_AXE, BUDDING_AMETHYST_PICKAXE, BUDDING_AMETHYST_SHOVEL, BUDDING_AMETHYST_HOE,
@@ -329,6 +327,7 @@ public class MoreToolsAndArmorRecipeProvider extends FabricRecipeProvider {
                 paxelAndHammer(GOLD_INGOT, GOLDEN_PICKAXE, GOLDEN_AXE, GOLDEN_SHOVEL, GOLDEN_HOE, GOLDEN_PAXEL, GOLDEN_HAMMER,itemLookup, exporter);
                 paxelAndHammer(IRON_INGOT, IRON_PICKAXE, IRON_AXE, IRON_SHOVEL, IRON_HOE, IRON_PAXEL, IRON_HAMMER,itemLookup, exporter);
                 paxelAndHammer(DIAMOND, DIAMOND_PICKAXE, DIAMOND_AXE, DIAMOND_SHOVEL, DIAMOND_HOE, DIAMOND_PAXEL, DIAMOND_HAMMER,itemLookup, exporter);
+                paxelAndHammer(COPPER_INGOT, COPPER_PICKAXE, COPPER_AXE, COPPER_SHOVEL, COPPER_HOE, COPPER_PAXEL, COPPER_HAMMER,itemLookup, exporter);
 
 
                 upgradeRecipe(NETHERITE_UPGRADE_SMITHING_TEMPLATE, DIAMOND_PAXEL, NETHERITE_INGOT, NETHERITE_PAXEL,itemLookup, exporter);

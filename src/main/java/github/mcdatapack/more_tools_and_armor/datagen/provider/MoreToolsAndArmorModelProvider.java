@@ -80,16 +80,6 @@ public class MoreToolsAndArmorModelProvider extends FabricModelProvider {
         itemModelGenerator.registerArmor(ItemInit.BUDDING_AMETHYST_LEGGINGS, EquipmentModelInit.BUDDING_AMETHYST, LEGGINGS, false);
         itemModelGenerator.registerArmor(ItemInit.BUDDING_AMETHYST_BOOTS, EquipmentModelInit.BUDDING_AMETHYST, BOOTS, false);
 
-        itemModelGenerator.register(ItemInit.COPPER_SWORD, Models.HANDHELD);
-        itemModelGenerator.register(ItemInit.COPPER_AXE, Models.HANDHELD);
-        itemModelGenerator.register(ItemInit.COPPER_PICKAXE, Models.HANDHELD);
-        itemModelGenerator.register(ItemInit.COPPER_SHOVEL, Models.HANDHELD);
-        itemModelGenerator.register(ItemInit.COPPER_HOE, Models.HANDHELD);
-        itemModelGenerator.registerArmor(ItemInit.COPPER_HELMET, EquipmentModelInit.COPPER, HELMET, false);
-        itemModelGenerator.registerArmor(ItemInit.COPPER_CHESTPLATE, EquipmentModelInit.COPPER, CHESTPLATE, false);
-        itemModelGenerator.registerArmor(ItemInit.COPPER_LEGGINGS, EquipmentModelInit.COPPER, LEGGINGS, false);
-        itemModelGenerator.registerArmor(ItemInit.COPPER_BOOTS, EquipmentModelInit.COPPER, BOOTS, false);
-
         itemModelGenerator.register(ItemInit.EMERALD_SWORD, Models.HANDHELD);
         itemModelGenerator.register(ItemInit.EMERALD_AXE, Models.HANDHELD);
         itemModelGenerator.register(ItemInit.EMERALD_PICKAXE, Models.HANDHELD);

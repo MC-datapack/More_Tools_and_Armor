@@ -37,7 +37,7 @@ public class HammerItem extends PaxelItem {
             return false;
         }
 
-        if (!world.isClient && state.getHardness(world, pos) != 0.0F && isCorrectForDrops(stack, state)) {
+        if (!world.isClient() && state.getHardness(world, pos) != 0.0F && isCorrectForDrops(stack, state)) {
             Registry<Enchantment> registryWrapper = world.getRegistryManager().getOrThrow(RegistryKeys.ENCHANTMENT);
             int range = this.range + stack.getEnchantments().getLevel(registryWrapper.getEntry(registryWrapper.get(EnchantmentInit.RANGE)));
 

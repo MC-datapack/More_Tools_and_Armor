@@ -77,10 +77,10 @@ public class PaxelItem extends Item {
                 Consumer<ItemUsageContext> consumer = pair.getSecond();
                 if (predicate.test(context)) {
                     world.playSound(playerEntity, blockPos, SoundEvents.ITEM_HOE_TILL, SoundCategory.BLOCKS, 1.0F, 1.0F);
-                    if (!world.isClient) {
+                    if (!world.isClient()) {
                         consumer.accept(context);
                         if (playerEntity != null) {
-                            context.getStack().damage(1, playerEntity, LivingEntity.getSlotForHand(context.getHand()));
+                            context.getStack().damage(1, playerEntity, context.getHand());
                         }
                     }
 
@@ -97,7 +97,7 @@ public class PaxelItem extends Item {
                 world.setBlockState(blockPos, optional.get(), Block.NOTIFY_ALL_AND_REDRAW);
                 world.emitGameEvent(GameEvent.BLOCK_CHANGE, blockPos, GameEvent.Emitter.of(playerEntity, optional.get()));
                 if (playerEntity != null) {
-                    itemStack.damage(1, playerEntity, LivingEntity.getSlotForHand(context.getHand()));
+                    itemStack.damage(1, playerEntity, context.getHand());
                 }
 
                 return ActionResult.SUCCESS;

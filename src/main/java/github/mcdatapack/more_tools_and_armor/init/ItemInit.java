@@ -81,7 +81,7 @@ public class ItemInit {
     public static final PaxelItem NETHERITE_PAXEL = register("netherite_paxel",
             settings -> new PaxelItem(ToolMaterial.NETHERITE, 6, -2.4f, settings.fireproof()));
     public static final PaxelItem COPPER_PAXEL = register("copper_paxel",
-            settings -> new PaxelItem(ToolMaterials.COPPER, 7, -2.4f, settings));
+            settings -> new PaxelItem(ToolMaterial.COPPER, 7, -2.4f, settings));
     public static final PaxelItem BUDDING_AMETHYST_PAXEL = register("budding_amethyst_paxel",
             settings -> new PaxelItem(ToolMaterials.BUDDING_AMETHYST, 7, -2.4f, settings));
     public static final PaxelItem EMERALD_PAXEL = register("emerald_paxel",
@@ -120,7 +120,7 @@ public class ItemInit {
     public static final HammerItem NETHERITE_HAMMER = register("netherite_hammer",
             settings -> new HammerItem(ToolMaterial.NETHERITE, 6, -2.4f, settings, 1));
     public static final HammerItem COPPER_HAMMER = register("copper_hammer",
-            settings -> new HammerItem(ToolMaterials.COPPER, 7, -2.4f, settings, 1));
+            settings -> new HammerItem(ToolMaterial.COPPER, 7, -2.4f, settings, 1));
     public static final HammerItem BUDDING_AMETHYST_HAMMER = register("budding_amethyst_hammer",
             settings -> new HammerItem(ToolMaterials.BUDDING_AMETHYST, 7, -2.4f, settings, 1));
     public static final HammerItem EMERALD_HAMMER = register("emerald_hammer",
@@ -174,22 +174,6 @@ public class ItemInit {
     public static final ArmorItem COAL_CHESTPLATE = register("coal_chestplate", settings -> new ArmorItem(ArmorMaterialInit.COAL, EquipmentType.CHESTPLATE, settings));
     public static final ArmorItem COAL_LEGGINGS = register("coal_leggings", settings -> new ArmorItem(ArmorMaterialInit.COAL, EquipmentType.LEGGINGS, settings));
     public static final ArmorItem COAL_BOOTS = register("coal_boots", settings -> new ArmorItem(ArmorMaterialInit.COAL, EquipmentType.BOOTS, settings));
-
-//Copper
-    public static final SwordItem COPPER_SWORD = register("copper_sword",
-        settings -> new SwordItem(ToolMaterials.COPPER, 3, -2.4f, settings));
-    public static final AxeItem COPPER_AXE = register("copper_axe",
-            settings -> new AxeItem(ToolMaterials.COPPER, 7, -3.2f, settings));
-    public static final PickaxeItem COPPER_PICKAXE = register("copper_pickaxe",
-            settings -> new PickaxeItem(ToolMaterials.COPPER, 1, -2.8f, settings));
-    public static final ShovelItem COPPER_SHOVEL = register("copper_shovel",
-            settings -> new ShovelItem(ToolMaterials.COPPER, 2, -3, settings));
-    public static final HoeItem COPPER_HOE = register("copper_hoe", settings -> 
-            new HoeItem(ToolMaterials.COPPER, -1, -2, settings));
-    public static final ArmorItem COPPER_HELMET = register("copper_helmet", settings -> new ArmorItem(ArmorMaterialInit.COPPER, EquipmentType.HELMET, settings));
-    public static final ArmorItem COPPER_CHESTPLATE = register("copper_chestplate", settings -> new ArmorItem(ArmorMaterialInit.COPPER, EquipmentType.CHESTPLATE, settings));
-    public static final ArmorItem COPPER_LEGGINGS = register("copper_leggings", settings -> new ArmorItem(ArmorMaterialInit.COPPER, EquipmentType.LEGGINGS, settings));
-    public static final ArmorItem COPPER_BOOTS = register("copper_boots", settings -> new ArmorItem(ArmorMaterialInit.COPPER, EquipmentType.BOOTS, settings));
 
     public static final SwordItem LAPIS_SWORD = register("lapis_sword",
             settings -> new SwordItem(ToolMaterials.LAPIS, 4, -2.4f, settings));

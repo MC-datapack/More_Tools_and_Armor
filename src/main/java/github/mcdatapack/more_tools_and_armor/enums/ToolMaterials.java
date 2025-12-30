@@ -18,10 +18,6 @@ public interface ToolMaterials {
             500, 7F, 1F, BlockTags.INCORRECT_FOR_IRON_TOOL, 12,
             TagList.ItemTags.BUDDING_AMETHYSTS
     );
-    ToolMaterial COPPER = material(
-            210, 6F, 1F, BlockTags.INCORRECT_FOR_STONE_TOOL, 15,
-            ConventionalItemTags.COPPER_INGOTS
-    );
     ToolMaterial LAPIS = material(280, 5F, 1F, BlockTags.INCORRECT_FOR_IRON_TOOL, 8,
             ConventionalItemTags.LAPIS_GEMS
     );

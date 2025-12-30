@@ -113,15 +113,6 @@ public class ItemGroupInit {
                 entries.add(COAL_PICKAXE);
                 entries.add(COAL_SHOVEL);
                 entries.add(COAL_HOE);
-                entries.add(COPPER_HELMET);
-                entries.add(COPPER_CHESTPLATE);
-                entries.add(COPPER_LEGGINGS);
-                entries.add(COPPER_BOOTS);
-                entries.add(COPPER_SWORD);
-                entries.add(COPPER_AXE);
-                entries.add(COPPER_PICKAXE);
-                entries.add(COPPER_SHOVEL);
-                entries.add(COPPER_HOE);
                 entries.add(BUDDING_AMETHYST_HELMET);
                 entries.add(BUDDING_AMETHYST_CHESTPLATE);
                 entries.add(BUDDING_AMETHYST_LEGGINGS);

@@ -29,18 +29,6 @@ public class ArmorMaterialInit {
             0,
             12, EquipmentModelInit.COAL);
 
-    public static final ArmorMaterial COPPER = register("copper", Map.of(
-                    EquipmentType.HELMET, 3,
-                    EquipmentType.CHESTPLATE, 5,
-                    EquipmentType.LEGGINGS, 4,
-                    EquipmentType.BOOTS, 2),
-            15,
-            SoundEvents.ITEM_ARMOR_EQUIP_GENERIC,
-            ConventionalItemTags.COPPER_INGOTS,
-            0,
-            0,
-            20, EquipmentModelInit.COPPER);
-
     public static final ArmorMaterial LAPIS = register("lapis", Map.of(
                     EquipmentType.HELMET, 3,
                     EquipmentType.CHESTPLATE, 6,
