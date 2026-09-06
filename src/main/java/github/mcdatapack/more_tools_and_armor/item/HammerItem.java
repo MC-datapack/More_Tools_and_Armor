@@ -1,29 +1,27 @@
 package github.mcdatapack.more_tools_and_armor.item;
 
 import github.mcdatapack.more_tools_and_armor.init.EnchantmentInit;
-import net.minecraft.block.Block;
-import net.minecraft.block.BlockState;
-import net.minecraft.component.DataComponentTypes;
-import net.minecraft.component.type.ToolComponent;
-import net.minecraft.enchantment.Enchantment;
-import net.minecraft.entity.EquipmentSlot;
-import net.minecraft.entity.ItemEntity;
-import net.minecraft.entity.LivingEntity;
-import net.minecraft.entity.player.PlayerEntity;
-import net.minecraft.item.ItemStack;
-import net.minecraft.item.ToolMaterial;
-import net.minecraft.recipe.Ingredient;
-import net.minecraft.registry.Registry;
-import net.minecraft.registry.RegistryKeys;
-import net.minecraft.registry.tag.TagKey;
-import net.minecraft.server.world.ServerWorld;
-import net.minecraft.util.math.BlockPos;
-import net.minecraft.world.World;
+import net.minecraft.core.BlockPos;
+import net.minecraft.core.Registry;
+import net.minecraft.core.component.DataComponents;
+import net.minecraft.core.registries.Registries;
+import net.minecraft.server.level.ServerLevel;
+import net.minecraft.world.entity.EquipmentSlot;
+import net.minecraft.world.entity.LivingEntity;
+import net.minecraft.world.entity.item.ItemEntity;
+import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.ToolMaterial;
+import net.minecraft.world.item.component.Tool;
+import net.minecraft.world.item.enchantment.Enchantment;
+import net.minecraft.world.level.Level;
+import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.state.BlockState;
 
 public class HammerItem extends PaxelItem {
     private final int range;
 
-    public HammerItem(ToolMaterial toolMaterial, float attackDamage, float attackSpeed, Settings settings, int range) {
+    public HammerItem(ToolMaterial toolMaterial, float attackDamage, float attackSpeed, Properties settings, int range) {
         super(new ToolMaterial(toolMaterial.incorrectBlocksForDrops(), toolMaterial.durability() / 4,
                 toolMaterial.speed(), toolMaterial.attackDamageBonus(), toolMaterial.enchantmentValue(), toolMaterial.repairItems()),
                 attackDamage, attackSpeed, settings);
@@ -31,33 +29,33 @@ public class HammerItem extends PaxelItem {
     }
 
     @Override
-    public boolean postMine(ItemStack stack, World world, BlockState state, BlockPos pos, LivingEntity miner) {
-        ToolComponent toolComponent = stack.get(DataComponentTypes.TOOL);
+    public boolean mineBlock(ItemStack stack, Level world, BlockState state, BlockPos pos, LivingEntity owner) {
+        Tool toolComponent = stack.get(DataComponents.TOOL);
         if (toolComponent == null) {
             return false;
         }
 
-        if (!world.isClient() && state.getHardness(world, pos) != 0.0F && isCorrectForDrops(stack, state)) {
-            Registry<Enchantment> registryWrapper = world.getRegistryManager().getOrThrow(RegistryKeys.ENCHANTMENT);
-            int range = this.range + stack.getEnchantments().getLevel(registryWrapper.getEntry(registryWrapper.get(EnchantmentInit.RANGE)));
+        if (!world.isClientSide() && state.getDestroySpeed(world, pos) != 0.0F && isCorrectToolForDrops(stack, state)) {
+            Registry<Enchantment> registryWrapper = world.registryAccess().lookupOrThrow(Registries.ENCHANTMENT);
+            int range = this.range + stack.getEnchantments().getLevel(registryWrapper.getOrThrow(EnchantmentInit.RANGE));
 
             for (int x = -range; x <= range; x++) {
                 for (int y = -range; y <= range; y++) {
                     for (int z = -range; z <= range; z++) {
-                        BlockPos targetPos = pos.add(x, y, z);
+                        BlockPos targetPos = pos.offset(x, y, z);
                         BlockState targetState = world.getBlockState(targetPos);
 
-                        if (!targetState.isAir() && targetState.calcBlockBreakingDelta((PlayerEntity) miner, world, pos) != 0.0F && isCorrectForDrops(stack, targetState)) {
-                            world.breakBlock(targetPos, true, miner);
+                        if (!targetState.isAir() && targetState.getDestroyProgress((Player) owner, world, pos) != 0.0F && isCorrectToolForDrops(stack, targetState)) {
+                                world.destroyBlock(targetPos, true, owner);
 
-                            Block.getDroppedStacks(world.getBlockState(pos), (ServerWorld) world, pos, null, miner, stack)
-                                    .forEach(drop -> world.spawnEntity(new ItemEntity(world, pos.getX(), pos.getY(), pos.getZ(), drop)));
+                            Block.getDrops(world.getBlockState(pos), (ServerLevel) world, pos, null, owner, stack)
+                                    .forEach(drop -> world.addFreshEntity(new ItemEntity(world, pos.getX(), pos.getY(), pos.getZ(), drop)));
                         }
                     }
                 }
             }
 
-            stack.damage(toolComponent.damagePerBlock(), miner, EquipmentSlot.MAINHAND);
+            stack.hurtAndBreak(toolComponent.damagePerBlock(), owner, EquipmentSlot.MAINHAND);
         }
 
         return true;

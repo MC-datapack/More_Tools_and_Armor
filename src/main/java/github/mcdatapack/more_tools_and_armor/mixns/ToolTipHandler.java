@@ -1,168 +1,174 @@
 package github.mcdatapack.more_tools_and_armor.mixns;
 
-import com.llamalad7.mixinextras.sugar.Local;
 import github.mcdatapack.more_tools_and_armor.config.MoreToolsAndArmorConfig;
 import github.mcdatapack.more_tools_and_armor.enums.ToolMaterials;
 import github.mcdatapack.more_tools_and_armor.init.ArmorMaterialInit;
 import github.mcdatapack.more_tools_and_armor.init.ItemInit;
 import github.mcdatapack.more_tools_and_armor.item.*;
-import net.minecraft.entity.player.PlayerEntity;
-import net.minecraft.item.Item;
-import net.minecraft.item.ItemStack;
-import net.minecraft.item.tooltip.TooltipType;
-import net.minecraft.text.Text;
+import net.minecraft.network.chat.Component;
+import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.item.Item;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.TooltipFlag;
+import net.minecraft.world.item.component.TooltipDisplay;
+import org.jspecify.annotations.Nullable;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Shadow;
 import org.spongepowered.asm.mixin.Unique;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
-import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
+import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 
-import java.util.List;
+import java.util.function.Consumer;
 
 @Mixin(ItemStack.class)
 public abstract class ToolTipHandler {
     @Shadow
     public abstract Item getItem();
 
-    @Inject(method = "getTooltip", at = @At(value = "INVOKE", target = "Lnet/minecraft/item/ItemStack;appendTooltip(Lnet/minecraft/item/Item$TooltipContext;Lnet/minecraft/component/type/TooltipDisplayComponent;Lnet/minecraft/entity/player/PlayerEntity;Lnet/minecraft/item/tooltip/TooltipType;Ljava/util/function/Consumer;)V", shift = At.Shift.BEFORE))
-    private void getTooltip(Item.TooltipContext context, PlayerEntity player, TooltipType tooltipType, CallbackInfoReturnable<List<Text>> info, @Local(ordinal = 0) List<Text> list) {
+    @Inject(method = "addDetailsToTooltip", at = @At("HEAD"))
+    private void appendTooltip(Item.TooltipContext context, TooltipDisplay display, @Nullable Player player, TooltipFlag tooltipFlag, Consumer<Component> builder, CallbackInfo info) {
         if (!MoreToolsAndArmorConfig.getConfig().showTooltip)
             return;
         if (getItem() instanceof ArmorItem armorItem) {
             var material = armorItem.material;
             if (material == ArmorMaterialInit.DEEPSLATE_EMERALD) {
-                addPhantomPassive(list);
+                addPhantomPassive(builder);
             } else if (material == ArmorMaterialInit.END_DIAMOND) {
-                addPhantomPassive(list);
-                addEndermanSave(list);
+                addPhantomPassive(builder);
+                addEndermanSave(builder);
             } else if (material == ArmorMaterialInit.VOID) {
-                addPhantomPassive(list);
-                addEndermanSave(list);
-                addPowderSnowWalk(list);
+                addPhantomPassive(builder);
+                addEndermanSave(builder);
+                addPowderSnowWalk(builder);
             } else if (material == ArmorMaterialInit.ONETHDENDERITE) {
-                addPhantomPassive(list);
-                addEndermanSave(list);
-                addPowderSnowWalk(list);
-                addPiglinPassive(list);
+                addPhantomPassive(builder);
+                addEndermanSave(builder);
+                addPowderSnowWalk(builder);
             } else if (material == ArmorMaterialInit.OLED) {
-                addPhantomPassive(list);
-                addEndermanSave(list);
-                addPowderSnowWalk(list);
-                addPiglinPassive(list);
-                addEndermanPassive(list);
-                addIronGolemPassive(list);
+                addPhantomPassive(builder);
+                addEndermanSave(builder);
+                addPowderSnowWalk(builder);
+                addEndermanPassive(builder);
+                addIronGolemPassive(builder);
             } else if (material == ArmorMaterialInit.ANCIENT) {
-                addPhantomPassive(list);
-                addEndermanSave(list);
-                addPowderSnowWalk(list);
-                addPiglinPassive(list);
-                addEndermanPassive(list);
-                addIronGolemPassive(list);
-                addStatusEffectImmune(list);
+                addPhantomPassive(builder);
+                addEndermanSave(builder);
+                addPowderSnowWalk(builder);
+                addEndermanPassive(builder);
+                addIronGolemPassive(builder);
+                addStatusEffectImmune(builder);
             }
             if (armorItem == ItemInit.ANCIENT_CHESTPLATE) {
-                list.add(Text.translatable("more_tools_and_armor.tooltip.elytra"));
+                builder.accept(Component.translatable("more_tools_and_armor.tooltip.elytra"));
             }
         }
         if (getItem() instanceof PickaxeItem pickaxeItem) {
             if (pickaxeItem.material == ToolMaterials.ONETHDENDERITE) {
-                addRandomOre(list);
+                addRandomOre(builder);
             }
             if (pickaxeItem.material == ToolMaterials.OLED) {
-                addRandomOre(list);
+                addRandomOre(builder);
             }
             if (pickaxeItem.material == ToolMaterials.ANCIENT) {
-                addRandomOre(list);
-                addBedrockMining(list);
+                addRandomOre(builder);
+                addBedrockMining(builder);
             }
         }
         if (getItem() instanceof PaxelItem paxelItem) {
             if (paxelItem.material == ToolMaterials.ONETHDENDERITE) {
-                addRandomOre(list);
+                addRandomOre(builder);
             }
             if (paxelItem.material == ToolMaterials.OLED) {
-                addRandomOre(list);
+                addRandomOre(builder);
             }
             if (paxelItem.material == ToolMaterials.ANCIENT) {
-                addRandomOre(list);
-                addBedrockMining(list);
+                addRandomOre(builder);
+                addBedrockMining(builder);
             }
         }
         if (getItem() instanceof SwordItem swordItem) {
             if (swordItem.material == ToolMaterials.DEEPSLATE_EMERALD)
-                addMoreXP(5, list);
+                addMoreXP(5, builder);
             if (swordItem.material == ToolMaterials.END_DIAMOND)
-                addMoreXP(10, list);
+                addMoreXP(10, builder);
             if (swordItem.material == ToolMaterials.VOID)
-                addMoreXP(50, list);
+                addMoreXP(50, builder);
             if (swordItem.material == ToolMaterials.ONETHDENDERITE)
-                addMoreXP(100, list);
+                addMoreXP(100, builder);
             if (swordItem.material == ToolMaterials.OLED)
-                addMoreXP(500, list);
+                addMoreXP(500, builder);
             if (swordItem.material == ToolMaterials.ANCIENT)
-                addMoreXP(1000, list);
+                addMoreXP(1000, builder);
+        }
+        if (getItem() instanceof SpearItem spearItem) {
+            if (spearItem.material == ToolMaterials.DEEPSLATE_EMERALD)
+                addMoreXP(5, builder);
+            if (spearItem.material == ToolMaterials.END_DIAMOND)
+                addMoreXP(10, builder);
+            if (spearItem.material == ToolMaterials.VOID)
+                addMoreXP(50, builder);
+            if (spearItem.material == ToolMaterials.ONETHDENDERITE)
+                addMoreXP(100, builder);
+            if (spearItem.material == ToolMaterials.OLED)
+                addMoreXP(500, builder);
+            if (spearItem.material == ToolMaterials.ANCIENT)
+                addMoreXP(1000, builder);
         }
     }
 
     @Unique
-    private void addEndermanSave(List<Text> list) {
+    private void addEndermanSave(Consumer<Component> list) {
         if (MoreToolsAndArmorConfig.getConfig().endermanSave) {
-            list.add(Text.translatable("more_tools_and_armor.tooltip.enderman_save"));
+            list.accept(Component.translatable("more_tools_and_armor.tooltip.enderman_save"));
         }
     }
     @Unique
-    private void addPowderSnowWalk(List<Text> list) {
+    private void addPowderSnowWalk(Consumer<Component> list) {
         if (MoreToolsAndArmorConfig.getConfig().powderSnowWalk) {
-            list.add(Text.translatable("more_tools_and_armor.tooltip.powder_snow_walk"));
+            list.accept(Component.translatable("more_tools_and_armor.tooltip.powder_snow_walk"));
         }
     }
     @Unique
-    private void addPiglinPassive(List<Text> list) {
-        if (MoreToolsAndArmorConfig.getConfig().piglinPassive) {
-            list.add(Text.translatable("more_tools_and_armor.tooltip.piglin_passive"));
-        }
-    }
-    @Unique
-    private void addEndermanPassive(List<Text> list) {
+    private void addEndermanPassive(Consumer<Component> list) {
         if (MoreToolsAndArmorConfig.getConfig().endermanPassive) {
-            list.add(Text.translatable("more_tools_and_armor.tooltip.enderman_passive"));
+            list.accept(Component.translatable("more_tools_and_armor.tooltip.enderman_passive"));
         }
     }
     @Unique
-    private void addPhantomPassive(List<Text> list) {
+    private void addPhantomPassive(Consumer<Component> list) {
         if (MoreToolsAndArmorConfig.getConfig().phantomPassive) {
-            list.add(Text.translatable("more_tools_and_armor.tooltip.phantom_passive"));
+            list.accept(Component.translatable("more_tools_and_armor.tooltip.phantom_passive"));
         }
     }
     @Unique
-    private void addIronGolemPassive(List<Text> list) {
+    private void addIronGolemPassive(Consumer<Component> list) {
         if (MoreToolsAndArmorConfig.getConfig().ironGolemPassive) {
-            list.add(Text.translatable("more_tools_and_armor.tooltip.iron_golem_passive"));
+            list.accept(Component.translatable("more_tools_and_armor.tooltip.iron_golem_passive"));
         }
     }
     @Unique
-    private void addStatusEffectImmune(List<Text> list) {
+    private void addStatusEffectImmune(Consumer<Component> list) {
         if (MoreToolsAndArmorConfig.getConfig().statusEffectImmune) {
-            list.add(Text.translatable("more_tools_and_armor.tooltip.status_effect_immune"));
+            list.accept(Component.translatable("more_tools_and_armor.tooltip.status_effect_immune"));
         }
     }
     @Unique
-    private void addBedrockMining(List<Text> list) {
+    private void addBedrockMining(Consumer<Component> list) {
         if (MoreToolsAndArmorConfig.getConfig().bedrockMining) {
-            list.add(Text.translatable("more_tools_and_armor.tooltip.bedrockMining"));
+            list.accept(Component.translatable("more_tools_and_armor.tooltip.bedrockMining"));
         }
     }
     @Unique
-    private void addRandomOre(List<Text> list) {
+    private void addRandomOre(Consumer<Component> list) {
         if (MoreToolsAndArmorConfig.getConfig().randomOre) {
-            list.add(Text.translatable("more_tools_and_armor.tooltip.randomOre"));
+            list.accept(Component.translatable("more_tools_and_armor.tooltip.randomOre"));
         }
     }
     @Unique
-    private void addMoreXP(int multiplier, List<Text> list) {
+    private void addMoreXP(int multiplier, Consumer<Component> list) {
         if (MoreToolsAndArmorConfig.getConfig().moreXP) {
-            list.add(Text.translatable("more_tools_and_armor.tooltip.moreXP").append(Text.of(String.valueOf(multiplier))));
+            list.accept(Component.translatable("more_tools_and_armor.tooltip.moreXP").append(Component.literal(String.valueOf(multiplier))));
         }
     }
 }

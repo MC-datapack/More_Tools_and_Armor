@@ -2,54 +2,54 @@ package github.mcdatapack.more_tools_and_armor.enums;
 
 import github.mcdatapack.more_tools_and_armor.list.TagList;
 import net.fabricmc.fabric.api.tag.convention.v2.ConventionalItemTags;
-import net.minecraft.block.Block;
-import net.minecraft.item.Item;
-import net.minecraft.item.ToolMaterial;
-import net.minecraft.registry.tag.BlockTags;
-import net.minecraft.registry.tag.ItemTags;
-import net.minecraft.registry.tag.TagKey;
+import net.minecraft.tags.BlockTags;
+import net.minecraft.tags.ItemTags;
+import net.minecraft.tags.TagKey;
+import net.minecraft.world.item.Item;
+import net.minecraft.world.item.ToolMaterial;
+import net.minecraft.world.level.block.Block;
 
 public interface ToolMaterials {
     ToolMaterial COAL = material(
-            135, 3F, 1F, BlockTags.INCORRECT_FOR_STONE_TOOL, 6,
+            135, 3F, 0.5F, BlockTags.INCORRECT_FOR_STONE_TOOL, 6,
             ItemTags.COALS
     );
     ToolMaterial BUDDING_AMETHYST = material(
-            500, 7F, 1F, BlockTags.INCORRECT_FOR_IRON_TOOL, 12,
+            500, 7F, 0.6F, BlockTags.INCORRECT_FOR_IRON_TOOL, 12,
             TagList.ItemTags.BUDDING_AMETHYSTS
     );
-    ToolMaterial LAPIS = material(280, 5F, 1F, BlockTags.INCORRECT_FOR_IRON_TOOL, 8,
+    ToolMaterial LAPIS = material(280, 0.75F, 1F, BlockTags.INCORRECT_FOR_IRON_TOOL, 8,
             ConventionalItemTags.LAPIS_GEMS
     );
     ToolMaterial EMERALD = material(
-            375, 6.5F, 1F, BlockTags.INCORRECT_FOR_IRON_TOOL, 14,
+            375, 6.5F, 0.8F, BlockTags.INCORRECT_FOR_IRON_TOOL, 14,
             ConventionalItemTags.EMERALD_GEMS
     );
     ToolMaterial REDSTONE = material(855, 7.5F, 1F, BlockTags.INCORRECT_FOR_DIAMOND_TOOL, 13,
             ConventionalItemTags.REDSTONE_DUSTS
     );
     ToolMaterial OBSIDIAN = material(
-            1331, 8.5F, 1F, BlockTags.INCORRECT_FOR_DIAMOND_TOOL, 10,
+            1331, 8.5F, 1.25F, BlockTags.INCORRECT_FOR_DIAMOND_TOOL, 10,
             ConventionalItemTags.OBSIDIANS
     );
     ToolMaterial DEEPSLATE_EMERALD = material(
-            14_571, 40F, 1F, TagList.BlockTags.INCORRECT_FOR_DEEPSLATE_EMERALD_TOOL, 100,
+            14_571, 40F, 2.5F, TagList.BlockTags.INCORRECT_FOR_DEEPSLATE_EMERALD_TOOL, 100,
             TagList.ItemTags.DEEPSLATE_EMERALDS
     );
     ToolMaterial END_DIAMOND = material(
-            24_581, 80F, 1F, TagList.BlockTags.INCORRECT_FOR_END_DIAMOND_TOOL, 100,
+            24_581, 80F, 5F, TagList.BlockTags.INCORRECT_FOR_END_DIAMOND_TOOL, 100,
             TagList.ItemTags.END_DIAMONDS
     );
     ToolMaterial VOID = material(
-            431_241, 256F, 1F, TagList.BlockTags.INCORRECT_FOR_VOID_TOOL, 100,
+            431_241, 256F, 10F, TagList.BlockTags.INCORRECT_FOR_VOID_TOOL, 100,
             TagList.ItemTags.VOID_INGOTS
     );
     ToolMaterial ONETHDENDERITE = material(
-            3_141_592, 1256F, 1F, TagList.BlockTags.INCORRECT_FOR_ONETHDENDERITE_TOOL, 100,
+            3_141_592, 1256F, 20F, TagList.BlockTags.INCORRECT_FOR_ONETHDENDERITE_TOOL, 100,
             TagList.ItemTags.ONETHDENDERITE_INGOTS
     );
     ToolMaterial OLED = material(
-            31_415_926, 3141F, 1F, TagList.BlockTags.INCORRECT_FOR_OLED_TOOL, 100,
+            31_415_926, 3141F, 30F, TagList.BlockTags.INCORRECT_FOR_OLED_TOOL, 100,
             TagList.ItemTags.OLED_INGOTS
     );
     ToolMaterial ANCIENT = material(

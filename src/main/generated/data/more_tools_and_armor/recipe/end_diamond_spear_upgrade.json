@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smithing_transform",
+  "addition": "more_tools_and_armor:end_diamond",
+  "base": "more_tools_and_armor:deepslate_emerald_spear",
+  "result": {
+    "id": "more_tools_and_armor:end_diamond_spear"
+  },
+  "template": "more_tools_and_armor:end_diamond_upgrade_smithing_template"
+}

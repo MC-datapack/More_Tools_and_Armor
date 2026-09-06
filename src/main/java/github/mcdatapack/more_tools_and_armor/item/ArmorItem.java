@@ -1,14 +1,13 @@
 package github.mcdatapack.more_tools_and_armor.item;
 
+import net.minecraft.world.item.equipment.ArmorMaterial;
+import net.minecraft.world.item.equipment.ArmorType;
 
-import net.minecraft.item.equipment.ArmorMaterial;
-import net.minecraft.item.equipment.EquipmentType;
-
-public class ArmorItem extends net.minecraft.item.Item {
+public class ArmorItem extends net.minecraft.world.item.Item {
     public final ArmorMaterial material;
 
-    public ArmorItem(ArmorMaterial material, EquipmentType type, Settings settings) {
-        super(settings.armor(material, type));
+    public ArmorItem(ArmorMaterial material, ArmorType type, Properties settings) {
+        super(settings.humanoidArmor(material, type));
         this.material = material;
     }
 }

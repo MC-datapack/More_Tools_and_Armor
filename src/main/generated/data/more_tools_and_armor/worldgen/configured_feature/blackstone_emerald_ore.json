@@ -6,7 +6,7 @@
     "targets": [
       {
         "state": {
-          "Name": "more_tools_and_armor:blackstone_emerald_ore"
+          "Name": "more_tools_and_armor:blackstone_emerald_block"
         },
         "target": {
           "block": "minecraft:blackstone",

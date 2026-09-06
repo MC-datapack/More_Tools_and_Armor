@@ -1,7 +1,13 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_onethdenderite_pickaxe": {
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "more_tools_and_armor:onethdenderite_paxel"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    },
+    "onethdenderite_pickaxe": {
       "conditions": {
         "items": [
           {
@@ -10,18 +16,12 @@
         ]
       },
       "trigger": "minecraft:inventory_changed"
-    },
-    "has_the_recipe": {
-      "conditions": {
-        "recipe": "more_tools_and_armor:onethdenderite_paxel"
-      },
-      "trigger": "minecraft:recipe_unlocked"
     }
   },
   "requirements": [
     [
       "has_the_recipe",
-      "has_onethdenderite_pickaxe"
+      "onethdenderite_pickaxe"
     ]
   ],
   "rewards": {

@@ -7,7 +7,7 @@
       },
       "trigger": "minecraft:recipe_unlocked"
     },
-    "has_void_pickaxe": {
+    "void_pickaxe": {
       "conditions": {
         "items": [
           {
@@ -21,7 +21,7 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_void_pickaxe"
+      "void_pickaxe"
     ]
   ],
   "rewards": {

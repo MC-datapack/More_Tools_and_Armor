@@ -1,7 +1,7 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_deepslate_emerald": {
+    "deepslate_emerald": {
       "conditions": {
         "items": [
           {
@@ -21,7 +21,7 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_deepslate_emerald"
+      "deepslate_emerald"
     ]
   ],
   "rewards": {

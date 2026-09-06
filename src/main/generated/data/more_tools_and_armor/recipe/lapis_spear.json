@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "A": "#c:rods/wooden",
+    "B": "minecraft:lapis_lazuli"
+  },
+  "pattern": [
+    "  B",
+    " A ",
+    "A  "
+  ],
+  "result": {
+    "id": "more_tools_and_armor:lapis_spear"
+  }
+}

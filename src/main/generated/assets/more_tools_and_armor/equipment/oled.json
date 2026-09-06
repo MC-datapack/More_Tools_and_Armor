@@ -5,6 +5,11 @@
         "texture": "more_tools_and_armor:oled"
       }
     ],
+    "humanoid_baby": [
+      {
+        "texture": "more_tools_and_armor:oled"
+      }
+    ],
     "humanoid_leggings": [
       {
         "texture": "more_tools_and_armor:oled"

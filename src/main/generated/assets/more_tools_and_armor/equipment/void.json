@@ -5,6 +5,11 @@
         "texture": "more_tools_and_armor:void"
       }
     ],
+    "humanoid_baby": [
+      {
+        "texture": "more_tools_and_armor:void"
+      }
+    ],
     "humanoid_leggings": [
       {
         "texture": "more_tools_and_armor:void"

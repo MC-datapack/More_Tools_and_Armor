@@ -3,13 +3,13 @@ package github.mcdatapack.more_tools_and_armor.item;
 import com.google.common.collect.ImmutableMap;
 import com.mojang.datafixers.util.Either;
 import github.mcdatapack.more_tools_and_armor.init.BlockInit;
-import net.minecraft.block.Block;
-import net.minecraft.block.BlockState;
-import net.minecraft.block.Blocks;
-import net.minecraft.registry.tag.BlockTags;
-import net.minecraft.registry.tag.TagKey;
-import net.minecraft.util.math.BlockPos;
-import net.minecraft.world.World;
+import net.minecraft.core.BlockPos;
+import net.minecraft.tags.BlockTags;
+import net.minecraft.tags.TagKey;
+import net.minecraft.world.level.Level;
+import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.level.block.state.BlockState;
 
 import java.util.Map;
 
@@ -52,17 +52,17 @@ record ConvertTo(int minLevel, float chance, Block result) {
             })
             .build();
 
-    static void replace(World world, BlockState state, BlockPos pos, int level) {
+    static void replace(Level world, BlockState state, BlockPos pos, int level) {
         for (Either<TagKey<Block>, Block> blockTag : ConvertTo.CONVERT.keySet()) {
-            if ((blockTag.right().isPresent() && state.isOf(blockTag.right().get()))
+            if ((blockTag.right().isPresent() && state.is(blockTag.right().get()))
                     ||
-                    (blockTag.left().isPresent() && state.isIn(blockTag.left().get()))) {
+                    (blockTag.left().isPresent() && state.is(blockTag.left().get()))) {
                 ConvertTo[] converts = ConvertTo.CONVERT.get(blockTag);
                 for (ConvertTo convertTo : converts) {
                     if (convertTo.minLevel() > level)
                         break;
                     if (Math.random() * 100 <= convertTo.chance()) {
-                        world.setBlockState(pos, convertTo.result().getDefaultState());
+                        world.setBlock(pos, convertTo.result().defaultBlockState(), Block.UPDATE_NONE);
                         break;
                     }
                 }

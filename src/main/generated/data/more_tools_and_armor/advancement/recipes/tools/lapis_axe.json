@@ -1,7 +1,13 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_lapis_lazuli": {
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "more_tools_and_armor:lapis_axe"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    },
+    "lapis_lazuli": {
       "conditions": {
         "items": [
           {
@@ -10,18 +16,12 @@
         ]
       },
       "trigger": "minecraft:inventory_changed"
-    },
-    "has_the_recipe": {
-      "conditions": {
-        "recipe": "more_tools_and_armor:lapis_axe"
-      },
-      "trigger": "minecraft:recipe_unlocked"
     }
   },
   "requirements": [
     [
       "has_the_recipe",
-      "has_lapis_lazuli"
+      "lapis_lazuli"
     ]
   ],
   "rewards": {

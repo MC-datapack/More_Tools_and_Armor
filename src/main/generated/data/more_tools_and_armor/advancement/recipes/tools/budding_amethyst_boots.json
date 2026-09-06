@@ -1,7 +1,7 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_budding_amethyst_crystal": {
+    "budding_amethyst_crystal": {
       "conditions": {
         "items": [
           {
@@ -21,7 +21,7 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_budding_amethyst_crystal"
+      "budding_amethyst_crystal"
     ]
   ],
   "rewards": {

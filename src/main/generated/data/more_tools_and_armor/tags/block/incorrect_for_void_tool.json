@@ -1,3 +1,7 @@
 {
-  "values": []
+  "values": [
+    "#more_tools_and_armor:needs_onethdenderite_tool",
+    "#more_tools_and_armor:needs_oled_tool",
+    "#more_tools_and_armor:needs_ancient_tool"
+  ]
 }

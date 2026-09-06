@@ -2,16 +2,13 @@ package github.mcdatapack.more_tools_and_armor.mixns.ability;
 
 import github.mcdatapack.more_tools_and_armor.init.ItemInit;
 import github.mcdatapack.more_tools_and_armor.util.Abilities;
-import net.minecraft.entity.Entity;
-import net.minecraft.entity.LivingEntity;
-import net.minecraft.entity.effect.StatusEffectCategory;
-import net.minecraft.entity.effect.StatusEffectInstance;
-import net.minecraft.entity.player.PlayerEntity;
-import net.minecraft.item.Item;
-import net.minecraft.item.ItemStack;
-import net.minecraft.item.Items;
-import net.minecraft.server.world.ServerWorld;
-import org.jetbrains.annotations.Nullable;
+import net.minecraft.server.level.ServerLevel;
+import net.minecraft.world.effect.MobEffectCategory;
+import net.minecraft.world.effect.MobEffectInstance;
+import net.minecraft.world.entity.Entity;
+import net.minecraft.world.entity.LivingEntity;
+import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.item.ItemStack;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Shadow;
 import org.spongepowered.asm.mixin.injection.At;
@@ -23,32 +20,44 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 public abstract class LivingEntityMixin {
 
     @Shadow
-    protected abstract int getExperienceToDrop(ServerWorld world);
+    protected abstract int getExperienceReward(ServerLevel world, Entity killer);
 
-    @Inject(method = "addStatusEffect(Lnet/minecraft/entity/effect/StatusEffectInstance;Lnet/minecraft/entity/Entity;)Z", at = @At("HEAD"), cancellable = true)
-    private void addStatusEffect(StatusEffectInstance effect, Entity source, CallbackInfoReturnable<Boolean> cir) {
-        if (Abilities.isWearingStatusEffectImmuneArmor( (LivingEntity) (Object) this) && effect.getEffectType().value().getCategory() == StatusEffectCategory.HARMFUL) {
+    @Inject(method = "addEffect(Lnet/minecraft/world/effect/MobEffectInstance;Lnet/minecraft/world/entity/Entity;)Z", at = @At("HEAD"), cancellable = true)
+    private void addStatusEffect(MobEffectInstance effect, Entity source, CallbackInfoReturnable<Boolean> cir) {
+        if (Abilities.isWearingStatusEffectImmuneArmor( (LivingEntity) (Object) this) && effect.getEffect().value().getCategory() == MobEffectCategory.HARMFUL) {
             cir.setReturnValue(false);
         }
     }
 
-    @Redirect(method = "dropExperience", at = @At(value = "INVOKE", target = "Lnet/minecraft/entity/LivingEntity;getExperienceToDrop(Lnet/minecraft/server/world/ServerWorld;Lnet/minecraft/entity/Entity;)I"))
-    private int getXpToDrop(LivingEntity instance, ServerWorld world, Entity attacker) {
-        if (attacker instanceof PlayerEntity player) {
-            ItemStack hand = player.getMainHandStack();
-            if (hand.isOf(ItemInit.DEEPSLATE_EMERALD_SWORD))
-                return getExperienceToDrop(world) * 5;
-            if (hand.isOf(ItemInit.END_DIAMOND_SWORD))
-                return getExperienceToDrop(world) * 10;
-            if (hand.isOf(ItemInit.VOID_SWORD))
-                return getExperienceToDrop(world) * 50;
-            if (hand.isOf(ItemInit.ONETHDENDERITE_SWORD))
-                return getExperienceToDrop(world) * 100;
-            if (hand.isOf(ItemInit.OLED_SWORD))
-                return getExperienceToDrop(world) * 500;
-            if (hand.isOf(ItemInit.ANCIENT_SWORD))
-                return getExperienceToDrop(world) * 1000;
+    @Redirect(method = "dropExperience", at = @At(value = "INVOKE", target = "Lnet/minecraft/world/entity/LivingEntity;getExperienceReward(Lnet/minecraft/server/level/ServerLevel;Lnet/minecraft/world/entity/Entity;)I"))
+    private int getXpToDrop(LivingEntity instance, ServerLevel world, Entity attacker) {
+        if (attacker instanceof Player player) {
+            ItemStack hand = player.getMainHandItem();
+            if (hand.is(ItemInit.DEEPSLATE_EMERALD_SWORD))
+                return getExperienceReward(world, attacker) * 5;
+            if (hand.is(ItemInit.END_DIAMOND_SWORD))
+                return getExperienceReward(world, attacker) * 10;
+            if (hand.is(ItemInit.VOID_SWORD))
+                return getExperienceReward(world, attacker) * 50;
+            if (hand.is(ItemInit.ONETHDENDERITE_SWORD))
+                return getExperienceReward(world, attacker) * 100;
+            if (hand.is(ItemInit.OLED_SWORD))
+                return getExperienceReward(world, attacker) * 500;
+            if (hand.is(ItemInit.ANCIENT_SWORD))
+                return getExperienceReward(world, attacker) * 1000;
+            if (hand.is(ItemInit.DEEPSLATE_EMERALD_SPEAR))
+                return getExperienceReward(world, attacker) * 5;
+            if (hand.is(ItemInit.END_DIAMOND_SPEAR))
+                return getExperienceReward(world, attacker) * 10;
+            if (hand.is(ItemInit.VOID_SPEAR))
+                return getExperienceReward(world, attacker) * 50;
+            if (hand.is(ItemInit.ONETHDENDERITE_SPEAR))
+                return getExperienceReward(world, attacker) * 100;
+            if (hand.is(ItemInit.OLED_SPEAR))
+                return getExperienceReward(world, attacker) * 500;
+            if (hand.is(ItemInit.ANCIENT_SPEAR))
+                return getExperienceReward(world, attacker) * 1000;
         }
-        return getExperienceToDrop(world);
+        return getExperienceReward(world, attacker);
     }
 }

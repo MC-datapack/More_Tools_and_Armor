@@ -9,10 +9,10 @@
 	"ability.AbstractBlockMixin",
 	"ability.AbstractBlockSettingsMixin",
 	"ability.EndermanEntityMixin",
+	"ability.IronGolemMixin",
 	"ability.LivingEntityMixin",
-	"ability.PiglinBrainMixin",
-	"ability.PowderSnowBlockMixin",
-	"ability.TargetPredicateMixin"
+	"ability.PhantomMixin",
+	"ability.PowderSnowBlockMixin"
   ],
   "injectors": {
 	"defaultRequire": 1

@@ -8,10 +8,6 @@ import me.shedaniel.cloth.clothconfig.shadowed.blue.endless.jankson.Comment;
 @Config(name = "more_tools_and_armor")
 public class MoreToolsAndArmorConfigData implements ConfigData {
     @ConfigEntry.Gui.CollapsibleObject
-    @ConfigEntry.Gui.RequiresRestart
-    public boolean trades = true;
-
-    @ConfigEntry.Gui.CollapsibleObject
     public boolean showTooltip = true;
 
     @ConfigEntry.Gui.CollapsibleObject
@@ -19,9 +15,6 @@ public class MoreToolsAndArmorConfigData implements ConfigData {
 
     @ConfigEntry.Gui.CollapsibleObject
     public boolean powderSnowWalk = true;
-
-    @ConfigEntry.Gui.CollapsibleObject
-    public boolean piglinPassive = true;
 
     @ConfigEntry.Gui.CollapsibleObject
     public boolean ironGolemPassive = true;
