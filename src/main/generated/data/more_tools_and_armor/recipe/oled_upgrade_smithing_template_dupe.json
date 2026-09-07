@@ -1,6 +1,5 @@
 {
   "type": "minecraft:crafting_shaped",
-  "category": "misc",
   "key": {
     "A": "more_tools_and_armor:onethdenderite_ingot",
     "B": "more_tools_and_armor:oled_ingot",

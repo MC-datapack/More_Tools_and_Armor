@@ -6,7 +6,7 @@ import com.google.common.collect.Maps;
 import com.mojang.datafixers.util.Pair;
 import github.mcdatapack.more_tools_and_armor.list.TagList;
 import net.fabricmc.fabric.mixin.content.registry.AxeItemAccessor;
-import net.minecraft.advancements.CriteriaTriggers;
+import net.minecraft.advancements.triggers.CriteriaTriggers;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.server.level.ServerPlayer;

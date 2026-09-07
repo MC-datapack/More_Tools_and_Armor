@@ -1,6 +1,5 @@
 {
   "type": "minecraft:crafting_shaped",
-  "category": "misc",
   "key": {
     "A": "more_tools_and_armor:end_diamond",
     "B": "minecraft:netherite_ingot",

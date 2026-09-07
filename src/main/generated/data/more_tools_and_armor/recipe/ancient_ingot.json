@@ -1,6 +1,5 @@
 {
   "type": "minecraft:crafting_shaped",
-  "category": "misc",
   "key": {
     "A": "more_tools_and_armor:ancient_honey_block",
     "B": "more_tools_and_armor:bat_wing",

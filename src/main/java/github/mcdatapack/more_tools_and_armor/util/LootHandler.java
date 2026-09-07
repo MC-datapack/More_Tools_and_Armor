@@ -7,6 +7,7 @@ import net.minecraft.core.HolderGetter;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.world.entity.EntityType;
+import net.minecraft.world.entity.EntityTypes;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.enchantment.Enchantment;
 import net.minecraft.world.item.enchantment.Enchantments;
@@ -27,7 +28,7 @@ public class LootHandler {
         LootTableEvents.MODIFY.register((lootTable, builder, lootTableSource, wrapperLookup) -> {
             addItemsToLootTable(builder, BuiltInLootTables.SNIFFER_DIGGING, lootTable,
                     new LootTableItem(ItemInit.ANCIENT_HONEY_BOTTLE, 0.01F));
-            addItemsToLootTable(builder, EntityType.BAT.getDefaultLootTable().get(), lootTable,
+            addItemsToLootTable(builder, EntityTypes.BAT.getDefaultLootTable().get(), lootTable,
                     new LootTableItem(ItemInit.BAT_WING, 0.1F));
             addItemsToLootTable(builder, BuiltInLootTables.DESERT_WELL_ARCHAEOLOGY, lootTable,
                     new LootTableItem(ItemInit.ANCIENT_COIN, 0.15F));
