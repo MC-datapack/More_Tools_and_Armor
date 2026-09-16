@@ -3,7 +3,7 @@
   "criteria": {
     "has_the_recipe": {
       "conditions": {
-        "recipe": "more_tools_and_armor:obsidian_hoe"
+        "recipes": "more_tools_and_armor:obsidian_hoe"
       },
       "trigger": "minecraft:recipe_unlocked"
     },

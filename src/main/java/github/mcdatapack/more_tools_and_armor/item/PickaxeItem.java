@@ -1,8 +1,9 @@
 package github.mcdatapack.more_tools_and_armor.item;
 
+import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ToolMaterial;
 
-public class PickaxeItem extends net.minecraft.world.item.Item {
+public class PickaxeItem extends Item {
     public final ToolMaterial material;
 
     public PickaxeItem(ToolMaterial material, float attackDamage, float attackSpeed, Properties settings) {

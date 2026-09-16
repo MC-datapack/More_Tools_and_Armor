@@ -4,6 +4,7 @@
 	"version": "${version}",
 	"name": "More Tools and Armor",
 	"description": "This mod adds many Tools and Armor Types to Minecraft",
+  "accessWidener": "more_tools_and_armor.accesswidener",
 	"authors": [
 		"Timo_11(MC-datapack)"
 	],

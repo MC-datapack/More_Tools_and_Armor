@@ -17,6 +17,8 @@ repositories {
 }
 
 loom {
+	accessWidenerPath = file("src/main/resources/more_tools_and_armor.accesswidener")
+
 	mods {
 		"modid" {
 			sourceSet sourceSets.main

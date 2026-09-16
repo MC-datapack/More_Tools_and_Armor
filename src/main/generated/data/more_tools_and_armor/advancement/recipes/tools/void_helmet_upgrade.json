@@ -3,7 +3,7 @@
   "criteria": {
     "has_the_recipe": {
       "conditions": {
-        "recipe": "more_tools_and_armor:void_helmet_upgrade"
+        "recipes": "more_tools_and_armor:void_helmet_upgrade"
       },
       "trigger": "minecraft:recipe_unlocked"
     },

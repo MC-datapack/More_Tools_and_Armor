@@ -8,13 +8,11 @@
 		  "type": "minecraft:item",
 		  "name": "minecraft:emerald",
 		  "weight": 98,
-		  "functions": [
-			{
-			  "function": "minecraft:apply_bonus",
-			  "enchantment": "minecraft:fortune",
-			  "formula": "minecraft:ore_drops"
-			}
-		  ]
+		  "modifier": {
+			"type": "minecraft:apply_bonus",
+			"enchantment": "fortune",
+			"formula": "minecraft:ore_drops"
+		  }
 		},
 		{
 		  "type": "minecraft:item",

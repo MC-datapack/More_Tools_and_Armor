@@ -1,4 +1,5 @@
 {
+  "type": "minecraft:block",
   "pools": [
     {
       "rolls": 1,
@@ -9,31 +10,27 @@
             {
               "type": "minecraft:item",
               "name": "more_tools_and_armor:end_coal_ore",
-              "conditions": [
-                {
-                  "condition": "minecraft:match_tool",
-                  "predicate": {
-                    "predicates": {
-                      "minecraft:enchantments": [
-                        {
-                          "enchantments": "minecraft:silk_touch"
-                        }
-                      ]
-                    }
+              "condition": {
+                "type": "minecraft:match_tool",
+                "predicate": {
+                  "predicates": {
+                    "minecraft:enchantments": [
+                      {
+                        "enchantments": "minecraft:silk_touch"
+                      }
+                    ]
                   }
                 }
-              ]
+              }
             },
             {
               "type": "minecraft:item",
               "name": "minecraft:coal",
-              "functions": [
-                {
-                  "function": "minecraft:apply_bonus",
-                  "enchantment": "minecraft:fortune",
-                  "formula": "minecraft:ore_drops"
-                }
-              ]
+              "modifier": {
+                "type": "minecraft:apply_bonus",
+                "enchantment": "fortune",
+                "formula": "minecraft:ore_drops"
+              }
             }
           ]
         }

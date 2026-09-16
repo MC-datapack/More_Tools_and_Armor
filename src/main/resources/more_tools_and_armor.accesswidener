@@ -1,0 +1,4 @@
+classTweaker	v1	official
+
+accessible method net/minecraft/world/item/component/BlockTransformers axeStrippables ()Lnet/minecraft/core/component/BlockTransformer$BlockTransformData;
+accessible method net/minecraft/world/item/component/BlockTransformers axe (Ljava/util/Set;Lnet/minecraft/core/Holder;Lnet/minecraft/core/component/BlockTransformer$TransformParticle;)Ljava/util/List;

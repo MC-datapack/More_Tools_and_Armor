@@ -3,7 +3,7 @@
   "criteria": {
     "has_the_recipe": {
       "conditions": {
-        "recipe": "more_tools_and_armor:onethdenderite_pickaxe_upgrade"
+        "recipes": "more_tools_and_armor:onethdenderite_pickaxe_upgrade"
       },
       "trigger": "minecraft:recipe_unlocked"
     },

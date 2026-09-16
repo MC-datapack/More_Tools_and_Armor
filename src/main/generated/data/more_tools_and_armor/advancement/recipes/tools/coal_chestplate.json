@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "more_tools_and_armor:coal_chestplate"
+        "recipes": "more_tools_and_armor:coal_chestplate"
       },
       "trigger": "minecraft:recipe_unlocked"
     }

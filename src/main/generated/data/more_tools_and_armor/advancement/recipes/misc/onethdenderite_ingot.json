@@ -23,7 +23,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "more_tools_and_armor:onethdenderite_ingot"
+        "recipes": "more_tools_and_armor:onethdenderite_ingot"
       },
       "trigger": "minecraft:recipe_unlocked"
     },

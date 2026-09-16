@@ -3,7 +3,7 @@
   "criteria": {
     "has_the_recipe": {
       "conditions": {
-        "recipe": "more_tools_and_armor:stone_paxel"
+        "recipes": "more_tools_and_armor:stone_paxel"
       },
       "trigger": "minecraft:recipe_unlocked"
     },

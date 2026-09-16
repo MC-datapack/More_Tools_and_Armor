@@ -1,12 +1,13 @@
 package github.mcdatapack.more_tools_and_armor.item;
 
+import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ToolMaterial;
 
-public class ShovelItem extends net.minecraft.world.item.ShovelItem {
+public class ShovelItem extends Item {
     public final ToolMaterial material;
 
     public ShovelItem(ToolMaterial material, float attackDamage, float attackSpeed, Properties settings) {
-        super(material, attackDamage, attackSpeed, settings);
+        super(settings.shovel(material, attackDamage, attackSpeed));
         this.material = material;
     }
 }

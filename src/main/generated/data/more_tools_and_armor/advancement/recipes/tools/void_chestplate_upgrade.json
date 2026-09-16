@@ -3,7 +3,7 @@
   "criteria": {
     "has_the_recipe": {
       "conditions": {
-        "recipe": "more_tools_and_armor:void_chestplate_upgrade"
+        "recipes": "more_tools_and_armor:void_chestplate_upgrade"
       },
       "trigger": "minecraft:recipe_unlocked"
     },

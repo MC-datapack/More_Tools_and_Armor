@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "more_tools_and_armor:emerald_axe"
+        "recipes": "more_tools_and_armor:emerald_axe"
       },
       "trigger": "minecraft:recipe_unlocked"
     }

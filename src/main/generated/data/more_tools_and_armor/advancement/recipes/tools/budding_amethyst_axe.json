@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "more_tools_and_armor:budding_amethyst_axe"
+        "recipes": "more_tools_and_armor:budding_amethyst_axe"
       },
       "trigger": "minecraft:recipe_unlocked"
     }

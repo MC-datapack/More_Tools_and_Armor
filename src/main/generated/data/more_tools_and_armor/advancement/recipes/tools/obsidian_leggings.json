@@ -3,7 +3,7 @@
   "criteria": {
     "has_the_recipe": {
       "conditions": {
-        "recipe": "more_tools_and_armor:obsidian_leggings"
+        "recipes": "more_tools_and_armor:obsidian_leggings"
       },
       "trigger": "minecraft:recipe_unlocked"
     },

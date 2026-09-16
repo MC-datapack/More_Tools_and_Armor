@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "more_tools_and_armor:deepslate_emerald_block"
+        "recipes": "more_tools_and_armor:deepslate_emerald_block"
       },
       "trigger": "minecraft:recipe_unlocked"
     }

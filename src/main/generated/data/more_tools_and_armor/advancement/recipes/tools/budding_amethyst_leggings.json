@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "more_tools_and_armor:budding_amethyst_leggings"
+        "recipes": "more_tools_and_armor:budding_amethyst_leggings"
       },
       "trigger": "minecraft:recipe_unlocked"
     }

@@ -3,7 +3,7 @@
   "criteria": {
     "has_the_recipe": {
       "conditions": {
-        "recipe": "more_tools_and_armor:redstone_shovel"
+        "recipes": "more_tools_and_armor:redstone_shovel"
       },
       "trigger": "minecraft:recipe_unlocked"
     },

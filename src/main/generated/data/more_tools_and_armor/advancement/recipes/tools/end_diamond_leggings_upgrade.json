@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "more_tools_and_armor:end_diamond_leggings_upgrade"
+        "recipes": "more_tools_and_armor:end_diamond_leggings_upgrade"
       },
       "trigger": "minecraft:recipe_unlocked"
     }

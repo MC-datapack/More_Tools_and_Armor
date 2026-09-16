@@ -7,7 +7,7 @@ import net.minecraft.core.registries.Registries;
 import net.minecraft.data.worldgen.BootstrapContext;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.world.level.levelgen.VerticalAnchor;
-import net.minecraft.world.level.levelgen.feature.ConfiguredFeature;
+import net.minecraft.world.level.levelgen.feature.Feature;
 import net.minecraft.world.level.levelgen.placement.*;
 
 import java.util.List;
@@ -31,7 +31,7 @@ public class PlacedFeatureInit {
 
 
     public static void bootstrap(BootstrapContext<PlacedFeature> context) {
-        HolderGetter<ConfiguredFeature<?, ?>> registryLookup = context.lookup(Registries.CONFIGURED_FEATURE);
+        HolderGetter<Feature> registryLookup = context.lookup(Registries.FEATURE);
 
         register(context, END_COAL_ORE, registryLookup.getOrThrow(ConfiguredFeatureInit.END_COAL_ORE_KEY),
                 Modifiers.modifiersCount(30, HeightRangePlacement.uniform(VerticalAnchor.absolute(0), VerticalAnchor.absolute(138))));
@@ -71,7 +71,7 @@ public class PlacedFeatureInit {
 
     private static void register(BootstrapContext<PlacedFeature> context,
                                  ResourceKey<PlacedFeature> key,
-                                 Holder<ConfiguredFeature<?, ?>> config,
+                                 Holder<Feature> config,
                                  List<PlacementModifier> modifiers) {
         context.register(key, new PlacedFeature(config, List.copyOf(modifiers)));
     }

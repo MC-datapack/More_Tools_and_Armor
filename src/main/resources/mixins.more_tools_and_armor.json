@@ -7,7 +7,6 @@
 	"BrushableBlockEntityMixin",
 	"ToolTipHandler",
 	"ability.AbstractBlockMixin",
-	"ability.AbstractBlockSettingsMixin",
 	"ability.EndermanEntityMixin",
 	"ability.IronGolemMixin",
 	"ability.LivingEntityMixin",

@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "more_tools_and_armor:ancient_upgrade_smithing_template_dupe"
+        "recipes": "more_tools_and_armor:ancient_upgrade_smithing_template_dupe"
       },
       "trigger": "minecraft:recipe_unlocked"
     }

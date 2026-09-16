@@ -1,4 +1,5 @@
 {
+  "type": "minecraft:block",
   "pools": [
 	{
 	  "rolls": 1,
@@ -9,20 +10,18 @@
 			{
 			  "type": "minecraft:item",
 			  "name": "more_tools_and_armor:overworld_unstable_ore",
-			  "conditions": [
-				{
-				  "condition": "minecraft:match_tool",
-				  "predicate": {
-					"predicates": {
-					  "minecraft:enchantments": [
-						{
-						  "enchantments": "minecraft:silk_touch"
-						}
-					  ]
-					}
+			  "condition": {
+				"type": "minecraft:match_tool",
+				"predicate": {
+				  "predicates": {
+					"minecraft:enchantments": [
+					  {
+						"enchantments": "minecraft:silk_touch"
+					  }
+					]
 				  }
 				}
-			  ]
+			  }
 			},
 			{
 			  "type": "minecraft:item",

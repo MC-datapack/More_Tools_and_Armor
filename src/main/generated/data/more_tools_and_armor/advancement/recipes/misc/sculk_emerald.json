@@ -3,7 +3,7 @@
   "criteria": {
     "has_the_recipe": {
       "conditions": {
-        "recipe": "more_tools_and_armor:sculk_emerald"
+        "recipes": "more_tools_and_armor:sculk_emerald"
       },
       "trigger": "minecraft:recipe_unlocked"
     },

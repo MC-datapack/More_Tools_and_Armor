@@ -1,13 +1,14 @@
 package github.mcdatapack.more_tools_and_armor.datagen.provider;
 
 import github.mcdatapack.more_tools_and_armor.init.BlockInit;
-import github.mcdatapack.more_tools_and_armor.init.EquipmentModelInit;
 import github.mcdatapack.more_tools_and_armor.init.ItemInit;
 import net.fabricmc.fabric.api.client.datagen.v1.provider.FabricModelProvider;
 import net.fabricmc.fabric.api.datagen.v1.FabricPackOutput;
 import net.minecraft.client.data.models.BlockModelGenerators;
 import net.minecraft.client.data.models.ItemModelGenerators;
 import net.minecraft.client.data.models.model.ModelTemplates;
+
+import java.util.Map;
 
 import static github.mcdatapack.more_tools_and_armor.init.ItemInit.*;
 import static github.mcdatapack.more_tools_and_armor.init.ItemInit.ONETHDENDERITE_PAXEL;
@@ -69,10 +70,10 @@ public class MoreToolsAndArmorModelProvider extends FabricModelProvider {
         generator.generateFlatItem(ItemInit.BUDDING_AMETHYST_PICKAXE, ModelTemplates.FLAT_HANDHELD_ITEM);
         generator.generateFlatItem(ItemInit.BUDDING_AMETHYST_SHOVEL, ModelTemplates.FLAT_HANDHELD_ITEM);
         generator.generateFlatItem(ItemInit.BUDDING_AMETHYST_HOE, ModelTemplates.FLAT_HANDHELD_ITEM);
-        generator.generateTrimmableItem(ItemInit.BUDDING_AMETHYST_HELMET, EquipmentModelInit.BUDDING_AMETHYST, TRIM_PREFIX_HELMET, false);
-        generator.generateTrimmableItem(ItemInit.BUDDING_AMETHYST_CHESTPLATE, EquipmentModelInit.BUDDING_AMETHYST, TRIM_PREFIX_CHESTPLATE, false);
-        generator.generateTrimmableItem(ItemInit.BUDDING_AMETHYST_LEGGINGS, EquipmentModelInit.BUDDING_AMETHYST, TRIM_PREFIX_LEGGINGS, false);
-        generator.generateTrimmableItem(ItemInit.BUDDING_AMETHYST_BOOTS, EquipmentModelInit.BUDDING_AMETHYST, TRIM_PREFIX_BOOTS, false);
+        generator.generateTrimmableItem(ItemInit.BUDDING_AMETHYST_HELMET, TRIM_PREFIX_HELMET, false, Map.of());
+        generator.generateTrimmableItem(ItemInit.BUDDING_AMETHYST_CHESTPLATE, TRIM_PREFIX_CHESTPLATE, false, Map.of());
+        generator.generateTrimmableItem(ItemInit.BUDDING_AMETHYST_LEGGINGS, TRIM_PREFIX_LEGGINGS, false, Map.of());
+        generator.generateTrimmableItem(ItemInit.BUDDING_AMETHYST_BOOTS, TRIM_PREFIX_BOOTS, false, Map.of());
         generator.generateSpear(BUDDING_AMETHYST_SPEAR);
 
         generator.generateFlatItem(ItemInit.EMERALD_SWORD, ModelTemplates.FLAT_HANDHELD_ITEM);
@@ -80,10 +81,10 @@ public class MoreToolsAndArmorModelProvider extends FabricModelProvider {
         generator.generateFlatItem(ItemInit.EMERALD_PICKAXE, ModelTemplates.FLAT_HANDHELD_ITEM);
         generator.generateFlatItem(ItemInit.EMERALD_SHOVEL, ModelTemplates.FLAT_HANDHELD_ITEM);
         generator.generateFlatItem(ItemInit.EMERALD_HOE, ModelTemplates.FLAT_HANDHELD_ITEM);
-        generator.generateTrimmableItem(ItemInit.EMERALD_HELMET, EquipmentModelInit.EMERALD, TRIM_PREFIX_HELMET, false);
-        generator.generateTrimmableItem(ItemInit.EMERALD_CHESTPLATE, EquipmentModelInit.EMERALD, TRIM_PREFIX_CHESTPLATE, false);
-        generator.generateTrimmableItem(ItemInit.EMERALD_LEGGINGS, EquipmentModelInit.EMERALD, TRIM_PREFIX_LEGGINGS, false);
-        generator.generateTrimmableItem(ItemInit.EMERALD_BOOTS, EquipmentModelInit.EMERALD, TRIM_PREFIX_BOOTS, false);
+        generator.generateTrimmableItem(ItemInit.EMERALD_HELMET, TRIM_PREFIX_HELMET, false, Map.of());
+        generator.generateTrimmableItem(ItemInit.EMERALD_CHESTPLATE, TRIM_PREFIX_CHESTPLATE, false, Map.of());
+        generator.generateTrimmableItem(ItemInit.EMERALD_LEGGINGS, TRIM_PREFIX_LEGGINGS, false, Map.of());
+        generator.generateTrimmableItem(ItemInit.EMERALD_BOOTS, TRIM_PREFIX_BOOTS, false, Map.of());
         generator.generateSpear(EMERALD_SPEAR);
 
         generator.generateFlatItem(ItemInit.OBSIDIAN_SWORD, ModelTemplates.FLAT_HANDHELD_ITEM);
@@ -91,10 +92,10 @@ public class MoreToolsAndArmorModelProvider extends FabricModelProvider {
         generator.generateFlatItem(ItemInit.OBSIDIAN_PICKAXE, ModelTemplates.FLAT_HANDHELD_ITEM);
         generator.generateFlatItem(ItemInit.OBSIDIAN_SHOVEL, ModelTemplates.FLAT_HANDHELD_ITEM);
         generator.generateFlatItem(ItemInit.OBSIDIAN_HOE, ModelTemplates.FLAT_HANDHELD_ITEM);
-        generator.generateTrimmableItem(ItemInit.OBSIDIAN_HELMET, EquipmentModelInit.OBSIDIAN, TRIM_PREFIX_HELMET, false);
-        generator.generateTrimmableItem(ItemInit.OBSIDIAN_CHESTPLATE, EquipmentModelInit.OBSIDIAN, TRIM_PREFIX_CHESTPLATE, false);
-        generator.generateTrimmableItem(ItemInit.OBSIDIAN_LEGGINGS, EquipmentModelInit.OBSIDIAN, TRIM_PREFIX_LEGGINGS, false);
-        generator.generateTrimmableItem(ItemInit.OBSIDIAN_BOOTS, EquipmentModelInit.OBSIDIAN, TRIM_PREFIX_BOOTS, false);
+        generator.generateTrimmableItem(ItemInit.OBSIDIAN_HELMET, TRIM_PREFIX_HELMET, false, Map.of());
+        generator.generateTrimmableItem(ItemInit.OBSIDIAN_CHESTPLATE, TRIM_PREFIX_CHESTPLATE, false, Map.of());
+        generator.generateTrimmableItem(ItemInit.OBSIDIAN_LEGGINGS, TRIM_PREFIX_LEGGINGS, false, Map.of());
+        generator.generateTrimmableItem(ItemInit.OBSIDIAN_BOOTS, TRIM_PREFIX_BOOTS, false, Map.of());
         generator.generateSpear(OBSIDIAN_SPEAR);
 
         generator.generateFlatItem(ItemInit.DEEPSLATE_EMERALD_SWORD, ModelTemplates.FLAT_HANDHELD_ITEM);
@@ -102,10 +103,10 @@ public class MoreToolsAndArmorModelProvider extends FabricModelProvider {
         generator.generateFlatItem(ItemInit.DEEPSLATE_EMERALD_PICKAXE, ModelTemplates.FLAT_HANDHELD_ITEM);
         generator.generateFlatItem(ItemInit.DEEPSLATE_EMERALD_SHOVEL, ModelTemplates.FLAT_HANDHELD_ITEM);
         generator.generateFlatItem(ItemInit.DEEPSLATE_EMERALD_HOE, ModelTemplates.FLAT_HANDHELD_ITEM);
-        generator.generateTrimmableItem(ItemInit.DEEPSLATE_EMERALD_HELMET, EquipmentModelInit.DEEPSLATE_EMERALD, TRIM_PREFIX_HELMET, false);
-        generator.generateTrimmableItem(ItemInit.DEEPSLATE_EMERALD_CHESTPLATE, EquipmentModelInit.DEEPSLATE_EMERALD, TRIM_PREFIX_CHESTPLATE, false);
-        generator.generateTrimmableItem(ItemInit.DEEPSLATE_EMERALD_LEGGINGS, EquipmentModelInit.DEEPSLATE_EMERALD, TRIM_PREFIX_LEGGINGS, false);
-        generator.generateTrimmableItem(ItemInit.DEEPSLATE_EMERALD_BOOTS, EquipmentModelInit.DEEPSLATE_EMERALD, TRIM_PREFIX_BOOTS, false);
+        generator.generateTrimmableItem(ItemInit.DEEPSLATE_EMERALD_HELMET, TRIM_PREFIX_HELMET, false, Map.of());
+        generator.generateTrimmableItem(ItemInit.DEEPSLATE_EMERALD_CHESTPLATE, TRIM_PREFIX_CHESTPLATE, false, Map.of());
+        generator.generateTrimmableItem(ItemInit.DEEPSLATE_EMERALD_LEGGINGS, TRIM_PREFIX_LEGGINGS, false, Map.of());
+        generator.generateTrimmableItem(ItemInit.DEEPSLATE_EMERALD_BOOTS, TRIM_PREFIX_BOOTS, false, Map.of());
         generator.generateSpear(DEEPSLATE_EMERALD_SPEAR);
 
         generator.generateFlatItem(ItemInit.END_DIAMOND_SWORD, ModelTemplates.FLAT_HANDHELD_ITEM);
@@ -113,10 +114,10 @@ public class MoreToolsAndArmorModelProvider extends FabricModelProvider {
         generator.generateFlatItem(ItemInit.END_DIAMOND_PICKAXE, ModelTemplates.FLAT_HANDHELD_ITEM);
         generator.generateFlatItem(ItemInit.END_DIAMOND_SHOVEL, ModelTemplates.FLAT_HANDHELD_ITEM);
         generator.generateFlatItem(ItemInit.END_DIAMOND_HOE, ModelTemplates.FLAT_HANDHELD_ITEM);
-        generator.generateTrimmableItem(ItemInit.END_DIAMOND_HELMET, EquipmentModelInit.END_DIAMOND, TRIM_PREFIX_HELMET, false);
-        generator.generateTrimmableItem(ItemInit.END_DIAMOND_CHESTPLATE, EquipmentModelInit.END_DIAMOND, TRIM_PREFIX_CHESTPLATE, false);
-        generator.generateTrimmableItem(ItemInit.END_DIAMOND_LEGGINGS, EquipmentModelInit.END_DIAMOND, TRIM_PREFIX_LEGGINGS, false);
-        generator.generateTrimmableItem(ItemInit.END_DIAMOND_BOOTS, EquipmentModelInit.END_DIAMOND, TRIM_PREFIX_BOOTS, false);
+        generator.generateTrimmableItem(ItemInit.END_DIAMOND_HELMET,TRIM_PREFIX_HELMET, false, Map.of());
+        generator.generateTrimmableItem(ItemInit.END_DIAMOND_CHESTPLATE,TRIM_PREFIX_CHESTPLATE, false, Map.of());
+        generator.generateTrimmableItem(ItemInit.END_DIAMOND_LEGGINGS,TRIM_PREFIX_LEGGINGS, false, Map.of());
+        generator.generateTrimmableItem(ItemInit.END_DIAMOND_BOOTS,TRIM_PREFIX_BOOTS, false, Map.of());
         generator.generateSpear(END_DIAMOND_SPEAR);
 
         generator.generateFlatItem(ItemInit.VOID_SWORD, ModelTemplates.FLAT_HANDHELD_ITEM);
@@ -124,10 +125,10 @@ public class MoreToolsAndArmorModelProvider extends FabricModelProvider {
         generator.generateFlatItem(ItemInit.VOID_PICKAXE, ModelTemplates.FLAT_HANDHELD_ITEM);
         generator.generateFlatItem(ItemInit.VOID_SHOVEL, ModelTemplates.FLAT_HANDHELD_ITEM);
         generator.generateFlatItem(ItemInit.VOID_HOE, ModelTemplates.FLAT_HANDHELD_ITEM);
-        generator.generateTrimmableItem(ItemInit.VOID_HELMET, EquipmentModelInit.VOID, TRIM_PREFIX_HELMET, false);
-        generator.generateTrimmableItem(ItemInit.VOID_CHESTPLATE, EquipmentModelInit.VOID, TRIM_PREFIX_CHESTPLATE, false);
-        generator.generateTrimmableItem(ItemInit.VOID_LEGGINGS, EquipmentModelInit.VOID, TRIM_PREFIX_LEGGINGS, false);
-        generator.generateTrimmableItem(ItemInit.VOID_BOOTS, EquipmentModelInit.VOID, TRIM_PREFIX_BOOTS, false);
+        generator.generateTrimmableItem(ItemInit.VOID_HELMET, TRIM_PREFIX_HELMET, false, Map.of());
+        generator.generateTrimmableItem(ItemInit.VOID_CHESTPLATE, TRIM_PREFIX_CHESTPLATE, false, Map.of());
+        generator.generateTrimmableItem(ItemInit.VOID_LEGGINGS, TRIM_PREFIX_LEGGINGS, false, Map.of());
+        generator.generateTrimmableItem(ItemInit.VOID_BOOTS, TRIM_PREFIX_BOOTS, false, Map.of());
         generator.generateSpear(VOID_SPEAR);
 
         generator.generateFlatItem(ItemInit.ONETHDENDERITE_SWORD, ModelTemplates.FLAT_HANDHELD_ITEM);
@@ -135,10 +136,10 @@ public class MoreToolsAndArmorModelProvider extends FabricModelProvider {
         generator.generateFlatItem(ItemInit.ONETHDENDERITE_PICKAXE, ModelTemplates.FLAT_HANDHELD_ITEM);
         generator.generateFlatItem(ItemInit.ONETHDENDERITE_SHOVEL, ModelTemplates.FLAT_HANDHELD_ITEM);
         generator.generateFlatItem(ItemInit.ONETHDENDERITE_HOE, ModelTemplates.FLAT_HANDHELD_ITEM);
-        generator.generateTrimmableItem(ItemInit.ONETHDENDERITE_HELMET, EquipmentModelInit.ONETHDENDERITE, TRIM_PREFIX_HELMET, false);
-        generator.generateTrimmableItem(ItemInit.ONETHDENDERITE_CHESTPLATE, EquipmentModelInit.ONETHDENDERITE, TRIM_PREFIX_CHESTPLATE, false);
-        generator.generateTrimmableItem(ItemInit.ONETHDENDERITE_LEGGINGS, EquipmentModelInit.ONETHDENDERITE, TRIM_PREFIX_LEGGINGS, false);
-        generator.generateTrimmableItem(ItemInit.ONETHDENDERITE_BOOTS, EquipmentModelInit.ONETHDENDERITE, TRIM_PREFIX_BOOTS, false);
+        generator.generateTrimmableItem(ItemInit.ONETHDENDERITE_HELMET, TRIM_PREFIX_HELMET, false, Map.of());
+        generator.generateTrimmableItem(ItemInit.ONETHDENDERITE_CHESTPLATE, TRIM_PREFIX_CHESTPLATE, false, Map.of());
+        generator.generateTrimmableItem(ItemInit.ONETHDENDERITE_LEGGINGS, TRIM_PREFIX_LEGGINGS, false, Map.of());
+        generator.generateTrimmableItem(ItemInit.ONETHDENDERITE_BOOTS, TRIM_PREFIX_BOOTS, false, Map.of());
         generator.generateSpear(ONETHDENDERITE_SPEAR);
 
         generator.generateFlatItem(OLED_INGOT, ModelTemplates.FLAT_ITEM);
@@ -149,10 +150,10 @@ public class MoreToolsAndArmorModelProvider extends FabricModelProvider {
         generator.generateFlatItem(ItemInit.OLED_PICKAXE, ModelTemplates.FLAT_HANDHELD_ITEM);
         generator.generateFlatItem(ItemInit.OLED_SHOVEL, ModelTemplates.FLAT_HANDHELD_ITEM);
         generator.generateFlatItem(ItemInit.OLED_HOE, ModelTemplates.FLAT_HANDHELD_ITEM);
-        generator.generateTrimmableItem(ItemInit.OLED_HELMET, EquipmentModelInit.OLED, TRIM_PREFIX_HELMET, false);
-        generator.generateTrimmableItem(ItemInit.OLED_CHESTPLATE, EquipmentModelInit.OLED, TRIM_PREFIX_CHESTPLATE, false);
-        generator.generateTrimmableItem(ItemInit.OLED_LEGGINGS, EquipmentModelInit.OLED, TRIM_PREFIX_LEGGINGS, false);
-        generator.generateTrimmableItem(ItemInit.OLED_BOOTS, EquipmentModelInit.OLED, TRIM_PREFIX_BOOTS, false);
+        generator.generateTrimmableItem(ItemInit.OLED_HELMET, TRIM_PREFIX_HELMET, false, Map.of());
+        generator.generateTrimmableItem(ItemInit.OLED_CHESTPLATE, TRIM_PREFIX_CHESTPLATE, false, Map.of());
+        generator.generateTrimmableItem(ItemInit.OLED_LEGGINGS, TRIM_PREFIX_LEGGINGS, false, Map.of());
+        generator.generateTrimmableItem(ItemInit.OLED_BOOTS, TRIM_PREFIX_BOOTS, false, Map.of());
         generator.generateSpear(OLED_SPEAR);
 
         generator.generateFlatItem(ItemInit.ANCIENT_SWORD, ModelTemplates.FLAT_HANDHELD_ITEM);
@@ -160,10 +161,10 @@ public class MoreToolsAndArmorModelProvider extends FabricModelProvider {
         generator.generateFlatItem(ItemInit.ANCIENT_PICKAXE, ModelTemplates.FLAT_HANDHELD_ITEM);
         generator.generateFlatItem(ItemInit.ANCIENT_SHOVEL, ModelTemplates.FLAT_HANDHELD_ITEM);
         generator.generateFlatItem(ItemInit.ANCIENT_HOE, ModelTemplates.FLAT_HANDHELD_ITEM);
-        generator.generateTrimmableItem(ItemInit.ANCIENT_HELMET, EquipmentModelInit.ANCIENT, TRIM_PREFIX_HELMET, false);
-        generator.generateTrimmableItem(ItemInit.ANCIENT_CHESTPLATE, EquipmentModelInit.ANCIENT, TRIM_PREFIX_CHESTPLATE, false);
-        generator.generateTrimmableItem(ItemInit.ANCIENT_LEGGINGS, EquipmentModelInit.ANCIENT, TRIM_PREFIX_LEGGINGS, false);
-        generator.generateTrimmableItem(ItemInit.ANCIENT_BOOTS, EquipmentModelInit.ANCIENT, TRIM_PREFIX_BOOTS, false);
+        generator.generateTrimmableItem(ItemInit.ANCIENT_HELMET,TRIM_PREFIX_HELMET, false, Map.of());
+        generator.generateTrimmableItem(ItemInit.ANCIENT_CHESTPLATE,TRIM_PREFIX_CHESTPLATE, false, Map.of());
+        generator.generateTrimmableItem(ItemInit.ANCIENT_LEGGINGS,TRIM_PREFIX_LEGGINGS, false, Map.of());
+        generator.generateTrimmableItem(ItemInit.ANCIENT_BOOTS,TRIM_PREFIX_BOOTS, false, Map.of());
         generator.generateSpear(ANCIENT_SPEAR);
 
         generator.generateFlatItem(ItemInit.COAL_SWORD, ModelTemplates.FLAT_HANDHELD_ITEM);
@@ -171,10 +172,10 @@ public class MoreToolsAndArmorModelProvider extends FabricModelProvider {
         generator.generateFlatItem(ItemInit.COAL_PICKAXE, ModelTemplates.FLAT_HANDHELD_ITEM);
         generator.generateFlatItem(ItemInit.COAL_SHOVEL, ModelTemplates.FLAT_HANDHELD_ITEM);
         generator.generateFlatItem(ItemInit.COAL_HOE, ModelTemplates.FLAT_HANDHELD_ITEM);
-        generator.generateTrimmableItem(ItemInit.COAL_HELMET, EquipmentModelInit.COAL, TRIM_PREFIX_HELMET, false);
-        generator.generateTrimmableItem(ItemInit.COAL_CHESTPLATE, EquipmentModelInit.COAL, TRIM_PREFIX_CHESTPLATE, false);
-        generator.generateTrimmableItem(ItemInit.COAL_LEGGINGS, EquipmentModelInit.COAL, TRIM_PREFIX_LEGGINGS, false);
-        generator.generateTrimmableItem(ItemInit.COAL_BOOTS, EquipmentModelInit.COAL, TRIM_PREFIX_BOOTS, false);
+        generator.generateTrimmableItem(ItemInit.COAL_HELMET, TRIM_PREFIX_HELMET, false, Map.of());
+        generator.generateTrimmableItem(ItemInit.COAL_CHESTPLATE, TRIM_PREFIX_CHESTPLATE, false, Map.of());
+        generator.generateTrimmableItem(ItemInit.COAL_LEGGINGS, TRIM_PREFIX_LEGGINGS, false, Map.of());
+        generator.generateTrimmableItem(ItemInit.COAL_BOOTS, TRIM_PREFIX_BOOTS, false, Map.of());
         generator.generateSpear(COAL_SPEAR);
 
         generator.generateFlatItem(ItemInit.REDSTONE_SWORD, ModelTemplates.FLAT_HANDHELD_ITEM);
@@ -182,10 +183,10 @@ public class MoreToolsAndArmorModelProvider extends FabricModelProvider {
         generator.generateFlatItem(ItemInit.REDSTONE_PICKAXE, ModelTemplates.FLAT_HANDHELD_ITEM);
         generator.generateFlatItem(ItemInit.REDSTONE_SHOVEL, ModelTemplates.FLAT_HANDHELD_ITEM);
         generator.generateFlatItem(ItemInit.REDSTONE_HOE, ModelTemplates.FLAT_HANDHELD_ITEM);
-        generator.generateTrimmableItem(ItemInit.REDSTONE_HELMET, EquipmentModelInit.REDSTONE, TRIM_PREFIX_HELMET, false);
-        generator.generateTrimmableItem(ItemInit.REDSTONE_CHESTPLATE, EquipmentModelInit.REDSTONE, TRIM_PREFIX_CHESTPLATE, false);
-        generator.generateTrimmableItem(ItemInit.REDSTONE_LEGGINGS, EquipmentModelInit.REDSTONE, TRIM_PREFIX_LEGGINGS, false);
-        generator.generateTrimmableItem(ItemInit.REDSTONE_BOOTS, EquipmentModelInit.REDSTONE, TRIM_PREFIX_BOOTS, false);
+        generator.generateTrimmableItem(ItemInit.REDSTONE_HELMET, TRIM_PREFIX_HELMET, false, Map.of());
+        generator.generateTrimmableItem(ItemInit.REDSTONE_CHESTPLATE, TRIM_PREFIX_CHESTPLATE, false, Map.of());
+        generator.generateTrimmableItem(ItemInit.REDSTONE_LEGGINGS, TRIM_PREFIX_LEGGINGS, false, Map.of());
+        generator.generateTrimmableItem(ItemInit.REDSTONE_BOOTS, TRIM_PREFIX_BOOTS, false, Map.of());
         generator.generateSpear(REDSTONE_SPEAR);
 
         generator.generateFlatItem(ItemInit.LAPIS_SWORD, ModelTemplates.FLAT_HANDHELD_ITEM);
@@ -193,10 +194,10 @@ public class MoreToolsAndArmorModelProvider extends FabricModelProvider {
         generator.generateFlatItem(ItemInit.LAPIS_PICKAXE, ModelTemplates.FLAT_HANDHELD_ITEM);
         generator.generateFlatItem(ItemInit.LAPIS_SHOVEL, ModelTemplates.FLAT_HANDHELD_ITEM);
         generator.generateFlatItem(ItemInit.LAPIS_HOE, ModelTemplates.FLAT_HANDHELD_ITEM);
-        generator.generateTrimmableItem(ItemInit.LAPIS_HELMET, EquipmentModelInit.LAPIS, TRIM_PREFIX_HELMET, false);
-        generator.generateTrimmableItem(ItemInit.LAPIS_CHESTPLATE, EquipmentModelInit.LAPIS, TRIM_PREFIX_CHESTPLATE, false);
-        generator.generateTrimmableItem(ItemInit.LAPIS_LEGGINGS, EquipmentModelInit.LAPIS, TRIM_PREFIX_LEGGINGS, false);
-        generator.generateTrimmableItem(ItemInit.LAPIS_BOOTS, EquipmentModelInit.LAPIS, TRIM_PREFIX_BOOTS, false);
+        generator.generateTrimmableItem(ItemInit.LAPIS_HELMET, TRIM_PREFIX_HELMET, false, Map.of());
+        generator.generateTrimmableItem(ItemInit.LAPIS_CHESTPLATE, TRIM_PREFIX_CHESTPLATE, false, Map.of());
+        generator.generateTrimmableItem(ItemInit.LAPIS_LEGGINGS, TRIM_PREFIX_LEGGINGS, false, Map.of());
+        generator.generateTrimmableItem(ItemInit.LAPIS_BOOTS, TRIM_PREFIX_BOOTS, false, Map.of());
         generator.generateSpear(LAPIS_SPEAR);
 
         generator.generateFlatItem(WOODEN_PAXEL, ModelTemplates.FLAT_HANDHELD_ITEM);
